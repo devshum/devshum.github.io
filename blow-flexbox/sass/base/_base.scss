@@ -16,4 +16,8 @@ html {
     @include respond(tab-land) {
         font-size: 87.5%; // 14px
     }
+
+    @include respond(phone) {
+        font-size: 62.5%; // 10px
+    }
 }
