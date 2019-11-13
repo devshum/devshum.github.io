@@ -1,0 +1,46 @@
+.main { 
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex: 1;
+
+    background-image: url(../img/bg-small.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+    @include respond(tab-land) {
+        &:after {
+            position: absolute;
+            content: '';
+            height: 100%;
+            width: 100%;
+            background-color: rgba($color-white, 0.4);
+        }
+    }
+
+    @media (min-resolution: 192dpi) and (min-width: 900px),
+            (min-width: 1200px) {
+        background-image: url(../img/bg.png); 
+    }
+
+    @include respond(tab-land) {
+        background-size: cover;
+        background-position: center;
+    }
+
+    &__header {
+        margin: 6rem 6rem 0 6rem;
+
+        @include respond(phone) {
+            margin: 2rem;
+        }
+    }
+
+    &__btn {
+        align-self: center;
+        margin-bottom: 5rem;
+        z-index: 1;
+    }
+}
+

@@ -1,0 +1,16 @@
+body {
+    font-family: $font-montserrat;
+    font-weight: 400;
+    line-height: 1.6;
+    color: $color-black;
+    background-image: linear-gradient(to right bottom, $color-grey-dark-1, $color-grey-dark-2);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    min-height: 100vh;
+
+    @include respond(tab-port) {
+        overflow-x: hidden;
+    }
+}
