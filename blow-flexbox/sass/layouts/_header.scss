@@ -1,0 +1,88 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+
+    &__hero {
+        color: currentColor;
+        font-size: 3rem;
+        font-weight: 900;
+        text-decoration: none;
+        transition: $animation-all;
+
+        &:hover {
+            color: $color-grey-dark-1;
+        }
+    }
+
+    &__list {
+        display: flex;
+        list-style: none;
+
+        @include respond(tab-port) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    
+            position: absolute;
+            padding-bottom: 8rem;
+            height: 100vh;
+            width: 100%;
+            right: 0;
+            top: 0;
+            background-color: $color-white;
+            transform: translateX(100%);
+            transition: transform .5s ease-in;
+        }
+    }
+
+    &__item {
+        transition: $animation-all;
+        border-radius: $b-radius;
+        padding: .5rem 1.5rem;
+        cursor: pointer;
+        
+        &:not(:last-child) {
+            margin-right: 2rem;
+
+            @include respond(tab-land) {
+                margin-right: 1rem;
+            }
+
+            @include respond(tab-port) {
+                margin-right: 0;
+                margin-bottom: 1rem;
+            }
+        }
+
+        @include respond(tab-port) {
+            opacity: 0;
+        }
+
+        &:hover {
+            color: $color-white;
+            background-color: $color-black;
+
+            @include respond(tab-port) {
+                color: inherit;
+                background-color: $color-white;
+            }
+        }
+    }
+
+    &__link {
+        font-size: 1.4rem;
+        color: currentColor;
+        text-decoration: none;
+
+        @include respond(tab-port) {
+            font-size: 2rem;
+        }
+    }
+}
+
+.list-active {
+    transform: translateX(0);
+}
