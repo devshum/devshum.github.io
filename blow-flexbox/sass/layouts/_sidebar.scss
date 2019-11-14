@@ -1,0 +1,71 @@
+.sidebar { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 5%;
+
+    @include respond(tab-land) {
+        justify-content: space-between;
+    }
+
+    @include respond(tab-port) {
+        border-bottom: solid .1rem rgba($color-grey-light-1, .1);
+    }
+
+    @include respond(phone) {
+        justify-content: center;
+    }
+
+    &__text { 
+        color: $color-grey-light-1;
+        font-size: 1.4rem;
+        writing-mode: tb-rl;
+        transform:rotate(180deg);
+        position: absolute;
+        text-transform: uppercase;
+
+        @include respond(tab-land) {
+            writing-mode: horizontal-tb;
+            transform: none;
+            position: relative;
+        }
+    
+        span {
+            color: $color-black;
+            font-weight: 700;
+
+            @include respond(phone) {
+                display: grid;
+                justify-content: center;
+            }
+        }
+    }
+
+    &__item { 
+       margin-top: auto;
+    }
+
+    &__icon { 
+        align-self: center;
+        display: flex;
+
+        fill: $color-grey-light-2;
+        transition: $animation-all;
+        height: 2.5rem;
+        width: 2.5rem;
+        cursor: pointer;
+
+        @include respond(tab-land) {
+            height: 1.8rem;
+            width: 1.6rem;
+        }
+
+        @include respond(phone) {
+            display: none;
+        }
+
+        &:hover {
+            fill: $color-grey-light-1;
+        }
+    }
+}

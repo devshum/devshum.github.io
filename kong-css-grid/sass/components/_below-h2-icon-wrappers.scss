@@ -1,0 +1,42 @@
+.icon-wrapper {
+    display: grid;
+    grid-template-columns: 8rem max-content 8rem;
+    column-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+
+    &--black {
+        &::before,
+        &::after {
+            content: "";
+            height: .1rem;
+            display: block;
+            background-color: $color-black;
+        }
+    }
+
+    &__icon {
+        height: 2rem;
+        width: 2rem;
+        justify-self: center;
+    }
+
+    &--white {
+        &::before,
+        &::after {
+            content: "";
+            height: .1rem;
+            display: block;
+            background-color: $color-white;
+        }
+    }
+
+    &__icon {
+        height: 2rem;
+        width: 2rem;
+        justify-self: center;
+
+        &--white { fill: $color-white; }
+    }
+}
+

@@ -1,0 +1,20 @@
+.wrapper {
+    grid-row: 2 / 3;
+    @include columnsCenterPosition;
+
+    &--down {
+        grid-row: 3 / 4;
+    }
+
+    &--bottom {
+        grid-row: 4 / 5;
+    }
+
+    &--6 {
+        @include gridFrColumns($columns-6...);
+    }
+
+    @include respond(phone-small) {
+        @include columnsFullPosition;
+    }
+}

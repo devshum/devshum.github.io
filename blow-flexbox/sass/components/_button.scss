@@ -1,0 +1,32 @@
+.btn {
+    &,
+    &:link,
+    &:visited {
+        font-size: 1.2rem;
+        padding: 1.2rem 3.5rem;
+        background-color: $color-black;
+        border-radius: $b-radius;
+        box-shadow: $shadow-dark;
+        color: $color-sand;
+        letter-spacing: .2rem;
+        outline: none;
+        border: none;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: all .3s;
+    }
+
+    &:hover {
+        transform: translateY(.1rem);
+        box-shadow: $shadow-clicked;
+
+        @include respond(tab-port) {
+            transform: none;
+            box-shadow: $shadow-dark;
+        }  
+    }
+
+    &--animated {
+        animation: moveFromBottom 2s;
+    }
+}

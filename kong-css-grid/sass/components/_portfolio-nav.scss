@@ -1,0 +1,39 @@
+.portfolio-nav {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    grid-gap: 1rem;
+            
+    list-style: none;
+    text-align: center;
+
+    @include respond(phone) {
+        grid-gap: 0;
+    }
+
+    &__item {
+        display: grid;
+        align-items: center;
+
+        border: solid .2rem $color-white;
+        padding: .3rem 1rem .3rem 1rem;
+        transition: all .6s;
+
+        &:hover {
+            background-color: $color-mint;
+        }
+    }
+
+    &__link {
+        align-self: center;
+        
+        color: $color-white;
+        text-decoration: none;
+        font-size: $default-font-size;
+        font-weight: 500;
+
+        @include respond(phone) {
+            font-size: 2vw;
+        }
+    }
+}

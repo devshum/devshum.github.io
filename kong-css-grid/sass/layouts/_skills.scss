@@ -1,0 +1,38 @@
+.skills {
+    background-color: $color-mint-dark;
+    @include columnsFullPosition;
+
+    display: grid;
+    @include columnsCenterArea;
+
+    margin-top: -13rem;
+    padding-bottom: 24rem;
+
+    @supports(clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+        -webkit-clip-path: polygon(0 15%, 100% 5%, 100% 95%, 0 90%);
+        clip-path: polygon(0 15%, 100% 5%, 100% 95%, 0 90%);
+    }
+
+    @include respond(tab-land) {
+        clip-path: polygon(0 10%, 100% 5%, 100% 95%, 0 90%);
+        padding-bottom: 24rem;
+    }
+
+    @include respond(phone) {
+        clip-path: polygon(0 6%, 100% 5%, 100% 95%, 0 93%);
+        padding-bottom: 22rem;
+    }
+
+    &__wrapper {
+        @include respond(tab-land) {
+            justify-content: center;
+            @include gridFrColumns($columns-2...);
+        }
+
+        @include respond(phone) {
+            @include gridFrColumns($columns-1...);
+            justify-content: center;
+        }
+    }
+}
+

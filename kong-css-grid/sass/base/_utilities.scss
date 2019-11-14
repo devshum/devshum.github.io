@@ -1,0 +1,30 @@
+.mt-sm { margin-top: 1rem; 
+    @include respond(tab-port) {
+        margin-top: 2rem;
+    }
+}
+
+.mt-md { margin-top: 3rem;
+    @include respond(tab-port) {
+        margin-top: 5rem;
+    }
+}
+
+.mt-lg { margin-top: 5rem; }
+.mt-hg { margin-top: 7rem; } 
+    
+.mt-bg { margin-top: 10rem; 
+    @include respond(phone) {
+        margin-top: 8rem; 
+    }
+}
+
+.mt-bg-2 { margin-top: 14rem;
+    @include respond(tab-land) {
+        margin-top: 16rem;
+    }
+}
+
+.mt-bg-3 { margin-top: 20rem; }
+
+.mb-md { margin-bottom: 4rem; }

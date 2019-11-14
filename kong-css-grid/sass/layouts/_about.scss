@@ -1,0 +1,16 @@
+.about {
+    background-color: $color-white;
+    @include columnsFullPosition;
+
+    display: grid;
+    @include columnsCenterArea;
+    padding-bottom: 14rem;
+
+    @include respond(tab-land) {
+       padding-bottom: 12rem;
+    }
+
+    @include respond(phone) {
+        padding-bottom: 10rem;
+    }
+}

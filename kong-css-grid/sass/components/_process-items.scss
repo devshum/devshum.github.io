@@ -1,0 +1,97 @@
+.process-item {
+    display: grid;
+    grid-gap: .5rem;
+    justify-items: center;
+    align-content: center;
+
+    height: 11rem;
+    width: 11rem;
+    background-color: $color-white;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+
+    &:hover &__icon {
+        fill: $color-grey-dark-1;
+    }
+
+    &:hover &__text {
+        transform: scale(1.1);
+    }
+
+    &::after {
+        position: absolute;
+        display: block;
+        content: '';
+        height: 2rem;
+        width: 2rem;
+        -webkit-mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><path d='M11 16.5v-3.5h-8v-6h8v-3.5l6.5 6.5-6.5 6.5z' /></svg>");
+        mask-size: cover;
+        background-color: #fff;
+        background-image: none;
+        top: 40%;
+        right: -2.6vw;
+
+        @include respond(tab-land) {;
+            right: -10vw;
+        }
+
+        @include respond(phone) {;
+            right: -50%;
+        }
+
+        @include respond(phone-small) {
+            -webkit-mask-image: url('');
+        }
+    }
+
+    &:last-child::after {
+        -webkit-mask-image: url('');
+    }
+
+    @include respond(tab-land) {;
+        &:nth-child(3)::after {
+            -webkit-mask-image: url('');
+        }
+    }
+
+    @include respond(phone) {
+        &:nth-child(2)::after {
+            -webkit-mask-image: url('');
+        }
+
+        &:nth-child(4)::after {
+            -webkit-mask-image: url('');
+        }
+
+        &:nth-child(3)::after {
+            -webkit-mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><path d='M11 16.5v-3.5h-8v-6h8v-3.5l6.5 6.5-6.5 6.5z' /></svg>");
+        }
+    }
+
+    @include respond(phone-small) {
+        &:nth-child(3)::after {
+            -webkit-mask-image: url('');
+        }
+    }
+
+    &__icon {
+        height: 3.5rem;
+        width: 3.5rem;
+        transition: all .3s;
+
+        @include respond(tab-port) {
+            transform: translateX(.5rem);
+            height: 4rem;
+            width: 4rem;
+        }
+    }
+
+    &__text {
+        color: #000;
+        font-size: $default-font-size;
+        font-weight: 500;
+        text-transform: uppercase;
+        transition: all .3s;
+    }
+}

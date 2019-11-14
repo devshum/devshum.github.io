@@ -1,0 +1,47 @@
+.process {
+    background-color: $color-mint;
+    @include columnsFullPosition;
+
+    display: grid;
+    @include columnsCenterArea;
+
+    margin-top: -5rem;
+    padding-bottom: 10rem;
+
+    @supports(clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+        -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+    }
+
+    @include respond(tab-land) {
+        margin-top: -6rem;
+        padding-bottom: 12rem;
+    }
+
+    @include respond(tab-port) {
+        clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
+    }
+
+    @include respond(phone) {
+        margin-top: 0;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    &__wrapper {
+        @include respond(tab-land) {
+            @include gridFrColumns($columns-3...);
+            justify-items: center;
+        }
+
+        @include respond(phone) {
+            @include gridFrColumns($columns-2...);
+            justify-content: center;
+        }
+
+        @include respond(phone-small) {
+            @include gridFrColumns($columns-1...);
+            justify-content: center;
+            grid-gap: 3rem;
+        }
+    }
+}
