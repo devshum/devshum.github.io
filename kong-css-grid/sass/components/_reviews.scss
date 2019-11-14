@@ -1,0 +1,112 @@
+.review {
+    display: grid;
+    justify-content: center;
+    
+    &__top {
+        background-color: $color-mint;
+    }
+
+    &__main {
+        display: grid;
+        justify-content: center;
+        row-gap: 2rem;
+        column-gap: 4rem;
+        grid-template-columns: 18rem 30rem;
+
+        background-color: $color-white;
+        padding: 8rem 3rem 8rem 3rem;
+        position: relative;
+        transition: all .3s ease-out;
+        cursor: pointer;
+
+        @include respond(tab-port) {;
+            grid-template-columns: 85%;
+            padding: 8vh 3vw 8vh 3vw;
+        }
+
+        &:hover &-user-photo {
+            filter: opacity(.4);
+        }
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        &::before,
+        &::after {
+            position: absolute;
+            content: "\201C";
+            top: 4%;
+            left: 50%;
+            transform: translateX(-50%);
+            color: $color-mint-light;
+            font-size: 10rem;
+            font-family: sans-serif;
+            line-height: 1;
+
+            @include respond(tab-port) {
+                font-size: 5rem;
+            }
+
+            @include respond(phone-small) {
+                font-size: 4rem;
+            }
+        }
+
+        &::after { 
+            top: 85%;
+
+            @include respond(tab-port) {
+                top: 90%
+            }
+        
+            @include respond(phone-small) {
+                top: 94%
+            }
+        }
+    }
+
+    &__user-photo {
+        display: grid;
+        align-self: center;
+        grid-row: 1 / span 2;
+
+        height: 18rem;
+        width: 18rem;
+        border: .5rem solid $color-grey-light-1;
+        border-radius: 50%;
+        transition: all .3s ease-out;
+
+        @include respond(tab-port) {
+            justify-self: center;
+            grid-row: 1 / 2;
+        }
+    }
+
+    &__user-name {
+        font-size: 1.4rem;
+        font-weight: 400;
+        font-style: italic;
+
+        @include respond(tab-port) {
+            text-align: center;
+            grid-row: 2 / 3;
+        }
+    }
+
+    &__user-text {
+        display: grid;
+        align-content: end;
+
+        color: $color-grey-dark-1;
+        letter-spacing: 0;
+        font-size: 1.6rem;
+        font-weight: 600;
+        font-style: italic;
+
+        @include respond(tab-port) {
+            text-align: center;
+            grid-row: 3 / 4;
+        }
+    }
+}

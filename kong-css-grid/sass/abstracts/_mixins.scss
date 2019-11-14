@@ -1,0 +1,113 @@
+@mixin columnsFullArea {
+    grid-template-columns: [full-start] 4rem 1fr 4rem [full-end];
+}
+
+@mixin columnsCenterArea {
+    grid-template-columns: [full-start] minmax(4rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 8rem) [col-end]) [center-end] minmax(4rem, 1fr) [full-end];
+}
+
+@mixin columnsFullPosition {
+    grid-column: full-start / full-end;
+}
+
+@mixin columnsCenterPosition {
+    grid-column: center-start / center-end;
+}
+
+@mixin burgerLineOptions {
+    display: block;
+    height: .4rem;
+    width: 100%;
+    background-color: $color-white;
+
+    @include respond(tab-port) {
+        height: .5rem;
+    }
+}
+
+@mixin gridFrColumns($display, $grid-gap, $template) {
+    display: $display;
+    grid-gap: $grid-gap;
+    grid-template-columns: $template;
+}
+
+$columns-6: (grid, 3rem, repeat(6, 1fr));
+$columns-4: (grid, 8rem, repeat(4, 1fr));
+$columns-3: (grid, 3rem, repeat(3, 1fr));
+$columns-2: (grid, 8rem, repeat(2, min-content));
+$columns-1: (grid, 1rem, 80%);
+$columns-1-fr: (grid, 1rem, 1fr);
+
+@mixin iconPosition {
+    position: absolute;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    top: 18%;
+    left: 37%;
+    fill: $color-white;
+    min-height: 5rem;
+    width: 100%;
+
+    @include respond(big-desktop) {
+        top: 17%;
+        left: 39%;
+    }
+
+    @include respond(tab-land) {
+        top: 17%;
+        left: 35%;
+    }
+
+    @include respond(tab-port) {
+        top: 16%;
+        left: 27%;
+    }
+}
+
+@mixin iconPositionSmall {
+    position: relative;
+    top: 30%;
+    left: 39%;
+    fill: $color-black;
+    min-height: 5rem;
+    width: 100%;
+
+    @include respond(phone) {
+        top: 50%;
+        left: 46%;
+    }
+}
+
+//Media Query Manager
+/*
+0-600px:      phone
+600-900px:    tablet portrait
+900-1200px:   tablet landscape
+
+1800+:        big screen
+*/
+
+//1em = 16px
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone-small {
+        @media only screen and (max-width: 25em) { @content; }       //400px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 43.75em) { @content; }    //700px
+    }
+    
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content; }    //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content; }       //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content; }    //1800px
+    }
+}
+

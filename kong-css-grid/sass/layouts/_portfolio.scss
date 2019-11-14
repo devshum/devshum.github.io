@@ -1,0 +1,42 @@
+.portfolio {
+    background: $color-grey-dark-1 url(../img/bgs/portfolio-bg-small.png);
+    background-size: cover;
+    background-position: center; 
+    background-attachment: fixed;
+    @include columnsFullPosition;
+
+    display: grid;
+    @include columnsCenterArea;
+
+    margin-top: -12rem;
+    padding-bottom: 14rem;
+
+     @media (min-resolution: 192dpi) and (min-width: 900px),
+            (min-width: 1200px) {
+        background-image: url(../img/bgs/portfolio-bg.png); 
+    }
+
+    @supports(clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+        -webkit-clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 100%);
+    }
+
+    @include respond(phone) {
+        padding-bottom: 0;
+        clip-path: polygon(0 0, 100% 1%, 100% 100%, 0 100%);
+    }
+
+    &__description {
+        grid-row: 2 / 3;
+        @include columnsCenterPosition;
+    }
+
+    &__wrapper {
+        display: grid;
+        @include columnsCenterArea;
+
+        @include respond(phone) {
+            grid-column: full-start / full-end;
+        }
+    }
+}
