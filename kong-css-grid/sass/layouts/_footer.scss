@@ -1,0 +1,28 @@
+.footer {
+    background-color: $color-grey-dark-1;
+    @include columnsFullPosition;
+
+    display: grid;
+    grid-template-columns: max-content;
+    justify-content: center;
+    align-items: center;
+
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: bold;
+    height: 8rem;
+
+    @include respond(phone) {
+        font-size: 3vw;
+    }
+
+    &__text {
+        cursor: pointer;
+        display: block;
+        transition: all .4s;
+
+        &:hover {
+            color: $color-grey-light-1;
+        }
+    }
+}

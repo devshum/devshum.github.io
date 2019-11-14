@@ -1,0 +1,70 @@
+.header {
+    background: $color-blue url(../img/bgs/bg-small.png);
+    background-size: cover;
+    background-position: center; 
+    @include columnsFullPosition;
+
+    display: grid;
+    grid-template-rows: min-content;
+    @include columnsCenterArea;
+
+    @media (min-resolution: 192dpi) and (min-width: 900px),
+            (min-width: 1200px) {
+        background-image: url(../img/bgs/bg.png); 
+    }
+
+    &__top {
+        grid-row: 1 / 2;
+        @include columnsCenterPosition;
+
+        display: grid;
+        grid-auto-flow: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        height: 4rem;
+        cursor: pointer;
+    }
+
+    &__main {
+        grid-row: 2 / 3;
+        grid-column: 3 / 13;
+
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: max-content;
+        justify-content: space-between;
+        align-items: center;
+
+        @include respond(tab-port) {
+            grid-auto-flow: row;
+            justify-content: center;
+            align-content: center;
+        }
+    }
+
+    &__photo {
+        height: 24rem;
+        border-radius: 50%;
+        border: 1px solid $color-white;
+        padding: 1rem;
+        cursor: pointer;
+
+         @include respond(tab-port) {
+             justify-self: center;
+             margin: 4rem 0 2rem 0;
+        }
+
+         @include respond(phone) {
+            height: 22rem;
+        }
+    }
+
+    &__wrapper {
+        display: grid;
+        justify-items: center;
+    }
+}
+
