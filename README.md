@@ -4,7 +4,7 @@ A quite simple, well-organized adaptive project on Flexbox basis. There I used B
 
 The design I took from the internet. 
 
-![Screenshot](screenshot.png)
+![Screenshot](kong-css-grid.jpg)
 
 ---------------------
 
