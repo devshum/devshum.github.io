@@ -2,7 +2,7 @@ blow-flexbox |
 
 A quite simple, well-organized adaptive project on Flexbox basis. There I used BEM | SCSS | slightly JS :) 
 
-The design I took from the internet. 
+*The design I took from the internet. 
 
 ![Screenshot](blow-flexbox.jpg)
 
@@ -14,7 +14,7 @@ This HTML markup is absolutely huge :D I used CSS GRID | BEM | SCSS | well-adapr
 
 I think that I managed to implement my CSS GRID knowledge greatly, i'm glad that in 2019 this technology has the support 90% or even more
 
-The design I took from the internet.
+*The design I took from the internet.
 
 ![Screenshot](kong-css-grid.jpg)
 
