@@ -1,6 +1,6 @@
 blow-flexbox |
 
-A quite simple, well-organized adaptive project on Flexbox basis. There I used BEM | SCSS | slightly JS :) 
+The quite simple, well-organized adaptive project on Flexbox basis. There I used BEM | SCSS | slightly JS :) 
 
 *The design I took from the internet. 
 
