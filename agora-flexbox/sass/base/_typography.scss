@@ -1,0 +1,52 @@
+body {
+    font-family: $font-helvetica;
+    font-size: 1.4rem;
+    font-weight: normal;
+    color: $color-grey-dark-2;
+    background-color: $color-grey-light-2;
+    position: relative;
+    min-height: 100vh;
+}
+
+@font-face {
+    font-family: Helvetica;
+    src: url(../font/Helvetica.ttc);
+}
+
+a {
+    text-decoration: none;
+}
+
+.heading-primary {
+    @extend %heading;
+
+    font-size: 2.4rem;
+    color: $color-grey-dark-5;
+}
+.heading-secondary {
+    @extend %heading;
+
+    font-size: 1.5rem;
+    color: $color-grey-dark-3;
+}
+
+.heading-tertiary {
+    color: $color-grey-dark-3;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    font-weight: normal;
+}
+.paragraph {
+    font-size: 1.7rem;
+    line-height: 3rem;
+    color: $color-grey-dark-5;
+}
+.following {
+    &:link,
+    &:visited {
+        color: $color-grey-dark-7;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.7rem;
+    }
+}

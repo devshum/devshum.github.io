@@ -1,0 +1,9 @@
+.logo {
+   &:link,
+   &:visited {
+      color: $color-grey-light-1;
+      font-family: $font-lobster;
+      font-size: 3.2rem;
+      outline: none;
+   }
+}

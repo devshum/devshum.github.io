@@ -1,0 +1,20 @@
+@import "abstracts/extends.scss";
+@import "abstracts/mixins.scss";
+@import "abstracts/variables.scss";
+
+@import "base/base.scss";
+@import "base/typography.scss";
+@import "base/utilities.scss";
+
+@import "components/news.scss";
+@import "components/user-bar.scss";
+@import "components/page-numbers.scss";
+@import "components/logo.scss";
+@import "components/search.scss";
+@import "components/btn.scss";
+
+@import "layouts/container.scss";
+@import "layouts/header.scss";
+@import "layouts/main.scss";
+@import "layouts/sidebar.scss";
+@import "layouts/footer.scss";

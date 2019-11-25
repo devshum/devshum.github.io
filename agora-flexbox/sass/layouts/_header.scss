@@ -1,0 +1,18 @@
+.header {
+    height: 5.5rem;
+    background-color: $color-grey-dark-4; 
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        height: 100%;
+    }
+
+    &__logo {
+        margin-right: 18rem;
+        transform: translateY(-.2rem);
+    }
+}
+
