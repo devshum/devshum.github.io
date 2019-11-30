@@ -2,7 +2,7 @@ agora-flexbox |
 
 *The design made by my dear friend Artur Berg. 
 
-![Screenshot](agora-flexbox.jpg)
+![Screenshot](agora-flexbox.png)
 
 ---------------------
 
