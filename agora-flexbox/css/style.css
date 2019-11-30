@@ -491,6 +491,7 @@ a {
   font-size: inherit;
   font-weight: inherit;
   width: 10.2rem;
+  transform: translateY(-1.5rem);
   background-color: transparent;
   margin-left: .3rem; }
   @media only screen and (max-width: 37.5em) {
