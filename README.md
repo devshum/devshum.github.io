@@ -1,3 +1,11 @@
+agora-flexbox |
+
+*The design made by my dear friend Artur Berg. 
+
+![Screenshot](agora-flexbox.jpg)
+
+---------------------
+
 blow-flexbox |
 
 The quite simple, well-organized adaptive project on Flexbox basis. There I used BEM , SCSS , slightly JS :) 
