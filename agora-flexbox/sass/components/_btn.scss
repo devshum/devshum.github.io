@@ -16,6 +16,12 @@
         cursor: pointer;
         position: relative;
 
+        @include respond(phone-small) {
+            display: none;
+        }
+
+        &::-moz-focus-inner {border:0;}
+
         &::after {
             content: '';
             position: absolute;
@@ -23,11 +29,29 @@
             width: 1.3rem;
             height: 1.4rem;
             mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><path d='M11.5632 4.60642V13.0352C11.5632 13.1328 11.4656 13.232 11.3664 13.232H1.0784C0.9808 13.232 0.8816 13.1344 0.8816 13.0352V1.56802C0.8816 1.47042 0.9792 1.37122 1.0784 1.37122H7.6448V0.489624H1.0784C0.4896 0.489624 0 0.979224 0 1.56802V13.0336C0 13.6224 0.4896 14.112 1.0784 14.112H11.368C11.9552 14.112 12.4464 13.6224 12.4464 13.0336C12.4464 13.0336 12.4464 4.70402 12.4464 4.60482H11.5632V4.60642Z' />
-            <path d='M4.21436 6.272L3.52795 9.3104L6.56476 8.624L12.8368 2.352L10.4848 0L4.21436 6.272ZM11.0736 2.2544L6.36956 7.056L5.78236 6.4672L10.4864 1.7632L11.0736 2.2544Z' /> </svg>");
+            <path d='M4.21436 6.272L3.52795 9.3104L6.56476 8.624L12.8368 2.352L10.4848 0L4.21436 6.272ZM11.0736 2.2544L6.36956 7.056L5.78236 6.4672L10.4864 1.7632L11.0736 2.2544Z' /></svg>");
             mask-size: cover;
             background-color: $color-grey-dark-2;
             bottom: 30%;
             left: auto;
+
+            @include respond(phone-small) {
+                bottom: 35%;
+            }
+        }
+    }
+
+    &--sidebar {
+        display: none;
+        color: $color-grey-dark-5;
+        font-size: inherit;
+        font-weight: inherit;
+        width: 10.2rem;
+        background-color: transparent;
+        margin-left: .3rem;
+
+        @include respond(phone-small) {
+            display: block;
         }
     }
 }

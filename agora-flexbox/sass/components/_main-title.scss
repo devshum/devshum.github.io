@@ -1,0 +1,18 @@
+.main-title {
+    display: flex;
+    align-items: center;
+
+    &__score {
+        display: flex;
+        align-items: center;
+    }
+
+    &__like {
+        margin: 0 3rem 3rem 0;
+        display: none !important;
+
+        @include respond(phone) {
+            display: block !important;
+        }
+    }
+}

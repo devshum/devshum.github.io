@@ -1,0 +1,33 @@
+.like {
+    color: $color-green;
+    font-size: 1.6rem;
+    font-weight: bold;
+    position: relative;
+
+    &--red {
+        color: $color-red;
+    }
+
+    &::before, 
+    &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        left: 5%;
+        height: 1rem;
+        width: 1.6rem;
+        mask-size: cover;
+        background-color: $color-grey-light-3;
+        cursor: pointer;
+    }
+
+    &::before { 
+        top: -2.2rem;
+        mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><path d='M16 7.5624L13.3333 9.93828L8 5.32717L2.66667 9.93828L-9.42978e-08 7.5624L8 0.716056L16 7.5624Z' /></svg>"); 
+    }
+
+    &::after { 
+        top: 2.8rem;
+        mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><path d='M-9.42978e-08 3.30181L2.66667 0.925933L8 5.53705L13.3333 0.925934L16 3.30181L8 10.1482L-9.42978e-08 3.30181Z' /></svg>"); 
+    }
+}

@@ -3,5 +3,16 @@
         display: flex;
 
         padding: 2.5rem 0 16rem 0;
+        position: relative;
+
+        @include respond(tab-land) {
+            padding: 1.1rem 1.1rem 11rem 1.1rem;
+        }
+        
+        @include respond(phone-small) {
+            padding: 1.1rem 0 3rem 0;
+        }
     }
 }
+
+

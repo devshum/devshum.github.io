@@ -6,6 +6,10 @@
     left: 0;
     bottom: 0;
 
+    @include respond(phone-small) {
+        display: none;
+    }
+
     &__logo {
         color: $color-grey-dark-8 !important;
         transform: translateY(-.4rem);
@@ -24,6 +28,10 @@
 
         height: 100%;
         margin-left: 3.5rem;
+
+        @include respond(tab-land) {
+            margin-left: 1.2rem;
+        }
     }
 
     &__item {
@@ -34,6 +42,11 @@
         list-style: none;
         padding: 0 1.5rem;
         transition: $transition;
+        cursor: pointer;
+
+        @include respond(tab-land) {
+            padding: 0 1rem;
+        }
 
         &:hover {
             background-color: $color-grey-dark-7;
@@ -43,13 +56,17 @@
     &__link {
         color: $color-grey-light-6;
         font-size: 1.5rem;
-        font-weight: 700;
+        font-weight: bold;
     }
 
     &__copyright {
         color: $color-grey-light-7;
         font-size: 1.4rem;
         margin-left: auto;
+
+        @include respond(tab-land) {
+            display: none;
+        }
     }
 }
 

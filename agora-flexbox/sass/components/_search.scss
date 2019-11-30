@@ -6,6 +6,10 @@
     background-color: $color-grey-dark-6;
     border-radius: $border-3;
 
+    @include respond(tab-port) {
+        display: none;
+    }
+
     &__input {
         font-family: $font-helvetica;
         color: inherit;
@@ -13,5 +17,13 @@
         margin-left: 2rem;
         border: 0;
         background-color: transparent;
+    }
+
+    &--white {
+        margin: 0 auto;
+        height: 3rem;
+        width: 35.5rem;
+        background-color: transparent;
+        border: .1rem solid $color-grey-light-3;
     }
 }

@@ -13,6 +13,20 @@
     &__logo {
         margin-right: 18rem;
         transform: translateY(-.2rem);
+
+        @include respond(tab-land) {
+            margin-right: 0;
+        }
+
+        @include respond(tab-port) {
+            margin: 0 auto 0 2.3rem
+        }
+    }
+
+    &__search {
+        @include respond(tab-land) {
+            margin: 0 -2.3rem 0 2.3rem;
+        }
     }
 }
 
