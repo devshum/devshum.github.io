@@ -1,6 +1,6 @@
 agora-flexbox |
 
-*The design made by my dear friend Artur Berg. 
+*The design made by my dear friend Arthur Berg. 
 
 ![Screenshot](agora-flexbox.png)
 
