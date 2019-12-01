@@ -1,4 +1,4 @@
-agora-flexbox |
+agora-flexbox | https://devshum.github.io/agora-flexbox/
 
 I really enjoyed to make this HTML markup because I absolutely like this kind of static websites like a blog or something similar
 
@@ -13,7 +13,7 @@ In the next markup I mean to make an old-standart site on Floats(some grid syste
 
 ---------------------
 
-blow-flexbox |
+blow-flexbox | https://devshum.github.io/blow-flexbox/
 
 The quite simple, well-organized adaptive project on Flexbox basis. There I used BEM , SCSS , slightly JS :) 
 
@@ -23,7 +23,7 @@ The quite simple, well-organized adaptive project on Flexbox basis. There I used
 
 ---------------------
 
-kong-css-grid |
+kong-css-grid | https://devshum.github.io/kong-css-grid/
 
 This HTML markup is absolutely huge :D I used CSS GRID , BEM , SCSS , well-adaprive backgrounds that depend on width or device pixel ratio, that's nice
 
