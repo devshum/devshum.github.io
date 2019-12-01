@@ -5,7 +5,7 @@ I really enjoyed to make this HTML markup because I absolutely like this kind of
 In the work I used the same things as below which base on Flexbox and so on...
 This markup also has a good support in 'The W3C Markup Validation Service', 'PageSpeed Insights' and has well-compressed images
 
-In the next markup I mean to make old-standart site on Floats(some grid system) and PUG, because as I consider that kind of markup must be in a portfolio in spite of modern technologies like CSS Grid or Flexbox etc.
+In the next markup I mean to make an old-standart site on Floats(some grid system) and PUG, because as I consider that kind of markup must be in a portfolio in spite of modern technologies like CSS Grid or Flexbox etc.
 
 *The design made by my dear friend Arthur Berg. 
 
