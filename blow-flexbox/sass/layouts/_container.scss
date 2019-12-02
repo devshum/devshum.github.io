@@ -1,8 +1,7 @@
 .container { 
     display: flex;
 
-    max-width: 120rem;
-    margin: 10rem auto;
+    width: 120rem;
     background-color: $color-white;
     box-shadow: $shadow-light;
     border-radius: .3rem;
@@ -30,6 +29,8 @@
         }
     }
 }
+
+
 
 
 

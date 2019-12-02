@@ -33,10 +33,10 @@
         span {
             color: $color-black;
             font-weight: 700;
+            text-align: center;
 
             @include respond(phone) {
-                display: grid;
-                justify-content: center;
+                display: block;
             }
         }
     }
