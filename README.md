@@ -4,7 +4,7 @@ I've never ever used PUG preprocessor because I've wanted to learn SCSS preproce
 
 And this is my first project with jQuery, I implemented onScroll method that allows produce the header if scroll height bigger than intro height section.
 
-I used the same things which I used below, namely: SCSS, BEM, The W3C Markup Validation and certainly FLOATS, after Flexbox and CSS grid 
+I used the same things which I used below, namely: SCSS, BEM, responsive-adaptive markup, The W3C Markup Validation and certainly FLOATS, after Flexbox and CSS grid 
 it was difficult =|
 
 *The design I took from the Internet. 
