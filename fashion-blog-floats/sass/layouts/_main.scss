@@ -1,7 +1,0 @@
-.main {
-    &__gallery {
-        @include respond(phone) {
-            margin-top: 3rem;
-        }
-    }
-}
