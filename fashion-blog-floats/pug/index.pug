@@ -109,7 +109,7 @@ html(lang="en")
            use(xlink:href= iconID)
       //mixin svg-social
       mixin svg-social(iconID)
-         .share__item
+         li.share__item
            svg.share__icon
              use(xlink:href= iconID)
       //mixin svg
@@ -150,7 +150,7 @@ html(lang="en")
         ul.stats.mt-10px
          +stats('June 6, 2019', '<span>By</span> Marlon James', '4 comments')
      //main section
-     main.main.mt-30px
+     main.mt-30px
       //grid-float (layouts)
       .row 
        //blog (layouts)
@@ -272,7 +272,7 @@ html(lang="en")
       .row.mt-80px
        h2.heading-secondary.heading-secondary--center Follow our @instagram_name
       // gallery (components)
-      section.main__gallery.gallery
+      section.gallery
        .gallery__item
          img.gallery__photo(src="img/gallery/gallery-1.png" alt="gallery-photo-1")
        .gallery__item
