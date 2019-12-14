@@ -1,0 +1,28 @@
+.intro {
+    height: calc(100vh - 10.1rem);
+    background: url(../img/hero.png) center no-repeat;
+    background-size: cover;
+    position: relative;
+    cursor: pointer;
+
+    @include respond(phone) {
+        height: 75vh;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color-primary, .2);
+    }
+
+    &__text-box {
+        color: $color-white;
+        position: absolute;
+        bottom: 6rem;
+        z-index: 1;
+    }
+}

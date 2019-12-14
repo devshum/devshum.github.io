@@ -1,0 +1,42 @@
+.header {
+    padding: 3.4rem 2rem;
+    background-color: $color-white;
+
+    @include respond(tab-land-big) {
+        padding: 2rem 0;
+    }
+
+    &__inner {
+        @include clearFix;
+
+        @include respond(phone) {
+            text-align: center;
+        }
+    }
+
+    &__logo {
+        float: left;
+
+        @include respond(phone) {
+            float: none;
+        }
+    }
+
+    &__menu {
+        float: right;
+
+        @include respond(phone) {
+            float: none;
+        }
+    }
+}
+
+//JS
+.header.fixed {
+    position: fixed;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 100%;
+    z-index: 1;
+    box-shadow: $box-shadow;
+}

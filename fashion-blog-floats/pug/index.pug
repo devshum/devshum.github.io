@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=PT+Serif:400,700&display=swap")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Darker+Grotesque&display=swap")
+        link(rel="stylesheet", href="css/style.compress.css")
+        title Fashion &mdash; Blog 
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js")
+    body
+     // sprite 1
+     svg(style="display: none;")
+      symbol#icon-pinterest
+       g
+        path(d="M13.0546 2.81762C11.741 1.48267 9.92295 0.747437 7.93556 0.747437C4.89971 0.747437 3.03253 2.06473 2.00076 3.16973C0.72917 4.53153 0 6.33971 0 8.13076C0 10.3795 0.888595 12.1056 2.37667 12.7477C2.47657 12.791 2.57709 12.8129 2.67563 12.8129C2.98956 12.8129 3.2383 12.5954 3.32448 12.2466C3.3747 12.0465 3.4911 11.5529 3.5417 11.3386C3.65004 10.9154 3.56251 10.7118 3.32626 10.4171C2.89588 9.87809 2.69545 9.24065 2.69545 8.41107C2.69545 5.94694 4.42882 3.32807 7.64145 3.32807C10.1905 3.32807 11.774 4.86168 11.774 7.33037C11.774 8.88822 11.457 10.3309 10.8812 11.3929C10.4811 12.1308 9.77756 13.0105 8.69747 13.0105C8.2304 13.0105 7.81085 12.8074 7.5461 12.4533C7.29601 12.1186 7.21359 11.6862 7.31417 11.2356C7.4278 10.7264 7.58273 10.1953 7.73267 9.6819C8.00616 8.74415 8.26469 7.85847 8.26469 7.15183C8.26469 5.94316 7.56272 5.13104 6.51809 5.13104C5.19049 5.13104 4.15041 6.55838 4.15041 8.38051C4.15041 9.27415 4.37477 9.94253 4.47634 10.1992C4.3091 10.9493 3.31512 15.4087 3.12658 16.2497C3.01757 16.7405 2.36085 20.6177 3.44783 20.9269C4.66913 21.2743 5.76079 17.4981 5.87189 17.0714C5.96195 16.7244 6.27704 15.4122 6.47014 14.6055C7.0597 15.2067 8.00899 15.6131 8.93267 15.6131C10.674 15.6131 12.24 14.7836 13.3422 13.2776C14.4112 11.8169 15 9.78101 15 7.54519C15 5.79728 14.2909 4.07412 13.0546 2.81762Z") 
+      // sprite 2
+      symbol#icon-vimeo
+       g
+        path(d="M0 5.71933C1.75987 4.29489 4.26211 1.16689 6.21375 1.16689C8.16305 1.16689 8.64182 3.50155 8.90775 5.61908C9.17718 7.73661 9.94295 12.369 10.9735 12.369C12.0064 12.369 14.3579 8.27113 14.2239 6.688C14.0921 5.10486 12.3887 5.34231 11.4524 5.7969C12.3135 2.63077 14.3016 0.947388 16.8438 0.947388C19.3871 0.947388 20 2.76902 20 5.00593C20 8.41069 13.1945 18.8421 9.08298 18.8421C6.53964 18.8421 5.90904 15.0413 5.39384 13.16C4.87734 11.2811 3.86334 6.35043 2.6776 6.03422C2.21757 5.95665 0.918894 7.00289 0.918894 7.00289L0 5.71933Z") 
+      // sprite 3
+      symbol#icon-dribbble
+       g
+        path(fill-rule="evenodd" clip-rule="evenodd" d="M9.99972 0.444458C4.48587 0.444458 0 4.97604 0 10.5456C0 16.1152 4.48587 20.6465 9.99972 20.6465C15.5138 20.6465 20 16.1155 20 10.5456C20 4.97604 15.5138 0.444458 9.99972 0.444458ZM16.58 5.21193C17.7206 6.64175 18.4139 8.44752 18.4458 10.4152C18.0663 10.3364 16.4588 10.0333 14.538 10.0333C13.9182 10.0333 13.2659 10.0648 12.6119 10.1464C12.5566 10.0106 12.5014 9.87536 12.4434 9.7387C12.2738 9.33524 12.091 8.9349 11.9018 8.54052C14.8582 7.3086 16.2842 5.59895 16.58 5.21193ZM15.566 4.14503C14.0783 2.82635 12.1305 2.02568 9.99972 2.02568C9.34514 2.02568 8.70767 2.10195 8.09514 2.24541C8.43883 2.71436 9.8831 4.73448 11.2026 7.17393C14.0533 6.08462 15.3305 4.46995 15.566 4.14503ZM6.37082 2.85357C6.66209 3.2593 8.1086 5.30096 9.46204 7.72085C5.82978 8.68653 2.60428 8.74948 1.8258 8.74948H1.7431C2.30237 6.14275 4.04379 3.97661 6.37082 2.85357ZM1.55472 10.3483C1.55248 10.4183 1.55136 10.4886 1.55136 10.5589C1.55136 12.7256 2.35563 14.7052 3.6788 16.213C4.03594 15.6162 6.35681 11.9647 10.5794 10.5853C10.6722 10.5547 10.7656 10.5272 10.8603 10.4997C10.6588 10.0429 10.4421 9.58588 10.2145 9.13564C6.46417 10.2612 2.8249 10.3488 1.77646 10.3488C1.67975 10.3488 1.60518 10.3488 1.55472 10.3483ZM9.99972 19.0916C8.06207 19.0916 6.27383 18.4279 4.84694 17.3151C5.0883 16.8365 6.8401 13.6465 11.4675 12.0177C11.4703 12.0165 11.4734 12.0154 11.4768 12.0146C12.6371 15.0698 13.1285 17.634 13.2633 18.4287C12.2592 18.8557 11.1564 19.0916 9.99972 19.0916ZM13.1658 11.5958C14.2165 14.5269 14.6717 16.93 14.785 17.5875C16.6349 16.2983 17.9525 14.2842 18.334 11.9567C18.013 11.8575 16.6318 11.4665 14.866 11.4665C14.3283 11.4665 13.755 11.5031 13.1658 11.5958Z") 
+      // sprite 4
+      symbol#icon-twitter
+       g
+        path(d="M20 2.62038C19.2644 2.95736 18.473 3.18527 17.6431 3.28706C18.4905 2.76263 19.1407 1.93285 19.4477 0.942477C18.6548 1.42834 17.7762 1.7808 16.842 1.97078C16.0935 1.14732 15.0271 0.63269 13.8462 0.63269C11.5805 0.63269 9.74295 2.53092 9.74295 4.87139C9.74295 5.20363 9.77937 5.527 9.84975 5.83742C6.43961 5.66072 3.41596 3.97333 1.39203 1.40811C1.03889 2.034 0.836317 2.76263 0.836317 3.53931C0.836317 5.00953 1.56125 6.30748 2.66165 7.0674C1.98935 7.04559 1.35622 6.85498 0.803268 6.53666C0.802962 6.55467 0.802962 6.57269 0.802962 6.59039C0.802962 8.64415 2.21794 10.3571 4.09468 10.7463C3.75073 10.8436 3.3875 10.8952 3.01386 10.8952C2.74886 10.8952 2.49212 10.8689 2.24181 10.8196C2.76385 12.5032 4.27889 13.7288 6.07485 13.7632C4.67028 14.9003 2.90125 15.5777 0.978304 15.5777C0.647817 15.5777 0.320389 15.5578 0 15.5183C1.81493 16.7214 3.97228 17.4228 6.28936 17.4228C13.8367 17.4228 17.9641 10.9641 17.9641 5.36231C17.9641 5.17865 17.9602 4.99563 17.9522 4.81418C18.7546 4.21673 19.4501 3.4704 20 2.62038Z")
+      // sprite 5
+      symbol#icon-behance
+       g
+        path(fill-rule="evenodd" clip-rule="evenodd" d="M8.07247 6.84028C8.07247 6.84028 9.96213 6.69327 9.96213 4.3413C9.96213 1.99587 8.41658 0.845215 6.45439 0.845215H0V13.9792H6.45381C6.45381 13.9792 10.3964 14.1072 10.3964 10.0998C10.3967 10.0998 10.5658 6.84028 8.07247 6.84028ZM10.8855 9.23079C10.8855 9.20499 10.8917 4.18776 15.649 4.18776C20.6724 4.18776 19.966 9.88879 19.966 9.88879H13.5421C13.5421 12.3241 15.7216 12.1705 15.7216 12.1705C17.7862 12.1705 17.714 10.7582 17.714 10.7582H19.8934C19.8934 14.5097 15.649 14.2542 15.649 14.2542C10.5596 14.2542 10.8855 9.23079 10.8855 9.23079ZM15.6975 6.11141C13.7834 6.11141 13.5177 8.13111 13.5177 8.13111H17.5871C17.5871 8.13111 17.6174 6.11141 15.6975 6.11141ZM6.4541 3.17791H2.84389V6.11141H6.23066C6.81641 6.11141 7.32964 5.91311 7.32964 4.54551C7.32964 3.17791 6.4541 3.17791 6.4541 3.17791ZM6.27324 11.6465H2.84389V8.13111H6.4541C6.4541 8.13111 7.76447 8.11837 7.75831 9.93977C7.75831 11.474 6.78647 11.6337 6.27324 11.6465ZM12.9804 3.23572V1.61853H18.1004V3.23572H12.9804Z") 
+      // sprite 6
+      symbol#icon-instagram
+       g
+        path(d="M6.25 0.151489H13.75C17.2013 0.151489 20 2.97851 20 6.46462V14.0404C20 17.5265 17.2013 20.3535 13.75 20.3535H6.25C2.79875 20.3535 0 17.5265 0 14.0404V6.46462C0 2.97851 2.79875 0.151489 6.25 0.151489ZM13.75 18.4596C16.1625 18.4596 18.125 16.4772 18.125 14.0404V6.46462C18.125 4.02775 16.1625 2.04543 13.75 2.04543H6.25C3.8375 2.04543 1.875 4.02775 1.875 6.46462V14.0404C1.875 16.4772 3.8375 18.4596 6.25 18.4596H13.75Z") 
+        path(d="M5 10.2525C5 7.46339 7.23875 5.20203 10 5.20203C12.7613 5.20203 15 7.46339 15 10.2525C15 13.0417 12.7613 15.303 10 15.303C7.23875 15.303 5 13.0417 5 10.2525ZM6.875 10.2525C6.875 11.9924 8.2775 13.4091 10 13.4091C11.7225 13.4091 13.125 11.9924 13.125 10.2525C13.125 8.51137 11.7225 7.09597 10 7.09597C8.2775 7.09597 6.875 8.51137 6.875 10.2525Z")
+        path(d="M15 5.20196C15.5523 5.20196 16 4.74973 16 4.19186C16 3.634 15.5523 3.18176 15 3.18176C14.4477 3.18176 14 3.634 14 4.19186C14 4.74973 14.4477 5.20196 15 5.20196Z") 
+      //mixin nav
+     mixin main-nav(title)
+      li.menu__item
+       a(href='#').menu__link= title
+     //mixin stats
+     mixin stats(date, user, comments)
+      //ul-stats (components)
+      li.stats__item
+       a(href='#').stats__link= date
+      li.stats__item
+       a(href='#').stats__link!= user
+      li.stats__item
+       a(href='#').stats__link= comments
+     //mixin post
+     mixin post(photo, alt, subtitle, title, date, user)
+      //post (components)
+      .post
+       img.post__photo(src= photo alt= alt)
+       .post__main
+         //typography (base)
+         h5.heading-quinary= subtitle
+         h2.heading-secondary.mt-10px= title
+         //ul-stats (components)
+         ul.stats.mt-15px
+          li.stats__item
+           a(href='#').stats__link--gray= date
+          li.stats__item
+           a(href='#').stats__link--gray!= user
+     //mixin post-big
+     mixin post-big(photo, alt, subtitle, title, date, user, paragraph)
+      //post (components)
+      .post
+       img.post__photo.post__photo--big(src= photo alt= alt)
+       .post__main.post__main--left
+         //typography (base)
+         h5.heading-quinary= subtitle
+         h2.heading-secondary.mt-10px= title
+         //ul-stats (components)
+         ul.stats.mt-15px
+          li.stats__item
+           a(href='#').stats__link--gray= date
+          li.stats__item
+           a(href='#').stats__link--gray!= user
+         //typography (components)
+         .paragraph.mt-15px= paragraph
+      //mixin post-small
+      mixin post-small(photo, alt, subtitle, title, date, user)
+        //post (components)
+        .post.mb-30px
+         img.post__photo.post__photo--small(src= photo alt= alt)
+         .post__main.post__main--small
+           //typography (base)
+           h5.heading-quinary= subtitle
+           h2.heading-secondary.heading-secondary--small.mt-10px= title
+           //ul-stats (components)
+           ul.stats.mt-15px
+            li.stats__item
+             a(href='#').stats__link--gray= date
+            li.stats__item
+             a(href='#').stats__link--gray!= user
+      //mixin categories
+      mixin categories(title, number)
+         li.categories__item
+          a(href='#').categories__link= title
+          a(href='#').categories__link= number
+      //mixin svg
+      mixin svg(iconID)
+         svg.social-box__icon
+           use(xlink:href= iconID)
+      //mixin svg-social
+      mixin svg-social(iconID)
+         .share__item
+           svg.share__icon
+             use(xlink:href= iconID)
+      //mixin svg
+      mixin social(totalNumber, likesOrFollowers)
+         .social-box__number= totalNumber
+         .social-box__follower= likesOrFollowers
+      //mixin ul-tags
+      mixin tags(title)
+         li.tags__item
+          a.tags__link= title
+     //header (layouts)
+     header.header#header
+      //grid-float (layouts)
+      .row.row--big
+       //header (layouts)
+       .header__inner
+        //logo (components)
+        .header__logo.logo FASHION
+        //nav-menu (components)
+        nav.header__menu.menu
+         ul.menu__box
+          +main-nav('Home')
+          +main-nav('Recipes')
+          +main-nav('Article')
+          +main-nav('Contact')
+          +main-nav('Purchase')
+          +main-nav('Featured Posts')
+          +main-nav('About')
+     //intro (layouts)
+     section.intro#intro
+      //grid-float (layouts) 
+      .row
+       .intro__text-box
+        //typography (base) 
+        h4.heading-quaternary Vehicle
+        h1.heading-primary One of Saturn’s largest rings<br>may be newer than anyone
+        //ul-stats (components)
+        ul.stats.mt-10px
+         +stats('June 6, 2019', '<span>By</span> Marlon James', '4 comments')
+     //main section
+     main.main.mt-30px
+      //grid-float (layouts)
+      .row 
+       //blog (layouts)
+       section.blog 
+        .row
+         .col-1-of-2 
+            +post('img/blog/post-1.png', 'post-1', 'Tourism', 'One of Saturn’s largest rings may be newer than anyone', 'June 6, 2019', '<span>By</span> Indya Moore')
+         .col-1-of-2 
+            +post('img/blog/post-2.png', 'post-2', 'Sport', 'An art director is responsible for the visual styling...', 'June 8, 2019', '<span>By</span> Chrissy Teigen')
+        .row
+         .col-1-of-2 
+            +post('img/blog/post-3.png', 'post-3', 'Fashion', 'They work for retail fashion and department stores', 'June 15, 2019', '<span>By</span> Massimo Bottura')
+         .col-1-of-2 
+            +post('img/blog/post-4.png', 'post-4', 'Clothes', 'Along with artistic skills, most designers need...', 'July 1, 2019', '<span>By</span> Hasan Minhaj')
+        .row
+         .col-1-of-2 
+            +post('img/blog/post-5.png', 'post-5', 'Clothes', 'A fashion market researcher studies the fashion market...', 'August 16, 2019', '<span>By</span> Samin Nosrat')
+         .col-1-of-2 
+            +post('img/blog/post-6.png', 'post-6', 'Fashion', 'A model poses for photographers or the public', 'September 12, 2019', '<span>By</span> Lynn Nottage')
+        .row
+         +post-big('img/blog/post-7.png', 'post-7', 'Fashion', 'Marketing researchers work with various software to collect and manage data', 'September 12, 2019', '<span>By</span> Fred Swaniker', 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem') 
+        .row
+         .col-1-of-2 
+            +post('img/blog/post-8.png', 'post-8', 'Tourism', 'Marketing researchers work with various...', 'June 6, 2019', '<span>By</span> Tara Westover')
+         .col-1-of-2 
+            +post('img/blog/post-9.png', 'post-9', 'Sport', 'One of Saturn’s largest rings may be newer than anyone', 'June 8, 2019', '<span>By</span> Shep Doeleman')
+        .row.mb-70px
+         .col-1-of-2 
+            +post('img/blog/post-10.png', 'post-10', 'Fashion', 'They work for retail fashion and department stores', 'June 15, 2019', '<span>By</span> Aileen Lee')
+         .col-1-of-2 
+            +post('img/blog/post-11.png', 'post-11', 'Clothes', 'Along with artistic skills, most designers need...', 'July 1, 2019', '<span>By</span> Tom Miller')
+        .row 
+         //page-numbers (components)
+         ul.page-numbers
+          li.page-numbers__item
+           a(href="").page-numbers__link OLDER POST 
+          li.page-numbers__item
+           a(href="").page-numbers__link 1
+          li.page-numbers__item
+           a(href="").page-numbers__link 2
+          li.page-numbers__item
+           a(href="").page-numbers__link 3
+          li.page-numbers__item
+           a(href="").page-numbers__link ...
+          li.page-numbers__item
+           a(href="").page-numbers__link 8
+          li.page-numbers__item
+           a(href="").page-numbers__link NEXT POST
+       //sidebar (layouts)
+       section.sidebar 
+        //grid-float (layouts)
+        .row
+         //sidebar-title (components)
+         .sidebar-title.mb-20px About the author
+         //post (components)
+         .post.mb-70px
+          img.post__photo.post__photo--small(src= 'img/sidebar/owner.png' alt='owner')
+          .post__main.post__main--small
+           //typography (base)
+           h3.heading-tertiary Kate Williams
+           h4.heading-quaternary.heading-quaternary--italic.mt-5px Food & cooking bloger
+           //typography (base)
+           .paragraph.mt-10px Hi, I'm Sonia. Cooking is the way I express my creative side to the world. Welcome to my Kitchen Corner on…
+           //btn (components)
+           button.continue.mt-24px Continue Reading
+         //sidebar-title (components)
+         .sidebar-title.mb-20px Featured posts
+         +post-small('img/sidebar/featured-post-1.png', 'featured-post-1', 'Jeans', 'They work for retail fashion and department stores', 'July 2, 2019', '<span>By</span> Shep Doeleman')
+         +post-small('img/sidebar/featured-post-2.png', 'featured-post-2', 'City', 'Marketing researchers work with various software', 'July 22, 2019', '<span>By</span> Mark Rotenberg')
+         +post-small('img/sidebar/featured-post-3.png', 'featured-post-3', 'Photography', 'Very largest rings may be newer than anyone', 'June 8, 2019', '<span>By</span> John Smith')
+         //sidebar-title (components)
+         .sidebar-title.mt-70px Categories
+         //ul-categories (components)
+         ul.categories.mt-20px
+          +categories('Fashion', '(23)')
+          +categories('Style & clothes', '(7)')
+          +categories('Minimalism', '(16)')
+          +categories('Black & White', '(5)')
+          +categories('Modern clothes', '(12)')
+         //sidebar-title (components)
+         .sidebar-title.mt-70px Social media
+         //social-media-box (components)
+         .social-box.mt-20px
+          .social-box__item
+           +svg('#icon-pinterest')
+           +social('814', 'followers')
+          .social-box__item
+           +svg('#icon-vimeo')
+           +social('165', 'followers')
+          .social-box__item
+           +svg('#icon-dribbble')
+           +social('6k', 'followers')
+          .social-box__item
+           +svg('#icon-twitter')
+           +social('130k', 'followers')
+          .social-box__item
+           +svg('#icon-behance')
+           +social('37k', 'followers')
+          .social-box__item
+           +svg('#icon-instagram')
+           +social('854', 'followers')
+         //sidebar-title (components)
+         .sidebar-title.mt-70px Tags
+         // ul-tags (components)
+         ul.tags.mt-20px
+          +tags('Business')
+          +tags('Freelance')
+          +tags('Money')
+          +tags('Experience')
+          +tags('Lifestyle')
+          +tags('SEO')
+          +tags('Wordpress')
+          +tags('Marketing')
+          +tags('UX')
+          +tags('Modern')
+          +tags('Success')
+          +tags('Nature')
+      //grid-float (layouts)
+      .row.mt-80px
+       h2.heading-secondary.heading-secondary--center Follow our @instagram_name
+      // gallery (components)
+      section.main__gallery.gallery
+       .gallery__item
+         img.gallery__photo(src="img/gallery/gallery-1.png" alt="gallery-photo-1")
+       .gallery__item
+         img.gallery__photo(src="img/gallery/gallery-2.png" alt="gallery-photo-2")
+       .gallery__item
+         img.gallery__photo(src="img/gallery/gallery-3.png" alt="gallery-photo-3")
+       .gallery__item
+         img.gallery__photo(src="img/gallery/gallery-4.png" alt="gallery-photo-4")
+       .gallery__item
+         img.gallery__photo(src="img/gallery/gallery-5.png" alt="gallery-photo-5")
+       .gallery__item
+         img.gallery__photo(src="img/gallery/gallery-6.png" alt="gallery-photo-6")
+     //grid-float (layouts)
+     .row.row--center.mt-100px
+      footer.footer
+       .row 
+        //logo (components)
+        .footer__logo.logo FASHION
+       .row 
+        //nav-menu (components)
+        ul.menu__box.mt-60px
+         +main-nav('Home')
+         +main-nav('Recipes')
+         +main-nav('Article')
+         +main-nav('Contact')
+         +main-nav('Purchase')
+        //share (components)
+        ul.footer__share.share.mt-30px
+          +svg-social('#icon-vimeo')
+          +svg-social('#icon-dribbble')
+          +svg-social('#icon-instagram')
+        .footer__copyright Сделано с ❤️ Vlad Shum
+     //JS
+     script(src="app.js")
+
+
+      
+        
+       
+        
+          
+           
+          
+           
+           
+
+         
+          
+          
+      //-   .row 
+      //-    +post('img/post-1.png','Tourism', 'Whether you are sewing clothing or ordering products...', 'September 17, 2019', '<span>By</span> He Jiankui')
+            
+    //-  section.grid-test
+    //-   .row
+    //-    .col-1-of-2 Col 1 of 2
+    //-    .col-1-of-2 Col 1 of 2
+    //-   .row
+    //-    .col-1-of-3 Col 1 of 3
+    //-    .col-1-of-3 Col 1 of 3
+    //-    .col-1-of-3 Col 1 of 3
+    //-   .row
+    //-    .col-1-of-3 Col 1 of 3
+    //-    .col-2-of-3 Col 2 of 3
+    //-   .row
+    //-    .col-1-of-4 Col 1 of 4
+    //-    .col-1-of-4 Col 1 of 4
+    //-    .col-1-of-4 Col 1 of 4
+    //-    .col-1-of-4 Col 1 of 4
+    //-   .row
+    //-    .col-1-of-4 Col 1 of 4
+    //-    .col-1-of-4 Col 1 of 4
+    //-    .col-2-of-4 Col 2 of 4
+    //-   .row
+    //-    .col-1-of-4 Col 1 of 4
+    //-    .col-3-of-4 Col 3 of 4
+
+      

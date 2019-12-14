@@ -1,0 +1,8 @@
+.sidebar {
+    width: 27rem;
+    float: right;
+
+    @include respond(tab-land) {
+        display: none;
+    }
+}

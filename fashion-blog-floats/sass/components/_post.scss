@@ -1,0 +1,64 @@
+.post {
+    box-shadow: $box-shadow;
+    transition: $transition-quik;
+    position: relative;
+
+    @include respond(phone) {
+        margin-bottom: $gutter-vertical;
+    }
+
+    &::after {
+        @extend %after;
+        width: 0;
+        bottom: 0;
+        opacity: 0;
+        transition: $transition;
+    }
+
+    &:hover::after {
+        opacity: 1;
+        width: 100%;
+    }
+
+    &__photo {
+        width: 100%;
+
+        &--big {
+            height: 35rem;
+
+            @include respond(phone-small) {
+                height: 20rem;
+            }
+        }
+
+        &--small {
+            height: 18rem;
+        }
+    }
+
+    &__main {
+        font-size: 1.2rem;
+        text-align: center;
+        padding: 1.5rem 4.2rem;
+
+        @include respond(tab-port) {
+            padding: 2.5rem 2rem;
+        }
+
+        &--small {
+            padding: 1rem 1rem 1.5rem 1rem;
+        }
+
+        &--left {
+            text-align: left !important;
+            padding: 1.5rem 10rem 1.5rem 4.2rem;
+
+            @include respond(tab-port) {
+                padding: 2.5rem;
+            }
+        }
+    }
+}
+
+
+

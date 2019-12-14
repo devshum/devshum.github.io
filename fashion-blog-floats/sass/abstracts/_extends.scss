@@ -1,0 +1,7 @@
+%after {
+    content: '';
+    position: absolute;
+    left: 0;
+    border: .3rem solid rgba($color-sand, .3);
+    z-index: -1;
+}

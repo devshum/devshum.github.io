@@ -1,0 +1,22 @@
+.gallery {
+    width: 100vw;
+
+    @include respond(tab-land) {
+        width: $grid-width;
+    }
+    
+    &__item {
+        display: inline-block;
+    }
+
+    &__photo {
+        max-height: 26.9rem;
+        width: 16.4vw;
+
+        @include respond(tab-land) {
+            max-width: 33vw;
+        }
+    }
+}
+
+

@@ -1,0 +1,35 @@
+.categories {
+
+    &__item {
+        @include clearFix;
+        padding: 1.5rem 0;
+        
+        &:not(:last-child) {
+            border-bottom: solid .1rem $color-gray-light-1;
+        }
+    }
+
+    &__link {
+        &,
+        &:link,
+        &:visited {
+            color: $color-gray-dark !important;
+            transition: $transition;
+            outline: 0;
+
+            &:hover {
+                color: $color-primary !important;
+            }
+
+            &:nth-child(1) {
+                float: left;
+            }
+
+            &:nth-child(2) {
+                float: right;
+            }
+        }
+    }
+}
+
+

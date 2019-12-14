@@ -1,0 +1,32 @@
+.stats {
+    &__item {
+        display: inline-block;
+
+        &:not(:last-child) {
+            margin-right: 1rem;
+        }
+    }
+
+    &__link {
+        & span {
+            color: $color-gray;
+        }
+    
+        &--gray {
+            color: $color-gray-dark !important;
+    
+            & span {
+                color: $color-gray-light;
+            }
+        }
+    }
+
+    &__link, &__link--gray {
+        outline: 0;
+        transition: $transition;
+
+        &:hover {
+            color: $color-primary !important;
+        }    
+    }
+}

@@ -1,0 +1,15 @@
+.footer {
+    &__logo {
+        display: inline-block;
+    }
+
+    &__share {
+        padding-bottom: 4rem;
+        border-bottom: $border;
+    }
+
+    &__copyright {
+        padding: 3rem 0;
+        color: $color-gray-dark;
+    }
+}

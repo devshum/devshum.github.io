@@ -1,0 +1,49 @@
+.menu {
+    padding: .8rem 0 .5rem 0;
+
+    &__item {
+        display: inline-block;
+
+        &:not(:nth-child(5)) {
+            margin-right: 2rem;
+        }
+
+        &:nth-child(5) {
+            @include respond(tab-land) {
+                margin-right: 2rem;
+            }
+        }
+
+        &:nth-child(6),
+        &:nth-child(7) {
+            display: none;
+
+            @include respond(tab-land) {
+                display: inline-block;
+                color: $color-sand;
+            }
+
+            &:nth-child(7) {
+                @include respond(tab-land) {
+                    margin-right: 0;
+                }
+
+                @include respond(phone-small) {
+                    margin-right: 2rem;
+                }
+            }
+        }
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            transition: $transition;
+                outline: none;
+
+            &:hover {
+                color: $color-sand;
+            }
+        }
+    }
+}

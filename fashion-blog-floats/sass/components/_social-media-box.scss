@@ -1,0 +1,59 @@
+.social-box {
+    @include clearFix;
+    
+    &__item {
+        margin: .3rem;
+        float: left;
+        background-color: $color-gray-light-3;
+        width: 8.6rem;
+        height: 8.6rem;
+        position: relative;
+        cursor: pointer;
+        transition: $transition-quik;
+
+        @include respond(tab-land-big) {
+            width: 7.6rem;
+            height: 8.6rem;
+        }
+
+        &:hover {
+            background-color: darken($color-gray-light-3, 2%);
+        }
+
+        &:nth-child(1),
+        &:nth-child(4) {
+            margin: .3rem .3rem .3rem 0;
+        }
+
+        &:nth-child(3),
+        &:nth-child(6) {
+            margin: .3rem 0 .3rem .3rem;
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        top: 1.7rem;
+        left: 50%;
+        transform: translate(-50%);
+        fill: $color-gray-dark-1; 
+        height: 2.2rem;
+        width: 2rem;
+        transition: $transition-quik;
+
+        @include respond(tab-land-big) {
+            top: 1.5rem;
+        }
+    }
+
+    &__number,
+    &__follower {
+        text-align: center;
+        color: $color-gray-dark-2;
+        font-size: 1.2rem;
+    }
+
+    &__number {
+        padding-top: 4.3rem;
+    }
+}

@@ -1,0 +1,8 @@
+.blog {
+    width: 77rem;
+    float: left;
+
+    @include respond(tab-land) {
+        width: 100%;
+    }
+}

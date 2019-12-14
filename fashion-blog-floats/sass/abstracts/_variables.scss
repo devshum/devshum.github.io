@@ -1,0 +1,36 @@
+//GRID-FLOAT
+$grid-width: 117rem;
+$grid-width-big: 176rem;
+$gutter-vertical: 3rem;
+$gutter-horizontal: 3rem;
+
+//FONTS
+$font-pt-serif: 'PT Serif', serif;
+$font-pt-sans: 'PT Sans', sans-serif;
+$grotesk: 'Darker Grotesque', sans-serif;
+
+//COLORS
+$color-primary: #171717;
+$color-white: #fff;
+
+$color-sand: #C9A96E;
+
+$color-gray-light: #b1b1b1;
+$color-gray-light-1: #eee;
+$color-gray-light-3: #F8F9FA;
+$color-gray: #b4b4b4;
+$color-gray-dark: #666;
+$color-gray-dark-1: #5A5A5A;
+$color-gray-dark-2: #999;
+
+//TRANSITIONS
+$transition: all .5s;
+$transition-quik: all .2s;
+
+//SHADOW
+$box-shadow: 0 2px 5px rgba($color-primary, .1);
+
+//BORDER
+$border: solid .1rem $color-gray-light-1;
+
+

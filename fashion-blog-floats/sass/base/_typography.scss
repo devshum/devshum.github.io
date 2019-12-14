@@ -1,0 +1,86 @@
+body {
+    font-family: $font-pt-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: $color-primary;
+    overflow-x: hidden;
+    position: relative;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    &:link,
+    &:visited {
+        color: inherit;
+        text-decoration: none;
+    }
+}
+
+.heading-primary {
+    font-size: 4rem;
+    animation: introAnimaitionFromLeft 1s ease-out;
+
+    @include respond(phone) {
+        font-size: 6.2vw;
+    }
+}
+
+.heading-secondary {
+    font-size: 2rem;
+
+    &--center {
+        text-align: center;
+    }
+
+    &--small {
+        font-size: 1.8rem;
+    }
+}
+
+.heading-secondary,
+.heading-quinary {
+    cursor: pointer;
+}
+
+
+.heading-secondary,
+.heading-quaternary {
+    font-weight: 400;
+}
+
+.heading-tertiary {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.heading-quaternary {
+    &--italic {
+        color: $color-gray-light;
+        text-transform: none !important;
+        font-style: italic;
+    }
+}
+
+.heading-quaternary,
+.heading-quinary {
+    font-family: $font-pt-sans;
+    text-transform: uppercase;
+}
+
+.heading-quinary {
+    font-size: 1.2rem;
+    color: $color-sand;
+}
+
+.heading-quaternary,
+.paragraph {
+    font-size: 1.4rem;
+}
+
+.paragraph {
+    line-height: 2.5rem;
+    color: $color-gray-dark;
+}
