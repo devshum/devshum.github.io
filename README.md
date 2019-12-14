@@ -1,10 +1,10 @@
 fashion-blog-floats | https://devshum.github.io/fashion-blog-floats/
 
-I've never ever used PUG preprocessor because I've wanted to learn SCSS preprocessor well. PUG is a technology, that stand one step above any CSS preprocessor and well I've really liked that thing, its allows save time and HTML code looks more clean! I think that in furter I'll use PUG.
+I've never ever used PUG preprocessor because I've wanted to learn SCSS preprocessor well. PUG is a technology, that stand one step above any CSS preprocessor and well I've really liked that thing, its allows save time and HTML code looks much clean! I think that in furter I'll use PUG.
 
-And this is my first project with jQuery, I implemented onScroll method that allows produce the header if scroll height bigger than intro height section.
+And this is my first project with jQuery, I implemented an onScroll method that allows produce the header if the scroll height bigger than the intro height section.
 
-I used the same things that I used below, namely: SCSS, BEM, responsive-adaptive markup, The W3C Markup Validation and certainly FLOATS, after Flexbox and CSS grid 
+I used the same things that I used below, namely: SCSS, BEM, a responsive-adaptive markup, The W3C Markup Validation and certainly FLOATS, after Flexbox and CSS grid 
 it was difficult =|
 
 *The design I took from the Internet. 
