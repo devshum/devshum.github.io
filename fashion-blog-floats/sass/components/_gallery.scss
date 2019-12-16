@@ -1,21 +1,15 @@
 .gallery {
-    width: 100vw;
-
-    @include respond(tab-land) {
-        width: $grid-width;
-    }
+    width: 100%;
+    @include clearFix;
     
     &__item {
-        display: inline-block;
+        float: left;
+        width: 16.6666667%;
     }
 
     &__photo {
-        max-height: 26.9rem;
-        width: 16.4vw;
-
-        @include respond(tab-land) {
-            max-width: 33vw;
-        }
+        height: auto;
+        width: 100%;
     }
 }
 

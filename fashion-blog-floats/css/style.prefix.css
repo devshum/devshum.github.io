@@ -429,18 +429,17 @@ a:link, a:visited {
     border: solid 0.1rem #eee; }
 
 .gallery {
-  width: 100vw; }
-  @media only screen and (max-width: 68.75em) {
-    .gallery {
-      width: 117rem; } }
+  width: 100%; }
+  .gallery::after {
+    content: '';
+    display: table;
+    clear: both; }
   .gallery__item {
-    display: inline-block; }
+    float: left;
+    width: 16.6666667%; }
   .gallery__photo {
-    max-height: 26.9rem;
-    width: 16.4vw; }
-    @media only screen and (max-width: 68.75em) {
-      .gallery__photo {
-        max-width: 33vw; } }
+    height: auto;
+    width: 100%; }
 
 .share__item {
   display: inline-block;
@@ -511,10 +510,6 @@ a:link, a:visited {
     content: '';
     display: table;
     clear: both; }
-
-@media only screen and (max-width: 43.75em) {
-  .main__gallery {
-    margin-top: 3rem; } }
 
 .header {
   padding: 3.4rem 2rem;
