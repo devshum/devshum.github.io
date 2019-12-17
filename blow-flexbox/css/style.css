@@ -73,11 +73,11 @@ body {
   cursor: pointer;
   transition: all .3s; }
 
-.btn:hover {
+.btn:hover, .btn:active {
   transform: translateY(0.1rem);
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.8); }
   @media only screen and (max-width: 56.25em) {
-    .btn:hover {
+    .btn:hover, .btn:active {
       transform: none;
       box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.6); } }
 
@@ -213,34 +213,34 @@ body {
     .main {
       background-size: cover;
       background-position: center; } }
-  .main__header {
+  .main__hero {
     margin: 6rem 6rem 0 6rem; }
     @media only screen and (max-width: 43.75em) {
-      .main__header {
+      .main__hero {
         margin: 2rem; } }
   .main__btn {
     align-self: center;
     margin-bottom: 5rem;
     z-index: 1; }
 
-.header {
+.hero {
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 2; }
-  .header__hero {
+  .hero__logo, .hero__logo:link, .hero__logo:active {
     color: currentColor;
     font-size: 3rem;
     font-weight: 900;
     text-decoration: none;
     transition: all 0.5s; }
-    .header__hero:hover {
+    .hero__logo:hover, .hero__logo:active, .hero__logo:link:hover, .hero__logo:link:active, .hero__logo:active:hover, .hero__logo:active:active {
       color: #474747; }
-  .header__list {
+  .hero__nav {
     display: flex;
     list-style: none; }
     @media only screen and (max-width: 56.25em) {
-      .header__list {
+      .hero__nav {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -254,36 +254,36 @@ body {
         background-color: #fff;
         transform: translateX(100%);
         transition: transform .5s ease-in; } }
-  .header__item {
+  .hero__item {
     transition: all 0.5s;
     border-radius: 5rem;
     padding: .5rem 1.5rem;
     cursor: pointer; }
-    .header__item:not(:last-child) {
+    .hero__item:not(:last-child) {
       margin-right: 2rem; }
       @media only screen and (max-width: 75em) {
-        .header__item:not(:last-child) {
+        .hero__item:not(:last-child) {
           margin-right: 1rem; } }
       @media only screen and (max-width: 56.25em) {
-        .header__item:not(:last-child) {
+        .hero__item:not(:last-child) {
           margin-right: 0;
           margin-bottom: 1rem; } }
     @media only screen and (max-width: 56.25em) {
-      .header__item {
+      .hero__item {
         opacity: 0; } }
-    .header__item:hover {
+    .hero__item:hover, .hero__item:active {
       color: #fff;
       background-color: #000; }
       @media only screen and (max-width: 56.25em) {
-        .header__item:hover {
+        .hero__item:hover, .hero__item:active {
           color: inherit;
           background-color: #fff; } }
-  .header__link {
+  .hero__link:link, .hero__link:visited {
     font-size: 1.4rem;
     color: currentColor;
     text-decoration: none; }
     @media only screen and (max-width: 56.25em) {
-      .header__link {
+      .hero__link:link, .hero__link:visited {
         font-size: 2rem; } }
 
 .list-active {

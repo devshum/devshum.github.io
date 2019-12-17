@@ -1,22 +1,27 @@
-.header {
+.hero {
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 2;
 
-    &__hero {
-        color: currentColor;
-        font-size: 3rem;
-        font-weight: 900;
-        text-decoration: none;
-        transition: $animation-all;
+    &__logo {
+        &,
+        &:link,
+        &:active {
+            color: currentColor;
+            font-size: 3rem;
+            font-weight: 900;
+            text-decoration: none;
+            transition: $animation-all;
 
-        &:hover {
-            color: $color-grey-dark-1;
+            &:hover,
+            &:active {
+                color: $color-grey-dark-1;
+            }
         }
     }
 
-    &__list {
+    &__nav {
         display: flex;
         list-style: none;
 
@@ -61,7 +66,8 @@
             opacity: 0;
         }
 
-        &:hover {
+        &:hover,
+        &:active {
             color: $color-white;
             background-color: $color-black;
 
@@ -73,12 +79,15 @@
     }
 
     &__link {
-        font-size: 1.4rem;
-        color: currentColor;
-        text-decoration: none;
+        &:link,
+        &:visited {
+            font-size: 1.4rem;
+            color: currentColor;
+            text-decoration: none;
 
-        @include respond(tab-port) {
-            font-size: 2rem;
+            @include respond(tab-port) {
+                font-size: 2rem;
+            }
         }
     }
 }

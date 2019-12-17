@@ -16,7 +16,8 @@
         transition: all .3s;
     }
 
-    &:hover {
+    &:hover,
+    &:active {
         transform: translateY(.1rem);
         box-shadow: $shadow-clicked;
 

@@ -117,14 +117,14 @@ body {
   -o-transition: all .3s;
   transition: all .3s; }
 
-.btn:hover {
+.btn:hover, .btn:active {
   -webkit-transform: translateY(0.1rem);
   -ms-transform: translateY(0.1rem);
   transform: translateY(0.1rem);
   -webkit-box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.8);
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.8); }
   @media only screen and (max-width: 56.25em) {
-    .btn:hover {
+    .btn:hover, .btn:active {
       -webkit-transform: none;
       -ms-transform: none;
       transform: none;
@@ -318,10 +318,10 @@ body {
     .main {
       background-size: cover;
       background-position: center; } }
-  .main__header {
+  .main__hero {
     margin: 6rem 6rem 0 6rem; }
     @media only screen and (max-width: 43.75em) {
-      .main__header {
+      .main__hero {
         margin: 2rem; } }
   .main__btn {
     -webkit-align-self: center;
@@ -330,7 +330,7 @@ body {
     margin-bottom: 5rem;
     z-index: 1; }
 
-.header {
+.hero {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -344,7 +344,7 @@ body {
   -ms-flex-align: center;
   align-items: center;
   z-index: 2; }
-  .header__hero {
+  .hero__logo, .hero__logo:link, .hero__logo:active {
     color: currentColor;
     font-size: 3rem;
     font-weight: 900;
@@ -352,16 +352,16 @@ body {
     -webkit-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s; }
-    .header__hero:hover {
+    .hero__logo:hover, .hero__logo:active, .hero__logo:link:hover, .hero__logo:link:active, .hero__logo:active:hover, .hero__logo:active:active {
       color: #474747; }
-  .header__list {
+  .hero__nav {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     list-style: none; }
     @media only screen and (max-width: 56.25em) {
-      .header__list {
+      .hero__nav {
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -394,38 +394,38 @@ body {
         -o-transition: transform .5s ease-in;
         transition: transform .5s ease-in;
         transition: transform .5s ease-in, -webkit-transform .5s ease-in; } }
-  .header__item {
+  .hero__item {
     -webkit-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
     border-radius: 5rem;
     padding: .5rem 1.5rem;
     cursor: pointer; }
-    .header__item:not(:last-child) {
+    .hero__item:not(:last-child) {
       margin-right: 2rem; }
       @media only screen and (max-width: 75em) {
-        .header__item:not(:last-child) {
+        .hero__item:not(:last-child) {
           margin-right: 1rem; } }
       @media only screen and (max-width: 56.25em) {
-        .header__item:not(:last-child) {
+        .hero__item:not(:last-child) {
           margin-right: 0;
           margin-bottom: 1rem; } }
     @media only screen and (max-width: 56.25em) {
-      .header__item {
+      .hero__item {
         opacity: 0; } }
-    .header__item:hover {
+    .hero__item:hover, .hero__item:active {
       color: #fff;
       background-color: #000; }
       @media only screen and (max-width: 56.25em) {
-        .header__item:hover {
+        .hero__item:hover, .hero__item:active {
           color: inherit;
           background-color: #fff; } }
-  .header__link {
+  .hero__link:link, .hero__link:visited {
     font-size: 1.4rem;
     color: currentColor;
     text-decoration: none; }
     @media only screen and (max-width: 56.25em) {
-      .header__link {
+      .hero__link:link, .hero__link:visited {
         font-size: 2rem; } }
 
 .list-active {
