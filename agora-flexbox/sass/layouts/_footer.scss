@@ -54,9 +54,13 @@
     }
 
     &__link {
-        color: $color-grey-light-6;
-        font-size: 1.5rem;
-        font-weight: bold;
+        &:link,
+        &:visited {
+            color: $color-grey-light-6;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
     }
 
     &__copyright {

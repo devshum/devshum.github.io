@@ -1,4 +1,4 @@
-.page-numbers {
+.page-nav {
     @include respond(tab-land) {
         display: flex;
         justify-content: center;
@@ -10,14 +10,19 @@
 
         list-style: none;
     }
-
-    &__item {
+    
+    &__link {
         display: flex;
         justify-content: center;
         align-items: center;
-        
+
         height: 5rem;
         width: 5rem;
+        color: $color-grey-dark-2;
+        font-size: 1.8rem;
+        font-weight: bold;
+        outline: none;
+        text-decoration: none;
         background-color: $color-grey-light-4;
         border-radius: $border-6;
         transition: $transition;
@@ -60,13 +65,6 @@
             border: .1rem solid $color-grey-light-4;
             background-color: transparent;
         }
-    }
-
-    &__link {
-        color: $color-grey-dark-2;
-        font-size: 1.8rem;
-        font-weight: bold;
-        outline: none;
     }
 }
 

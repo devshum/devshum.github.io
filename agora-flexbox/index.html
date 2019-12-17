@@ -84,14 +84,16 @@
             <!-- user-bar (components) -->
             <nav class="user-bar">
                 <!-- btn (components) -->
-                <button class="user-bar__btn btn">Написать</button>
+                <form action="#">
+                    <button class="user-bar__btn btn">Написать</button>
+                </form>
                 <!-- user-bar (components) -->
                 <div class="user-bar__icon-box">
                     <!-- item 1 -->
                     <svg class="user-bar__icon">
                         <use xlink:href="#icon-bell"></use>
                     </svg>
-                    <span class="user-bar__notification">1</span>
+                    <div class="user-bar__notification">1</div>
                 </div>
                 <div class="user-bar__user">
                     <!-- item 2 -->
@@ -130,8 +132,10 @@
                         <a href="#" class="sidebar__link">Мои подписки</a>
                     </li>
                 </ul>
-                 <!-- component (btn) -->
-                 <button class="user-bar__btn btn btn--sidebar">Написать</button>
+                <!-- component (btn) -->
+                <form action="#">
+                    <button class="user-bar__btn btn btn--sidebar">Написать</button>
+                </form>
                 <!-- base (typography) -->
                 <h3 class="heading-tertiary mb-sm">Сортировать</h3>
                 <!-- sidebar (layouts) -->
@@ -142,10 +146,6 @@
                             <use xlink:href="#icon-sort"></use>
                         </svg>
                         <a href="#" class="sidebar__link">Главная</a>
-                    </li>
-                    <!-- item 2 -->
-                    <li class="sidebar__item">
-                        <a href="#" class="sidebar__link sidebar__link--m">Рейтинговое</a>
                     </li>
                 </ul>
                 <!-- base (typography) -->
@@ -236,14 +236,14 @@
                 <div class="news mb-bg">
                     <div class="news__sidebar">
                         <!-- like (components) -->
-                        <span class="news__like like">25</span>
+                        <div class="news__like like">25</div>
                     </div>
                     <div class="news__content">
                         <!-- main-title (components) -->
                         <div class="main-title">
                             <div class="main-title__score">
                                 <!-- like (components) -->
-                                <span class="main-title__like like">25</span>
+                                <div class="main-title__like like">25</div>
                             </div>
                             <div class="main-title__text">
                                 <!-- base (typography) -->
@@ -272,11 +272,11 @@
                             <nav class="news__icon-box">
                                 <a href="#" class="news__icon-item">
                                     <svg class="news__icon"><use xlink:href="#icon-bookmark"></use></svg>
-                                    <span class="news__figure">0</span>
+                                    <div class="news__figure">0</div>
                                 </a>
                                 <a href="#" class="news__icon-item">
                                     <svg class="news__icon"><use xlink:href="#icon-facebook"></use></svg>
-                                    <span class="news__figure">1</span>
+                                    <div class="news__figure">1</div>
                                 </a>
                                 <a href="#" class="news__icon-item">
                                     <svg class="news__icon"><use xlink:href="#icon-twitter"></use></svg>
@@ -293,14 +293,14 @@
                 <div class="news mb-bg-1">
                     <div class="news__sidebar">
                         <!-- like (components) -->
-                        <span class="news__like like like--red">-2</span>
+                        <div class="news__like like like--red">-2</div>
                     </div>
                     <div class="news__content">
                         <!-- main-title (components) -->
                         <div class="main-title">
                             <div class="main-title__score">
                                 <!-- like (components) -->
-                                <span class="main-title__like like like--red">-2</span>
+                                <div class="main-title__like like like--red">-2</div>
                             </div>
                             <div class="main-title__text">
                                 <!-- base (typography) -->
@@ -329,11 +329,11 @@
                             <nav class="news__icon-box">
                                 <a href="#" class="news__icon-item">
                                     <svg class="news__icon"><use xlink:href="#icon-bookmark"></use></svg>
-                                    <span class="news__figure">0</span>
+                                    <div class="news__figure">0</div>
                                 </a>
                                 <a href="#" class="news__icon-item">
                                     <svg class="news__icon"><use xlink:href="#icon-facebook"></use></svg>
-                                    <span class="news__figure">1</span>
+                                    <div class="news__figure">1</div>
                                 </a>
                                 <a href="#" class="news__icon-item">
                                     <svg class="news__icon"><use xlink:href="#icon-twitter"></use></svg>
@@ -346,43 +346,19 @@
                         </div>
                     </div>
                 </div>
-                <!-- component (page-numbers) -->
-                <nav class="page-numbers">
-                    <ul class="page-numbers__box">
-                        <li class="page-numbers__item">
-                            <a href="#" class="page-numbers__link">1</a>
-                        </li>
-                        <li class="page-numbers__item">
-                            <a href="#" class="page-numbers__link">2</a>
-                        </li>
-                        <li class="page-numbers__item">
-                            <a href="#" class="page-numbers__link">3</a>
-                        </li>
-                        <li class="page-numbers__item">
-                            <a href="#" class="page-numbers__link">4</a>
-                        </li>
-                        <li class="page-numbers__item">
-                            <a href="#" class="page-numbers__link">5</a>
-                        </li>
-                        <li class="page-numbers__item page-numbers__item--active">
-                            <a href="#" class="page-numbers__link">6</a>
-                        </li>
-                        <li class="page-numbers__item">
-                            <a href="#" class="page-numbers__link">7</a>
-                        </li>
-                        <li class="page-numbers__item">
-                            <a href="#" class="page-numbers__link">8</a>
-                        </li>
-                        <li class="page-numbers__item">
-                            <a href="#" class="page-numbers__link">9</a>
-                        </li>
-                        <li class="page-numbers__item page-numbers__item--border">
-                            <a href="#" class="page-numbers__link">...</a>
-                        </li>
-                        <li class="page-numbers__item">
-                            <a href="#" class="page-numbers__link">27</a>
-                        </li>
-                    </ul>
+                <!-- component (page-nav) -->
+                <nav class="page-nav__box">
+                    <a href="#" class="page-nav__link">1</a>
+                    <a href="#" class="page-nav__link">2</a>
+                    <a href="#" class="page-nav__link">3</a>            
+                    <a href="#" class="page-nav__link">4</a>
+                    <a href="#" class="page-nav__link">5</a>
+                    <a href="#" class="page-nav__link page-nav__link--active">6</a>
+                    <a href="#" class="page-nav__link">7</a>
+                    <a href="#" class="page-nav__link">8</a>
+                    <a href="#" class="page-nav__link">9</a>
+                    <a href="#" class="page-nav__link page-nav__link--border">...</a>
+                    <a href="#" class="page-nav__link">27</a>
                 </nav>
             </div>      
         </div>

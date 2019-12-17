@@ -131,18 +131,27 @@
             }
         }
 
-        &:hover {
+        &:hover,
+        &:active {
             color: $color-white;
             background-color: $color-grey-light-1;
             border: solid .1rem transparent;
         }
     }
 
-    &__link {
-        color: $color-grey-dark-3;
+    &__link, &__icon-item, &__user-add a {
+        text-decoration: none;
+    }
 
-        &:hover {
-            color: $color-grey-dark-2;
+    &__link {
+        &:link,
+        &:visited {
+            color: $color-grey-dark-3;
+
+            &:hover,
+            &:active {
+                color: $color-grey-dark-2;
+            }
         }
     }
 
@@ -189,20 +198,24 @@
     }
 
     &__icon-item {
-        display: flex;
-        align-items: center;
+        &:link,
+        &:visited {
+            display: flex;
+            align-items: center;
 
-        height: 100%;
-        padding: 0 2rem;
-        border-right: solid .1rem $color-grey-light-2;
-        outline: none;
+            height: 100%;
+            padding: 0 2rem;
+            border-right: solid .1rem $color-grey-light-2;
+            outline: none;
 
-        &:hover {
-            background-color: rgba($color-grey-dark, .3);
-        }
+            &:hover,
+            &:active {
+                background-color: rgba($color-grey-dark, .3);
+            }
 
-        &:last-child {
-            border-right: none;
+            &:last-child {
+                border-right: none;
+            }
         }
     }
 
@@ -245,26 +258,6 @@
             &:visited {
                 color: $color-black;
             }
-        }
-    }
-    
-
-    &:hover &__caption {
-        opacity: 1;
-        top: 14rem;
-
-        @include respond(tab-land) {
-            opacity: 0;
-            top: 0;
-        }
-    }
-
-    &:hover &__photo {
-        transform: scale(1);
-        filter: blur(.3rem) brightness(90%);
-
-        @include respond(tab-land) {
-            filter: none;
         }
     }
 }

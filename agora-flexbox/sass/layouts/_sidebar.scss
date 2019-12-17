@@ -60,7 +60,6 @@
 
         height: 3.9rem;
         padding-left: 1rem;
-        cursor: pointer;
 
         &--active {
             background-color: $color-grey-light-1;
@@ -92,12 +91,14 @@
     }
 
     &__link {
-        color: $color-grey-dark-5;
-        font-size: 1.4rem;
-        line-height: 2.2rem;
-        margin-left: 1.7rem;
-
-        &--m {margin-left: 2.8rem;}
+       &:link,
+       &:visited {
+            color: $color-grey-dark-5;
+            font-size: 1.4rem;
+            line-height: 2.2rem;
+            margin-left: 1.7rem;
+            text-decoration: none;
+       }
     }
 
     // JS class
