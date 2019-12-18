@@ -24,8 +24,12 @@
     }
 
     &__logo {
-        height: 4rem;
-        cursor: pointer;
+        &,
+        &:link,
+        &:visited {
+            height: 4rem;
+            cursor: pointer;
+        }
     }
 
     &__main {

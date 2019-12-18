@@ -25,15 +25,18 @@
     }
 
     &__link {
-        align-self: center;
+        &:link,
+        &:visited {
+            align-self: center;
         
-        color: $color-white;
-        text-decoration: none;
-        font-size: $default-font-size;
-        font-weight: 500;
+            color: $color-white;
+            text-decoration: none;
+            font-size: $default-font-size;
+            font-weight: 500;
 
-        @include respond(phone) {
-            font-size: 2vw;
+            @include respond(phone) {
+                font-size: 2vw;
+            }
         }
     }
 }

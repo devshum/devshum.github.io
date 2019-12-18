@@ -147,22 +147,26 @@
                 <img src="img/logos/logo.png" alt="Kong logo" class="header__logo">
             </picture>
             <!-- burger (components) -->
-            <button class="burger"><span>&nbsp;</span></button>
+            <form action="#">
+                <button class="burger"><span>&nbsp;</span></button>
+            </form>
         </div>
         <div class="header__main mb-md">
             <img src="img/kong.png" alt="Kong UX - UI Designer" class="header__photo">
             <div class="header__wrapper">
                 <!-- typografy (base) -->
                 <h1 class="heading-primary heading-primary--white"> 
-                    <span class="heading-primary__main">I'm John Doe</span>
-                    <span class="heading-primary__sub">UX - UI Designer</span>
+                    <div class="heading-primary__main">I'm John Doe</div>
+                    <div class="heading-primary__sub">UX - UI Designer</div>
                 </h1>
                 <!-- typografy (base) -->
                 <h1 class="heading-single">
-                    <span>I'm John Doe <span class="heading-single__dash">/</span> UX - UI Designer</span>
+                    <div>I'm John Doe <div class="heading-single__dash">/</div> UX - UI Designer</div>
                 </h1>
                 <!-- burger (components) -->
-                <button class="btn mt-sm">Download my resume</button>
+                <form action="#">
+                    <button class="btn mt-sm">Download my resume</button>
+                </form>
             </div>
         </div>
     </header>
@@ -183,7 +187,7 @@
         <!-- typografy (base) -->
         <p class="paragraph mt-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Nulla aliquet porttitor lacus luctus accumsan tortor posuere ac ut.Pulvinar elementum integer enim neque. Porta lorem mollis aliquam ut. Eros in cursus turpis massa tincidunt dui.Nunc sed id semper risus in hendrerit. Sed augue lacus viverra vitae congue eu consequat ac felis. Placerat inegestas erat imperdiet sed. Pellentesque sit amet porttitor eget. Quam viverra orci sagittis eu volutpat odiofacilisis mauris. Malesuada nunc vel risus commodo viverra. Lacus luctus accumsan tortor posuere ac ut consequatsemper viverra. In est ante in nibh mauris cursus mattis molestie. Eget nunc scelerisque viverra mauris in aliquamsem. Rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat. Condimentum vitae sapienpellentesque habitant morbi tristique senectus et. Fermentum leo vel orci porta non pulvinar. Pellentesque elitullamcorper dignissim cras tincidunt. Tempus egestas sed sed risus pretium quam vulputate. Id ornare arcu odio ut.</p>
         <!-- about-bar (components) -->
-        <div class="about-bar mt-md">
+        <nav class="about-bar mt-md">
             <!-- item 1 -->
             <a href="#" class="about-bar__item"> 
                 <svg class="about-bar__icon">
@@ -220,7 +224,7 @@
                     <use xlink:href="#icon-instagram"></use>
                 </svg>
             </a>
-        </div>
+        </nav>
     </section>
     <!-- skills (layouts)-->
     <section class="skills">
@@ -247,8 +251,8 @@
                         <circle cx="70" cy="70" r="70"></circle>
                     </svg>
                 </div>
-                <span class="progress-item__number">75%</span>
-                <span class="progress-item__text">Photoshop</span>
+                <div class="progress-item__number">75%</div>
+                <div class="progress-item__text">Photoshop</div>
             </div>
             <!-- progress-item (components) -->
             <!-- item 2 -->
@@ -259,8 +263,8 @@
                         <circle cx="70" cy="70" r="70"></circle>
                     </svg>
                 </div>
-                <span class="progress-item__number">68%</span>
-                <span class="progress-item__text">Illustrator</span>
+                <div class="progress-item__number">68%</div>
+                <div class="progress-item__text">Illustrator</div>
             </div>
             <!-- item 3 -->
             <div class="progress-item"> 
@@ -270,8 +274,8 @@
                         <circle cx="70" cy="70" r="70"></circle>
                     </svg>
                 </div>
-                <span class="progress-item__number">50%</span>
-                <span class="progress-item__text">Photography</span>
+                <div class="progress-item__number">50%</div>
+                <div class="progress-item__text">Photography</div>
             </div>
             <!-- item 4 -->
             <div class="progress-item"> 
@@ -281,8 +285,8 @@
                         <circle cx="70" cy="70" r="70"></circle>
                     </svg>
                 </div>
-                <span class="progress-item__number">95%</span>
-                <span class="progress-item__text">Html <sub>5</sub> / Css <sub>3</sub></span>
+                <div class="progress-item__number">95%</div>
+                <div class="progress-item__text">Html <sub>5</sub> / Css <sub>3</sub></div>
             </div>
             <!-- item 5 -->
             <div class="progress-item"> 
@@ -292,8 +296,8 @@
                         <circle cx="70" cy="70" r="70"></circle>
                     </svg>
                 </div>
-                <span class="progress-item__number">80%</span>
-                <span class="progress-item__text">Cd <sub>4</sub></span>
+                <div class="progress-item__number">80%</div>
+                <div class="progress-item__text">Cd <sub>4</sub></div>
             </div>
             <!-- item 6 -->
             <div class="progress-item"> 
@@ -303,8 +307,8 @@
                         <circle cx="70" cy="70" r="70"></circle>
                     </svg>
                 </div>
-                <span class="progress-item__number">99%</span>
-                <span class="progress-item__text">After Effect</span>
+                <div class="progress-item__number">99%</div>
+                <div class="progress-item__text">After Effect</div>
             </div>
         </div>
     </section>
@@ -327,13 +331,13 @@
             <!-- item 1 -->
             <div class="study-item">
                 <div class="study-item__top">
-                    <span class="study-item__years">2012-2014</span>
-                    <span class="study-item__degree">Undergraduate</span>
+                    <div class="study-item__years">2012-2014</div>
+                    <div class="study-item__degree">Undergraduate</div>
                 </div>
                 <div class="study-item__main">
                     <!-- typografy (base) -->
                     <h3 class="heading-tertiary mt-sm">Associate's degree of computer science</h3>
-                    <span class="study-item__university">Oxford University</span>
+                    <div class="study-item__university">Oxford University</div>
                     <p class="study-item__description">
                         This is Photoshop's version Lorem Ipsum. Well, the way they makeshows is,they make one show.
                     </p>
@@ -342,13 +346,13 @@
             <!-- item 2 -->
             <div class="study-item"> 
                 <div class="study-item__top">
-                    <span class="study-item__years">2014-2015</span>
-                    <span class="study-item__degree">Undergraduate</span>
+                    <div class="study-item__years">2014-2015</div>
+                    <div class="study-item__degree">Undergraduate</div>
                 </div>
                 <div class="study-item__main">
                     <!-- typografy (base) -->
                     <h3 class="heading-tertiary mt-sm">Bachelor's degree of computer science</h3>
-                    <span class="study-item__university">Oxford University</span>
+                    <div class="study-item__university">Oxford University</div>
                     <p class="study-item__description">
                         This is Photoshop's version Lorem Ipsum. Well, the way they makeshows is,they make one show.
                     </p>
@@ -357,13 +361,13 @@
             <!-- item 3 -->
             <div class="study-item">
                 <div class="study-item__top">
-                    <span class="study-item__years">2015-2016</span>
-                    <span class="study-item__degree">Graduated</span>
+                    <div class="study-item__years">2015-2016</div>
+                    <div class="study-item__degree">Graduated</div>
                 </div>
                 <div class="study-item__main">
                     <!-- typografy (base) -->
                     <h3 class="heading-tertiary mt-sm">Master degree of computer science</h3>
-                    <span class="study-item__university">Oxford University</span>
+                    <div class="study-item__university">Oxford University</div>
                     <p class="study-item__description">
                         This is Photoshop's version Lorem Ipsum. Well, the way they makeshows is,they make one show.
                     </p>
@@ -386,11 +390,11 @@
             <!-- work-items (components) -->
             <!-- item 1 -->
             <div class="work-item">
-                <span class="work-item__top">2012 - 2013</span>
+                <div class="work-item__top">2012 - 2013</div>
                 <div class="work-item__main">
                     <!-- typografy (base) -->
                     <h3 class="heading-quaternary mt-sm">Google</h3>
-                    <span class="work-item__position">Visual Designer</span>
+                    <div class="work-item__position">Visual Designer</div>
                     <p class="work-item__description">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreet dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat. 
                     </p>
@@ -398,11 +402,11 @@
             </div>
             <!-- item 2 -->
             <div class="work-item"> 
-                <span class="work-item__top">2014 - 2016</span>
+                <div class="work-item__top">2014 - 2016</div>
                 <div class="work-item__main">
                     <!-- typografy (base) -->
                     <h3 class="heading-quaternary mt-sm">Netflix</h3>
-                    <span class="work-item__position">Visual Designer</span>
+                    <div class="work-item__position">Visual Designer</div>
                     <p class="work-item__description">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreet dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat. 
                     </p>
@@ -410,11 +414,11 @@
             </div>
             <!-- item 3 -->
             <div class="work-item">
-                <span class="work-item__top">2016 - Now</span>
+                <div class="work-item__top">2016 - Now</div>
                 <div class="work-item__main">
                     <!-- typografy (base) -->
                     <h3 class="heading-quaternary mt-sm">Hewlett-Packard</h3>
-                    <span class="work-item__position">Visual Designer</span>
+                    <div class="work-item__position">Visual Designer</div>
                     <p class="work-item__description">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreet dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat. 
                     </p>
@@ -473,9 +477,11 @@
                     <div class="portfolio-grid__content">
                         <!-- typografy (base) -->
                         <h5 class="heading-quinary heading-quinary--white">Project Name</h5>
-                        <span class="portfolio-grid__description">Web Design</span>
+                        <div class="portfolio-grid__description">Web Design</div>
                         <!-- button (components) -->
-                        <button class="btn btn--small mt-md"><span>View</span></button>
+                        <form action="#">
+                            <button class="btn btn--small mt-md">View</button>
+                        </form>
                     </div>
                 </div>
                 <!-- item 2 -->
@@ -484,9 +490,11 @@
                     <div class="portfolio-grid__content">
                         <!-- typografy (base) -->
                         <h5 class="heading-quinary heading-quinary--white">Project Name</h5>
-                        <span class="portfolio-grid__description">Web Design</span>
+                        <div class="portfolio-grid__description">Web Design</div>
                         <!-- button (components) -->
-                        <button class="btn btn--small mt-md"><span>View</span></button>
+                        <form action="#">
+                            <button class="btn btn--small mt-md">View</button>
+                        </form>
                     </div>
                 </div>
                 <!-- item 3 -->
@@ -495,9 +503,11 @@
                     <div class="portfolio-grid__content">
                         <!-- typografy (base) -->
                         <h5 class="heading-quinary heading-quinary--white">Project Name</h5>
-                        <span class="portfolio-grid__description">Web Design</span>
+                        <div class="portfolio-grid__description">Web Design</div>
                         <!-- button (components) -->
-                        <button class="btn btn--small mt-md"><span>View</span></button>
+                        <form action="#">
+                            <button class="btn btn--small mt-md">View</button>
+                        </form>
                     </div>
                 </div>
                 <!-- item 4 -->
@@ -506,9 +516,11 @@
                     <div class="portfolio-grid__content">
                         <!-- typografy (base) -->
                         <h5 class="heading-quinary heading-quinary--white">Project Name</h5>
-                        <span class="portfolio-grid__description">Web Design</span>
+                        <div class="portfolio-grid__description">Web Design</div>
                         <!-- button (components) -->
-                        <button class="btn btn--small mt-md"><span>View</span></button>
+                        <form action="#">
+                            <button class="btn btn--small mt-md">View</button>
+                        </form>
                     </div>
                 </div>
                 <!-- item 5 -->
@@ -517,9 +529,11 @@
                     <div class="portfolio-grid__content">
                         <!-- typografy (base) -->
                         <h5 class="heading-quinary heading-quinary--white">Project Name</h5>
-                        <span class="portfolio-grid__description">Web Design</span>
+                        <div class="portfolio-grid__description">Web Design</div>
                         <!-- button (components) -->
-                        <button class="btn btn--small mt-md"><span>View</span></button>
+                        <form action="#">
+                            <button class="btn btn--small mt-md">View</button>
+                        </form>
                     </div>
                 </div>
                 <!-- item 6 -->
@@ -530,7 +544,9 @@
                         <h5 class="heading-quinary heading-quinary--white">Project Name</h5>
                         <div class="portfolio-grid__description">Web Design</div>
                         <!-- button (components) -->
-                        <button class="btn btn--small mt-md"><span>View</span></button>
+                        <form action="#">
+                            <button class="btn btn--small mt-md">View</button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -557,42 +573,42 @@
                 <svg class="process-item__icon">
                     <use xlink:href="#icon-idea"></use>
                 </svg>
-                <span class="process-item__text">Idea</span>
+                <div class="process-item__text">Idea</div>
             </div>
             <!-- item 2 -->
             <div class="process-item"> 
                 <svg class="process-item__icon">
                     <use xlink:href="#icon-concept"></use>
                 </svg>
-                <span class="process-item__text">Concept</span>
+                <div class="process-item__text">Concept</div>
             </div>
             <!-- item 3 -->
             <div class="process-item"> 
                 <svg class="process-item__icon">
                     <use xlink:href="#icon-design"></use>
                 </svg>
-                <span class="process-item__text">Design</span>
+                <div class="process-item__text">Design</div>
             </div>
             <!-- item 4 -->
             <div class="process-item"> 
                 <svg class="process-item__icon">
                     <use xlink:href="#icon-develop"></use>
                 </svg>
-                <span class="process-item__text">Develop</span>
+                <div class="process-item__text">Develop</div>
             </div>
             <!-- item 5 -->
             <div class="process-item"> 
                 <svg class="process-item__icon">
                     <use xlink:href="#icon-test"></use>
                 </svg>
-                <span class="process-item__text">Test</span>
+                <div class="process-item__text">Test</div>
             </div>
             <!-- item 6 -->
             <div class="process-item"> 
                 <svg class="process-item__icon">
                     <use xlink:href="#icon-launch"></use>
                 </svg>
-                <span class="process-item__text">launch</span>
+                <div class="process-item__text">launch</div>
             </div>
         </div>
     </section>
@@ -620,9 +636,7 @@
                     <blockquote class="review__user-text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut laboreet dolore magna aliqua.
                     </blockquote>
-                    <span class="review__user-name">
-                        Helen O'Hara, Empire Magazine
-                    </span>
+                    <div class="review__user-name">Helen O'Hara, Empire Magazine</div>
                 </div>
             </figure>
             <!-- review 2 -->
@@ -633,13 +647,11 @@
                     <blockquote class="review__user-text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut laboreet dolore magna aliqua.
                     </blockquote>
-                    <span class="review__user-name">
-                        Johnny Oleksinski, New York Post
-                    </span>
+                    <div class="review__user-name">Johnny Oleksinski, New York Post</div>
                 </div>
             </figure>
             <!-- testimonials (layouts) -->
-            <span class="testimonials__text">Clients</span>
+            <div class="testimonials__text">Clients</div>
             <div class="testimonials__logos mt-lg">
                 <img src="img/logos/logo-mimi.png" alt="logo 1">
                 <img src="img/logos/logo-toma.png" alt="logo 2">
@@ -666,103 +678,127 @@
             <!-- item 1 -->
             <div class="blog-item"> 
                 <img src="img/blogs/blog-1.png" alt="Blog 1" class="blog-item__photo">
-                <div class="blog-item__date"><span>5 <sub>May</sub></span></div>
+                <div class="blog-item__date"><span>5<sub>May</sub></span></div>
                 <div class="blog-item__main">
                     <!-- typografy (base) -->
                     <h6 class="heading-senary">Lorem ipsum dolor sit amet</h6>
-                    <span class="blog-item__description">
+                    <div class="blog-item__description">
                         Suspendisse faucibus interdum posuere lorem ipsum dolor sitametconsectetur. Diam phasellus vestibulum lorem sedcras semper auctornequevitae tempus quam pellentesque nec. 
-                    </span>
+                    </div>
                 </div>
                 <div class="blog-item__stats"><span>13 Comments</span> 8 Share</div>
                 <div class="blog-item__content">
-                    <button class="blog-item__btn btn btn--black"><span>Read the article</span></button>
-                    <button class="btn btn--black"><span>Suggest an article</span></button>
+                    <form action="#">
+                        <button class="blog-item__btn btn btn--black">Read the article</button>
+                    </form>
+                    <form action="#">
+                        <button class="btn btn--black">Suggest an article</button>
+                    </form>
                 </div>
             </div>
             <!-- item 2 -->
             <div class="blog-item">
                 <img src="img/blogs/blog-2.png" alt="Blog 1" class="blog-item__photo">
-                <div class="blog-item__date"><span>7 <sub>May</sub></span></div>
+                <div class="blog-item__date"><span>7<sub>May</sub></span></div>
                 <div class="blog-item__main">
                     <!-- typografy (base) -->
                     <h6 class="heading-senary">Lorem ipsum dolor sit amet</h6>
-                    <span class="blog-item__description">
+                    <div class="blog-item__description">
                         Suspendisse faucibus interdum posuere lorem ipsum dolor sitametconsectetur. entesque nec. 
-                    </span>
+                    </div>
                 </div>
                 <div class="blog-item__stats"><span>3 Comments</span> 5 Share</div>
                 <div class="blog-item__content">
-                    <button class="blog-item__btn btn btn--black"><span>Read the article</span></button>
-                    <button class="btn btn--black"><span>Suggest an article</span></button>
+                    <form action="#">
+                        <button class="blog-item__btn btn btn--black">Read the article</button>
+                    </form>
+                    <form action="#">
+                        <button class="btn btn--black">Suggest an article</button>
+                    </form>
                 </div>
             </div>
             <!-- item 3 -->
             <div class="blog-item"> 
                 <img src="img/blogs/blog-3.png" alt="Blog 1" class="blog-item__photo">
-                <div class="blog-item__date"><span>18 <sub>May</sub></span></div>
+                <div class="blog-item__date"><span>18<sub>May</sub></span></div>
                 <div class="blog-item__main">
                     <!-- typografy (base) -->
                     <h6 class="heading-senary">Lorem ipsum dolor sit amet</h6>
-                    <span class="blog-item__description">
+                    <div class="blog-item__description">
                         Suspendisse faucibus interdum posuere lorem ipsum dolor sitametconsectetur. Diam phasellus. 
-                    </span>
+                    </div>
                 </div>
                 <div class="blog-item__stats"><span>11 Comments</span> 35 Share</div>
                 <div class="blog-item__content">
-                    <button class="blog-item__btn btn btn--black"><span>Read the article</span></button>
-                    <button class="btn btn--black"><span>Suggest an article</span></button>
+                    <form action="#">
+                        <button class="blog-item__btn btn btn--black">Read the article</button>
+                    </form>
+                    <form action="#">
+                        <button class="btn btn--black">Suggest an article</button>
+                    </form>
                 </div>
             </div>
              <!-- item 4 -->
             <div class="blog-item">
                 <img src="img/blogs/blog-4.png" alt="Blog 1" class="blog-item__photo">
-                <div class="blog-item__date"><span>21 <sub>May</sub></span></div>
+                <div class="blog-item__date"><span>21<sub>May</sub></span></div>
                 <div class="blog-item__main">
                     <!-- typografy (base) -->
                     <h6 class="heading-senary">Lorem ipsum dolor sit amet</h6>
-                    <span class="blog-item__description">
+                    <div class="blog-item__description">
                         Suspendisse faucibus  ipsum dolor sit amet consectetur. Diamphasellusvestibulum lorem. 
-                    </span>
+                    </div>
                 </div>
                 <div class="blog-item__stats"><span>0 Comments</span> 2 Share</div>
                 <div class="blog-item__content">
-                    <button class="blog-item__btn btn btn--black"><span>Read the article</span></button>
-                    <button class="btn btn--black"><span>Suggest an article</span></button>
+                    <form action="#">
+                        <button class="blog-item__btn btn btn--black">Read the article</button>
+                    </form>
+                    <form action="#">
+                        <button class="btn btn--black">Suggest an article</button>
+                    </form>
                 </div>
             </div>
             <!-- item 5 -->
             <div class="blog-item"> 
                 <img src="img/blogs/blog-5.png" alt="Blog 1" class="blog-item__photo">
-                <div class="blog-item__date"><span>1 <sub>June</sub></span></div>
+                <div class="blog-item__date"><span>1<sub>June</sub></span></div>
                 <div class="blog-item__main">
                     <!-- typografy (base) -->
                     <h6 class="heading-senary">Lorem ipsum dolor sit amet</h6>
-                    <span class="blog-item__description">
+                    <div class="blog-item__description">
                         Suspendisse faucibus interdum posuere lorem ipsum dolor sitametconsectetur. Diam phasellus vestibulum lorem sedcras semper auctornequevitae tempus quam pellentesque nec. 
-                    </span>
+                    </div>
                 </div>
                 <div class="blog-item__stats"><span>6 Comments</span> 2 Share</div>
                 <div class="blog-item__content">
-                    <button class="blog-item__btn btn btn--black"><span>Read the article</span></button>
-                    <button class="btn btn--black"><span>Suggest an article</span></button>
+                    <form action="#">
+                        <button class="blog-item__btn btn btn--black">Read the article</button>
+                    </form>
+                    <form action="#">
+                        <button class="btn btn--black">Suggest an article</button>
+                    </form>
                 </div>
             </div>
             <!-- item 6 -->
             <div class="blog-item"> 
                 <img src="img/blogs/blog-6.png" alt="Blog 1" class="blog-item__photo">
-                <div class="blog-item__date"><span>8 <sub>June</sub></span></div>
+                <div class="blog-item__date"><span>8<sub>June</sub></span></div>
                 <div class="blog-item__main">
                     <!-- typografy (base) -->
                     <h6 class="heading-senary">Lorem ipsum dolor sit amet</h6>
-                    <span class="blog-item__description">
+                    <div class="blog-item__description">
                         Suspendisse faucibus interdum posuere lorem ipsum dolor sitametconsectetur. Diam phasellus vestibulum auctor neque vitae tempusquampellentesque nec. 
-                    </span>
+                    </div>
                 </div>
                 <div class="blog-item__stats"><span>5 Comments</span> 5 Share</div>
                 <div class="blog-item__content">
-                    <button class="blog-item__btn btn btn--black"><span>Read the article</span></button>
-                    <button class="btn btn--black"><span>Suggest an article</span></button>
+                    <form action="#">
+                        <button class="blog-item__btn btn btn--black">Read the article</button>
+                    </form>
+                    <form action="#">
+                        <button class="btn btn--black">Suggest an article</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -783,22 +819,22 @@
         <!-- contact (layouts) -->
         <div class="contact__address mt-md">
             <!-- typografy (base) -->
-            <span class="subtitle">
+            <div class="subtitle">
                 Say Hi to Me
-            </span>
+            </div>
             <div class="contact__box">
                 <!-- contact (layouts) -->
-                <span class="contact__info">
+                <div class="contact__info">
                 Orchard Park, Long Bennington,<br>
                 Newark, Lincolnshire<br>
                     NG23 5DQ, United Kingdom
-                </span>
+                </div>
                 <!-- contact (layouts) -->
-                <span class="contact__phone">9876543210</span>
+                <div class="contact__phone">9876543210</div>
                 <!-- contact (layouts) -->
-                <span class="contact__email">Sebastian@mail.com</span>
+                <div class="contact__email">Sebastian@mail.com</div>
                 <!-- contact (layouts) -->
-                <span class="contact__site">www.sebasti.an</span>
+                <div class="contact__site">www.sebasti.an</div>
             </div>
         </div>
         <div class="contact__touch mt-md">
@@ -819,7 +855,7 @@
                 </div>  
                 <div class="form__group">
                     <!-- button (component) -->
-                    <button class="btn btn--form"><span class="form__text">Send</span></button>
+                    <button class="btn btn--form"><div class="form__text">Send</div></button>
                 </div>
             </form>   
         </div>
@@ -845,7 +881,7 @@
     <!-- Main Sections end-->
     <!-- footer (layouts) -->
     <footer class="footer">
-        <span class="footer__text">Сделано с ❤️ Vlad Shum</span>
+        <div class="footer__text">Сделано с ❤️ Vlad Shum</div>
     </footer>
     <!-- Grid container end-->
 </body>

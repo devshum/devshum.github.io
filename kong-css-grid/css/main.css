@@ -231,6 +231,7 @@ textarea {
 
 .btn, .btn:link, .btn:visited {
   cursor: pointer;
+  width: 100%;
   text-transform: uppercase;
   font-family: "Raleway", sans-serif;
   font-weight: 500;
@@ -346,7 +347,8 @@ textarea {
   cursor: pointer;
   height: 3.5rem;
   width: 4rem;
-  border: none;
+  border: 0;
+  outline: 0;
   background: transparent;
   position: relative; }
   .burger span {
@@ -601,14 +603,14 @@ textarea {
     transition: all .6s; }
     .portfolio-nav__item:hover {
       background-color: #52edc7; }
-  .portfolio-nav__link {
+  .portfolio-nav__link:link, .portfolio-nav__link:visited {
     align-self: center;
     color: #fff;
     text-decoration: none;
     font-size: 1.6rem;
     font-weight: 500; }
     @media only screen and (max-width: 43.75em) {
-      .portfolio-nav__link {
+      .portfolio-nav__link:link, .portfolio-nav__link:visited {
         font-size: 2vw; } }
 
 .portfolio-grid {
@@ -932,7 +934,7 @@ textarea {
     grid-auto-flow: column;
     align-items: center;
     justify-content: space-between; }
-  .header__logo {
+  .header__logo, .header__logo:link, .header__logo:visited {
     height: 4rem;
     cursor: pointer; }
   .header__main {
