@@ -56,29 +56,31 @@
     <!--mixin stats-->
     <!--mixin post-->
     <!--mixin post-big-->
-    <!--header (layouts)-->
-    <header class="header" id="header">
-      <!--grid-float (layouts)-->
-      <div class="row row--big">
-        <!--header (layouts)-->
-        <div class="header__inner">
-          <!--logo (components)-->
-          <div class="header__logo logo">FASHION</div>
-          <!--nav-menu (components)-->
-          <nav class="header__menu menu">
-            <ul class="menu__box">
-                  <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
-                  <li class="menu__item"><a class="menu__link" href="#">Recipes</a></li>
-                  <li class="menu__item"><a class="menu__link" href="#">Article</a></li>
-                  <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
-                  <li class="menu__item"><a class="menu__link" href="#">Purchase</a></li>
-                  <li class="menu__item"><a class="menu__link" href="#">Featured Posts</a></li>
-                  <li class="menu__item"><a class="menu__link" href="#">About</a></li>
-            </ul>
-          </nav>
+    <nav>
+      <!--header (layouts)-->
+      <header class="header" id="header">
+        <!--grid-float (layouts)-->
+        <div class="row row--big">
+          <!--header (layouts)-->
+          <div class="header__inner">
+            <!--logo (components)-->
+            <div class="header__logo logo">FASHION</div>
+            <!--nav-menu (components)-->
+            <nav class="header__menu menu">
+              <ul class="menu__box">
+                    <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Recipes</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Article</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Purchase</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Featured Posts</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
-      </div>
-    </header>
+      </header>
+    </nav>
     <!--intro (layouts)-->
     <section class="intro" id="intro">
       <!--grid-float (layouts) -->
@@ -212,7 +214,7 @@
                       <li class="stats__item"><a class="stats__link--gray" href="#"><span>By</span> Fred Swaniker</a></li>
                     </ul>
                     <!--typography (components)-->
-                    <div class="paragraph mt-15px">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem</div>
+                    <p class="paragraph mt-15px">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem</p>
                   </div>
                 </div>
                 <!--mixin post-small-->
@@ -288,15 +290,7 @@
           </div>
           <div class="row"> 
             <!--page-numbers (components)-->
-            <ul class="page-numbers">
-              <li class="page-numbers__item"><a class="page-numbers__link" href="">OLDER POST </a></li>
-              <li class="page-numbers__item"><a class="page-numbers__link" href="">1</a></li>
-              <li class="page-numbers__item"><a class="page-numbers__link" href="">2</a></li>
-              <li class="page-numbers__item"><a class="page-numbers__link" href="">3</a></li>
-              <li class="page-numbers__item"><a class="page-numbers__link" href="">...</a></li>
-              <li class="page-numbers__item"><a class="page-numbers__link" href="">8</a></li>
-              <li class="page-numbers__item"><a class="page-numbers__link" href="">NEXT POST</a></li>
-            </ul>
+            <nav class="main__page-numbers page-numbers"><a class="page-numbers__link" href="#">OLDER POST </a><a class="page-numbers__link" href="#">1</a><a class="page-numbers__link" href="#">2</a><a class="page-numbers__link" href="#">3</a><a class="page-numbers__link" href="#">...</a><a class="page-numbers__link" href="#">8</a><a class="page-numbers__link" href="#">NEXT POST</a></nav>
           </div>
         </section>
         <!--sidebar (layouts)-->
@@ -312,9 +306,11 @@
                 <h3 class="heading-tertiary">Kate Williams</h3>
                 <h4 class="heading-quaternary heading-quaternary--italic mt-5px">Food & cooking bloger</h4>
                 <!--typography (base)-->
-                <div class="paragraph mt-10px">Hi, I'm Sonia. Cooking is the way I express my creative side to the world. Welcome to my Kitchen Corner on…</div>
+                <p class="paragraph mt-10px">Hi, I'm Sonia. Cooking is the way I express my creative side to the world. Welcome to my Kitchen Corner on…</p>
                 <!--btn (components)-->
-                <button class="continue mt-24px">Continue Reading</button>
+                <form action="#">
+                  <button class="continue mt-24px">Continue Reading</button>
+                </form>
               </div>
             </div>
             <!--sidebar-title (components)-->
@@ -371,50 +367,37 @@
             <!--sidebar-title (components)-->
             <div class="sidebar-title mt-70px">Social media</div>
             <!--social-media-box (components)-->
-            <div class="social-box mt-20px">
-              <div class="social-box__item">
+            <div class="social-box mt-20px"><a class="social-box__item" href="#">
                     <svg class="social-box__icon">
                       <use xlink:href="#icon-pinterest"></use>
                     </svg>
                     <div class="social-box__number">814</div>
-                    <div class="social-box__follower">followers</div>
-              </div>
-              <div class="social-box__item">
+                    <div class="social-box__follower">followers</div></a><a class="social-box__item" href="#">
                     <svg class="social-box__icon">
                       <use xlink:href="#icon-vimeo"></use>
                     </svg>
                     <div class="social-box__number">165</div>
-                    <div class="social-box__follower">followers</div>
-              </div>
-              <div class="social-box__item">
+                    <div class="social-box__follower">followers</div></a><a class="social-box__item" href="#">
                     <svg class="social-box__icon">
                       <use xlink:href="#icon-dribbble"></use>
                     </svg>
                     <div class="social-box__number">6k</div>
-                    <div class="social-box__follower">followers</div>
-              </div>
-              <div class="social-box__item">
+                    <div class="social-box__follower">followers</div></a><a class="social-box__item" href="#">
                     <svg class="social-box__icon">
                       <use xlink:href="#icon-twitter"></use>
                     </svg>
                     <div class="social-box__number">130k</div>
-                    <div class="social-box__follower">followers</div>
-              </div>
-              <div class="social-box__item">
+                    <div class="social-box__follower">followers</div></a><a class="social-box__item" href="#">
                     <svg class="social-box__icon">
                       <use xlink:href="#icon-behance"></use>
                     </svg>
                     <div class="social-box__number">37k</div>
-                    <div class="social-box__follower">followers</div>
-              </div>
-              <div class="social-box__item">
+                    <div class="social-box__follower">followers</div></a><a class="social-box__item" href="#">
                     <svg class="social-box__icon">
                       <use xlink:href="#icon-instagram"></use>
                     </svg>
                     <div class="social-box__number">854</div>
-                    <div class="social-box__follower">followers</div>
-              </div>
-            </div>
+                    <div class="social-box__follower">followers</div></a></div>
             <!--sidebar-title (components)-->
             <div class="sidebar-title mt-70px">Tags</div>
             <!-- ul-tags (components)-->
@@ -463,23 +446,17 @@
                 <li class="menu__item"><a class="menu__link" href="#">Purchase</a></li>
           </ul>
           <!--share (components)-->
-          <ul class="footer__share share mt-30px">
-                <li class="share__item">
+          <nav class="footer__share share mt-30px"><a class="share__item" href="#">
                   <svg class="share__icon">
                     <use xlink:href="#icon-vimeo"></use>
-                  </svg>
-                </li>
-                <li class="share__item">
+                  </svg></a><a class="share__item" href="#">
                   <svg class="share__icon">
                     <use xlink:href="#icon-dribbble"></use>
-                  </svg>
-                </li>
-                <li class="share__item">
+                  </svg></a><a class="share__item" href="#">
                   <svg class="share__icon">
                     <use xlink:href="#icon-instagram"></use>
-                  </svg>
-                </li>
-          </ul>
+                  </svg></a>
+          </nav>
           <div class="footer__copyright">Сделано с ❤️ Vlad Shum</div>
         </div>
       </footer>

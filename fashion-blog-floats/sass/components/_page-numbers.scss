@@ -3,7 +3,6 @@
     font-family: $grotesk;
     font-size: 2rem;
     width: 56rem;
-    height: 5rem;
     margin: 0 auto;
     border: $border;
     padding: 1rem 3.8rem;
@@ -13,8 +12,18 @@
         text-align: center;
     }
 
-    &__item {
+    &__link {
         display: inline-block;
+        transition: $transition;
+        outline: none;
+
+        &:hover {
+            color: $color-gray-light;
+        }
+
+        &:nth-child(1) {
+            margin-left: 1.5rem;
+        }
 
         &:nth-child(1),
         &:nth-child(6) {
@@ -42,18 +51,6 @@
 
             @include respond(phone) {
                 margin-right: 2rem;
-            }
-        }
-    }
-
-    &__link {
-        &:link,
-        &:visited {
-            transition: $transition;
-            outline: none;
-        
-            &:hover {
-                color: $color-gray-light;
             }
         }
     }

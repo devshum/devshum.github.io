@@ -82,7 +82,7 @@ html(lang="en")
           li.stats__item
            a(href='#').stats__link--gray!= user
          //typography (components)
-         .paragraph.mt-15px= paragraph
+         p.paragraph.mt-15px= paragraph
       //mixin post-small
       mixin post-small(photo, alt, subtitle, title, date, user)
         //post (components)
@@ -109,7 +109,7 @@ html(lang="en")
            use(xlink:href= iconID)
       //mixin svg-social
       mixin svg-social(iconID)
-         li.share__item
+         a(href='#').share__item
            svg.share__icon
              use(xlink:href= iconID)
       //mixin svg
@@ -120,24 +120,25 @@ html(lang="en")
       mixin tags(title)
          li.tags__item
           a.tags__link= title
-     //header (layouts)
-     header.header#header
-      //grid-float (layouts)
-      .row.row--big
-       //header (layouts)
-       .header__inner
-        //logo (components)
-        .header__logo.logo FASHION
-        //nav-menu (components)
-        nav.header__menu.menu
-         ul.menu__box
-          +main-nav('Home')
-          +main-nav('Recipes')
-          +main-nav('Article')
-          +main-nav('Contact')
-          +main-nav('Purchase')
-          +main-nav('Featured Posts')
-          +main-nav('About')
+     nav
+      //header (layouts)
+      header.header#header
+       //grid-float (layouts)
+       .row.row--big
+        //header (layouts)
+        .header__inner
+         //logo (components)
+         .header__logo.logo FASHION
+         //nav-menu (components)
+         nav.header__menu.menu
+          ul.menu__box
+           +main-nav('Home')
+           +main-nav('Recipes')
+           +main-nav('Article')
+           +main-nav('Contact')
+           +main-nav('Purchase')
+           +main-nav('Featured Posts')
+           +main-nav('About')
      //intro (layouts)
      section.intro#intro
       //grid-float (layouts) 
@@ -184,21 +185,14 @@ html(lang="en")
             +post('img/blog/post-11.png', 'post-11', 'Clothes', 'Along with artistic skills, most designers need...', 'July 1, 2019', '<span>By</span> Tom Miller')
         .row 
          //page-numbers (components)
-         ul.page-numbers
-          li.page-numbers__item
-           a(href="").page-numbers__link OLDER POST 
-          li.page-numbers__item
-           a(href="").page-numbers__link 1
-          li.page-numbers__item
-           a(href="").page-numbers__link 2
-          li.page-numbers__item
-           a(href="").page-numbers__link 3
-          li.page-numbers__item
-           a(href="").page-numbers__link ...
-          li.page-numbers__item
-           a(href="").page-numbers__link 8
-          li.page-numbers__item
-           a(href="").page-numbers__link NEXT POST
+         nav.main__page-numbers.page-numbers
+           a(href="#").page-numbers__link OLDER POST 
+           a(href="#").page-numbers__link 1
+           a(href="#").page-numbers__link 2
+           a(href="#").page-numbers__link 3
+           a(href="#").page-numbers__link ...
+           a(href="#").page-numbers__link 8
+           a(href="#").page-numbers__link NEXT POST
        //sidebar (layouts)
        section.sidebar 
         //grid-float (layouts)
@@ -213,9 +207,10 @@ html(lang="en")
            h3.heading-tertiary Kate Williams
            h4.heading-quaternary.heading-quaternary--italic.mt-5px Food & cooking bloger
            //typography (base)
-           .paragraph.mt-10px Hi, I'm Sonia. Cooking is the way I express my creative side to the world. Welcome to my Kitchen Corner on…
+           p.paragraph.mt-10px Hi, I'm Sonia. Cooking is the way I express my creative side to the world. Welcome to my Kitchen Corner on…
            //btn (components)
-           button.continue.mt-24px Continue Reading
+           form(action="#")
+            button.continue.mt-24px Continue Reading
          //sidebar-title (components)
          .sidebar-title.mb-20px Featured posts
          +post-small('img/sidebar/featured-post-1.png', 'featured-post-1', 'Jeans', 'They work for retail fashion and department stores', 'July 2, 2019', '<span>By</span> Shep Doeleman')
@@ -234,22 +229,22 @@ html(lang="en")
          .sidebar-title.mt-70px Social media
          //social-media-box (components)
          .social-box.mt-20px
-          .social-box__item
+          a(href='#').social-box__item
            +svg('#icon-pinterest')
            +social('814', 'followers')
-          .social-box__item
+          a(href='#').social-box__item
            +svg('#icon-vimeo')
            +social('165', 'followers')
-          .social-box__item
+          a(href='#').social-box__item
            +svg('#icon-dribbble')
            +social('6k', 'followers')
-          .social-box__item
+          a(href='#').social-box__item
            +svg('#icon-twitter')
            +social('130k', 'followers')
-          .social-box__item
+          a(href='#').social-box__item
            +svg('#icon-behance')
            +social('37k', 'followers')
-          .social-box__item
+          a(href='#').social-box__item
            +svg('#icon-instagram')
            +social('854', 'followers')
          //sidebar-title (components)
@@ -298,7 +293,7 @@ html(lang="en")
          +main-nav('Contact')
          +main-nav('Purchase')
         //share (components)
-        ul.footer__share.share.mt-30px
+        nav.footer__share.share.mt-30px
           +svg-social('#icon-vimeo')
           +svg-social('#icon-dribbble')
           +svg-social('#icon-instagram')

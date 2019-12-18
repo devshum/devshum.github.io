@@ -1,0 +1,7 @@
+.main {
+    &__page-numbers {
+        @include respond(phone) {
+            margin-bottom: 2rem;;
+        }
+    }
+}

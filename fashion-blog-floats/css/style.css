@@ -62,10 +62,6 @@ a:link, a:visited {
     font-size: 1.8rem; }
 
 .heading-secondary,
-.heading-quinary {
-  cursor: pointer; }
-
-.heading-secondary,
 .heading-quaternary {
   font-weight: 400; }
 
@@ -145,24 +141,23 @@ a:link, a:visited {
   display: table;
   clear: both; }
 
-.social-box__item {
+.social-box__item:link, .social-box__item:visited {
   margin: .3rem;
   float: left;
   background-color: #F8F9FA;
   width: 8.6rem;
   height: 8.6rem;
   position: relative;
-  cursor: pointer;
   transition: all 0.2s; }
   @media only screen and (max-width: 76.875em) {
-    .social-box__item {
+    .social-box__item:link, .social-box__item:visited {
       width: 7.6rem;
       height: 8.6rem; } }
-  .social-box__item:hover {
+  .social-box__item:link:hover, .social-box__item:visited:hover {
     background-color: #f2f4f6; }
-  .social-box__item:nth-child(1), .social-box__item:nth-child(4) {
+  .social-box__item:link:nth-child(1), .social-box__item:link:nth-child(4), .social-box__item:visited:nth-child(1), .social-box__item:visited:nth-child(4) {
     margin: .3rem .3rem .3rem 0; }
-  .social-box__item:nth-child(3), .social-box__item:nth-child(6) {
+  .social-box__item:link:nth-child(3), .social-box__item:link:nth-child(6), .social-box__item:visited:nth-child(3), .social-box__item:visited:nth-child(6) {
     margin: .3rem 0 .3rem .3rem; }
 
 .social-box__icon {
@@ -217,7 +212,6 @@ a:link, a:visited {
   font-family: "Darker Grotesque", sans-serif;
   font-size: 2rem;
   width: 56rem;
-  height: 5rem;
   margin: 0 auto;
   border: solid 0.1rem #eee;
   padding: 1rem 3.8rem; }
@@ -225,26 +219,27 @@ a:link, a:visited {
     .page-numbers {
       width: 75vw;
       text-align: center; } }
-  .page-numbers__item {
-    display: inline-block; }
-    .page-numbers__item:nth-child(1), .page-numbers__item:nth-child(6) {
-      margin-right: 3rem; }
-    @media only screen and (max-width: 43.75em) {
-      .page-numbers__item:nth-child(6) {
-        margin-right: 0; } }
-    @media only screen and (max-width: 43.75em) {
-      .page-numbers__item:nth-child(1), .page-numbers__item:nth-child(7) {
-        display: none; } }
-    .page-numbers__item:nth-child(2), .page-numbers__item:nth-child(3), .page-numbers__item:nth-child(4), .page-numbers__item:nth-child(5) {
-      margin-right: 4rem; }
-      @media only screen and (max-width: 43.75em) {
-        .page-numbers__item:nth-child(2), .page-numbers__item:nth-child(3), .page-numbers__item:nth-child(4), .page-numbers__item:nth-child(5) {
-          margin-right: 2rem; } }
-  .page-numbers__link:link, .page-numbers__link:visited {
+  .page-numbers__link {
+    display: inline-block;
     transition: all 0.5s;
     outline: none; }
-    .page-numbers__link:link:hover, .page-numbers__link:visited:hover {
+    .page-numbers__link:hover {
       color: #b1b1b1; }
+    .page-numbers__link:nth-child(1) {
+      margin-left: 1.5rem; }
+    .page-numbers__link:nth-child(1), .page-numbers__link:nth-child(6) {
+      margin-right: 3rem; }
+    @media only screen and (max-width: 43.75em) {
+      .page-numbers__link:nth-child(6) {
+        margin-right: 0; } }
+    @media only screen and (max-width: 43.75em) {
+      .page-numbers__link:nth-child(1), .page-numbers__link:nth-child(7) {
+        display: none; } }
+    .page-numbers__link:nth-child(2), .page-numbers__link:nth-child(3), .page-numbers__link:nth-child(4), .page-numbers__link:nth-child(5) {
+      margin-right: 4rem; }
+      @media only screen and (max-width: 43.75em) {
+        .page-numbers__link:nth-child(2), .page-numbers__link:nth-child(3), .page-numbers__link:nth-child(4), .page-numbers__link:nth-child(5) {
+          margin-right: 2rem; } }
 
 .menu {
   padding: .8rem 0 .5rem 0; }
@@ -337,7 +332,8 @@ a:link, a:visited {
 .post {
   box-shadow: 0 2px 5px rgba(23, 23, 23, 0.1);
   transition: all 0.2s;
-  position: relative; }
+  position: relative;
+  cursor: pointer; }
   @media only screen and (max-width: 43.75em) {
     .post {
       margin-bottom: 3rem; } }
@@ -551,3 +547,7 @@ a:link, a:visited {
 .footer__copyright {
   padding: 3rem 0;
   color: #666; }
+
+@media only screen and (max-width: 43.75em) {
+  .main__page-numbers {
+    margin-bottom: 2rem; } }
