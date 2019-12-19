@@ -342,6 +342,9 @@ body {
   display: flex;
   align-items: center;
   list-style: none; }
+  @media only screen and (max-width: 43.75em) {
+    .page-nav__box {
+      justify-content: center; } }
 
 .page-nav__link {
   display: flex;

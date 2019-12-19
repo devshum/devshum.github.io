@@ -9,6 +9,10 @@
         align-items: center;
 
         list-style: none;
+
+        @include respond(phone) {
+            justify-content: center;
+        }
     }
     
     &__link {
