@@ -3243,13 +3243,10 @@ body {
   padding: 0px;
   margin: 0px; }
 
-.row {
-  zoom: 1;
-  /* For IE 6/7 (trigger hasLayout) */ }
-  .row::after {
-    content: '';
-    display: table;
-    clear: both; }
+.row::after {
+  content: '';
+  display: table;
+  clear: both; }
 
 .col {
   display: block;
