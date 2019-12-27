@@ -2864,8 +2864,10 @@ body {
     background-color: #1c81d7; }
   .btn--small {
     font-size: 1.8rem;
-    padding: .5rem 1.5rem;
-    margin-top: 0; }
+    padding: .5rem 1.5rem; }
+    @media only screen and (max-width: 30em) {
+      .btn--small {
+        margin-top: 0; } }
   .btn--narrow {
     border-radius: .5rem;
     padding: .5rem 3rem .7rem; }
