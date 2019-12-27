@@ -2814,20 +2814,12 @@ body {
   @media only screen and (max-width: 30em) {
     .logo {
       height: 3rem; } }
-  .logo--big {
-    height: 8rem; }
-    @media only screen and (max-width: 30em) {
-      .logo--big {
-        height: 7rem; } }
 
 .social-links {
   list-style: none;
   display: inline-block; }
   .social-links__item {
     display: inline-block; }
-    @media only screen and (max-width: 30em) {
-      .social-links__item {
-        display: none; } }
   .social-links__icon {
     font-size: 3rem; }
     @media only screen and (max-width: 30em) {
@@ -2911,6 +2903,7 @@ body {
 
 @media only screen and (max-width: 48.75em) {
   .info {
+    font-size: 1.5rem;
     float: none; } }
 
 .info__timing, .info__genre, .info__social-link {
@@ -3110,7 +3103,7 @@ body {
     .post-box__date:link:hover, .post-box__date:visited:hover {
       color: #1c81d7; }
     .post-box__date:link span, .post-box__date:visited span {
-      padding-right: .6rem;
+      padding-right: .3rem;
       border-right: 0.2rem solid #1c81d7; }
     @media only screen and (max-width: 30em) {
       .post-box__date:link, .post-box__date:visited {
@@ -3844,8 +3837,15 @@ body {
     .footer__top {
       padding: 2rem 0; } }
 
+.footer__logo {
+  height: 8rem; }
+  @media only screen and (max-width: 30em) {
+    .footer__logo {
+      height: 6rem; } }
+
 @media only screen and (max-width: 64em) {
   .footer__social-links {
+    display: block;
     margin-top: 2rem; } }
 
 .footer__link, .footer__legals, .footer__copyright {
@@ -3900,6 +3900,7 @@ body {
   color: #fff; }
   @media only screen and (max-width: 64em) {
     .reviews {
+      background: rgba(0, 0, 0, 0.9);
       padding: 4rem 0; } }
 
 .products {
