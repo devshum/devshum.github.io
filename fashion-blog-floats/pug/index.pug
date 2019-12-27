@@ -120,25 +120,24 @@ html(lang="en")
       mixin tags(title)
          li.tags__item
           a.tags__link= title
-     nav
-      //header (layouts)
-      header.header#header
-       //grid-float (layouts)
-       .row.row--big
-        //header (layouts)
-        .header__inner
+   //header (layouts)
+   header.header#header
+     //grid-float (layouts)
+     .row.row--big
+     //header (layouts)
+     .header__inner
          //logo (components)
-         .header__logo.logo FASHION
-         //nav-menu (components)
-         nav.header__menu.menu
-          ul.menu__box
-           +main-nav('Home')
-           +main-nav('Recipes')
-           +main-nav('Article')
-           +main-nav('Contact')
-           +main-nav('Purchase')
-           +main-nav('Featured Posts')
-           +main-nav('About')
+       .header__logo.logo FASHION
+       //nav-menu (components)
+       nav.header__menu.menu
+       ul.menu__box
+         +main-nav('Home')
+         +main-nav('Recipes')
+         +main-nav('Article')
+         +main-nav('Contact')
+         +main-nav('Purchase')
+         +main-nav('Featured Posts')
+         +main-nav('About')
      //intro (layouts)
      section.intro#intro
       //grid-float (layouts) 
