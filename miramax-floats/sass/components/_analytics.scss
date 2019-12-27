@@ -1,0 +1,25 @@
+.analytics {
+    &__average, &__article {
+        display: inline-block;
+    }
+
+    &__average {
+        margin-right: 1rem;
+    }
+
+    &__icon {
+        color: $color-black;
+        font-size: 3.5rem;
+        vertical-align: middle;
+        transform: translateY(.5rem);
+    }
+
+    &__article {
+        font-size: 1.8rem;
+    }
+
+    &__level {
+        font-size: 1rem;
+        transform: translateY(-.8rem) translateX(.4rem);
+    }
+}

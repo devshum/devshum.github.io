@@ -1,0 +1,65 @@
+.post-box {
+    position: relative;
+
+    &__photo {
+        width: 85%;
+        opacity: 9;
+        border: .2rem solid $color-primary;
+        box-shadow: $shadow;
+
+        @include respond(phone-small) {
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__social {
+        position: absolute;
+        top: 5rem;
+        left: 3rem;
+    }
+
+    &__share {
+        color: $color-white;
+        text-transform: uppercase;
+        font-weight: 700;
+        display: inline-block;
+        vertical-align: middle;
+        transform: translateY(.5rem);
+        margin-left: 1rem;
+    }
+
+    &__date {
+        &:link,
+        &:visited {
+            @extend %link;
+            display: block;
+            font-weight: 300;
+            margin-top: 1rem;
+
+            &:hover {
+                color: $color-primary;
+            }
+
+            & span {
+                padding-right: .6rem;
+                border-right: .2rem solid $color-primary;
+            }
+
+            @include respond(phone-small) {
+                font-size: 3vw;
+            }
+        }
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            @extend %link;
+
+            &:hover {
+                margin-left: .2rem;
+            }
+        }
+    }
+}

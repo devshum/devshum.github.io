@@ -1,0 +1,70 @@
+.blockquote {
+    line-height: 145%;
+    font-style: italic;
+    position: relative;
+
+    &::before {
+        content: '\201C';
+        font-size: 8rem;
+        top: -2rem;
+        position: absolute;
+    }
+
+    &__critic-info {
+        width: 70%;
+        margin-left: 20%;
+        margin-top: 2rem;
+        text-align: right;
+
+        @include respond(phone) {
+            width: 80%;
+            margin-left: 0;
+        }
+
+        @include respond(phone-small) {
+            width: 70%;
+            margin-left: 20%;
+        }
+    }
+
+    &__critic-photo {
+        border-radius: 50%;
+        height: 6rem;
+        width: 6rem;
+        float: left;
+        transform: translateY(1rem);
+
+        @include respond(phone) {
+            display: none;
+        }
+
+        @include respond(phone-small) {
+            display: block;
+            float: right;
+            margin-left: 2rem;
+        }
+    }
+
+    &__critic-name,
+    &__critic-state {
+        &:link,
+        &:visited {
+            display: block;
+            color: $color-white;
+            text-decoration: none;
+        }
+    }
+
+    &__critic-state {
+        font-size: 1.5rem;
+    }
+
+    &__critic-status {
+        color: $color-yellow;
+        font-size: 1.4rem;
+    }
+
+    &__icon {
+        transform: translateY(.2rem);
+    }
+}

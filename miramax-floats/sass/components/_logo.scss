@@ -1,0 +1,16 @@
+.logo {
+    height: 4rem;
+    vertical-align: middle;
+
+    @include respond(phone-small) {
+        height: 3rem
+    }
+
+    &--big {
+        height: 8rem;
+
+        @include respond(phone-small) {
+            height: 7rem;
+        }
+    }
+}

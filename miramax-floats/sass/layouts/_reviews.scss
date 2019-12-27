@@ -1,0 +1,11 @@
+.reviews {
+    padding: 8rem 0;
+    background: linear-gradient(rgba($color-black, .8), rgba($color-black, .8)), url(../img/bgs/bg-2.jpg) center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: $color-white;
+
+    @include respond(tab-port) {
+        padding: 4rem 0;
+    }
+}

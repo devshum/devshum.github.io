@@ -1,0 +1,28 @@
+//FOR REUSABLE COMPONENTS
+
+.mr-10px { margin-right: 1rem; }
+
+.mt-10px { margin-top: 10px; }
+.mt-30px { margin-top: 30px; }
+.mt-45px { margin-top: 45px; }
+
+.mb-10px { margin-bottom: 1rem; }
+.mb-30px { margin-bottom: 3rem; 
+
+    @include respond(tab-port) {
+        margin-bottom: .5rem;
+    }
+}
+
+.mb-50px { margin-bottom: 5rem; 
+    @include respond(phone) {
+        margin-bottom: 2rem;
+    }}
+
+.center { text-align: center; }
+
+.f-left { float: left; }
+.f-right { float: right; }
+
+.right { text-align: right; }
+

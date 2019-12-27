@@ -1,0 +1,26 @@
+.movie-item {
+    &__icon {
+        margin-left: 1rem;
+        color: $color-black;
+        font-size: 3rem;
+        transition: $transition;
+
+        &:hover {
+            transform: scale(1.1);
+            color: $color-default;
+        }
+
+        &--white {
+            color: $color-white;
+            font-size: 2.5rem;
+            background-color: $color-primary;
+            padding: .5rem;
+            border-radius: 50%;
+
+            &:hover {
+                color: $color-white
+            }
+        }
+    }
+}
+

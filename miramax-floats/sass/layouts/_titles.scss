@@ -1,0 +1,7 @@
+.titles {
+    padding: 8rem 0;
+
+    @include respond(tab-port) {
+        padding: 4rem 0;
+    }
+}

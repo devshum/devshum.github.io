@@ -1,0 +1,12 @@
+.arrow-box {
+    display: inline-block;
+    animation: action 2s 3s;
+    animation-fill-mode: backwards;
+    vertical-align: middle;
+}
+
+.arrow-action {
+    color: $color-primary;
+    font-size: 4rem;
+    animation: moveUpDown 2s 5s infinite linear;
+}

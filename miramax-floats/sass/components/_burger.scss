@@ -1,0 +1,62 @@
+.burger,
+.burger-close {
+    height: 3rem;
+    width: 3rem;
+    float: left;
+    cursor: pointer;
+    position: relative;
+    display: none;
+
+    @include respond(phone) {
+        display: block;
+        height: 2.8rem;
+    }
+
+    @include respond(phone-small) {
+        height: 2.4rem;
+        width: 2.5rem;
+    }
+
+    span {
+        position: absolute;
+        display: block;
+        height: .2rem;
+        width: 100%;
+        top: 50%;
+        background-color: $color-primary;
+        
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            height: .2rem;
+            width: 100%;
+            background-color: $color-primary;
+        }
+
+        &::before { bottom: -1rem; }
+        &::after { top: -1rem; }
+    }
+}
+
+.burger-close {
+    span {
+        background-color: transparent;
+    
+
+        &::before { 
+            bottom: 0;
+            transform: rotate(135deg); 
+        }
+        &::after { 
+            top: 0;
+            transform: rotate(-135deg); 
+        }
+    }
+}
+
+.js--burger {
+    margin-right: 1rem;
+}

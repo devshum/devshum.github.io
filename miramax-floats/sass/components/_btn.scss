@@ -1,0 +1,36 @@
+.btn {
+    display: inline-block;
+    color: $color-white;
+    padding: 1rem 2rem;
+    background: transparent;
+    border: .1rem solid $color-primary;
+    border-radius: 5rem;
+    cursor: pointer;
+    font-size: 2rem;
+    text-decoration: none;
+    transition: $transition;
+
+    @include respond(phone-small) {
+        font-size: 1.8rem;
+    }
+
+    &:hover {
+        background-color: darken($color-primary, 10%);
+        border: .1rem solid transparent;
+    }
+
+    &--full {
+        background-color: $color-primary;
+    }
+
+    &--small {
+        font-size: 1.8rem;
+        padding: .5rem 1.5rem;
+        margin-top: 0;
+    }
+
+    &--narrow {
+        border-radius: .5rem;
+        padding: .5rem 3rem .7rem;
+    }
+}

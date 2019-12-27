@@ -1,0 +1,33 @@
+.point-right,
+.point-left {
+    position: relative;
+
+    &:after {
+        display: none;
+        content: '';
+        position: absolute;
+        height: 2rem;
+        width: 2rem;
+        border-radius: 50%;
+        background-color: $color-primary;
+
+        @include respond(phone-small) {
+            display: block;
+        }
+    }
+}
+
+.point-left {
+    &:after {
+        top: .5rem;
+        left: .1rem;
+    }
+}
+
+.point-right {
+    &:after {
+        top: 0;
+        right: .1rem;
+    }
+}
+

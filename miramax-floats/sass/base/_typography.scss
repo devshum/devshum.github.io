@@ -1,0 +1,82 @@
+body {
+    color: $color-default;
+    font-family: $font-roboto;
+    font-weight: 300;
+    font-size: 2rem;
+    text-rendering: optimizeLegibility;
+}
+
+.heading-primary {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    color: $color-white;
+    text-transform: uppercase;
+    font-size: 5rem !important;
+    font-weight: bold;
+    transform: translate(-50%, -50%);
+
+    @include respond(phone) {
+        display: block;
+    }
+}
+
+.heading-secondary {
+    @extend %heading;
+    font-size: 3.8rem;
+    letter-spacing: .4rem;
+    font-weight: 300;
+    padding-bottom: 2rem;
+    border-bottom: solid .2rem $color-red;
+
+    @include respond(phone) {
+        padding-bottom: 0;
+        border-bottom: 0;
+    }
+
+    &--white {
+        color: $color-white;
+    }
+
+    &--none {
+        border-bottom: none;
+    }
+
+    @include respond(phone) {
+        font-size: 3rem;
+    }
+}
+
+.heading-tertiary {
+    @extend %heading;
+    display: inline-block;
+
+    @include respond(phone-small) {
+        display: block;
+    }
+
+    &--color-blue {
+        @include respond(phone-small) {
+            color: $color-primary
+        }
+    }
+
+    @include respond(phone-small) {
+        font-size: 4vw;
+    }
+}
+
+.heading-quinary {
+    @extend %heading;
+    font-size: 2rem;
+}
+
+.paragraph {
+    line-height: 145%;
+
+    @include respond(phone-small) {
+        font-size: 5vw;
+    }
+}

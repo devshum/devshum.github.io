@@ -1,0 +1,18 @@
+.poster-box {
+
+    @include respond(phone-small) {
+        margin-bottom: 1rem;
+    }
+
+    &__poster {
+        width: 100%;
+    }
+
+    &__movie-name {
+        margin-top: .5rem;
+        color: $color-black;
+        font-weight: 700;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+    }
+}

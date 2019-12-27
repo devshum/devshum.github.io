@@ -1,0 +1,10 @@
+.box {
+    padding: 2rem 2rem 0 2rem;
+    position: relative;
+
+    &--small {
+        @include respond(phone-small) {
+            padding: 0;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+%link {
+    color: $color-primary;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    transition: $transition;
+
+    &:hover {
+        color: lighten($color-primary, 20%);
+    }
+}
+
+%heading {
+    color: $color-black;
+    display: inline-block;
+    text-transform: uppercase;
+}

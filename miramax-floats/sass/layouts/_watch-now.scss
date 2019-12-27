@@ -1,0 +1,25 @@
+.watch-now {
+    padding: 5rem 0 0 0;
+
+    @include respond(tab-port) {
+        padding: 4rem 0 0 0;
+    }
+
+    &__movie-watch {
+        @include clearFix;
+        margin-top: 3rem;
+    }
+
+    &__movie-item {
+        @include respond(phone) {
+            margin-top: 5rem;
+            display: inline-block;
+            float: none;
+        }
+    }
+}
+
+
+
+
+

@@ -1,0 +1,104 @@
+.header {
+    height: 100vh;
+    background-color: rgba($color-black, .4);
+    position: relative;
+
+    @include respond(tab-port) {
+        background: linear-gradient(rgba($color-black, .7), rgba($color-black, .7)), url(../img/bgs/bg-1.jpg) center no-repeat;
+        background-size: cover;
+    }
+
+    &__icon {
+        font-size: 3rem;
+    }
+
+    &__list {
+        float: left;
+        margin-right: 2rem;
+        list-style: block;
+
+        @include respond(phone) {
+            display: none;
+        }
+    }
+
+    &__item {
+        color: $color-primary;
+        display: inline-block;
+        vertical-align: middle;
+        cursor: pointer;
+
+        @include respond(phone) {
+            display: block;
+            text-align: center;
+
+            &:not(:last-child) {
+                margin-bottom: 1rem;
+            }
+        }
+
+        &:not(:last-child) {
+            margin-right: 2rem;
+
+            @include respond(phone) {
+                margin-right: 0;
+            }
+        }
+    }
+
+    &__link {
+        @extend %link;
+        position: relative;
+
+        &:after {
+            content: '';
+            width: 60%;
+            margin-left: 20%;
+            display: block;
+            bottom: -.5rem;
+            border-bottom: .2rem solid $color-primary;
+            position: absolute;
+            transform: scaleX(0);
+            transition: $transition;
+
+            @include respond(phone) {
+                border-bottom: none;
+            }
+        }
+
+        &:hover {
+            &:after {
+                border-bottom: .2rem solid lighten($color-primary, 20%);
+                transform: scaleX(1);
+
+                @include respond(phone) {
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+
+    &__btn-box {
+        position: absolute;
+        right: 0;
+        top: 90vh;
+        animation: moveLeft 2s 1s;
+        animation-fill-mode: backwards;
+        backface-visibility: hidden;
+
+        @include respond(tab-land) {
+            padding: 0 2%;
+        }
+
+        @include respond(phone) {
+            width: 100%;
+            text-align: center;
+            padding: 0;
+        }
+
+        & form {
+            display: inline-block;
+        }
+    }
+}
+

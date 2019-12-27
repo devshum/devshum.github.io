@@ -1,0 +1,38 @@
+.info {
+    @include respond(phone) {
+        float: none;
+    }
+
+    &__timing, &__genre, &__social-link {
+        display: inline-block;
+        padding: 0 2rem;
+
+        &:not(:last-child) {
+            border-right: solid .2rem $color-default;
+        }
+
+        &:nth-child(1) {
+            padding-left: 0;
+        }
+
+        &:nth-child(3) {
+            padding-right: 0;
+        }
+    }
+
+    &__genre {
+        & span {
+            font-weight: 700;
+            color: $color-red;
+        }
+    }
+
+    &__social-link {
+        &:link,
+        &:visited {
+            @extend %link;
+            text-transform: none;
+            font-weight: initial;
+        }
+    }
+}

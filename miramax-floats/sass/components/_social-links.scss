@@ -1,0 +1,30 @@
+.social-links {
+    list-style: none;
+    display: inline-block;
+    
+    &__item {
+        display: inline-block;
+
+        @include respond(phone-small) {
+            display: none;
+        }
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            @extend %link;
+        }
+    }
+
+    &__icon {
+        font-size: 3rem;
+
+        @include respond(phone-small) {
+            height: 2.5rem
+        }
+    }
+}
+
+
+

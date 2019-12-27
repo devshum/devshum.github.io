@@ -1,0 +1,30 @@
+.products {
+    padding: 8rem 0;
+
+    @include respond(tab-port) {
+        padding: 4rem 0;
+    }
+
+    @include respond(phone-small) {
+        text-align: center;
+    }
+
+    &__title {
+        font-size: 5rem;
+        font-weight: 900;
+
+        @include respond(phone) {
+            font-size: 6vw;
+        }
+    }
+
+    &__item {
+        width: 70%;
+        float: right;
+
+        @include respond(phone-small) {
+            margin-top: 5rem;
+            width: 100%;
+        }
+    }
+}
