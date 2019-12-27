@@ -3604,6 +3604,9 @@ body {
     .header {
       background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/bgs/bg-1.jpg) center no-repeat;
       background-size: cover; } }
+  @media only screen and (max-width: 30em) {
+    .header__social-links {
+      display: none; } }
   .header__icon {
     font-size: 3rem; }
   .header__list {
@@ -3612,7 +3615,8 @@ body {
     list-style: block; }
     @media only screen and (max-width: 48.75em) {
       .header__list {
-        display: none; } }
+        display: block;
+        margin-right: 0; } }
   .header__item {
     color: #1c81d7;
     display: inline-block;
@@ -3620,10 +3624,8 @@ body {
     cursor: pointer; }
     @media only screen and (max-width: 48.75em) {
       .header__item {
-        display: block;
-        text-align: center; }
-        .header__item:not(:last-child) {
-          margin-bottom: 1rem; } }
+        margin-top: 1rem;
+        font-size: 2rem; } }
     .header__item:not(:last-child) {
       margin-right: 2rem; }
       @media only screen and (max-width: 48.75em) {
@@ -3744,7 +3746,7 @@ body {
   height: 8rem; }
   @media only screen and (max-width: 30em) {
     .footer__logo {
-      height: 6rem; } }
+      height: 7rem; } }
 
 @media only screen and (max-width: 64em) {
   .footer__social-links {
