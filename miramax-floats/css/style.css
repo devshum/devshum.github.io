@@ -3612,10 +3612,10 @@ body {
   .header__list {
     float: left;
     margin-right: 2rem;
-    list-style: block; }
+    list-style: none; }
     @media only screen and (max-width: 48.75em) {
       .header__list {
-        display: block;
+        display: none;
         margin-right: 0; } }
   .header__item {
     color: #1c81d7;
