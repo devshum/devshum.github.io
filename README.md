@@ -2,9 +2,9 @@ miramax-floats | https://devshum.github.io/miramax-floats/
 
 Another(and last in this portfolio, but who knows :D) markup is with floats but this time with Graham Miller's fluid grid(http://www.responsivegridsystem.com/), really outstanding thing.
 
-This valid HTML markup has a basic SEO optimization a lot of jQuery animations(waypoints plugin), a few my own keyframes CSS animations and a big CSS animation framework(https://daneden.github.io/animate.css/) which also included in this Sass 7-1 Pattern and looks smooth and well ^_^
+The valid HTML markup has a basic SEO optimization a lot of jQuery animations(waypoints plugin), a few my own keyframes CSS animations and a big CSS animation framework(https://daneden.github.io/animate.css/) which also included in this Sass 7-1 Pattern and looks smooth and well ^_^
 
-To the markup looks correct in Internet Explorer 6-8, Safari 4.x, Firefox 3.x. и iPhone 3.x. I included respond.js | html5shiv.min.js | selectivizr.min.js
+To this one looks correct in Internet Explorer 6-8, Safari 4.x, Firefox 3.x. и iPhone 3.x. I included respond.js | html5shiv.min.js | selectivizr.min.js
 
 *The design was created just in browser without a template,
 this is a mix of my idea and a real miramax web-site page,
@@ -33,8 +33,8 @@ agora-flexbox | https://devshum.github.io/agora-flexbox/
 
 I really enjoyed to make this HTML markup(cross-browser, responsive-adaptive) because I absolutely like this kind of static websites like a blog or something similar.
 
-In the work I used the same things as below that base on Flexbox and so on...
-This markup also has a good support in 'The W3C Markup Validation Service', 'PageSpeed Insights' and has well-compressed images.
+In this one I used the same things as below that base on Flexbox and so on...
+The markup also has a good support in 'The W3C Markup Validation Service', 'PageSpeed Insights' and has well-compressed images.
 
 In the next markup I mean to make an old-standart site on Floats(some grid system) and PUG, because as I consider that kind of markup must be in a portfolio in spite of modern technologies like CSS Grid or Flexbox etc.
 
