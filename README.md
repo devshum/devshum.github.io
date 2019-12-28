@@ -7,7 +7,8 @@ This valid HTML markup has a basic SEO optimization a lot of jQuery animations(w
 To the markup looks correct in Internet Explorer 6-8, Safari 4.x, Firefox 3.x. и iPhone 3.x. I included respond.js | html5shiv.min.js | selectivizr.min.js
 
 *The design was created just in browser without a template,
-this is a mix of my idea and a real miramax web-site page
+this is a mix of my idea and a real miramax web-site page,
+in this case ionicons(https://ionicons.com/) helped me
 https://www.miramax.com/movie/pulp-fiction/
 
 ![Screenshot](pulp-fiction.jpg)
