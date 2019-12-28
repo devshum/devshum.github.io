@@ -3126,7 +3126,7 @@ body {
 
 @media only screen and (max-width: 30em) {
   .burger-close {
-    height: 2.2rem; } }
+    transform: translateY(-0.1rem); } }
 
 .burger-close span {
   background-color: transparent; }
@@ -3603,7 +3603,8 @@ body {
   @media only screen and (max-width: 64em) {
     .header {
       background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/bgs/bg-1.jpg) center no-repeat;
-      background-size: cover; } }
+      background-size: cover;
+      background-attachment: fixed; } }
   .header__icon {
     font-size: 3rem; }
   .header__list {
