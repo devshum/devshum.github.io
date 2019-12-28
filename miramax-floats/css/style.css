@@ -2764,7 +2764,7 @@ body {
   vertical-align: middle; }
   @media only screen and (max-width: 30em) {
     .logo {
-      height: 3.5rem; } }
+      height: 3rem; } }
 
 .social-links {
   list-style: none;
