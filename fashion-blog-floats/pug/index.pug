@@ -54,7 +54,7 @@ html(lang="en")
      //mixin post
      mixin post(photo, alt, subtitle, title, date, user)
       //post (components)
-      .post
+      article.post
        img.post__photo(src= photo alt= alt)
        .post__main
          //typography (base)
@@ -69,7 +69,7 @@ html(lang="en")
      //mixin post-big
      mixin post-big(photo, alt, subtitle, title, date, user, paragraph)
       //post (components)
-      .post
+      article.post
        img.post__photo.post__photo--big(src= photo alt= alt)
        .post__main.post__main--left
          //typography (base)
@@ -86,7 +86,7 @@ html(lang="en")
       //mixin post-small
       mixin post-small(photo, alt, subtitle, title, date, user)
         //post (components)
-        .post.mb-30px
+        article.post.mb-30px
          img.post__photo.post__photo--small(src= photo alt= alt)
          .post__main.post__main--small
            //typography (base)
