@@ -1,3 +1,13 @@
+miramax-floats | https://devshum.github.io/miramax-floats/
+
+*The design was created just in browser without a template,
+This is a mix of my idea and real miramax web-site
+https://www.miramax.com/movie/pulp-fiction/
+
+![Screenshot](pulp-fiction.jpg)
+
+---------------------
+
 fashion-blog-floats | https://devshum.github.io/fashion-blog-floats/
 
 I've never ever used PUG preprocessor because I've wanted to learn SCSS preprocessor well. PUG is a technology, that stand one step above any CSS preprocessor and well I've really liked that thing, it allows to save time and HTML code looks much clean! I think that in furter I'll use PUG.
