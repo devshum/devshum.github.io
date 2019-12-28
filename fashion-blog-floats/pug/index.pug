@@ -7,7 +7,7 @@ html(lang="en")
         link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=PT+Serif:400,700&display=swap")
         link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap")
         link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Darker+Grotesque&display=swap")
-        link(rel="stylesheet", href="css/style.compress.css")
+        link(rel="stylesheet", href="css/style.css")
         title Fashion &mdash; Blog 
         script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js")
     body
@@ -120,24 +120,24 @@ html(lang="en")
       mixin tags(title)
          li.tags__item
           a.tags__link= title
-   //header (layouts)
-   header.header#header
-     //grid-float (layouts)
-     .row.row--big
      //header (layouts)
-     .header__inner
-         //logo (components)
-       .header__logo.logo FASHION
-       //nav-menu (components)
-       nav.header__menu.menu
-       ul.menu__box
-         +main-nav('Home')
-         +main-nav('Recipes')
-         +main-nav('Article')
-         +main-nav('Contact')
-         +main-nav('Purchase')
-         +main-nav('Featured Posts')
-         +main-nav('About')
+     header.header#header
+      //grid-float (layouts)
+      .row.row--big
+       //header (layouts)
+       .header__inner
+        //logo (components)
+        .header__logo.logo FASHION
+        //nav-menu (components)
+        nav.header__menu.menu
+         ul.menu__box
+           +main-nav('Home')
+           +main-nav('Recipes')
+           +main-nav('Article')
+           +main-nav('Contact')
+           +main-nav('Purchase')
+           +main-nav('Featured Posts')
+           +main-nav('About')
      //intro (layouts)
      section.intro#intro
       //grid-float (layouts) 
@@ -155,6 +155,7 @@ html(lang="en")
       .row 
        //blog (layouts)
        section.blog 
+        h2.heading-secondary.heading-secondary--none &nbsp;
         .row
          .col-1-of-2 
             +post('img/blog/post-1.png', 'post-1', 'Tourism', 'One of Saturn’s largest rings may be newer than anyone', 'June 6, 2019', '<span>By</span> Indya Moore')
@@ -194,6 +195,7 @@ html(lang="en")
            a(href="#").page-numbers__link NEXT POST
        //sidebar (layouts)
        section.sidebar 
+        h2.heading-secondary.heading-secondary--none &nbsp;
         //grid-float (layouts)
         .row
          //sidebar-title (components)

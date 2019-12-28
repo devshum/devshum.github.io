@@ -60,6 +60,8 @@ a:link, a:visited {
     text-align: center; }
   .heading-secondary--small {
     font-size: 1.8rem; }
+  .heading-secondary--none {
+    display: none; }
 
 .heading-secondary,
 .heading-quaternary {
