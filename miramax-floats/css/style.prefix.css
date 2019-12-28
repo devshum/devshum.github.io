@@ -3176,6 +3176,7 @@ body {
   @media only screen and (max-width: 30em) {
     .burger,
     .burger-close {
+      width: 2.5rem;
       height: 2.5rem; } }
   .burger span,
   .burger-close span {
@@ -3689,8 +3690,7 @@ body {
       background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../img/bgs/bg-1.jpg) center no-repeat;
       background: -o-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/bgs/bg-1.jpg) center no-repeat;
       background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/bgs/bg-1.jpg) center no-repeat;
-      background-size: cover;
-      background-attachment: fixed; } }
+      background-size: cover; } }
   .header__icon {
     font-size: 3rem; }
   .header__list {
