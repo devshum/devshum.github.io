@@ -1,7 +1,7 @@
 miramax-floats | https://devshum.github.io/miramax-floats/
 
 *The design was created just in browser without a template,
-This is a mix of my idea and real miramax web-site
+this is a mix of my idea and a real miramax web-site page
 https://www.miramax.com/movie/pulp-fiction/
 
 ![Screenshot](pulp-fiction.jpg)
