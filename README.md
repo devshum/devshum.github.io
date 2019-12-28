@@ -1,6 +1,6 @@
 miramax-floats | https://devshum.github.io/miramax-floats/
 
-Another(and last in this portfolio, but who knows :D) markup with floats but this time with Graham Miller's fluid grid(http://www.responsivegridsystem.com/), really outstanding thing.
+Another(and last in this portfolio, but who knows :D) markup is with floats but this time with Graham Miller's fluid grid(http://www.responsivegridsystem.com/), really outstanding thing.
 
 This valid HTML markup has a basic SEO optimization a lot of jQuery animations(waypoints plugin), a few my own keyframes CSS animations and a big CSS animation framework(https://daneden.github.io/animate.css/) which also included in this Sass 7-1 Pattern and looks smooth and well ^_^
 
@@ -8,7 +8,7 @@ To the markup looks correct in Internet Explorer 6-8, Safari 4.x, Firefox 3.x. Ð
 
 *The design was created just in browser without a template,
 this is a mix of my idea and a real miramax web-site page,
-in this case ionicons(https://ionicons.com/) helped me
+in this case ionicons(https://ionicons.com/) really helped me a lot
 https://www.miramax.com/movie/pulp-fiction/
 
 ![Screenshot](pulp-fiction.jpg)
@@ -56,9 +56,9 @@ The quite simple(cross-browser, responsive-adaptive), well-organized adaptive pr
 
 kong-css-grid | https://devshum.github.io/kong-css-grid/
 
-This HTML(cross-browser, responsive-adaptive) markup is absolutely huge :D I used CSS GRID , BEM , SCSS , well-adaprive backgrounds that depend on width or device pixel ratio, that's nice.
+This HTML(cross-browser, responsive-adaptive) markup is absolutely huge :D I used CSS GRID , BEM , SCSS , well-adaprive backgrounds which depend on width or device pixel ratio, that's nice.
 
-I think that I managed to implement my CSS GRID knowledge greatly, i'm glad that in 2019 this technology has the support 90% or even more.
+I think that I managed to implement my CSS GRID knowledge greatly, I'm glad that in 2019 this technology has the support 90% or even more.
 
 *The design I took from the Internet.
 
