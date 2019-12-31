@@ -10,10 +10,7 @@
 
     &__social-links {
         display: block;
-
-        @include respond(tab-port) {
-            margin-top: 2rem;
-        }
+        margin-top: 2rem;
     }
 
     &__link,

@@ -3843,10 +3843,8 @@ body {
       padding: 2rem 0; } }
 
 .footer__social-links {
-  display: block; }
-  @media only screen and (max-width: 64em) {
-    .footer__social-links {
-      margin-top: 2rem; } }
+  display: block;
+  margin-top: 2rem; }
 
 .footer__link, .footer__legals, .footer__copyright {
   color: #fff; }
