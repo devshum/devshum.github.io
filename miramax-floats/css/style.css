@@ -2953,52 +2953,52 @@ body {
   font-size: 1.2rem;
   text-transform: uppercase; }
 
-.blockquote {
+.review {
   line-height: 145%;
   font-style: italic;
   position: relative; }
-  .blockquote::before {
+  .review::before {
     content: '\201C';
     font-size: 8rem;
     top: -2rem;
     position: absolute; }
-  .blockquote__critic-info {
+  .review__critic-info {
     width: 70%;
     margin-left: 20%;
     margin-top: 2rem;
     text-align: right; }
     @media only screen and (max-width: 48.75em) {
-      .blockquote__critic-info {
+      .review__critic-info {
         width: 80%;
         margin-left: 0; } }
     @media only screen and (max-width: 30em) {
-      .blockquote__critic-info {
+      .review__critic-info {
         width: 70%;
         margin-left: 20%; } }
-  .blockquote__critic-photo {
+  .review__critic-photo {
     border-radius: 50%;
     height: 6rem;
     width: 6rem;
     float: left;
     transform: translateY(1rem); }
     @media only screen and (max-width: 48.75em) {
-      .blockquote__critic-photo {
+      .review__critic-photo {
         display: none; } }
     @media only screen and (max-width: 30em) {
-      .blockquote__critic-photo {
+      .review__critic-photo {
         display: block;
         float: right;
         margin-left: 2rem; } }
-  .blockquote__critic-name:link, .blockquote__critic-name:visited, .blockquote__critic-state:link, .blockquote__critic-state:visited {
+  .review__critic-name:link, .review__critic-name:visited, .review__critic-state:link, .review__critic-state:visited {
     display: block;
     color: #fff;
     text-decoration: none; }
-  .blockquote__critic-state {
+  .review__critic-state {
     font-size: 1.5rem; }
-  .blockquote__critic-status {
+  .review__critic-status {
     color: #f5ff6a;
     font-size: 1.4rem; }
-  .blockquote__icon {
+  .review__icon {
     transform: translateY(0.2rem); }
 
 .post-box {
