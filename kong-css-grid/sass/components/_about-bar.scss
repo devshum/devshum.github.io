@@ -5,6 +5,8 @@
     grid-auto-flow: column;
     justify-items: center;
 
+    list-style: none;
+
     &__item {
         &:link,
         &:visited {
