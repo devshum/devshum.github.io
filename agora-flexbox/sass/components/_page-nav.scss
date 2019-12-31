@@ -5,13 +5,33 @@
     }
 
     &__box {
-        display: flex;
-        align-items: center;
+        ul {
+            display: flex;
+            align-items: center;
 
-        list-style: none;
+            list-style: none;
 
-        @include respond(phone) {
-            justify-content: center;
+            @include respond(phone) {
+                justify-content: center;
+            }
+        }
+
+        li {
+            display: inline-block;
+
+            &:not(:last-child) {
+                margin-right: .7rem;
+            }
+
+            @include respond(phone) {
+                &:nth-child(5),
+                &:nth-child(6),
+                &:nth-child(7),
+                &:nth-child(8),
+                &:nth-child(9) {
+                    display: none;
+                }
+            }
         }
     }
     
@@ -32,16 +52,6 @@
         transition: $transition;
         cursor: pointer;
 
-        @include respond(phone) {
-            &:nth-child(5),
-            &:nth-child(6),
-            &:nth-child(7),
-            &:nth-child(8),
-            &:nth-child(9) {
-                display: none;
-            }
-        }
-
         @include respond(phone-small) {
             height: 4rem;
             width: 4rem;
@@ -55,10 +65,6 @@
             &:hover {
                 background-color: transparent;
             }
-        }
-
-        &:not(:last-child) {
-            margin-right: .7rem;
         }
 
         &--active {

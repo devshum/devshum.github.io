@@ -233,7 +233,7 @@
             <!-- component (news) -->
             <div class="news-box">
                 <!-- item 1 -->
-                <article class="news mb-bg">
+                <div class="news mb-bg">
                     <div class="news__sidebar">
                         <!-- like (components) -->
                         <div class="news__like like">25</div>
@@ -254,6 +254,7 @@
                         <!-- component (news) -->
                         <figure class="news__shape mb-md-1">
                             <img src="img/news-1.png" alt="#" class="news__photo">
+                            <figcaption class="news__caption">Статья</figcaption>
                         </figure>
                         <nav class="news__nav mb-sm-1">
                             <ul class="news__nav-bar">
@@ -267,8 +268,8 @@
                         <!-- base (typography) -->
                         <a href="#" class="following">читать далее</a>
                         <!-- component (news) -->
-                        <div class="news__footer mt-md">
-                            <nav class="news__icon-box">
+                        <ul class="news__footer mt-md">
+                            <li class="news__icon-box">
                                 <a href="#" class="news__icon-item">
                                     <svg class="news__icon"><use xlink:href="#icon-bookmark"></use></svg>
                                     <div class="news__figure">0</div>
@@ -283,13 +284,13 @@
                                 <a href="#" class="news__icon-item">
                                     <svg class="news__icon"><use xlink:href="#icon-vk"></use></svg>
                                 </a>
-                            </nav>
-                            <div class="news__user-add">Добавил <a href="#">username</a> сегодня в 15:04</div>
-                        </div>
+                            </li>
+                            <li class="news__user-add">Добавил <a href="#">username</a> сегодня в 15:04</li>
+                        </ul>
                     </div>
-                </article>
+                </div>
                 <!-- item 2 -->
-                <article class="news mb-bg-1">
+                <div class="news mb-bg-1">
                     <div class="news__sidebar">
                         <!-- like (components) -->
                         <div class="news__like like like--red">-2</div>
@@ -310,6 +311,7 @@
                         <!-- component (news) -->
                         <figure class="news__shape mb-md-1">
                             <img src="img/news-2.png" alt="#" class="news__photo">
+                            <figcaption class="news__caption">Новость</figcaption>
                         </figure>
                         <nav class="news__nav mb-sm-1">
                             <ul class="news__nav-bar">
@@ -323,8 +325,8 @@
                         <!-- base (typography) -->
                         <a href="#" class="following">читать далее</a>
                         <!-- component (news) -->
-                        <div class="news__footer mt-md">
-                            <nav class="news__icon-box">
+                        <ul class="news__footer mt-md">
+                            <li class="news__icon-box">
                                 <a href="#" class="news__icon-item">
                                     <svg class="news__icon"><use xlink:href="#icon-bookmark"></use></svg>
                                     <div class="news__figure">0</div>
@@ -339,24 +341,27 @@
                                 <a href="#" class="news__icon-item">
                                     <svg class="news__icon"><use xlink:href="#icon-vk"></use></svg>
                                 </a>
-                            </nav>
-                            <div class="news__user-add">Добавил <a href="#">username</a> сегодня в 15:04</div>
-                        </div>
+                            </li>
+                            <li class="news__user-add">Добавил <a href="#">username</a> сегодня в 15:04</li>
+                        </ul>
                     </div>
-                </article>
+                </div>
                 <!-- component (page-nav) -->
                 <nav class="page-nav__box">
-                    <a href="#" class="page-nav__link">1</a>
-                    <a href="#" class="page-nav__link">2</a>
-                    <a href="#" class="page-nav__link">3</a>            
-                    <a href="#" class="page-nav__link">4</a>
-                    <a href="#" class="page-nav__link">5</a>
-                    <a href="#" class="page-nav__link page-nav__link--active">6</a>
-                    <a href="#" class="page-nav__link">7</a>
-                    <a href="#" class="page-nav__link">8</a>
-                    <a href="#" class="page-nav__link">9</a>
-                    <a href="#" class="page-nav__link page-nav__link--border">...</a>
-                    <a href="#" class="page-nav__link">27</a>
+                    <ul>
+                        <li><a href="#" class="page-nav__link">1</a></li>
+                        <li><a href="#" class="page-nav__link">2</a></li>
+                        <li><a href="#" class="page-nav__link">3</a></li>
+                        <li><a href="#" class="page-nav__link">4</a></li>
+                        <li><a href="#" class="page-nav__link">5</a></li>
+                        <li><a href="#" class="page-nav__link page-nav__link--active">6</a></li>
+                        <li><a href="#" class="page-nav__link">7</a></li>
+                        <li><a href="#" class="page-nav__link">8</a></li>
+                        <li><a href="#" class="page-nav__link">8</a></li>
+                        <li><a href="#" class="page-nav__link">9</a></li>
+                        <li><a href="#" class="page-nav__link page-nav__link--border">...</a></li>
+                        <li> <a href="#" class="page-nav__link">27</a></li>
+                    </ul>      
                 </nav>
             </div>      
         </div>
