@@ -16,6 +16,11 @@
         float: left;
         margin-right: 2rem;
         list-style: block;
+        transform: translateY(-.1rem);
+
+        @include respond(tab-port) {
+            transform: translateY(0);
+        }
 
         @include respond(phone) {
             display: none;

@@ -3614,7 +3614,11 @@ body {
   .header__list {
     float: left;
     margin-right: 2rem;
-    list-style: block; }
+    list-style: block;
+    transform: translateY(-0.1rem); }
+    @media only screen and (max-width: 64em) {
+      .header__list {
+        transform: translateY(0); } }
     @media only screen and (max-width: 48.75em) {
       .header__list {
         display: none; } }
