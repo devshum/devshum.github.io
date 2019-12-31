@@ -2774,11 +2774,11 @@ body {
 .social-links {
   list-style: none;
   display: inline-block; }
+  @media only screen and (max-width: 30em) {
+    .social-links {
+      display: none; } }
   .social-links__item {
     display: inline-block; }
-    @media only screen and (max-width: 30em) {
-      .social-links__item {
-        display: none; } }
   .social-links__icon {
     font-size: 3rem; }
     @media only screen and (max-width: 30em) {
@@ -3745,9 +3745,11 @@ body {
     .footer__top {
       padding: 2rem 0; } }
 
-@media only screen and (max-width: 64em) {
-  .footer__social-links {
-    margin-top: 2rem; } }
+.footer__social-links {
+  display: block; }
+  @media only screen and (max-width: 64em) {
+    .footer__social-links {
+      margin-top: 2rem; } }
 
 .footer__link, .footer__legals, .footer__copyright {
   color: #fff; }

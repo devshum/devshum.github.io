@@ -1,13 +1,13 @@
 .social-links {
     list-style: none;
     display: inline-block;
+
+    @include respond(phone-small) {
+        display: none;
+    }
     
     &__item {
         display: inline-block;
-
-        @include respond(phone-small) {
-            display: none;
-        }
     }
 
     &__link {
