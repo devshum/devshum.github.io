@@ -72,6 +72,8 @@ body {
   text-transform: uppercase;
   cursor: pointer;
   transition: all .3s; }
+  .btn::-moz-focus-inner, .btn:link::-moz-focus-inner, .btn:visited::-moz-focus-inner {
+    border: 0; }
 
 .btn:hover, .btn:active {
   transform: translateY(0.1rem);
@@ -93,6 +95,8 @@ body {
   position: relative;
   display: none;
   outline: none; }
+  .burger::-moz-focus-inner {
+    border: 0; }
   @media only screen and (max-width: 56.25em) {
     .burger {
       display: block; } }
@@ -200,12 +204,8 @@ body {
   background-repeat: no-repeat;
   position: relative; }
   @media only screen and (max-width: 75em) {
-    .main:after {
-      position: absolute;
-      content: '';
-      height: 100%;
-      width: 100%;
-      background-color: rgba(255, 255, 255, 0.4); } }
+    .main {
+      background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(../img/bg-small.png); } }
   @media (min-resolution: 192dpi) and (min-width: 900px), (min-width: 1200px) {
     .main {
       background-image: url(../img/bg.png); } }
@@ -220,20 +220,19 @@ body {
         margin: 2rem; } }
   .main__btn {
     align-self: center;
-    margin-bottom: 5rem;
-    z-index: 1; }
+    margin-bottom: 5rem; }
 
 .hero {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  z-index: 2; }
+  align-items: center; }
   .hero__logo, .hero__logo:link, .hero__logo:active {
     color: currentColor;
     font-size: 3rem;
     font-weight: 900;
     text-decoration: none;
-    transition: all 0.5s; }
+    transition: all 0.5s;
+    outline: none; }
     .hero__logo:hover, .hero__logo:active, .hero__logo:link:hover, .hero__logo:link:active, .hero__logo:active:hover, .hero__logo:active:active {
       color: #474747; }
   .hero__nav {

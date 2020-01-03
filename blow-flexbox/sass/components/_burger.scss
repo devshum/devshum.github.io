@@ -8,6 +8,10 @@
     display: none;
     outline: none;
 
+    &::-moz-focus-inner {
+        border: 0;
+    }
+
     @include respond(tab-port) {
         display: block;
     }

@@ -14,6 +14,10 @@
         text-transform: uppercase;
         cursor: pointer;
         transition: all .3s;
+
+        &::-moz-focus-inner {
+            border: 0;
+        }
     }
 
     &:hover,
