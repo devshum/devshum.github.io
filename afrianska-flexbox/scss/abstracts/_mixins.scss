@@ -1,0 +1,4 @@
+@mixin linear-gradient ($url) { 
+    background: linear-gradient(306.81deg, $color-primary 0%, $color-blue-5 97.81%), $url center no-repeat; 
+    background-size: cover;
+}

@@ -1,0 +1,61 @@
+.projects {
+    padding: 8.4rem 0 19.2rem;
+
+    &__project { 
+        position: relative; 
+        border-radius: $border-r-1px;
+        height: 42.4rem;
+
+        &:first-child {
+            margin-bottom: 9rem;
+            width: 100%;
+            @include linear-gradient(url(../img/projects/project-1.png));
+
+            &::after {
+                content: url(../img/projects/project-cover.svg);
+                position: absolute;
+                left: 0;
+                bottom: -1rem;
+            }
+        }
+
+        &:nth-child(2) {
+            @include linear-gradient(url(../img/projects/project-2.png));
+        }
+
+        &:nth-child(3) {
+            @include linear-gradient(url(../img/projects/project-3.png));
+        }
+
+        &:nth-child(n+2) {
+            flex: 0 0 45%;
+            
+            &:not(:last-child) {
+                margin-right: 10%;
+            }
+        }
+    }
+
+    &__box {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__content {
+        position: absolute;
+        top: 4.8rem;
+        right: 6rem;
+        color: $color-white;
+        text-align: right;
+
+        &--small {
+            left: 3rem;
+            text-align: left;
+        }
+    }
+
+    &__subtitle {
+        opacity: .6;
+        font-weight: 700;
+    }
+}

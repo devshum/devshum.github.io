@@ -1,0 +1,11 @@
+.container {
+    max-width: 94rem;
+    margin: 0 auto;
+
+    & a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    &--flex { display: flex; }
+}

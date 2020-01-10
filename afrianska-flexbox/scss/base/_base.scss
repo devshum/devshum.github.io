@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {  box-sizing: border-box; }
+
+html {
+    font-size: 62.5%; // 1rem = 10px | 10px / 16px
+    box-sizing: inherit;
+}

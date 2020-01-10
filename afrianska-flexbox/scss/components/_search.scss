@@ -1,0 +1,34 @@
+.search {
+    display: block;
+    position: relative;
+
+    &__input {
+        width: 100%;
+        padding: 1.9rem 2.7rem;
+        background-color: $color-gray;
+        border-radius: $border-r-1px;
+
+        &:placeholder-shown {
+            font-size: inherit;
+            padding-left: 7.2rem;
+            display: inline-block;
+            opacity: .6;
+        }
+    }
+
+    &__btn {
+        position: absolute;
+        left: 2.7rem;
+        top: 1.9rem;
+        background: none;
+        border: 0;
+        cursor: pointer;
+
+        &::-moz-focus-inner { border: 0; }
+    }
+    
+    &__input,
+    &__btn { border: none; }
+}
+
+

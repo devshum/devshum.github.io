@@ -1,0 +1,43 @@
+.contact-form {
+    padding: 5.6rem;
+    border-radius: $border-r-1px;
+    box-shadow: $box-shadow;
+
+    &__box { margin-bottom: 3.2rem; }
+
+    &__label {
+        display: block;
+        font-size: 1.4rem;
+        margin-bottom: .8rem;
+    }
+
+    &__input,
+    &__message {
+        width: 100%;
+        padding: 2.1rem 4.2rem;
+        border-radius: $border-r-1px;
+        border: solid .1rem rgba($color-primary, .4);
+
+        &:placeholder-shown {
+            font-size: inherit;
+            font-family: $font-lato;
+            opacity: .6;
+        }
+    }
+
+    &__message {
+        resize: none;
+        margin-bottom: 10.8rem;
+    }
+
+    &__messages {
+        display: block;
+        text-align: center;
+        width: 90%;
+        margin-left: 5%;
+        transform: translateY(-5rem);
+    }
+
+    &__success { color: $color-green; }
+    &__error { display: none; color: $color-red; }
+}
