@@ -918,9 +918,6 @@ textarea {
   grid-template-columns: [full-start] 4rem 1fr 4rem [full-end]; }
   @media only screen and (max-width: 75em) {
     .container {
-      grid-template-rows: 85vh; } }
-  @media only screen and (max-width: 43.75em) {
-    .container {
       grid-template-rows: min-content; } }
 
 .header {
