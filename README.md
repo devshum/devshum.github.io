@@ -11,7 +11,7 @@ this is a mix of my idea and a real miramax web-site page(https://www.miramax.co
 in this case ionicons(https://ionicons.com/) really helped me a lot 🎅
 
 
-![Screenshot](pulp-fiction.jpg)
+![Screenshot](preview/pulp-fiction.jpg)
 
 ---------------------
 
@@ -25,7 +25,7 @@ I used the same things that I used below, namely: a Cross-Browser, a Responsive-
 
 *The design I took from the Internet. 
 
-![Screenshot](fashion-blog-floats.jpg)
+![Screenshot](preview/fashion-blog-floats.jpg)
 
 ---------------------
 
@@ -40,7 +40,7 @@ In the next markup I mean to make an old-standart site on Floats(some grid syste
 
 *The design made by my dear friend Arthur Berg. 
 
-![Screenshot](agora-flexbox.jpg)
+![Screenshot](preview/agora-flexbox.jpg)
 
 ---------------------
 
@@ -50,11 +50,13 @@ The quite simple(cross-browser, responsive-adaptive), well-organized adaptive pr
 
 *The design I took from the Internet. 
 
-![Screenshot](blow-flexbox.jpg)
+![Screenshot](preview/blow-flexbox.jpg)
 
 ---------------------
 
 kong-css-grid | https://devshum.github.io/kong-css-grid/
+
+![Kong Demo](demo/kong-demo.gif)
 
 This HTML(cross-browser, responsive-adaptive) markup is absolutely huge  I used CSS GRID , BEM , SCSS , well-adaprive backgrounds which depend on width or device pixel ratio, that's nice
 
@@ -62,7 +64,7 @@ I think that I managed to implement my CSS GRID knowledge greatly, I'm glad that
 
 *The design I took from the Internet.
 
-![Screenshot](kong-css-grid.jpg)
+![Screenshot](preview/kong-css-grid.jpg)
 
 
 
