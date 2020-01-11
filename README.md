@@ -11,7 +11,7 @@ this is a mix of my idea and a real miramax web-site page(https://www.miramax.co
 in this case ionicons(https://ionicons.com/) really helped me a lot 🎅
 
 
-![Screenshot](preview/pulp-fiction.jpg)
+![Pulp Fiction Preview](preview/pulp-fiction.jpg)
 
 ---------------------
 
@@ -25,7 +25,7 @@ I used the same things that I used below, namely: a Cross-Browser, a Responsive-
 
 *The design I took from the Internet. 
 
-![Screenshot](preview/fashion-blog-floats.jpg)
+![Fashion Blog Preview](preview/fashion-blog-floats.jpg)
 
 ---------------------
 
@@ -40,7 +40,7 @@ In the next markup I mean to make an old-standart site on Floats(some grid syste
 
 *The design made by my dear friend Arthur Berg. 
 
-![Screenshot](preview/agora-flexbox.jpg)
+![Agora Preview](preview/agora-flexbox.jpg)
 
 ---------------------
 
@@ -50,7 +50,7 @@ The quite simple(cross-browser, responsive-adaptive), well-organized adaptive pr
 
 *The design I took from the Internet. 
 
-![Screenshot](preview/blow-flexbox.jpg)
+![Blow Preview](preview/blow-flexbox.jpg)
 
 ---------------------
 
