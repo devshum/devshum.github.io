@@ -1,6 +1,6 @@
 miramax-floats | https://devshum.github.io/miramax-floats/
 
-Another(and last in this portfolio, but who knows 🤣) markup is with floats but this time with Graham Miller's fluid grid(http://www.responsivegridsystem.com/), really outstanding thing 😍
+Another(and last in this portfolio, but who knows 🤣) markup is with floats but this time with Graham Miller's fluid grid(http://www.responsivegridsystem.com/), a really outstanding thing 😍
 
 The valid HTML markup has a basic SEO optimization a lot of jQuery animations(waypoints plugin), a few my own keyframes CSS animations and a big CSS animation framework(https://daneden.github.io/animate.css/) which also included in this Sass 7-1 Pattern and looks smooth and well 🙂
 
@@ -46,6 +46,8 @@ In the next markup I mean to make an old-standart site on Floats(some grid syste
 
 blow-flexbox | https://devshum.github.io/blow-flexbox/
 
+![Kong Demo](demo/blow-demo.gif)
+
 The quite simple(cross-browser, responsive-adaptive), well-organized adaptive project on Flexbox basis. There I used BEM , SCSS , slightly JS 😃
 
 *The design I took from the Internet. 
@@ -64,7 +66,7 @@ I think that I managed to implement my CSS GRID knowledge greatly, I'm glad that
 
 *The design I took from the Internet.
 
-![Screenshot](preview/kong-css-grid.jpg)
+![Kong Preview](preview/kong-css-grid.jpg)
 
 
 
