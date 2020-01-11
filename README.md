@@ -56,6 +56,9 @@ The quite simple(cross-browser, responsive-adaptive), well-organized adaptive pr
 
 kong-css-grid | https://devshum.github.io/kong-css-grid/
 
+![Screenshot](kong-css-grid.jpg)
+![Kong Demo](kong-demo.gif)
+
 This HTML(cross-browser, responsive-adaptive) markup is absolutely huge  I used CSS GRID , BEM , SCSS , well-adaprive backgrounds which depend on width or device pixel ratio, that's nice
 
 I think that I managed to implement my CSS GRID knowledge greatly, I'm glad that in 2019 this technology has the support 90% or even more.
