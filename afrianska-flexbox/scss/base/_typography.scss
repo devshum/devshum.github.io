@@ -1,0 +1,100 @@
+body {
+    color: $color-primary;
+    font-family: $font-lato;
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: .1rem;
+    text-rendering: optimizeLegibility;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.heading-primary {
+    font-size: 4.7rem;
+    line-height: 7.4rem;
+
+    @include respond(tab-land) { font-size: 3.5rem; }
+
+    @include respond(tab-port) {
+        font-size: 3rem;
+        line-height: 5rem;
+    }
+}
+
+.heading-secondary {
+    color: $color-blue-2;
+    font-size: 3rem;
+    font-weight: 500;
+    letter-spacing: .3rem;
+    line-height: 4.6rem;
+    text-align: left;
+
+    @include respond(tab-port) {
+        font-size: 3rem;
+        line-height: 5rem;
+    }
+
+    @include respond(tab-port) { text-align: center; }
+
+    &--big { 
+        font-size: 4.4rem; 
+        text-align: center;
+    }
+
+    &--small {
+        font-size: 2.2rem;
+        font-weight: 700;
+        line-height: 3.5rem;
+    }
+
+    &--white { color: $color-white; }
+
+    &--news {
+        color: inherit;
+        font-size: 3.5rem;
+        font-weight: 700;
+        line-height: 6rem;
+    }
+}
+
+.heading-tertiary { 
+    font-size: inherit;
+    line-height: 3rem; 
+
+    @include respond(phone) { text-align: center; }
+
+    &--ttu { text-transform: uppercase; }
+}
+
+.heading-quaternary {  
+    text-align: left;
+    text-transform: uppercase;
+    opacity: .8;
+    line-height: 0;
+
+    @include respond(tab-port) { text-align: center; }
+
+    &--right { 
+        text-align: right; 
+
+        @include respond(tab-port) { text-align: center; }
+    }
+}
+
+.paragraph {
+    line-height: 2.6rem;
+
+    @include respond(tab-land) { font-size: 1.4rem; }
+
+    @include respond(tab-port) { font-size: 1.2rem; }
+
+    @include respond(phone) { text-align: center; }
+
+    &--opacity { opacity: .6; }
+    
+    &--gray {
+        color: inherit;
+        font-size: inherit;
+        opacity: .6;
+    }
+}

@@ -1,0 +1,15 @@
+.what-we-do {
+    padding: 8rem 0 0;
+
+    @include respond(phone) { padding-top: 1rem; }
+
+    &__left,
+    &__right {
+        flex: 0 0 50%;
+
+        padding: 5rem;  
+
+        @include respond(tab-port) { padding: 5rem 0; }
+    }
+}
+

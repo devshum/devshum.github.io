@@ -1,0 +1,19 @@
+.container {
+    max-width: 94rem;
+    margin: 0 auto;
+
+    @include respond(tab-land) { padding: 0 2rem; }
+
+    @include respond(phone) { padding: 0 1rem; }
+
+    & a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    &--flex { display: flex; }
+
+    &--flex-none { 
+        @include respond(tab-port) { display: inherit; }
+    }
+}

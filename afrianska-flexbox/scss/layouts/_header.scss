@@ -1,0 +1,48 @@
+.header {
+    height: 100vh;
+    padding: 3.2rem 5rem;
+    background: linear-gradient(0deg, rgba($color-blue-4, .2) 8.84%, rgba($color-white, .2) 31.12%);
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    animation: fadeIn 2s;
+
+    &__inner {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        
+        height: 95%;
+
+        @include respond(tab-port) { flex: 1; }
+    }
+
+    &__text-box {
+        flex: 0 0 55%;
+
+        @include respond(tab-land) { flex: 0 0 60%; }
+
+        @include respond(tab-port) {
+           flex: 1;
+
+           text-align: center;
+        }
+    }
+
+    &__hero {
+        position: absolute;
+        right: 1%;
+        width: 48%;
+        z-index: 1;
+
+        @include respond(tab-land) {
+            width: 40%;
+            right: 2%;
+        }
+
+        @include respond(tab-port) { display: none; }
+    }
+}
+
+
+

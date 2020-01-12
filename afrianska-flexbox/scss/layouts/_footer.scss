@@ -1,0 +1,106 @@
+.footer {
+    color: $color-white;
+    background-color: $color-blue-2;
+    border-top-right-radius: 15rem;
+    position: relative;
+    z-index: 1;
+
+    @include respond(phone) { border-top-right-radius: 5rem; }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 9.1rem 0 10rem;
+
+        @include respond(tab-port) { flex-direction: column; }
+
+        @include respond(phone) { padding: 6rem 0 6rem; }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 45%;
+            left: 0;
+            width: 82%;
+            border: solid .1rem $color-gray;
+            opacity: .2;
+
+            @include respond(tab-port) { display: none; }
+        }
+    }
+
+    &__bottom {
+        display: flex;
+
+        padding: 9.8rem 0 0;
+
+        @include respond(tab-port) {
+            flex-direction: column;
+
+            padding: 0;
+            margin-left: 5%;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+
+        list-style: none;
+
+        @include respond(tab-port) { margin-bottom: 6rem; }
+
+        &:first-child { 
+            width: 50%; 
+            transform: translateY(1.5rem);
+        }
+
+        &:nth-child(-n+2) { 
+            padding: 0 10rem 0 0; 
+
+            @include respond(tab-port) {
+                padding: 0;
+                width: 100%;
+            }
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 2.8rem;
+
+        &:nth-child(1) { font-size: 2rem; }
+    }
+
+    &__box {
+       display: flex;
+
+       & a {
+           &:link,
+           &:visited { color: $color-white; }
+       }
+
+       & div { &:not(:last-child) { margin-right: 1.6rem; } }
+
+       &:not(:last-child) { margin-bottom: 2.4rem; }
+
+       &:first-child {
+            align-items: center;
+
+            margin-bottom: 3.2rem;
+        }
+    }
+
+    &__rights { 
+        opacity: .4; 
+        padding: 6.4rem 0;
+
+        @include respond(tab-port) { text-align: center; }
+
+        @include respond(phone) { padding-top: 2.5rem; }
+    }
+
+    &__btn { margin-top: 5rem; }
+}

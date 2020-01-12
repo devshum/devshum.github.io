@@ -1,0 +1,17 @@
+.blog {
+    &__popular { 
+        padding: 3.2rem 0 5.6rem;
+        border-bottom: solid .1rem $color-gray; 
+    }
+
+    &__all { padding: 5.6rem 0 9.6rem; }
+
+    &__arrows {
+        display: flex;
+        justify-content: space-between;
+
+        width: 100%; 
+
+        @include respond(tab-port) { transform: translateX(-.8rem); }
+    }
+}
