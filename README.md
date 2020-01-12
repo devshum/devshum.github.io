@@ -4,7 +4,7 @@ afrianska-flexbox | https://devshum.github.io/afrianska-flexbox/
 
 Really a pure project which fully created with Flexbox, there is smooth animations on scroll, a couple of soft pop-ups, a nice hamburger menu with clean CSS, a cool adaptive design which as always I had to figured out on my own(I'm used to making it) because free templates on figma include a mobile design quite seldom 🙄
 
-Also I succeed in practicing some PHP, the code was included in html and the folders but on GitHub Pages it isn't possible to show 😐
+Also I succeed in practicing some PHP, the usual and the compressed code was included in html and the folders, too but on GitHub Pages it isn't possible to show 😐
 
 The desktop part of site as usual has the ~100% support on Google Page speed but due to built-in Google Map above the footer the mobile support and the console warnings were crushed 😫😫😫😫 There's no getting around it. 
 
