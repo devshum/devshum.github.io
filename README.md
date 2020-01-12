@@ -8,7 +8,7 @@ Also I succeed in practicing some PHP, the code was included in html and the fol
 
 The desktop part of site as usual has the ~100% support on Google Page speed but due to built-in Google Map above the footer the mobile support and the console warnings were crushed 😫😫😫😫 There's no getting around it. 
 
-I hope You'll like it as I like 
+I hope You'll like it as I do 
 
 *The design I took from the Internet.
 
