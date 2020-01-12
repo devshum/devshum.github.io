@@ -31,6 +31,8 @@ I used the same things that I used below, namely: a Cross-Browser, a Responsive-
 
 agora-flexbox | https://devshum.github.io/agora-flexbox/
 
+![Agora Demo](demo/agora-demo.gif)
+
 I really enjoyed to make this HTML markup(cross-browser, responsive-adaptive) because I absolutely like this kind of static websites like a blog or something similar 😄
 
 In this one I used the same things as below that base on Flexbox and so on...
