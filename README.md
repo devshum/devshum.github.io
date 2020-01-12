@@ -1,5 +1,7 @@
 miramax-floats | https://devshum.github.io/miramax-floats/
 
+![Miramax Demo](demo/miramax-demo.gif)
+
 Another(and last in this portfolio, but who knows 🤣) markup is with floats but this time with Graham Miller's fluid grid(http://www.responsivegridsystem.com/), a really outstanding thing 😍
 
 The valid HTML markup has a basic SEO optimization a lot of jQuery animations(waypoints plugin), a few my own keyframes CSS animations and a big CSS animation framework(https://daneden.github.io/animate.css/) which also included in this Sass 7-1 Pattern and looks smooth and well 🙂
@@ -16,6 +18,8 @@ in this case ionicons(https://ionicons.com/) really helped me a lot 🎅
 ---------------------
 
 fashion-blog-floats | https://devshum.github.io/fashion-blog-floats/
+
+![Fashion Demo](demo/fashion-demo.gif)
 
 I've never ever used PUG preprocessor because I've wanted to learn SCSS preprocessor well. PUG is a technology, that stand one step above any CSS preprocessor and well I've really liked that thing, it allows to save time and HTML code looks much clean! I think that in furter I'll use PUG 🤠
 
