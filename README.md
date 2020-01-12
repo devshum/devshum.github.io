@@ -2,9 +2,10 @@ afrianska-flexbox | https://devshum.github.io/afrianska-flexbox/
 
 ![Afrianska Demo 1](demo/afrianska-demo-1.gif)
 
-Text
+Really a pure project which fully created with Flexbox, there is smooth animations on scroll, soft pop-ups, nice hamburger menu with clean CSS, a cool adaptive design which as always I had to fired out on my own, because free templates on figma include a mobile design quite seldom 
 
-* Text
+
+*The design I took from the Internet.
 
 
 ![Afrianska Preview](preview/afrianska.jpg)
@@ -67,7 +68,7 @@ blow-flexbox | https://devshum.github.io/blow-flexbox/
 
 ![Kong Demo](demo/blow-demo.gif)
 
-The quite simple(cross-browser, responsive-adaptive), well-organized adaptive project on Flexbox basis. There I used BEM , SCSS , slightly JS 😃
+A quite simple(cross-browser, responsive-adaptive), well-organized adaptive project on Flexbox basis. There I used BEM , SCSS , slightly JS 😃
 
 *The design I took from the Internet. 
 
