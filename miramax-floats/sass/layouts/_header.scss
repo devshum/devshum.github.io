@@ -1,6 +1,6 @@
 .header {
     height: 100vh;
-    background-color: rgba($color-black, .4);
+    background: rgba($color-black, .4);
     position: relative;
 
     @include respond(tab-port) {
@@ -15,15 +15,11 @@
     &__list {
         float: left;
         margin-right: 2rem;
-        list-style: block;
-        transform: translateY(-.1rem);
-
-        @include respond(tab-port) {
-            transform: translateY(0);
-        }
 
         @include respond(phone) {
             display: none;
+            width: 100%;
+            margin-top: .5rem;
         }
     }
 
@@ -33,20 +29,11 @@
         vertical-align: middle;
         cursor: pointer;
 
-        @include respond(phone) {
-            display: block;
-            text-align: center;
-
-            &:not(:last-child) {
-                margin-bottom: 1rem;
-            }
-        }
-
         &:not(:last-child) {
             margin-right: 2rem;
 
             @include respond(phone) {
-                margin-right: 0;
+                margin-right: .6rem;
             }
         }
     }
@@ -54,6 +41,10 @@
     &__link {
         @extend %link;
         position: relative;
+
+        @include respond(phone) {
+            font-size: 1.8rem;
+        }
 
         &:after {
             content: '';
@@ -106,4 +97,3 @@
         }
     }
 }
-
