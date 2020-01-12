@@ -1,3 +1,16 @@
+afrianska-flexbox | https://devshum.github.io/afrianska-flexbox/
+
+![Afrianska Demo 1](demo/afrianska-demo-1.gif)
+
+Text
+
+* Text
+
+
+![Afrianska Preview](preview/afrianska.jpg)
+
+---------------------
+
 miramax-floats | https://devshum.github.io/miramax-floats/
 
 ![Miramax Demo](demo/miramax-demo.gif)
