@@ -50,7 +50,7 @@ I used the same things that I used below, namely: a Cross-Browser, a Responsive-
 
 *The design I took from the Internet. 
 
-![Fashion Blog Preview](preview/fashion-blog-floats.jpg)
+![Fashion Blog Preview](preview/fashion.jpg)
 
 ---------------------
 
@@ -67,7 +67,7 @@ In the next markup I mean to make an old-standart site on Floats(some grid syste
 
 *The design made by my dear friend Arthur Berg. 
 
-![Agora Preview](preview/agora-flexbox.jpg)
+![Agora Preview](preview/agora.jpg)
 
 ---------------------
 
@@ -79,7 +79,7 @@ A quite simple(cross-browser, responsive-adaptive), well-organized adaptive proj
 
 *The design I took from the Internet. 
 
-![Blow Preview](preview/blow-flexbox.jpg)
+![Blow Preview](preview/blow.jpg)
 
 ---------------------
 
@@ -93,7 +93,7 @@ I think that I managed to implement my CSS GRID knowledge greatly, I'm glad that
 
 *The design I took from the Internet.
 
-![Kong Preview](preview/kong-css-grid.jpg)
+![Kong Preview](preview/kong.jpg)
 
 
 
