@@ -12,6 +12,8 @@
         overflow: hidden;
         cursor: pointer;
 
+        @include respond(phone) { height: 20rem; }
+
         &:first-child {
             margin-bottom: 9rem;
             width: 100%;
@@ -49,6 +51,7 @@
                 }
             }
         }
+
     }
 
     &__box {

@@ -109,7 +109,7 @@
     &__user-date { opacity: .4; }
 
     &__photo-box { 
-        height: 100%;
+        height: auto;
 
         &--small {
             height: 20rem;
@@ -120,6 +120,7 @@
     }
 
     &__photo { 
+        display: block;
         width: 100%; 
         height: 100%;
     }
