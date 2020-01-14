@@ -108,21 +108,18 @@
 
     &__user-date { opacity: .4; }
 
+    &__photo-box,
+    &__photo {
+        height: 100%;
+        width: 100%;
+    }
+
     &__photo-box { 
-        height: auto;
-
-        &--small {
-            height: 20rem;
-            width: 100%;
-
-            @include respond(tab-port) { display: none; }
-        }
+        &--invisible { @include respond(tab-port) { display: none; } } 
     }
 
     &__photo { 
         display: block;
-        width: 100%; 
-        height: 100%;
     }
 }
 
