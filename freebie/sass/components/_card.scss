@@ -85,19 +85,15 @@
         }
     }
 
-    @media only screen and (max-width: 56.25em), 
-           only screen and (hover: none) { 
+    &:hover &__side--front { transform: rotateY(-180deg); }
 
-        &:hover &__side--front { transform: rotateY(-180deg); }
+    &:hover &__side--back {
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        transform: rotateY(0);
 
-        &:hover &__side--back {
-            height: 100%;
-            width: 100%;
-            top: 0;
-            left: 0;
-            transform: rotateY(0);
-
-            @include respond(tab-port) { display: none; }
-        }
+        @include respond(tab-port) { display: none; }
     }
 }

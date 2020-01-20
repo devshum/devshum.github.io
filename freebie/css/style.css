@@ -195,18 +195,17 @@ body {
       padding: 2rem 0; }
       .card__details li:not(:last-child) {
         border-bottom: solid 0.1rem #F1F1F2; }
-  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
-    .card:hover .card__side--front {
-      transform: rotateY(-180deg); }
-    .card:hover .card__side--back {
-      height: 100%;
-      width: 100%;
-      top: 0;
-      left: 0;
-      transform: rotateY(0); } }
-  @media only screen and (max-width: 56.25em) and (max-width: 56.25em), only screen and (hover: none) and (max-width: 56.25em) {
-    .card:hover .card__side--back {
-      display: none; } }
+  .card:hover .card__side--front {
+    transform: rotateY(-180deg); }
+  .card:hover .card__side--back {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform: rotateY(0); }
+    @media only screen and (max-width: 56.25em) {
+      .card:hover .card__side--back {
+        display: none; } }
 
 .gift {
   display: grid;
@@ -214,16 +213,15 @@ body {
   height: 100%;
   background-color: #FAFAFA;
   cursor: pointer; }
-  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
-    .gift:hover {
-      background-color: #fff;
-      box-shadow: 1rem 1rem 1.5rem rgba(0, 0, 0, 0.05); }
-    .gift:hover .btn-inline {
-      color: #F7941E; }
-    .gift:hover .gift__picture-box::after {
-      background-color: transparent; }
-    .gift:hover .gift__picture {
-      transform: scale(1.1); } }
+  .gift:hover {
+    background-color: #fff;
+    box-shadow: 1rem 1rem 1.5rem rgba(0, 0, 0, 0.05); }
+  .gift:hover .btn-inline {
+    color: #F7941E; }
+  .gift:hover .gift__picture-box::after {
+    background-color: transparent; }
+  .gift:hover .gift__picture {
+    transform: scale(1.1); }
   .gift__picture-box {
     overflow: hidden;
     position: relative;
