@@ -1,0 +1,23 @@
+.intro {
+    &__find-content,
+    &__work-content {
+        display: grid;
+        align-content: center;
+        justify-items: start;
+
+        background-color: $color-gray-2;
+        padding: 0 10vw;
+    }
+
+    &__find-content,
+    &__work-card-box { grid-column: full-start / col-end 4; }
+
+    &__find-card-box,
+    &__work-content { grid-column: col-end 4 / full-end; }
+
+    // &__find-card-box { @include bg(url(../img/find-bg.png)); }
+
+    // &__work-card-box { @include bg(url(../img/work-bg.png)); }
+
+    &__paragraph { text-align: justify; }
+}
