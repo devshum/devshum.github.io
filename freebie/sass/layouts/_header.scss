@@ -1,0 +1,38 @@
+.header {
+    grid-column: full-start / full-end;
+    
+    display: grid;
+    align-items: center;
+    grid-auto-flow: column;
+
+    background-color: $color-gray-1;
+    padding: 0 8rem;
+
+    &__nav { 
+        justify-self: center; 
+        transform: translateX(5rem);
+    }
+
+    &__list { list-style: none; } 
+
+    &__item {
+        display: inline-block;
+        
+        &:not(:last-child) { margin-right: 3.1rem; }
+    }
+
+    &__link {
+        &:link,
+        &:visited { 
+            color: inherit;
+            text-decoration: none;
+            transition: $transition;
+            border-bottom: solid .2rem transparent;
+
+            &:hover { border-bottom: solid .2rem $color-orange; }
+        }
+    }
+
+    &__btn { justify-self: end; }
+}
+
