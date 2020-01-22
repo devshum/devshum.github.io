@@ -1,3 +1,14 @@
+freebie-css-grid | https://devshum.github.io/freebie-css-grid/
+
+![Freebie Demo 1](demo/freebie-demo.gif)
+
+
+*The design I took from the Internet.
+
+![Freebie Preview](preview/freebie.jpg)
+
+---------------------
+
 afrianska-flexbox | https://devshum.github.io/afrianska-flexbox/
 
 ![Afrianska Demo 1](demo/afrianska-demo-1.gif)
@@ -13,7 +24,6 @@ The desktop part of site as usual has the ~100% support on Google Page speed but
 I hope You'll like this as I do 
 
 *The design I took from the Internet.
-
 
 ![Afrianska Preview](preview/afrianska.jpg)
 
