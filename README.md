@@ -9,6 +9,7 @@ freebie-css-grid | https://devshum.github.io/freebie-css-grid/
 
 ---------------------
 
+
 afrianska-flexbox | https://devshum.github.io/afrianska-flexbox/
 
 ![Afrianska Demo 1](demo/afrianska-demo-1.gif)
@@ -29,6 +30,7 @@ I hope You'll like this as I do
 
 ---------------------
 
+
 miramax-floats | https://devshum.github.io/miramax-floats/
 
 ![Miramax Demo](demo/miramax-demo.gif)
@@ -48,6 +50,7 @@ in this case ionicons(https://ionicons.com/) really helped me a lot 🎅
 
 ---------------------
 
+
 fashion-blog-floats | https://devshum.github.io/fashion-blog-floats/
 
 ![Fashion Demo](demo/fashion-demo.gif)
@@ -63,6 +66,7 @@ I used the same things that I used below, namely: a Cross-Browser, a Responsive-
 ![Fashion Blog Preview](preview/fashion.jpg)
 
 ---------------------
+
 
 agora-flexbox | https://devshum.github.io/agora-flexbox/
 
@@ -81,6 +85,7 @@ In the next markup I mean to make an old-standart site on Floats(some grid syste
 
 ---------------------
 
+
 blow-flexbox | https://devshum.github.io/blow-flexbox/
 
 ![Kong Demo](demo/blow-demo.gif)
@@ -92,6 +97,7 @@ A quite simple(cross-browser, responsive-adaptive), well-organized adaptive proj
 ![Blow Preview](preview/blow.jpg)
 
 ---------------------
+
 
 kong-css-grid | https://devshum.github.io/kong-css-grid/
 
