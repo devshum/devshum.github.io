@@ -23,6 +23,7 @@ The desktop part of site as usual has the ~100% support on Google Page speed but
 
 I hope You'll like this as I do 
 
+
 *The design I took from the Internet.
 
 ![Afrianska Preview](preview/afrianska.jpg)
