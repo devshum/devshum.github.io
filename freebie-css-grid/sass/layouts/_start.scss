@@ -1,0 +1,51 @@
+.start {
+    grid-column: full-start / full-end;
+
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+
+    background-color: $color-orange;
+    padding: 9.6rem;
+
+    @include respond(tab-port) { 
+        grid-auto-flow: row; 
+        row-gap: 2rem;
+
+        padding: 5rem 0;
+    }
+
+    &__title { 
+        justify-self: start; 
+
+        @include respond(tab-port) { 
+            justify-self: inherit; 
+            align-self: end;
+        }
+    }
+    &__btn-box { 
+        justify-self: end; 
+        margin-left: 24.2rem;
+
+        @include respond(desktop) { 
+            display: grid;
+            grid-auto-flow: row; 
+        }
+
+        @include respond(tab-port) { 
+            justify-self: inherit; 
+            align-self: start;
+            
+            margin-left: 0;
+        }
+    }
+    &__btn { 
+        &:not(:first-child) { 
+            margin-left: 1.6rem; 
+
+            @include respond(desktop) { margin: 2rem 0 0 0; }
+        }
+    }
+}

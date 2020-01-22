@@ -1,0 +1,47 @@
+.intro {
+    &__find-content,
+    &__work-content {
+        display: grid;
+        align-content: center;
+        justify-items: start;
+
+        background-color: $color-gray-2;
+        padding: 0 10vw;
+    }
+
+    &__find-content,
+    &__work-card-box { 
+        grid-column: full-start / col-end 4; 
+    }
+
+    &__find-card-box,
+    &__work-content { 
+        grid-column: col-end 4 / full-end; 
+    }
+
+    &__find-content,
+    &__find-card-box,
+    &__work-content {
+        @include respond(phone) { grid-column: full-start / full-end; }
+    }
+
+    &__work-card-box {
+        @include respond(phone) { display: none; }
+    } 
+
+    &__work-content {
+        @include respond(phone) { justify-items: right; }
+
+        @include respond(phone-smallest) { border-top: solid .1rem $color-gray-3; }
+    }
+
+    &__find-card-box { 
+        @include respond(phone-smallest) { display: none; }
+    }
+
+    &__paragraph { 
+        text-align: justify; 
+
+        @include respond(phone) { text-align: right; }
+    }
+}

@@ -1,0 +1,28 @@
+.nav-mobile {
+    padding: 2rem 0;
+    display: none;
+
+    &__list {
+        display: grid;
+        grid-auto-flow: column;
+        justify-content: center;
+        
+        list-style: none;
+    }
+
+    &__item {
+        &:not(:last-child) { margin-right: 6vw; }
+    }
+    
+    &__link {
+        &:link,
+        &:visited { 
+            color: inherit;
+            text-decoration: none;
+        }
+    }
+
+    &__active { 
+        @include respond(tab-port) { display: grid; }
+    }
+}

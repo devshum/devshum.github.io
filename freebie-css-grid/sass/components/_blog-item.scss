@@ -1,0 +1,18 @@
+.blog-item {
+    display: grid;
+    align-content: start;
+
+    padding: 4.8rem;
+    transition: $transition;
+    cursor: pointer;
+
+    @media only screen and (max-width: 56.25em),
+           only screen and (hover: none) { 
+        box-shadow: $box-shadow-right; 
+        padding: 2.5rem;
+    }
+
+
+    &:hover { box-shadow: $box-shadow-right; }
+    &:hover .btn-inline { color: $color-orange; }
+}

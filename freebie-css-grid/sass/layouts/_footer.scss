@@ -1,0 +1,102 @@
+.footer {
+    grid-column: full-start / full-end;
+    
+    display: grid;
+    justify-content: center;
+    
+    background-color: $color-gray-1;
+    padding: 8rem 0 3.2rem;
+
+    display: grid;
+
+    @include respond(tab-port) { padding: 5rem 0 3.2rem; }
+
+    @include respond(phone) { padding: 5rem 3.2rem; }
+
+    &__list {
+        display: grid;
+        align-items: center;
+        grid-auto-flow: column;
+
+        list-style: none;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 250%;
+            border-bottom: solid .2rem $color-primary;
+            bottom: 0;
+            justify-self: center;
+            padding-bottom: 5rem;
+
+            grid-row: 2 / 3;
+            grid-column: 1 / span 5;
+
+            @include respond(tab-port) { 
+                width: 80%;
+            }
+        }
+    }
+
+    &__item {
+        display: inline-block;
+
+        &:nth-child(n+4) { justify-self: end; }
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            color: inherit;
+            font-size: 1.4rem;
+            font-weight: 700;
+            text-decoration: none;
+
+            &:hover { color: $color-orange; }
+        }
+    }
+
+    &__logo {
+        color: $color-orange;
+        justify-self: center;
+    }
+
+    &__icon-box {
+        display: grid;
+        justify-content: center;
+        grid-auto-flow: column;
+        column-gap: 2.6rem;
+
+        padding-top: 5rem;
+        list-style: none;
+    }
+
+    &__icon-item {  
+        @media only screen and (max-width: 56.25em),
+               only screen and (hover: none) { transform: translateY(-.5rem); }
+
+        &:hover { transform: translateY(-.5rem); }
+
+        cursor: pointer;
+    }
+
+    &__icon {
+        width: 4rem;  
+        height: 4rem;
+
+        @media only screen and (max-width: 56.25em),
+               only screen and (hover: none) { fill: $color-orange;}
+
+        &:hover { fill: $color-orange; }
+    }
+
+    &__copyright { 
+        margin-top: 7.2rem;
+        justify-self: center; 
+    }
+
+    &__icon-item,
+    &__icon,
+    &__link { transition: $transition; }
+}
+

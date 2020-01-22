@@ -1,0 +1,39 @@
+@mixin bg($picture) {
+    background: $picture center no-repeat;
+    background-size: cover;
+}
+
+@mixin bg-blend($picture) {
+    background-blend-mode: screen;
+    background-image: linear-gradient(to right bottom, $color-orange, rgba($color-orange, .5)), $picture;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+// MEDIA QUERY MANAGER
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone-smallest {
+        @media only screen and (max-width: 27.8125em) { @content; }    //445px
+    }
+
+    @if $breakpoint == phone-small {
+        @media only screen and (max-width: 43.75em) { @content; }    //700px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 48em) { @content; }    //768px
+    }
+    
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content; }    //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 64em) { @content; }     //1025px
+    }
+
+    @if $breakpoint == desktop {
+        @media only screen and (max-width: 68.75em) { @content; }     //1100px
+    }
+}

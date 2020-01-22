@@ -1,0 +1,76 @@
+.header {
+    grid-column: full-start / full-end;
+    
+    display: grid;
+    align-items: center;
+    grid-auto-flow: column;
+
+    background-color: $color-gray-1;
+    padding: 0 8rem;
+
+    @include respond(phone) { 
+        grid-template-columns: 8rem; 
+
+        padding: 0 3rem;
+    }
+
+    &__list {
+        grid-row: 1 / 2;
+
+        list-style: none; 
+
+        @include respond(tab-port) { display: none; }
+    }
+
+    &__item {
+        display: inline-block;
+        
+        &:not(:last-child) { margin-right: 3.1rem; }
+    }
+
+    &__link {
+        &:link,
+        &:visited { 
+            color: inherit;
+            text-decoration: none;
+            transition: $transition;
+            border-bottom: solid .2rem transparent;
+
+            &:hover { border-bottom: solid .2rem $color-orange; }
+        }
+    }
+
+    &__nav { 
+        display: grid;
+        justify-self: center; 
+        align-items: center;
+
+        transform: translateX(5rem);
+
+        @include respond(phone) { 
+            justify-self: inherit; 
+
+            transform: translateX(0);
+        }
+    }
+
+    &__btn { 
+        justify-self: end; 
+
+        @include respond(phone-smallest) { display: none; }
+    }
+
+    &__burger {
+        grid-row: 1 / 2;
+
+        display: none;
+        width: 2rem;
+        height: 2rem;
+        cursor: pointer;
+
+        @include respond(tab-port) { display: block; }
+
+        @include respond(phone-smallest) { justify-self: end; }
+    }
+}
+
