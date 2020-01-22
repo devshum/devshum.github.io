@@ -2,7 +2,6 @@ freebie-css-grid | https://devshum.github.io/freebie-css-grid/
 
 ![Freebie Demo 1](demo/freebie-demo.gif)
 
-
 *The design I took from the Internet.
 
 ![Freebie Preview](preview/freebie.jpg)
