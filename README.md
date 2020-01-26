@@ -6,7 +6,7 @@ I was creating this markup with great pleasure because I intended to revise my C
 
 I slightly experimented with rotation animations which also consist the background-blend-mode(created seperately form the original design by myself) and a property(hover: none) in parallel to media screen. Which is why I wanted to create this markup. 😃
 
-Afterwards, if everything goes smoothly, I'll create minimum 3 mobile-first markups in order to make my knowledge more complete and in the future 2-3 JS applications(1 large React app), ~ 2 html letters. It goes without saying 🙄 
+Afterwards, if everything goes smoothly, I'll create minimum 3 mobile-first markups on each of a technology in order to make my knowledge more complete and in the future 2-3 JS applications(1 large React app), ~ 2 html letters and some bootstrap project. It goes without saying 🙄 
 
 *The design I took from the Internet.
 
