@@ -1,0 +1,89 @@
+.projects {
+    padding: 8.4rem 0 19.2rem;
+
+    @include respond(tab-port) { padding: 8.4rem 0 12rem; }
+
+    @include respond(phone) { padding: 4rem 0 8rem }
+
+    &__project { 
+        position: relative; 
+        border-radius: $border-r-1px;
+        height: 42.4rem;
+        overflow: hidden;
+        cursor: pointer;
+
+        @include respond(phone) { height: 20rem; }
+
+        &:first-child {
+            margin-bottom: 9rem;
+            width: 100%;
+            @include linear-gradient(url(../img/projects/project-1.png));
+
+            @include respond(tab-port) { margin-bottom: 5.6rem; }
+
+            &::after {
+                content: url(../img/projects/project-cover.svg);
+                position: absolute;
+                left: 0;
+                bottom: -1rem;
+
+                @include respond(tab-port) { transform: translateY(6rem); }
+            }
+        }
+
+        &:nth-child(2) {
+            @include linear-gradient(url(../img/projects/project-2.png));
+        }
+
+        &:nth-child(3) {
+            @include linear-gradient(url(../img/projects/project-3.png));
+        }
+
+        &:nth-child(n+2) {
+            flex: 1;
+            
+            &:not(:last-child) {
+                margin-right: 10%;
+
+                @include respond(tab-port) {
+                    margin-right: 0;
+                    margin-bottom: 5.6rem;
+                }
+            }
+        }
+
+    }
+
+    &__box {
+        display: flex;
+        flex-wrap: wrap;
+
+        @include respond(tab-port) { display: inherit; }
+    }
+
+    &__content {
+        position: absolute;
+        top: 4.8rem;
+        right: 6rem;
+        color: $color-white;
+
+        
+        @include respond(phone) {
+            width: 100%;
+            right: 0;
+        }
+
+        &--small {
+            left: 3rem;
+
+            @include respond(phone) { left: 0; }
+        }
+    }
+
+    &__subtitle {
+        opacity: .6;
+        font-weight: 700;
+
+        @include respond(phone) { text-align: center; }
+    }
+}
