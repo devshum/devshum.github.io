@@ -14,9 +14,9 @@ afrianska-flexbox | https://devshum.github.io/afrianska-flexbox/
 
 ![Afrianska Demo 2](demo/afrianska-demo-2.gif)
 
-Really a pure project which fully created with Flexbox, there is smooth animations on scroll, a couple of soft pop-ups, a nice hamburger menu with clean CSS, a cool adaptive design which as always I had to figured out on my own(I'm used to making it) because free templates on figma include a mobile design quite seldom 🙄
+Really a pure project which fully created with Flexbox, there are smooth animations on scroll, a couple of soft pop-ups, a nice hamburger menu with clean CSS, a cool adaptive design which as always I figured out on my own(I'm used to making it) because free templates on figma include a mobile design quite seldom 🙄
 
-Also I succeed in practicing some PHP, the usual and the compressed code was included in html and the folder, too but on GitHub Pages it isn't possible to show 😐
+Also I succeed in practicing some PHP, the usual and the compressed code were included in html and the folder, too but on GitHub Pages it isn't possible to show 😐
 
 The desktop part of site as usual has the ~100% support on Google Page speed but due to built-in Google Map above the footer the mobile support and the console warnings were crushed 😫😫😫😫 There's no getting around it. 
 
@@ -39,7 +39,7 @@ The valid HTML markup has a basic SEO optimization a lot of jQuery animations(wa
 
 To this one looks correct in Internet Explorer 6-8, Safari 4.x, Firefox 3.x. и iPhone 3.x. I included respond.js | html5shiv.min.js | selectivizr.min.js
 
-*The design was created just in browser without a template,
+*The design I was creating just in browser without a template,
 this is a mix of my idea and a real miramax web-site page(https://www.miramax.com/movie/pulp-fiction/),
 in this case ionicons(https://ionicons.com/) really helped me a lot 🎅
 
@@ -56,7 +56,7 @@ I didn't use PUG preprocessor until this time because I wanted learning SCSS pre
 
 And this is my first project in the portfolio with jQuery, I implemented an onScroll method that allows produce the header if the scroll height bigger than the intro height section.
 
-I used the same things that I used below, namely: a Cross-Browser, a Responsive-Adaptive markup, SCSS, Svg-Sprites, BEM, Gulp, Desktop-First, The W3C Markup Validation and so on and certainly FLOATS, after Flexbox and CSS grid it was difficult 😥
+I used the same things that I used below, namely: a Cross-Browser, a Responsive-Adaptive markup, SCSS, Svg-Sprites, BEM, Gulp, Desktop-First, The W3C Markup Validation and so one and so forth and certainly FLOATS, after Flexbox and CSS grid it was difficult 😥
 
 *The design I took from the Internet. 
 
@@ -98,7 +98,7 @@ kong-css-grid | https://devshum.github.io/kong-css-grid/
 
 ![Kong Demo](demo/kong-demo.gif)
 
-This HTML(cross-browser, responsive-adaptive) markup is absolutely huge  I used CSS GRID , BEM , SCSS , well-adaprive backgrounds which depend on width or device pixel ratio, that's nice
+This HTML(cross-browser, responsive-adaptive) markup is absolutely huge I used CSS GRID , BEM , SCSS , well-adaprive backgrounds which depend on width or device pixel ratio, that's nice
 
 I think that I managed to implement my CSS GRID knowledge greatly, I'm glad that in 2019 this technology has the support 90% or even more.
 
