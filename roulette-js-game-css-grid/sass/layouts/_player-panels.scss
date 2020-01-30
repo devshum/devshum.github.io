@@ -1,9 +1,6 @@
 .player-0-panel,
 .player-1-panel { background-color: $color-white; }
 
-// .player-0-panel { grid-area: player; }
-// .player-1-panel { grid-area: player-1; }
-
 .player-0-panel {
     @include respond(tab-land) { grid-column: 1 / 2; }
 }
