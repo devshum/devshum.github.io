@@ -239,12 +239,14 @@ body {
 
 .cylinder-panel {
   background-color: #df7356;
-  row-gap: 2.5rem;
   display: grid;
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  justify-items: center; }
+  -webkit-align-content: space-evenly;
+  -ms-flex-line-pack: space-evenly;
+  align-content: space-evenly;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
   @media only screen and (max-width: 56.25em) {
     .cylinder-panel {
       grid-column: 1 / -1; } }

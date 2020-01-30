@@ -185,10 +185,9 @@ body {
 
 .cylinder-panel {
   background-color: #df7356;
-  row-gap: 2.5rem;
   display: grid;
-  align-content: center;
-  justify-items: center; }
+  align-content: space-evenly;
+  justify-content: center; }
   @media only screen and (max-width: 56.25em) {
     .cylinder-panel {
       grid-column: 1 / -1; } }
