@@ -2,7 +2,7 @@ roulette-js-game-css-grid | https://devshum.github.io/roulette-js-game-css-grid/
 
 ![Roulette Demo 1](demo/roulette-demo.gif)
 
-In front of you a straightforward DOM game(also adaptive and looks well on a phone), I'm glad that I successeded in creating this one using all the technics that I've already learnt and showed to you. As usual the project includes PUG(HTML preprocessor), SCSS(CSS preprocessor(CSS GRID)), clean JS, a couple of animation, especially I liked a cylinder animation when you push the fire button 💥
+In front of you a straightforward DOM game(also adaptive and looks well on a phone), I'm glad that I successeded in creating this one using all the technics that I've already learnt and showed to you. As usual the project includes PUG(HTML preprocessor(with BEM)), SCSS(CSS preprocessor(CSS GRID)), clean JS, a couple of animation, especially I liked a cylinder animation when you push the fire button 💥
 
 *The design created on my own
 
