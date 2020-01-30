@@ -1,0 +1,16 @@
+.cylinder-panel {
+    background-color: $color-red;
+
+    //grid-area: cylinder;
+    
+    display: grid;
+    align-content: space-evenly;
+    justify-items: center;
+
+    @include respond(tab-land) { grid-column: 1 / -1; }
+}
+
+
+
+
+
