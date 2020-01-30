@@ -46,6 +46,4 @@
             }
         }
     }
-
-    @include respond(tab-land) { grid-area: footer; }
 }
