@@ -5,7 +5,7 @@
     
     display: grid;
     align-content: space-evenly;
-    justify-content: center;
+    justify-items: center;
 
     @include respond(tab-land) { grid-column: 1 / -1; }
 }
