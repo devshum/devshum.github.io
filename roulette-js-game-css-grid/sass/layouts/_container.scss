@@ -3,8 +3,8 @@
     grid-template-rows: 35vw 6.5rem;
     grid-template-columns: 1fr 1fr 2fr;
 
-    grid-template-areas: 'player player-1 cylinder'
-                         'footer footer cylinder';
+    // grid-template-areas: 'player player-1 cylinder'
+    //                      'footer footer cylinder';
 
     border-radius: .5rem;
     background-color: $color-red;
@@ -13,11 +13,11 @@
 
     @include respond(tab-land) {
         grid-template-rows: 40vh 50vh 10vh;
-        grid-template-columns: initial;
+        grid-template-columns: 1fr 1fr;
 
-        grid-template-areas: 'player player-1'
-                             'cylinder cylinder'
-                             'footer footer';
+        // grid-template-areas: 'player player-1'
+        //                      'cylinder cylinder'
+        //                      'footer footer';
 
         border-radius: initial;
         box-shadow: initial;

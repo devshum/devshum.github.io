@@ -97,7 +97,7 @@ body {
   animation: flasher 1.5s infinite; }
 
 .cylinder {
-  width: 65%; }
+  width: 20vw; }
   @media only screen and (max-width: 56.25em) {
     .cylinder {
       width: 28vh; } }
@@ -109,7 +109,6 @@ body {
   display: grid;
   grid-template-rows: 35vw 6.5rem;
   grid-template-columns: 1fr 1fr 2fr;
-  grid-template-areas: 'player player-1 cylinder' 'footer footer cylinder';
   border-radius: .5rem;
   background-color: #df7356;
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.5);
@@ -117,8 +116,7 @@ body {
   @media only screen and (max-width: 56.25em) {
     .container {
       grid-template-rows: 40vh 50vh 10vh;
-      grid-template-columns: initial;
-      grid-template-areas: 'player player-1' 'cylinder cylinder' 'footer footer';
+      grid-template-columns: 1fr 1fr;
       border-radius: initial;
       box-shadow: initial; } }
 
@@ -126,11 +124,13 @@ body {
 .player-1-panel {
   background-color: #fff; }
 
-.player-0-panel {
-  grid-area: player; }
+@media only screen and (max-width: 56.25em) {
+  .player-0-panel {
+    grid-column: 1 / 2; } }
 
-.player-1-panel {
-  grid-area: player-1; }
+@media only screen and (max-width: 56.25em) {
+  .player-1-panel {
+    grid-column: 2 / 3; } }
 
 .player-0-panel,
 .player-1-panel {
@@ -185,11 +185,13 @@ body {
 
 .cylinder-panel {
   background-color: #df7356;
-  grid-area: cylinder;
   row-gap: 2.5rem;
   display: grid;
   align-content: center;
   justify-items: center; }
+  @media only screen and (max-width: 56.25em) {
+    .cylinder-panel {
+      grid-column: 1 / -1; } }
 
 .footer {
   background-color: #626262;
@@ -198,7 +200,7 @@ body {
   row-gap: 1rem;
   align-content: center;
   justify-content: center;
-  grid-area: footer; }
+  grid-column: 1 / -1; }
   @media only screen and (max-width: 20.625em) {
     .footer {
       grid-auto-flow: column;

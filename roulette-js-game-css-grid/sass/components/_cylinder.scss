@@ -1,5 +1,5 @@
 .cylinder { 
-    width: 65%; 
+    width: 20vw; 
 
     @include respond(tab-land) { width: 28vh; }
 }
