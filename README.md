@@ -12,7 +12,7 @@ Otherwise I used the same thing as below: PUG, SCSS, JS and so on and so forth â
 
 ![Prechu Preview](preview/prechu.jpg)
 
-
+---------------------
 
 roulette-js-game-css-grid | https://devshum.github.io/roulette-js-game-css-grid/
 
