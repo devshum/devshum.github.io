@@ -1,0 +1,27 @@
+.shopping {
+    padding: 4rem 0 2rem;
+    text-align: center;
+    background-color: $color-gray-light-1;
+
+    @include respond(tab-port) { padding: 4rem 0 4rem; }
+
+    &__img-small { 
+        margin-bottom: 3rem; 
+
+        @include respond(tab-port) { display: none; }
+    }
+
+    &__img-big { 
+        display: none;
+        margin-right: 10%;
+
+        @include respond(tab-port) { display: block; }
+    }
+
+    &__box {
+        @include respond(tab-port) { 
+            display: flex;
+            align-items: center
+        }
+    }
+}

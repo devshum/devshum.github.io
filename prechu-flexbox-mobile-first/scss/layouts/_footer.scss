@@ -1,0 +1,9 @@
+.footer {
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+    background-color: $color-primary;
+    color: $color-white;
+
+    &__rights { font-size: 1.4rem; }
+}

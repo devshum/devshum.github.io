@@ -1,0 +1,124 @@
+.nav {
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    position: absolute;
+    top: 7rem;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 7rem);
+    background-color: $color-gray-light;
+    z-index: 1000;
+
+    @include respond(tab-port) { 
+        display: flex; 
+
+        position: initial;
+        width: initial;
+        height: initial;
+        background-color: initial;
+    }
+
+    &__list { list-style: none; }
+
+    &__item { 
+        position: relative;
+
+        @include respond(tab-port) { 
+            display: inline-block; 
+
+            &:hover {
+                &::after { background: $color-blue; }
+            }
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -2.8rem;
+            background: transparent;
+            width: 100%;
+            height: .4rem;
+            display: block;
+            transition: $transition;
+        }
+
+        &:not(:last-child) { 
+            margin-bottom: 1rem; 
+
+            @include respond(tab-port) { margin: 0 1rem 0; }
+        }
+    }
+
+
+    &__link {
+        font-weight: 400;
+        color: $color-primary;
+        font-size: 2rem;
+        text-decoration: none;
+        transition: $transition;
+
+        @include respond(tab-port) { 
+            &:hover { color: $color-black; }
+        }
+    }
+}
+
+.burger {
+    @include blue-border;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: $color-blue;
+    height: 4rem;
+    width: 5rem;
+
+    @include respond(tab-port) { display: none; }
+
+    & span,
+    & span::before,
+    & span::after {
+        height: .4rem;
+        width: 3rem;
+        background: $color-white;
+        position: absolute;
+    }
+
+    & span {
+        &::before,
+        &::after { 
+            content: ''; 
+            display: block;
+        }
+
+        &::before { top: -1rem; }
+
+        &::after { top: 1rem; }
+    }
+}
+
+// JS
+.active { display: flex; }
+
+.burger-close {
+    & span,
+    & span::before,
+    & span::after { transition: $transition; }
+
+    & span { background-color: transparent; }
+
+    & span::before { 
+        top: 0;
+        transform: rotate(45deg); 
+    }
+
+    & span::after { 
+        top: 0;
+        transform: rotate(-45deg); 
+    }
+}
+

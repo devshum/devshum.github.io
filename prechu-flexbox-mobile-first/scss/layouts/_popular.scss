@@ -1,0 +1,76 @@
+.popular {
+    padding: 2rem 0;
+
+    @include respond(tab-port) {  
+        background: url(../img/popular/popular-bg.png) top repeat;
+        padding: 0;
+        margin-top: -1rem;
+    }
+
+    &__box { 
+        list-style: none; 
+        justify-content: center;
+
+        @include respond(tab-port) { display: flex; }
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding-top: 2rem;
+        text-align: center;
+        position: relative;
+
+        @include respond(tab-port) { 
+            padding-top: 6rem;
+            text-align: initial; 
+        }
+
+        &:not(:last-child) { 
+            margin-bottom: 2rem; 
+
+            @include respond(tab-port) { margin: 0 10% 4rem 0; }
+        }
+        
+        &::after {
+            content: '';
+            border-bottom: solid .1rem $color-gray-light;
+            position: absolute;
+            bottom: -2rem;
+            width: 125%;
+                
+            @include respond(tab-port) { border-bottom: solid .1rem transparent }
+        }
+
+        &:nth-child(n+2) {
+            span { transform: translateY(.3rem); }
+        }
+    }
+
+    &__icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        color: $color-white;
+        font-size: 6rem;
+        height: 10rem;
+        width: 10rem;
+        border-radius: 50%;
+        margin-bottom: 2rem;
+
+        @include respond(tab-port) { 
+            height: 15rem;
+            width: 15rem;
+            font-size: 10rem;
+            margin-bottom: 1.5rem; 
+        }
+
+        &--blue { background-color: $color-blue; }
+        &--red { background-color: $color-red; }
+        &--yellow { background-color: $color-yellow; }
+    }
+}
+

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Prechu, just for practice :D"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,900&amp;display=swap"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <title>Prechu</title>
+  </head>
+  <body>
+    <!--mixins-->
+    <!-- layouts (header)-->
+    <header class="header"> 
+      <div class="header__main">
+        <div class="header__logo-box">
+          <div class="header__logo-icon">&nbsp;</div>
+          <div class="header__logo-name">Perchu</div>
+        </div>
+        <!-- components (navigation)-->
+        <div class="burger"> <span>&nbsp;</span></div>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="#">Sign Up</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Shopping</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Get In Touch</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Owners</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__intro"> 
+        <!-- layouts (container)-->
+        <div class="container">
+          <!-- layouts (slider)-->
+          <div class="slider">
+            <div class="slider__item">
+              <div class="slider__img-big"><img src="img/intro/iphone-big.png" alt="an iphone big photo"/></div>
+              <div class="slider__img-small mb-10px"><img src="img/intro/iphone.png" alt="an iphone small photo"/></div>
+              <ul class="slider__text-box">
+                <li>
+                  <!-- base (typography)-->
+                  <h1 class="header-primary mb-10px">Lorem Ipsum is simply</h1>
+                </li>
+                <li>
+                  <!-- base (typography)-->
+                  <p class="paragraph mb-20px">dummy text of the<br> printing & typesetting </p>
+                </li>
+                <li>
+                  <!-- components (btn)--><a class="btn" href="#">Sign up now<i class="icon ion-md-checkmark-circle"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="slider__item">
+              <div class="slider__img-big"><img src="img/intro/iphone-big.png" alt="an iphone big photo"/></div>
+              <div class="slider__img-small mb-10px"><img src="img/intro/iphone.png" alt="an iphone small photo"/></div>
+              <ul class="slider__text-box">
+                <li>
+                  <!-- base (typography)-->
+                  <h1 class="header-primary mb-10px">Lorem Ipsum is simply</h1>
+                </li>
+                <li>
+                  <!-- base (typography)-->
+                  <p class="paragraph mb-20px">dummy text of the<br> printing & typesetting </p>
+                </li>
+                <li>
+                  <!-- components (btn)--><a class="btn" href="#">Shopping<i class="icon ion-md-cash"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="slider__item">
+              <div class="slider__img-big"><img src="img/intro/iphone-big.png" alt="an iphone big photo"/></div>
+              <div class="slider__img-small mb-10px"><img src="img/intro/iphone.png" alt="an iphone small photo"/></div>
+              <ul class="slider__text-box">
+                <li>
+                  <!-- base (typography)-->
+                  <h1 class="header-primary mb-10px">Lorem Ipsum is simply</h1>
+                </li>
+                <li>
+                  <!-- base (typography)-->
+                  <p class="paragraph mb-20px">dummy text of the<br> printing & typesetting </p>
+                </li>
+                <li>
+                  <!-- components (btn)--><a class="btn" href="#">Get in touch<i class="icon ion-md-call"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- layouts (popular)-->
+      <section class="popular">
+        <!-- layouts (container)-->
+        <div class="container">
+          <ul class="popular__box">
+            <li class="popular__item">
+              <div class="popular__icon popular__icon--blue"><span><i class="icon ion-md-brush"></i></span></div>
+                  <!-- base (typography)-->
+                  <h2 class="heading-secondary mb-10px">Contrary to popular</h2>
+                  <p class="paragraph paragraph--justify">Lorem Ipsum is not simply random text. It has roots in a piece </p>
+            </li>
+            <li class="popular__item">
+              <div class="popular__icon popular__icon--red"><span><i class="icon ion-md-desktop"></i></span></div>
+                  <!-- base (typography)-->
+                  <h2 class="heading-secondary mb-10px">Contrary to popular</h2>
+                  <p class="paragraph paragraph--justify">Lorem Ipsum is not simply random text. It has roots in a piece </p>
+            </li>
+            <li class="popular__item">
+              <div class="popular__icon popular__icon--yellow"><span><i class="icon ion-md-cart"></i></span></div>
+                  <!-- base (typography)-->
+                  <h2 class="heading-secondary mb-10px">Contrary to popular</h2>
+                  <p class="paragraph paragraph--justify">Lorem Ipsum is not simply random text. It has roots in a piece </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- layouts (shopping)-->
+      <section class="shopping">
+        <div class="container">
+          <!-- base (typography)-->
+          <h3 class="heading-tertiary mb-30px">The shopping cart</h3>
+          <div class="shopping__box">
+            <div class="shopping__img-small"><img src="img/shopping/basket.png" alt="a basket photo"/></div>
+            <div class="shopping__img-big"><img src="img/shopping/basket-big.png" alt="a basket photo"/></div>
+            <div class="shopping__text-box">
+              <h4 class="heading-quaternary mb-10px">Some Bullet text here</h4>
+              <p class="paragraph paragraph--justify">Lorem Ipsum is simply dummy text of the printing and typesetting Lorem Ipsum has been the industry's standard dummy text ever When an unknown printer took a galley of type and scrambled It to make a type specimen book. It has survived not only five centuries But also the leap into electronic typesetting, Remaining essentially unchanged. It was popularised The release of Letraset sheets containing Lorem Ipsum passages</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- layouts (form)-->
+      <section class="get-in-touch">
+        <div class="container">
+          <!-- base (typography)-->
+          <h3 class="heading-tertiary mb-30px">Send a message</h3>
+          <!-- component (form)-->
+          <form class="form">
+            <input type="text" placeholder="Name"/>
+            <input type="email" placeholder="E-mail"/>
+            <input type="submit" value="Send"/>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- layouts (footer)-->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__rights">Made width 💞 by Vlad Shum</div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"> </script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/app.js">   </script>
+  </body>
+</html>

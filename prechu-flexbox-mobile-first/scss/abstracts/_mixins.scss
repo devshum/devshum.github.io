@@ -1,0 +1,11 @@
+@mixin blue-border {
+    background-color: $color-blue;
+    border-radius: .3rem;
+    cursor: pointer;
+}
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone { @media only screen and (min-width: 37.5em) { @content; } }   //600px
+    
+    @if $breakpoint == tab-port { @media only screen and (min-width: 48em) { @content; } }    //768px
+} 

@@ -1,0 +1,53 @@
+.header {
+    font-weight: 300;
+
+    &__main {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        padding: 2rem 2rem 1rem 2rem;
+
+        @include respond(tab-port) { padding: 2rem; }
+    }
+
+    &__logo-box {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo-icon {
+        background-color: $color-blue;
+        border-radius: 50%;
+        height: 4rem;
+        width: 4rem;
+        position: relative;
+
+        &::after {
+            content: "\201C";
+            position: absolute;
+            color: $color-white;
+            font-size: 6rem;
+            font-family: sans-serif;
+            left: 1rem;
+            top: .1rem;
+        }
+    }
+
+    &__logo-name {
+        color: $color-black;
+        font-size: 3rem;
+        margin-left: 1rem;
+    }
+
+    &__intro {
+        display: flex;
+        align-items: center;
+
+        background: url(../img/intro/bg.png) center no-repeat;
+        background-size: cover;
+        height: calc(100vh - 7rem);
+
+        @include respond(tab-port) {  height: calc(100vh - 7rem); }
+    }
+}

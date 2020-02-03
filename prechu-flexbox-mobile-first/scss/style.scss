@@ -1,0 +1,20 @@
+@import 'abstracts/extends';
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+@import 'base/animations';
+@import 'base/base';
+@import 'base/typography';
+@import 'base/utilities';
+
+@import 'components/navigation';
+@import 'components/btn';
+@import 'components/form';
+
+@import 'layouts/container';
+@import 'layouts/header';
+@import 'layouts/popular';
+@import 'layouts/shopping';
+@import 'layouts/get-in-touch';
+@import 'layouts/footer';
+@import 'layouts/slider';

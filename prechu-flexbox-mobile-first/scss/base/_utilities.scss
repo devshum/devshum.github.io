@@ -1,0 +1,13 @@
+.mb-10px { margin-bottom: 1rem; }
+
+.mb-20px { 
+    margin-bottom: 2rem; 
+
+    @include respond(tab-port) { margin-bottom: 5rem; }
+}
+
+.mb-30px { 
+    margin-bottom: 3rem; 
+
+    @include respond(tab-port) { margin-bottom: 4rem; }
+}

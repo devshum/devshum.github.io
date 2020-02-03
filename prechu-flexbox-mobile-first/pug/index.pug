@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(name="description" content="Prechu, just for practice :D")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel="stylesheet", href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Roboto:300,400,900&display=swap")
+        link(rel="stylesheet", href="css/style.css")
+        title Prechu
+    body
+     //mixins
+     mixin popular(h, p)
+      // base (typography)
+      h2.heading-secondary.mb-10px= h
+      p.paragraph.paragraph--justify= p
+
+     // layouts (header)
+     header.header 
+      .header__main
+       .header__logo-box
+        .header__logo-icon &nbsp;
+        .header__logo-name Perchu
+       // components (navigation)
+       .burger 
+        span &nbsp;
+       nav.nav
+        ul.nav__list
+         li.nav__item
+          a(href="#").nav__link Sign Up
+         li.nav__item
+          a(href="#").nav__link Shopping
+         li.nav__item
+          a(href="#").nav__link Get In Touch
+         li.nav__item
+          a(href="#").nav__link Owners
+      .header__intro 
+       // layouts (container)
+       .container
+        // layouts (slider)
+        .slider
+         .slider__item
+          .slider__img-big
+           img(src="img/intro/iphone-big.png", alt="an iphone big photo")
+          .slider__img-small.mb-10px
+           img(src="img/intro/iphone.png", alt="an iphone small photo")
+          ul.slider__text-box
+           li
+            // base (typography)
+            h1.header-primary.mb-10px Lorem Ipsum is simply
+           li
+            // base (typography)
+            p.paragraph.mb-20px dummy text of the<br> printing & typesetting 
+           li
+            // components (btn)
+            a(href="#").btn Sign up now
+             i.icon.ion-md-checkmark-circle
+         .slider__item
+          .slider__img-big
+           img(src="img/intro/iphone-big.png", alt="an iphone big photo")
+          .slider__img-small.mb-10px
+           img(src="img/intro/iphone.png", alt="an iphone small photo")
+          ul.slider__text-box
+           li
+            // base (typography)
+            h1.header-primary.mb-10px Lorem Ipsum is simply
+           li
+            // base (typography)
+            p.paragraph.mb-20px dummy text of the<br> printing & typesetting 
+           li
+            // components (btn)
+            a(href="#").btn Shopping
+             i.icon.ion-md-cash
+         .slider__item
+          .slider__img-big
+           img(src="img/intro/iphone-big.png", alt="an iphone big photo")
+          .slider__img-small.mb-10px
+           img(src="img/intro/iphone.png", alt="an iphone small photo")
+          ul.slider__text-box
+           li
+            // base (typography)
+            h1.header-primary.mb-10px Lorem Ipsum is simply
+           li
+            // base (typography)
+            p.paragraph.mb-20px dummy text of the<br> printing & typesetting 
+           li
+            // components (btn)
+            a(href="#").btn Get in touch
+             i.icon.ion-md-call
+     main
+      // layouts (popular)
+      section.popular
+       // layouts (container)
+       .container
+        ul.popular__box
+         li.popular__item
+          .popular__icon.popular__icon--blue
+           span
+            i.icon.ion-md-brush
+          +popular('Contrary to popular', 'Lorem Ipsum is not simply random text. It has roots in a piece ')
+         li.popular__item
+          .popular__icon.popular__icon--red
+           span
+            i.icon.ion-md-desktop
+          +popular('Contrary to popular', 'Lorem Ipsum is not simply random text. It has roots in a piece ')
+         li.popular__item
+          .popular__icon.popular__icon--yellow
+           span
+            i.icon.ion-md-cart
+          +popular('Contrary to popular', 'Lorem Ipsum is not simply random text. It has roots in a piece ')
+      // layouts (shopping)
+      section.shopping
+       .container
+        // base (typography)
+        h3.heading-tertiary.mb-30px The shopping cart
+        .shopping__box
+         .shopping__img-small
+          img(src="img/shopping/basket.png", alt="a basket photo")
+         .shopping__img-big
+          img(src="img/shopping/basket-big.png", alt="a basket photo")
+         .shopping__text-box
+          h4.heading-quaternary.mb-10px Some Bullet text here
+          p.paragraph.paragraph--justify Lorem Ipsum is simply dummy text of the printing and typesetting Lorem Ipsum has been the industry's standard dummy text ever When an unknown printer took a galley of type and scrambled It to make a type specimen book. It has survived not only five centuries But also the leap into electronic typesetting, Remaining essentially unchanged. It was popularised The release of Letraset sheets containing Lorem Ipsum passages
+      // layouts (form)
+      section.get-in-touch
+       .container
+        // base (typography)
+        h3.heading-tertiary.mb-30px Send a message
+        // component (form)
+        form.form
+         input(type="text" placeholder="Name")
+         input(type="email" placeholder="E-mail")
+         input(type="submit" value="Send")
+     // layouts (footer)
+     footer.footer
+      .container
+       .footer__rights Made width 💞 by Vlad Shum
+     script(src="https://code.jquery.com/jquery-3.4.1.min.js") 
+     script(src="js/slick.min.js")
+     script(src="js/app.js")    
+
+           
+     
