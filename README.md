@@ -2,9 +2,9 @@ prechu-flexbox-mobile-first | https://devshum.github.io/prechu-flexbox-mobile-fi
 
 ![Prechu Demo](demo/prechu-demo.gif)
 
-A cool and quite small but really modern markup which I was making thanks to well-known and absolutely important in these days mobile-first approach 💫
+A cool and quite small but really modern markup(the design isn't modern itself) which I was making thanks to well-known and absolutely important in these days mobile-first approach 💫
 
-I also included in this project the slick.js slider for the header, it's a good enough thing, too 💨
+I also included in this project the slick.js slider for the header, it's a powerful thing, too 💨
 
 Otherwise I used the same thing as below: PUG, SCSS, JS and so on and so forth ♻
 
