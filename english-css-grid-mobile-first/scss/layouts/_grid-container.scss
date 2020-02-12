@@ -1,9 +1,0 @@
-.grid-container {
-    display: grid;
-    grid-template-rows: 3.7rem calc(100vh - 3.7rem);
-    grid-template-columns: [full-start] minmax(4vw, 1fr) [center-start] repeat(6, [col-start] minmax(min-content, 25.6rem) [col-end]) [center-end] minmax(4vw, 1fr) [full-end];
-
-    position: relative;
-
-    @include respond(phone) { grid-template-rows: 7.5rem calc(100vh - 7.6rem); }
-}

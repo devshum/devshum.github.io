@@ -1,7 +1,0 @@
-.mt-10px { margin-top: 1rem; }
-
-.mt-30px { 
-    margin-top: 3rem; 
-
-    @include respond(desktop) { margin-top: 5rem; }
-}
