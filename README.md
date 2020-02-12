@@ -1,5 +1,7 @@
 schott-newsletter-table | https://devshum.github.io/schott-newsletter-table/
 
+Check the E-Mail newsletter GMAIL | UKR.NET | MAIL.RU
+
 ![Schott Demo](demo/schott-demo.gif)
 
 
