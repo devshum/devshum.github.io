@@ -1,0 +1,63 @@
+.header {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: full-start / full-end;
+    
+    color: $color-white;
+    font-weight: 700; 
+    background-color: $color-primary;
+    padding-left: 4vw;
+
+    &__nav-mob { 
+        display: block;
+        cursor: pointer;
+        
+        @include respond(phone) { font-size: 2.5rem; }
+        @include respond(tab-port) { display: none; }
+    }
+
+    &__nav-hide { 
+        display: none;
+        text-transform: uppercase;
+        position: absolute;
+        left: 4vw;
+        top: 12vh;
+
+        @include respond(phone) { top: 14vh; }
+
+        @include respond(tab-port) { 
+            display: block; 
+            position: inherit;
+            top: inherit;
+        }
+    }
+
+    &__item { 
+        display: inline-block; 
+
+        &:not(:last-child) { margin-right: 2rem; }
+    }
+
+    &__link {
+        transition: color .3s;
+        
+        &:link,
+        &:visited {
+            color: $color-white;
+            text-decoration: none;
+        }
+
+        &:hover { color: $color-blue-1; }
+
+        @media only screen and (max-width: 61.25em),
+               only screen and (hover: none) {
+
+            &:hover { color: $color-white; }
+        }
+    }
+}
+
+// JS
+.active { display: block; }

@@ -1,0 +1,28 @@
+.info {
+    grid-column: center-start / center-end;
+
+    padding-bottom: 3rem;
+
+    @include respond(desktop) { padding-bottom: 5rem; }
+
+    &__text-box {
+        list-style: none;
+
+        li:nth-child(2),
+        li:nth-child(4) { margin-top: 1rem; }
+
+        li:nth-child(3) { margin-top: 3rem; }
+
+        @include respond(tab-port) { 
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 2rem;
+
+            li:nth-child(2) { margin-top: initial
+            }
+
+            li:nth-child(3),
+            li:nth-child(4) { margin-top: 1rem; }
+        }
+    }
+}
