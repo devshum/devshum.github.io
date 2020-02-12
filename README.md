@@ -18,9 +18,9 @@ english-css-grid-mobile-first | https://devshum.github.io/english-css-grid-mobil
 
 ![English Demo](demo/english-demo.gif)
 
-This time I trained a mobile first markup with css-grid, next time I'll be making mobile first with floats(custom grid)
+This time I trained a mobile first markup with css-grid, next time I'll be making mobile first with floats(custom grid).
 
-The markup has good and adaptive photo galleries/navigations, especially the large one, with css grid I made that section very esily and with pleasure .
+The markup has good and adaptive photo galleries/navigations. The large gallery was created with css grid I made that section very esily thanks to css grid.
 
 *The design I took from the Internet.
 
