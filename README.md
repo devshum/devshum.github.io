@@ -14,6 +14,19 @@ All those things are remnants of 90's and gives a huge obsolete result on The W3
 
 ---------------------
 
+english-css-grid-mobile-first | https://devshum.github.io/english-css-grid-mobile-first/
+
+![English Demo](demo/english-demo.gif)
+
+
+
+
+*The design I took from the Internet.
+
+![English Preview](preview/english.jpg)
+
+---------------------
+
 prechu-flexbox-mobile-first | https://devshum.github.io/prechu-flexbox-mobile-first/
 
 ![Prechu Demo](demo/prechu-demo.gif)
