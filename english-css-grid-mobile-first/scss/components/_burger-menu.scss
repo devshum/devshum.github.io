@@ -1,0 +1,78 @@
+.burger {
+    display: grid;
+    align-items: center;
+    
+    width: 100%;
+    height: 100%;
+    background-color: $color-gray-dark;
+    padding: 1.4rem;
+    cursor: pointer;
+
+    @include respond(phone) { padding: 2.5rem; }
+
+    @include respond(tab-port) { display: none; }
+
+    span { position: relative;  }
+
+    span,
+    span::before,
+    span::after {
+        display: block;
+        background: $color-white;
+        height: .2rem;
+        width: 2rem;
+
+        @include respond(phone) { 
+            height: .4rem;
+            width: 3rem; 
+        }
+    }
+
+   span {
+        &::before,
+        &::after { 
+            content: ''; 
+            position: absolute; 
+        }
+
+        &::before { 
+            top: .6rem; 
+
+            @include respond(phone) { top: 1rem; }
+        }
+
+        &::after { 
+            bottom: .6rem; 
+
+            @include respond(phone) { bottom: 1rem; }
+        }
+    }
+
+    &__list {
+        display: none;
+        justify-items: center;
+        align-content: center;
+
+        position: absolute;
+        background-color: $color-white;
+        height: 100vh;
+        width: 50%;
+        left: 0;
+        top: 0;
+
+        @include respond(phone) { width: 30%; }
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            display: inline-block;
+            color: $color-primary;
+            text-decoration: none;
+
+            @include respond(phone) { font-size: 2.2rem; }
+        }
+    }
+
+    &__active { display: grid; }
+}
