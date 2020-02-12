@@ -1,3 +1,15 @@
+schott-newsletter-table | https://devshum.github.io/schott-newsletter-table/
+
+![Schott Demo](demo/schott-demo.gif)
+
+
+
+*The common design I took from the Internet. I filled in the design with the content by myself
+
+![Schott Preview](preview/schott.jpg)
+
+---------------------
+
 prechu-flexbox-mobile-first | https://devshum.github.io/prechu-flexbox-mobile-first/
 
 ![Prechu Demo](demo/prechu-demo.gif)
