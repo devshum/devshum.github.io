@@ -4,7 +4,7 @@ Check the E-Mail newsletter GMAIL | UKR.NET | MAIL.RU
 
 ![Schott Demo](demo/schott-demo.gif)
 
-
+This is another interesting thing in WEB which I couldn't miss because IF you want to your newsletter displays correctly you need to use the TABLE approach instead of DIV, also the safe fonts, inline CSS properties, universal HTML tags, max-width, mandatory HTML attributes for the table, the inline elements, the images and also you'll need to write the color property without a reducion, for example: #ffffff instead of #fff 🙂👌✔
 
 *The common design I took from the Internet. I filled in the design with the content by myself
 
