@@ -6,9 +6,9 @@ Check the E-Mail newsletter GMAIL | UKR.NET | MAIL.RU
 
 This is another interesting thing in WEB which I couldn't miss because IF you want to your newsletter displays correctly you need to use the TABLE approach instead of DIV, also the safe fonts, inline CSS properties, universal HTML tags, max-width, mandatory HTML attributes for the table, the inline elements, the images and also you'll need to write the color property without a reducion, for example: #ffffff instead of #fff 🙂👌✔
 
-All those things are remnants of 90's and gives a huge obsolete result on The W3C Markup Validation Service
+All those things are remnants of 90's and gives a huge obsolete result on The W3C Markup Validation Service.
 
-*The common design I took from the Internet. I filled in the design with the content by myself
+*The common design I took from the Internet. I filled in the design with the content by myself.
 
 ![Schott Preview](preview/schott.jpg)
 
@@ -20,7 +20,7 @@ english-css-grid-mobile-first | https://devshum.github.io/english-css-grid-mobil
 
 This time I trained a mobile first markup with css-grid, next time I'll be making mobile first with floats(custom grid)
 
-The markup has good and adaptive photo galleries, especially the large one, with css grid I made that section very esily and with pleasure  
+The markup has good and adaptive photo galleries/navigations, especially the large one, with css grid I made that section very esily and with pleasure .
 
 *The design I took from the Internet.
 
@@ -50,9 +50,9 @@ roulette-js-game-css-grid ES5 | https://devshum.github.io/roulette-js-game-css-g
 
 In front of you a straightforward DOM game(also adaptive and looks well on a phone), I'm glad that I successeded in creating this one using all the technics that I've already learnt and showed to you. As usual the project includes PUG(HTML preprocessor(with BEM)), SCSS(CSS preprocessor(CSS GRID)), clean JS, a couple of animation, especially I liked a cylinder animation when you push the fire button 💥
 
-Includes 3 event listeners, 1 callback function(init), important gamePlaying variable and lots of DOM manipulations 
+Includes 3 event listeners, 1 callback function(init), important gamePlaying variable and lots of DOM manipulations.
 
-*The design created on my own
+*The design created on my own.
 
 ![Freebie Preview](preview/roulette.jpg)
 
@@ -64,7 +64,7 @@ freebie-css-grid | https://devshum.github.io/freebie-css-grid/
 
 I was creating this markup with great pleasure because I intended to revise my CSS Grid skills and the design looks outstanding and minimalistic.
 
-I slightly experimented with rotation animations which also consist the background-blend-mode(created seperately form the original design by myself) and a property(hover: none) in parallel to media screen. Which is why I wanted to create this markup. 😃
+I slightly experimented with rotation animations which also consist the background-blend-mode(created seperately form the original design by myself) and a property(hover: none) in parallel to media screen. Which is why I wanted to create this markup 😃
 
 Afterwards, if everything goes smoothly, I'll create minimum 3 mobile-first markups on each of a technology in order to make my knowledge more complete and in the future 2-3 JS applications(1 large React app), ~ 2 html letters and some bootstrap project. It goes without saying 🙄 
 
@@ -86,8 +86,7 @@ Also I succeed in practicing some PHP, the usual and the compressed code were in
 
 The desktop part of site as usual has the ~100% support on Google Page speed but due to built-in Google Map above the footer the mobile support and the console warnings were crushed 😫😫😫😫 There's no getting around it. 
 
-I hope You'll like this as I do 
-
+I hope You'll like this as I do.
 
 *The design I took from the Internet.
 
