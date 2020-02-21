@@ -1,0 +1,52 @@
+.btn {
+    &,
+    &:link,
+    &:visited {
+        display: flex;
+        margin-right: auto;
+
+        background: none;
+        border: none;
+
+        @include respond(phone-small) { 
+            margin-right: initial;
+            margin-left: auto; 
+        }
+    }
+
+    &__checkbox { display: none; }
+
+    &__checkbox:checked + &__shape  { background: var(--color-white); }
+
+    &__checkbox:checked + &__shape &__circle {
+        margin-left: auto;
+        background-color: var(--color-blue);
+        box-shadow: -.3rem 0 .3rem rgba(var(--color-black), .2);
+    }
+
+    &__shape {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+
+        color: inherit;
+        text-decoration: none;
+        width: 7rem;
+        height: 3.5rem;
+        padding: .5rem;
+        background: linear-gradient(to right bottom, var(--color-mint-1), var(--color-mint-2));
+        border-radius: 1.8rem;
+        cursor: pointer;
+    }
+
+    &__circle {
+        background-color: var(--color-white);
+        height: 3rem;
+        width: 3rem;
+        border-radius: 50%;
+        cursor: pointer;
+        box-shadow: .3rem 0 .3rem rgba(var(--color-black), .2);
+        transition: all .5s;
+    }
+}
+

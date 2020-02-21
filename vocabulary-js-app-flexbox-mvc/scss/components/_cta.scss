@@ -1,0 +1,38 @@
+.cta {
+    &,
+    &:link,
+    &:visited {
+        color: var(--color-white);
+        background-color: var(--color-blue);
+        text-decoration: none;
+        display: inline-block;
+        padding: 1rem 2.5rem;
+        position: relative;
+        font-size: 1.5rem;
+        z-index: 1;
+
+        &:hover {
+            @media only screen and (min-width: 43.75em) {
+
+                color: var(--color-blue);
+
+                &::after { height: 100%; }
+            }
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 0;
+            width: 100%;
+            display: block;
+            transition: all .5s;
+            background-color: var(--color-white);
+            z-index: -1;
+        }
+
+        & i { margin-left: 1rem; }
+    }
+}
