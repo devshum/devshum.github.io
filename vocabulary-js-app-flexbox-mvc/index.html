@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Vocabulary App will help you improve your English and help me to practice some fundamental JS features and a MVC approach"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Vocabulary App(ES5)</title>
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;display=swap"/>
+    <link rel="stylesheet" href="css/main.compress.css"/>
+  </head>
+  <body> 
+    <!-- layouts(container)-->
+    <div class="container">
+      <div class="container__content">
+        <div class="container__profile">
+          <!-- components(btn)-->
+          <div class="btn mb-30px">
+            <input class="btn__checkbox" type="checkbox" name="theme" id="toggle"/>
+            <label class="btn__shape" for="toggle"><span class="btn__circle">&nbsp;</span></label>
+          </div>
+          <!-- components(user-panel)-->
+          <figure class="user-panel">
+            <div class="user-panel__header-box"><img src="img/user/header.jpg" alt="user header"/>
+              <div class="user-panel__picture-box"><img src="img/user/picture.jpg" alt="user picture"/></div>
+            </div>
+            <ul class="user-panel__text-box">
+              <!-- base(typography)-->
+              <li>
+                <h1 class="heading-primary pt-30px"><span>Vlad Shum</span><span>Learn English</span>
+                  <!-- components(cta)-->
+                </h1>
+              </li>
+              <li><a class="cta" href="#">Account<i class="icon ion-person"></i></a></li>
+            </ul>
+          </figure>
+          <h3 class="heading-secondary">%Date%</h3>
+        </div>
+        <main class="container__vocabulary">
+          <!-- components(vocabulary-panel)-->
+          <h2 class="heading-tertiary mb-30px">Total Words:<span class="heading-tertiary--number">12</span><span class="heading-tertiary--delete">Delete All<i class="icon ion-ios-trash"></i></span></h2>
+          <div class="vocabulary-panel"> 
+            <figure class="vocabulary-panel__add">
+              <input class="vocabulary-panel__add-from" type="text" placeholder="From eng"/>
+              <input class="vocabulary-panel__add-into" type="text" placeholder="Into rus"/>
+              <div class="vocabulary-panel__btn"><i class="icon ion-checkmark-circled"></i></div>
+            </figure>
+            <!--components(eye)-->
+            <div class="eye__hide mt-10px"><i class="icon ion-eye-disabled"></i></div>
+            <div class="eye__show mt-10px"><i class="icon ion-eye"></i></div>
+            <div class="vocabulary-panel__box"> 
+              <!-- components(item)-->
+              <!--ul.item#word-1.mt-10px
+              li 
+               .item__from Friend
+              li
+               .item__into Друг
+              li
+               button.item__delete 
+                 i.icon.ion-close-circled
+              -->
+            </div>
+          </div>
+        </main>
+        <!-- layouts(footer)-->
+        <footer class="footer">
+          <ul>
+            <li>Made by Vlad Shum<a href="#"><i class="icon ion-social-linkedin"></i></a><a href="#"><i class="icon ion-social-github"></i></a></li>
+            <li>@WORDS VOCABULARY APP(ES5)<i class="icon ion-heart"></i></li>
+          </ul>
+        </footer>
+      </div>
+    </div>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>
