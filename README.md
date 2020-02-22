@@ -6,7 +6,7 @@ Check the E-Mail newsletter on GMAIL | UKR.NET | MAIL.RU
 
 Check the E-Mail newsletter on GMAIL APP
 
-![Multiplex Demo (Mobile)](demo/multiplex-demo-app.mov)
+![Multiplex Demo (Mobile)](demo/multiplex-demo-app.gif)
 
 
 *The desing I took from my gmail
