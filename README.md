@@ -11,7 +11,7 @@ Check the E-Mail newsletter on GMAIL APP
 
 *The desing I took from my gmail
 
-![Schott Preview](preview/multiplex.jpg)
+![Multiplex Preview](preview/multiplex.jpg)
 
 ---------------------
 
