@@ -4,10 +4,11 @@ Check the E-Mail newsletter on GMAIL | UKR.NET | MAIL.RU
 
 ![Multiplex Demo (Desktop)](demo/multiplex-demo-desktop.gif)
 
-Check the E-Mail newsletter on GMAIL APP
+Check the E-Mail newsletter in GMAIL APP
 
 ![Multiplex Demo (Mobile)](demo/multiplex-demo-app.gif)
 
+This kind of markup involves huge efforts and concentration but the result lived up my expectations, because the newsletter looks good everywhere :)
 
 *The desing I took from my gmail SPAM :D
 
