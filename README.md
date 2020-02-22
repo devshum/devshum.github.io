@@ -1,6 +1,23 @@
+multiplex-newsletter-table | https://devshum.github.io/multiplex-newsletter-table/
+
+Check the E-Mail newsletter on GMAIL | UKR.NET | MAIL.RU
+
+![Multiplex Demo (Desktop)](demo/multiplex-demo-desktop.gif)
+
+Check the E-Mail newsletter on GMAIL APP
+
+![Multiplex Demo (Mobile)](demo/multiplex-demo-app.mov)
+
+
+*The desing I took from my gmail
+
+![Schott Preview](preview/multiplex.jpg)
+
+---------------------
+
 schott-newsletter-table | https://devshum.github.io/schott-newsletter-table/
 
-Check the E-Mail newsletter GMAIL | UKR.NET | MAIL.RU
+Check the E-Mail newsletter on GMAIL | UKR.NET | MAIL.RU
 
 ![Schott Demo](demo/schott-demo.gif)
 
