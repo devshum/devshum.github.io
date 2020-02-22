@@ -9,7 +9,7 @@ Check the E-Mail newsletter on GMAIL APP
 ![Multiplex Demo (Mobile)](demo/multiplex-demo-app.gif)
 
 
-*The desing I took from my gmail
+*The desing I took from my gmail SPAM :D
 
 ![Multiplex Preview](preview/multiplex.jpg)
 
