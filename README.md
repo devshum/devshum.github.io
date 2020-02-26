@@ -1,4 +1,4 @@
-vocabulary-js-app-flexbox | https://devshum.github.io/vocabulary-js-app-flexbox/
+vocabulary-js-app-flexbox-mvc | https://devshum.github.io/vocabulary-js-app-flexbox-mvc/
 
 ![Vocabulary Demo](demo/vocabulary-demo.gif)
 
