@@ -9,7 +9,7 @@ Also this project has a switch button, which changes the color theme thanks to a
 *The desing is mine
 
 ![Vocabulary Preview](preview/vocabulary.jpg)
-MVC map
+
 ![Vocabulary MVC Preview](preview/vocabulay-mvc.jpg)
 
 ---------------------
