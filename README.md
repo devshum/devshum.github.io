@@ -7,7 +7,7 @@ vocabulary-js-app-flexbox | https://devshum.github.io/vocabulary-js-app-flexbox/
 *The desing is mine
 
 ![Vocabulary Preview](preview/vocabulary.jpg)
-![Vocabulary MVC Preview](preview/vocabulay-mvc.jpg
+![Vocabulary MVC Preview](preview/vocabulay-mvc.jpg)
 
 ---------------------
 
