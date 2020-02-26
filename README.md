@@ -1,4 +1,4 @@
-multiplex-newsletter-table | https://devshum.github.io/vocabulary-js-app-flexbox/
+vocabulary-js-app-flexbox | https://devshum.github.io/vocabulary-js-app-flexbox/
 
 ![Vocabulary Demo](demo/vocabulary-demo.gif)
 
