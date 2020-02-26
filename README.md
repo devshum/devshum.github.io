@@ -1,3 +1,16 @@
+vocabulary-js-app-flexbox | https://devshum.github.io/vocabulary-js-app-flexbox/
+
+![Vocabulary Demo](demo/vocabulary-demo.gif)
+
+
+
+*The desing is mine
+
+![Vocabulary Preview](preview/vocabulary.jpg)
+![Vocabulary MVC Preview](preview/vocabulary-mvc.jpg)
+
+---------------------
+
 multiplex-newsletter-table | https://devshum.github.io/multiplex-newsletter-table/
 
 Check the E-Mail newsletter on GMAIL | UKR.NET | MAIL.RU
