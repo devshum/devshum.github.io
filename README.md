@@ -1,12 +1,15 @@
-vocabulary-js-app-flexbox | https://devshum.github.io/vocabulary-js-app-flexbox/
+vocabulary-js-app-flexbox-mvc | https://devshum.github.io/vocabulary-js-app-flexbox-mvc/
 
 ![Vocabulary Demo](demo/vocabulary-demo.gif)
 
+In this work I practiced object oriented programming approach thanks to IIFE because I used ES5 syntax, I know the difference between ES5 and ES6 and if I use ES6 I will take the advantage of simple {} because let and const are block-scoped in contrast to var(function scoped).
 
+Also this project has a switch button, which changes the color theme thanks to a :root variable approach.
 
 *The desing is mine
 
 ![Vocabulary Preview](preview/vocabulary.jpg)
+MVC map
 ![Vocabulary MVC Preview](preview/vocabulay-mvc.jpg)
 
 ---------------------
