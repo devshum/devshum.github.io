@@ -1,3 +1,14 @@
+oscar-flexbox-mobile-first | https://devshum.github.io/oscar-flexbox-mobile-first
+
+![Oscar Demo](demo/oscar-demo.gif)
+
+
+*The desing is from a real oscars web-site(remade)
+
+![Oscar Preview](preview/oscar.jpg)
+
+---------------------
+
 vocabulary-js-app-flexbox-mvc | https://devshum.github.io/vocabulary-js-app-flexbox-mvc/
 
 ![Vocabulary Demo](demo/vocabulary-demo.gif)
