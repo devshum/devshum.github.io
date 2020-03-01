@@ -1,17 +1,8 @@
-var navMob;
-var navHide;
-var burger;
-var burgerList;
+const navMob = document.querySelector('.header__nav-btn');
+const navHide = document.querySelector('.header__nav-hide');
+const burger = document.querySelector('.burger');
+const burgerList = document.querySelector('.burger__list');
 
-navMob = document.querySelector('.header__nav-mob');
-navHide = document.querySelector('.header__nav-hide');
-burger = document.querySelector('.burger');
-burgerList = document.querySelector('.burger__list');
+navMob.addEventListener('click', () => navHide.classList.toggle('active'));
 
-navMob.addEventListener('click', function() {
-    navHide.classList.toggle('active');
-});
-
-burger.addEventListener('click', function() {
-    burgerList.classList.toggle('burger__active');
-});
+burger.addEventListener('click', () => burgerList.classList.toggle('burger__active'));

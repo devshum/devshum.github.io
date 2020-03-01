@@ -1,8 +1,11 @@
 .header {
-    display: grid;
-    grid-auto-flow: column;
-    justify-content: space-between;
-    align-items: center;
+
+    nav {
+        display: grid;
+
+        height: 100%;
+    }
+
     grid-column: full-start / full-end;
     
     color: $color-white;
@@ -11,24 +14,31 @@
     padding-left: 4vw;
 
     &__nav-mob { 
-        display: block;
+        display: grid;
+        grid-auto-flow: column;
+        justify-content: space-between;
+        align-items: center;
+
         cursor: pointer;
-        
+    }
+
+    &__nav-btn {
         @include respond(phone) { font-size: 2.5rem; }
         @include respond(tab-port) { display: none; }
     }
 
     &__nav-hide { 
-        display: none;
         text-transform: uppercase;
+        visibility: visible;
         position: absolute;
+        opacity: 1;
         left: 4vw;
         top: 12vh;
+        transition: all .5s ease;
 
         @include respond(phone) { top: 14vh; }
 
         @include respond(tab-port) { 
-            display: block; 
             position: inherit;
             top: inherit;
         }
@@ -60,4 +70,12 @@
 }
 
 // JS
-.active { display: block; }
+.active { 
+    visibility: hidden;
+    opacity: 0;
+
+    @include respond(tab-port) { 
+        opacity: 1; 
+        visibility: visible
+    }
+}

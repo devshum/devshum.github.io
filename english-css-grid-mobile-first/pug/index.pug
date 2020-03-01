@@ -20,27 +20,29 @@ html(lang="en")
      .grid-container 
       //layouts (header)
       header.header
-       .header__nav-mob Navigation
        nav
-        ul.header__nav-hide
-         li.header__item
-          a(href="#").header__link Regular verbs
-         li.header__item
-          a(href="#").header__link Irregular verbs
-         li.header__item
-          a(href="#").header__link Prepositions
-         li.header__item
-          a(href="#").header__link Adjectives
-         li.header__item
-          a(href="#").header__link Nouns
-        //components (burger-menu)
-       .burger
-        ul.burger__list
-         li.burger__item
-          a(href="#").burger__link About the project 
-         li.burger__item
-          a(href="#").burger__link.mt-30px Owners 
-        span &nbsp;
+        .header__nav-mob 
+         .header__nav-btn Navigation
+         ul.header__nav-hide
+          li.header__item
+           a(href="#").header__link Regular verbs
+          li.header__item
+           a(href="#").header__link Irregular verbs
+          li.header__item
+           a(href="#").header__link Prepositions
+          li.header__item
+           a(href="#").header__link Adjectives
+          li.header__item
+           a(href="#").header__link Nouns
+          li.header__item
+          //components (burger-menu)
+         .burger
+          ul.burger__list
+           li.burger__item
+            a(href="#").burger__link About the project 
+           li.burger__item
+            a(href="#").burger__link.mt-30px Owners 
+          span &nbsp;
       //layouts (intro)
       section.intro 
        .intro__text-box

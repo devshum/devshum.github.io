@@ -109,11 +109,14 @@ body {
       .burger span::after {
         bottom: 1rem; } }
   .burger__list {
-    display: none;
+    display: grid;
     justify-items: center;
     align-content: center;
-    position: absolute;
+    visibility: hidden;
+    opacity: 0;
     background-color: #fff;
+    transition: all .5s ease;
+    position: absolute;
     height: 100vh;
     width: 50%;
     left: 0;
@@ -129,7 +132,8 @@ body {
       .burger__link:link, .burger__link:visited {
         font-size: 2.2rem; } }
   .burger__active {
-    display: grid; }
+    visibility: visible;
+    opacity: 1; }
 
 .grid-container {
   display: grid;
@@ -141,36 +145,39 @@ body {
       grid-template-rows: 7.5rem calc(100vh - 7.6rem); } }
 
 .header {
-  display: grid;
-  grid-auto-flow: column;
-  justify-content: space-between;
-  align-items: center;
   grid-column: full-start / full-end;
   color: #fff;
   font-weight: 700;
   background-color: #333;
   padding-left: 4vw; }
+  .header nav {
+    display: grid;
+    height: 100%; }
   .header__nav-mob {
-    display: block;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    align-items: center;
     cursor: pointer; }
-    @media only screen and (min-width: 40em) {
-      .header__nav-mob {
-        font-size: 2.5rem; } }
-    @media only screen and (min-width: 61.25em) {
-      .header__nav-mob {
-        display: none; } }
+  @media only screen and (min-width: 40em) {
+    .header__nav-btn {
+      font-size: 2.5rem; } }
+  @media only screen and (min-width: 61.25em) {
+    .header__nav-btn {
+      display: none; } }
   .header__nav-hide {
-    display: none;
     text-transform: uppercase;
+    visibility: visible;
     position: absolute;
+    opacity: 1;
     left: 4vw;
-    top: 12vh; }
+    top: 12vh;
+    transition: all .5s ease; }
     @media only screen and (min-width: 40em) {
       .header__nav-hide {
         top: 14vh; } }
     @media only screen and (min-width: 61.25em) {
       .header__nav-hide {
-        display: block;
         position: inherit;
         top: inherit; } }
   .header__item {
@@ -189,7 +196,12 @@ body {
         color: #fff; } }
 
 .active {
-  display: block; }
+  visibility: hidden;
+  opacity: 0; }
+  @media only screen and (min-width: 61.25em) {
+    .active {
+      opacity: 1;
+      visibility: visible; } }
 
 .intro {
   display: grid;
