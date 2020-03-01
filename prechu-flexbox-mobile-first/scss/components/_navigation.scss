@@ -1,34 +1,39 @@
 .nav {
-    display: none;
-    align-items: center;
-    justify-content: center;
-
-    text-align: center;
-    position: absolute;
-    top: 7rem;
-    left: 0;
-    width: 100%;
-    height: calc(100vh - 7rem);
-    background-color: $color-gray-light;
     z-index: 1000;
 
-    @include respond(tab-port) { 
-        display: flex; 
+    &__list { 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
 
-        position: initial;
-        width: initial;
-        height: initial;
-        background-color: initial;
+        opacity: 0;
+        visibility: hidden;
+        transition: all .5s ease;
+        
+        background-color: $color-white;
+        position: absolute;
+        padding: 1rem;
+        width: 100%;
+        top: 7rem;
+        left: 0;
+
+        @include respond(tab-port) { 
+            opacity: 1;
+            visibility: visible; 
+
+            position: initial;
+            width: initial;
+            height: initial;
+            background-color: initial;
+        }
     }
 
-    &__list { list-style: none; }
-
     &__item { 
+        display: inline-block;
         position: relative;
 
         @include respond(tab-port) { 
-            display: inline-block; 
-
             &:hover {
                 &::after { background: $color-blue; }
             }
@@ -37,7 +42,7 @@
         &::after {
             content: '';
             position: absolute;
-            bottom: -2.8rem;
+            bottom: -3rem;
             background: transparent;
             width: 100%;
             height: .4rem;
@@ -46,9 +51,7 @@
         }
 
         &:not(:last-child) { 
-            margin-bottom: 1rem; 
-
-            @include respond(tab-port) { margin: 0 1rem 0; }
+            margin-right: 2rem; 
         }
     }
 
@@ -86,6 +89,7 @@
         width: 3rem;
         background: $color-white;
         position: absolute;
+        transition: $transition;
     }
 
     & span {
@@ -102,14 +106,15 @@
 }
 
 // JS
-.active { display: flex; }
+.active { 
+    opacity: 1;
+    visibility: visible;
+}
 
 .burger-close {
-    & span,
-    & span::before,
-    & span::after { transition: $transition; }
-
-    & span { background-color: transparent; }
+    & span { 
+        background-color: transparent;
+    }
 
     & span::before { 
         top: 0;
