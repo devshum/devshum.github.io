@@ -1,0 +1,39 @@
+.footer {
+    background-color: $color-gray-2;
+    padding: 3rem 2rem;
+
+    @include respond(tab-port) { padding: 5rem 3rem; }
+
+    &__list { 
+        list-style: none;
+        font-size: 2rem;
+        list-style: none;
+
+        li {
+            margin-bottom: 1rem;
+
+            @include respond(tab-port) { 
+                display: inline-block; 
+
+                &:not(:last-child) {
+                    margin-right: 1rem;
+                }
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: $color-gray-dark;
+            transition: all .5s;
+
+            &:hover { 
+                color: $color-gold; 
+
+                @media only screen and (max-width: 47.75em),
+                       only screen and (hover: none) { 
+                    color: $color-gray-dark;
+                }
+            }
+        }
+    }
+}

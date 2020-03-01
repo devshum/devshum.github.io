@@ -1,0 +1,125 @@
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: all .5s;
+    background-color: $color-white;
+    z-index: 2;
+
+    &__top { 
+        display: flex;
+        justify-content: space-between;
+
+        padding: 2rem; 
+
+        @include respond(tab-port) { align-items: center; }
+    }
+
+    &__logo-box img,
+    &__bottom img { height: 3rem; }
+
+    &__abc {
+        padding-right: 2rem;
+        border-right: solid .1rem $color-gray;
+    }
+
+    &__oscar { padding-left: 2rem; }
+
+    &__logo-box {
+        list-style: none;
+
+        li { display: inline-block; }
+    }
+
+    &__nav {
+        position: absolute;
+        right: 0;
+        top: 7.4rem;
+        background-color: $color-white;
+        z-index: 1;
+        padding: 3.5rem 3.5rem 0 3.5rem;
+        text-align: right;
+        width: 100%;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 1s;
+        list-style: none;
+        transform: translateY(-10rem);
+
+        @include respond(tab-port) {
+            opacity: 1; 
+            visibility: visible;
+            position: initial;
+            background-color: initial;
+            transform: initial;
+            padding: initial;
+        }
+
+        li {
+            margin: 0 2rem 2rem 0;
+            display: inline-block;
+
+            @include respond(tab-port) { margin: 0 0 0 2rem; }
+        }
+
+        a,
+        a::after { transition: all .5s; }
+
+        a {
+            display: inline-block;
+            color: $color-gray-dark;
+            text-decoration: none;
+            position: relative;
+
+            &:hover {
+                color: $color-black;
+
+                &::after { opacity: 1; }
+
+                @media only screen and (max-width: 47.75em),
+                       only screen and (hover: none) { 
+                    color: $color-gray-dark;
+
+                    &::after { opacity: 0; }
+                }
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                display: block;
+                width: 100%;
+                height: .2rem;
+                background: $color-gold;
+                top: 4.5rem;
+                opacity: 0;
+            }
+        }
+    }
+
+    &__bottom {
+        background-color: $color-gray;
+        padding: 2rem 0;
+        text-align: center;
+
+        @include respond(tab-port) { 
+            display: flex;
+            justify-content: space-between;
+            padding: 2rem
+        }
+    }
+
+    &__icon-box {
+        display: none;
+
+        @include respond(tab-port) { display: flex; }
+    }
+}
+
+//JS
+.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
