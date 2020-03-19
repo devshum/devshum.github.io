@@ -2,6 +2,9 @@ oscar-flexbox-mobile-first | https://devshum.github.io/oscar-flexbox-mobile-firs
 
 ![Oscar Demo](demo/oscar-demo.gif)
 
+Here's a mobile-first markup, I see only the advantages and the pros of this convenient approach. There is no need to expain that without doubt we have to use a robust mobile-first approach more and more. I experience true happines when I use this one.
+
+This markup contains a cool header effect, a consistent scss structure, smooth animations(as usual), a menu etc, check it =)
 
 *The desing is from a real oscars web-site(remade)
 
