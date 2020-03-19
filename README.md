@@ -2,7 +2,6 @@ quiz-js-app-flexbox-mvc-es6-modules | https://devshum.github.io/quiz-js-app-flex
 
 ![Quiz Demo](demo/quiz-demo.gif)
 
-
 *The desing is from Udemy 
 
 ![Quiz Preview](preview/quiz.jpg)
