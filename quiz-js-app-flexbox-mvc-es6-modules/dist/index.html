@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Simple quiz, check your knowledge greatly!"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;display=swap"/>
+    <link rel="stylesheet" href="css/style.compress.css"/>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <title>Udemy &ndash; HTML | Quiz</title>
+  </head>
+  <body>
+    <body>
+      <!-- sprites-->
+      <svg style="display: none;">
+        <!-- sprite 1 -->
+        <symbol id="correct">
+          <g> 
+            <path d="M13.648 7.362c-0.133-0.355 3.539-3.634 1.398-6.291-0.501-0.621-2.201 2.975-4.615 4.603-1.332 0.898-4.431 2.81-4.431 3.867v6.842c0 1.271 4.914 2.617 8.648 2.617 1.369 0 3.352-8.576 3.352-9.938 0-1.368-4.221-1.344-4.352-1.7zM5 7.457c-0.658 0-3 0.4-3 3.123v4.848c0 2.721 2.342 3.021 3 3.021 0.657 0-1-0.572-1-2.26v-6.373c0-1.768 1.657-2.359 1-2.359z"></path>
+          </g>
+        </symbol>
+        <!-- sprite 2 -->
+        <symbol id="wrong">
+          <g> 
+            <path d="M6.352 12.638c0.133 0.356-3.539 3.634-1.397 6.291 0.501 0.621 2.201-2.975 4.615-4.602 1.331-0.899 4.43-2.811 4.43-3.868v-6.842c0-1.271-4.914-2.617-8.648-2.617-1.369 0-3.352 8.576-3.352 9.939 0 1.367 4.221 1.343 4.352 1.699zM15 12.543c0.658 0 3-0.4 3-3.123v-4.848c0-2.721-2.342-3.021-3-3.021-0.657 0 1 0.572 1 2.26v6.373c0 1.768-1.657 2.359-1 2.359z"></path>
+          </g>
+        </symbol>
+        <!-- sprite 3 -->
+        <symbol id="know">
+          <g> 
+            <path d="M8.294 16.998c-0.435 0-0.847-0.203-1.111-0.553l-3.573-4.721c-0.465-0.613-0.344-1.486 0.27-1.951 0.615-0.467 1.488-0.344 1.953 0.27l2.351 3.104 5.911-9.492c0.407-0.652 1.267-0.852 1.921-0.445s0.854 1.266 0.446 1.92l-6.984 11.21c-0.242 0.391-0.661 0.635-1.12 0.656-0.022 0.002-0.042 0.002-0.064 0.002z"></path>
+          </g>
+        </symbol>
+        <!-- sprite 4 -->
+        <symbol id="skip">
+          <g> 
+            <path d="M19.315 10h-2.372v-0.205c-0.108-4.434-3.724-7.996-8.169-7.996-4.515 0-8.174 3.672-8.174 8.201s3.659 8.199 8.174 8.199c1.898 0 3.645-0.65 5.033-1.738l-1.406-1.504c-1.016 0.748-2.27 1.193-3.627 1.193-3.386 0-6.131-2.754-6.131-6.15s2.745-6.15 6.131-6.15c3.317 0 6.018 2.643 6.125 5.945v0.205h-2.672l3.494 3.894 3.594-3.894z"></path>
+          </g>
+        </symbol>
+        <!-- sprite 5 -->
+        <symbol id="revise">
+          <g> 
+            <path d="M14.348 14.849c-0.469 0.469-1.229 0.469-1.697 0l-2.651-3.030-2.651 3.029c-0.469 0.469-1.229 0.469-1.697 0-0.469-0.469-0.469-1.229 0-1.697l2.758-3.15-2.759-3.152c-0.469-0.469-0.469-1.228 0-1.697s1.228-0.469 1.697 0l2.652 3.031 2.651-3.031c0.469-0.469 1.228-0.469 1.697 0s0.469 1.229 0 1.697l-2.758 3.152 2.758 3.15c0.469 0.469 0.469 1.229 0 1.698z"></path>
+          </g>
+        </symbol>
+        <!-- sprite 6 -->
+        <symbol id="info">
+          <g> 
+            <path d="M18.69 12.344l-1.727-1.538c-0.5-0.445-0.5-1.174 0-1.619l1.727-1.539c0.5-0.445 0.367-0.859-0.296-0.924l-2.29-0.217c-0.662-0.062-1.020-0.633-0.791-1.266l1.215-3.383c0.228-0.635-0.051-0.865-0.619-0.514l-2.701 1.67c-0.568 0.354-1.303 0.16-1.631-0.426l-0.978-1.746c-0.329-0.588-0.872-0.59-1.207-0.008l-0.909 1.58c-0.337 0.585-1.108 0.833-1.713 0.556l-1.6-0.734c-0.608-0.28-1.073 0.042-1.037 0.716l0.086 1.615c0.037 0.674-0.461 1.367-1.104 1.541l-1.545 0.414c-0.642 0.174-0.76 0.68-0.26 1.125l1.727 1.539c0.5 0.445 0.5 1.174 0 1.619l-1.727 1.539c-0.5 0.445-0.368 0.877 0.293 0.957l2.095 0.254c0.661 0.080 1.029 0.67 0.818 1.311l-1.074 3.258c-0.211 0.641 0.090 0.889 0.668 0.555l2.463-1.426c0.578-0.334 1.356-0.15 1.729 0.408l1.022 1.539c0.372 0.559 0.931 0.529 1.24-0.068l0.899-1.733c0.31-0.598 1.052-0.842 1.648-0.543l1.734 0.867c0.598 0.297 1.057-0.010 1.021-0.682l-0.087-1.617c-0.035-0.674 0.461-1.365 1.106-1.539l1.543-0.416c0.644-0.174 0.762-0.68 0.262-1.125zM11 14h-2v-2h2v2zM11 11h-2v-5h2v5z"></path>
+          </g>
+        </symbol>
+      </svg>
+      <!-- layouts(container)-->
+      <header class="header">
+        <h3 class="mb-10px">Complete the quiz to see your results.</h3>
+        <p class="header__summary">You got 5 out of 10 correct on the first attempt. 2 questions are skipped.</p>
+      </header>
+      <div class="container">
+        <div class="container__intro">
+          <!-- base(typography)-->
+          <div class="container__text-box">
+            <h1>HTML Quiz</h1>
+            <p class="container__paragraph">10 questions</p>
+          </div>
+          <!-- components(btn)-->
+          <a class="btn btn--start">Start the quiz</a>
+        </div>
+        <div class="container__results"></div>
+        <main class="container__main"></main>
+      </div>
+      <!-- layouts(footer)-->
+      <footer class="footer">
+        <span class="footer__label">Question 1 of 10</span>
+        <div class="footer__btn-box">
+          <!-- components(btn)-->
+          <a class="btn btn--last">Skip the last question</a>
+          <!-- components(btn)-->
+          <a class="btn btn--skip">Skip question</a>
+          <!-- components(btn)-->
+          <a class="btn btn--check">Check answer</a>
+          <!-- components(btn)-->
+          <a class="btn btn--next">Next Question</a>
+          <!-- components(btn)-->
+          <a class="btn btn--result">See the result</a>
+          <!-- components(btn)-->
+          <a class="btn btn--retry">Retry</a>
+        </div>
+      </footer>
+    <script type="text/javascript" src="js/bundle.js"></script></body>
+  </html>
