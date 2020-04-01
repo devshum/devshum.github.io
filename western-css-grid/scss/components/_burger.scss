@@ -1,0 +1,25 @@
+.burger { 
+    display: flex;
+    align-items: center;
+
+    height: 1.8rem;
+    width: 2rem;
+    position: relative;
+    cursor: pointer;
+
+    span,
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        display: block;
+        background: $color-primary;
+        width: 100%;
+        height: .2rem;
+    }
+
+    &::before { transform: translateY(-.8rem) ;}
+
+    &::after { transform: translateY(.8rem) ;}
+}

@@ -1,0 +1,37 @@
+.form {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 4rem;
+
+    &__input,
+    &__btn { border: none; }
+
+    &__input { 
+        padding: 1rem 2rem 1rem 1rem; 
+
+        &:focus + .form__btn svg {
+            fill: $color-black;
+            transform: rotate(90deg)
+        }
+    }
+
+    &__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all .4s;
+
+        background-color: $color-red-muted;
+        cursor: pointer;
+
+        &:hover { background-color: lighten($color-red-muted, 20%); }
+
+        svg { 
+            fill: $color-white;
+            height: 2.2em;
+            width: 1rem;
+            transition: all .3s;
+        }
+    }
+}
+
