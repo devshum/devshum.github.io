@@ -24,6 +24,7 @@
 
             a { 
                 transition: all .3s;
+                margin-left: 1rem;
                 
                 &:link,
                 &:visited { color: var(--color-gray); }
@@ -31,9 +32,10 @@
                 &:hover { color: var(--color-white); }
             }
 
-            i { 
-                font-size: 2rem;
-                margin-left: 1rem; 
+            svg { 
+                fill: var(--color-white); 
+                height: 2rem;
+                width: 2rem;
             }
         }
     }

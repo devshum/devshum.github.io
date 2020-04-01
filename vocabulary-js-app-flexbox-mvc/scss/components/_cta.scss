@@ -2,10 +2,14 @@
     &,
     &:link,
     &:visited {
+        display: flex;        
+        align-items: center;
+        justify-content: center;
+
+        margin: 0 4rem;
         color: var(--color-white);
         background-color: var(--color-blue);
         text-decoration: none;
-        display: inline-block;
         padding: 1rem 2.5rem;
         position: relative;
         font-size: 1.5rem;
@@ -33,6 +37,11 @@
             z-index: -1;
         }
 
-        & i { margin-left: 1rem; }
+        & svg { 
+            margin-left: 1rem;
+            fill: var(--color-mint-1);
+            height: 1.8rem;
+            width: 1.8rem;
+        }
     }
 }

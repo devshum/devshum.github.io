@@ -113,13 +113,18 @@ body {
     color: var(--color-mint-1);
     margin: 0 auto 0 .5rem; }
   .heading-tertiary--delete {
+    display: flex;
+    align-items: center;
     color: var(--color-red);
     cursor: pointer; }
-    .heading-tertiary--delete:hover i {
+    .heading-tertiary--delete:hover svg {
       margin-left: 1rem; }
-    .heading-tertiary--delete i {
+    .heading-tertiary--delete svg {
+      fill: var(--color-red);
       margin-left: .5rem;
-      transition: all .2s; }
+      transition: all .2s;
+      height: 1.8rem;
+      width: 1.8rem; }
 
 .pt-30px {
   padding-top: 3rem; }
@@ -174,8 +179,10 @@ body {
     cursor: pointer; }
     .vocabulary-panel__btn:active {
       transform: translateY(0.2rem); }
-    .vocabulary-panel__btn i {
-      font-size: 3rem; }
+    .vocabulary-panel__btn svg {
+      fill: var(--color-black);
+      height: 2.8rem;
+      width: 2.8rem; }
 
 .user-panel,
 .user-panel__picture-box {
@@ -244,10 +251,13 @@ body {
       transform: translateY(-0.2rem); }
 
 .cta, .cta:link, .cta:visited {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 4rem;
   color: var(--color-white);
   background-color: var(--color-blue);
   text-decoration: none;
-  display: inline-block;
   padding: 1rem 2.5rem;
   position: relative;
   font-size: 1.5rem;
@@ -268,8 +278,11 @@ body {
     transition: all .5s;
     background-color: var(--color-white);
     z-index: -1; }
-  .cta i, .cta:link i, .cta:visited i {
-    margin-left: 1rem; }
+  .cta svg, .cta:link svg, .cta:visited svg {
+    margin-left: 1rem;
+    fill: var(--color-mint-1);
+    height: 1.8rem;
+    width: 1.8rem; }
 
 .btn, .btn:link, .btn:visited {
   display: flex;
@@ -319,11 +332,15 @@ body {
   opacity: .2; }
 
 .eye__show {
-  display: none; }
+  display: none;
+  cursor: pointer; }
 
 .eye__hide, .eye__show {
   justify-content: center;
   font-size: 4rem; }
+  .eye__hide svg, .eye__show svg {
+    width: 2.8rem;
+    height: 2.8rem; }
 
 .active {
   cursor: pointer;
@@ -381,11 +398,13 @@ body {
       display: flex;
       align-items: center; }
       .footer ul li a {
-        transition: all .3s; }
+        transition: all .3s;
+        margin-left: 1rem; }
         .footer ul li a:link, .footer ul li a:visited {
           color: var(--color-gray); }
         .footer ul li a:hover {
           color: var(--color-white); }
-      .footer ul li i {
-        font-size: 2rem;
-        margin-left: 1rem; }
+      .footer ul li svg {
+        fill: var(--color-white);
+        height: 2rem;
+        width: 2rem; }

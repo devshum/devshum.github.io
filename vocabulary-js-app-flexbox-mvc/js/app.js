@@ -22,6 +22,10 @@ var dataController = (function() {
         totals: []
     };
 
+    var persistData = function() {
+        localStorage.setItem('words', JSON.stringify(data.allWords));
+    };
+
     return {
         addWord: function(from, into) {
             var newWord, ID;
@@ -38,6 +42,9 @@ var dataController = (function() {
 
             // Push into data 
             data.allWords.push(newWord);
+
+            // Persist data in localStorage
+            persistData();
 
             // Return
             return newWord;
@@ -68,14 +75,23 @@ var dataController = (function() {
             index = ids.indexOf(id);
 
             data.allWords.splice(index, 1);
-        }
 
-        // test: function() {
-        //     console.log(data);
-        // },
+            // Persist data in localStorage
+            persistData();
+        },
+
+        readStorage: function() {
+            var storage = JSON.parse(localStorage.getItem('words'));
+            if (storage) data.allWords = storage;
+        },
+
+        test: function() {
+            console.log(data.allWords);
+        },
     };
 
 })();
+
 
 // UI CONTROLLER
 var UIController = (function() {
@@ -259,11 +275,6 @@ var controller = (function(dataCtrl, UIctrl) {
         wordID = e.target.parentNode.parentNode.parentNode.id;
 
         if (wordID) {
-
-            // // word-1 = ['word', '1']
-            // splitID = wordID.split('-');
-            // // = '1'
-            // ID = parseInt(splitID[1]);
 
             // 1. delete the item from the data
             dataCtrl.deleteWord();

@@ -56,7 +56,11 @@
         
         &:active { transform: translateY(.2rem); }
 
-        i {  font-size: 3rem; }
+        svg { 
+            fill: var(--color-black);
+            height: 2.8rem;
+            width: 2.8rem;
+        }
     }
 }
 
