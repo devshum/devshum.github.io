@@ -1,0 +1,80 @@
+.intro {
+    background-color: $color-white;
+    position: relative;
+
+    grid-column: full-start / full-end;
+
+    &__text-box { 
+        animation: fadeBottom 1s .2s; 
+        animation-fill-mode: backwards;
+    }
+
+    &__text-box {
+        color: $color-white;
+        text-align: center;
+        position: absolute;
+        left: 50%;
+        top: 65%;
+        transform: translate(-50%, -65%);
+        z-index: 1;
+
+        @include respond(phone) {
+           display: grid;
+           grid-auto-flow: column;
+           align-items: center;
+
+           width: 90%;
+           column-gap: 4rem;
+        }
+    }
+
+    &__slider,
+    &__img { height: 100%; }
+
+    &__img {
+        display: block;
+        width: 100%;
+        animation: fadeUp 1s;
+    }
+
+    &__paragraph { 
+        font-size: 1.8rem;
+        font-weight: 400; 
+
+        @include respond(tab-land) { font-size: 1.4rem; }
+
+        @include respond(phone) { display: none; }
+    }
+
+    &__btn-box {
+        display: flex;
+
+        position: absolute;
+        bottom: 2rem;
+        left: 4rem;
+
+        @include respond(phone) {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &__slider-btn {
+        height: 1.5rem;
+        width: 1.5rem;
+        background-color: rgba($color-white, .4);
+        border-radius: 50%;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        transition: all .5s;
+
+        &:first-child,
+        &:hover { background-color: $color-white; }
+        
+        &::-moz-focus-inner { border: 0; }
+        
+        &:not(:last-child) { margin-right: 2rem}
+    }
+}
+

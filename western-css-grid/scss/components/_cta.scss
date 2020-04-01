@@ -1,0 +1,21 @@
+.cta {
+    &,
+    &:link,
+    &:visited {
+        color: $color-red;
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: 700;
+        display: inline-block;
+        text-transform: uppercase;
+        padding: 1rem 2rem;
+        border: solid .3rem $color-red;
+        transition: all .3s;
+        animation: fadeUp 1s;
+
+        &:hover { 
+            color: $color-white;
+            background-color: $color-red; 
+        }
+    }
+}

@@ -1,0 +1,12 @@
+.grid-container {
+    display: grid;
+    grid-template-rows: 36vw;
+    grid-template-columns: [sidebar-start] 4rem [sidebar-end full-start] minmax(4rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 17.5rem) [col-end]) [center-end] minmax(4rem, 1fr) [full-end];
+
+    @include respond(tab-port) {
+        grid-template-rows: 60vw;
+        grid-template-columns: [full-start] minmax(4rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 17.5rem) [col-end]) [center-end] minmax(4rem, 1fr) [full-end];
+    }
+
+    @include respond(phone) { grid-template-rows: 72vw; }
+}

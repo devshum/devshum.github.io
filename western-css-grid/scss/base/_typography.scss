@@ -1,0 +1,81 @@
+body {
+    color: $color-primary;
+    font-family: $font-roboto;
+    font-size: 1.6rem;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    letter-spacing: .1rem;
+    animation: fadeIn 2s;
+    position: relative;
+}
+
+h1, h2, h4, h5 { text-transform: uppercase; }
+
+.heading-primary,
+.heading-secondary,
+.heading-quaternary {
+    &--main,
+    &--sub { display: block; }
+}
+
+.heading-primary { 
+    &--main { 
+        font-size: 3.6rem; 
+        margin-bottom: 1rem;
+
+        @include respond(tab-land) { font-size: 2.6rem; }
+
+        @include respond(phone) {
+            font-size: 2.2rem;
+            margin-bottom: 0;
+        }
+    } 
+
+    &--sub { 
+        font-size: 2rem; 
+        margin-bottom: .5rem;
+
+        @include respond(tab-land) { font-size: 1.4rem; }
+
+        @include respond(phone) { font-size: 1rem; }
+    }
+}
+.heading-secondary { 
+    font-size: 2rem; 
+
+    &--main {
+        font-size: 4rem;
+        font-weight: 300;
+    }
+
+    &--sub {
+        font-size: 1.6rem;
+        color: $color-red-muted;
+    }
+
+    @include respond(tab-land) { font-size: 1.6rem; }
+
+    @include respond(phone) { font-size: 1.2rem; }
+}
+
+.heading-quaternary {
+    &--main { 
+        font-weight: 100; 
+        margin-bottom: .5rem;
+    }
+
+    &--sub { 
+        font-size: 1rem;
+        color: $color-red;
+        margin-bottom: .5rem; 
+    }
+}
+
+h5 {
+    font-size: 2.5rem;
+    color: $color-black;
+    letter-spacing: .5rem;
+
+    @include respond(tab-land) { font-size: 1.8rem; }
+}
+

@@ -1,0 +1,116 @@
+.footer {
+    color: $color-white;
+    font-weight: 400;
+    background-color: $color-black;
+    padding: 6rem 4rem 2rem;
+    
+    grid-column: full-start / full-end;
+
+    display: grid;
+    column-gap: 2rem;
+    row-gap: 10rem;
+    grid-template-columns: repeat(4, 1fr) 30%;
+
+    @include respond(tab-land) {
+        row-gap: 5rem;
+        column-gap: 1rem;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    @include respond(tab-port) {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 4rem 3rem 5rem 3rem;
+    }
+
+    &__list,
+    &__loop,
+    &__icon-box { list-style: none; }
+
+    &__item,
+    &__loop-item {
+        
+        &:first-child { 
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    }
+
+    &__item {
+        margin-bottom: 1.5rem;
+
+        &:first-child { margin-bottom: 3rem; }
+
+        & a {
+            color: inherit;
+            text-decoration: none;
+        }
+    }
+
+    &__loop {
+        display: grid;
+        grid-template-rows: repeat(3, min-content);
+        align-items: center;
+        row-gap: 3rem;
+
+        @include respond(tab-land) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-column: 1 / -1;
+        }
+
+        @include respond(tab-port) {
+            grid-template-rows: 1fr;
+            grid-template-columns: 1fr;
+            column-gap: 3rem;
+        }
+    }
+
+    &__icon-box {
+        display: grid;
+        grid-auto-flow: column;
+        column-gap: 2rem;
+        justify-content: center;
+
+        @include respond(tab-land) { justify-content: start; }
+
+        li {
+            transition: all .3s;
+
+            &:hover { transform: translateY(-.5rem); }
+
+            svg {
+                fill: $color-white;
+                height: 2.8rem;
+                width: 2.8rem;
+            }
+        }
+    }
+
+    &__picture-box {
+        display: grid;
+        align-items: center;
+        grid-auto-flow: column;
+
+        list-style: none;
+
+        & img { 
+            width: 100%; 
+            transition: all .3s;
+
+            &:hover { transform: scale(1.1); }
+        }
+        
+    }
+
+    &__copyright { 
+        color: $color-primary;
+        font-size: 1.2rem;
+        grid-column: 3 / -1; 
+        text-align: right;
+
+        @include respond(tab-port) {
+            grid-row: 1 / -1;
+            grid-column: 1 / -1;
+            text-align: center;
+        }
+    }
+}

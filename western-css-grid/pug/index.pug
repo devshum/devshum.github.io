@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&display=swap")
+        link(rel="stylesheet", href="css/style.compress.css")
+        title Western
+    body 
+     // sprites
+     svg(style="display: none;")
+
+      // sprite 1
+      symbol#search
+       g
+        path(d="M17.545 15.467l-3.779-3.779c0.57-0.935 0.898-2.035 0.898-3.21 0-3.417-2.961-6.377-6.378-6.377s-6.186 2.769-6.186 6.186c0 3.416 2.961 6.377 6.377 6.377 1.137 0 2.2-0.309 3.115-0.844l3.799 3.801c0.372 0.371 0.975 0.371 1.346 0l0.943-0.943c0.371-0.371 0.236-0.84-0.135-1.211zM4.004 8.287c0-2.366 1.917-4.283 4.282-4.283s4.474 2.107 4.474 4.474c0 2.365-1.918 4.283-4.283 4.283s-4.473-2.109-4.473-4.474z") 
+
+      // sprite 2
+      symbol#question-mark
+       g
+        path(d="M10 0.4c-5.302 0-9.6 4.298-9.6 9.6s4.298 9.6 9.6 9.6c5.301 0 9.6-4.298 9.6-9.601 0-5.301-4.299-9.599-9.6-9.599zM9.849 15.599h-0.051c-0.782-0.023-1.334-0.6-1.311-1.371 0.022-0.758 0.587-1.309 1.343-1.309l0.046 0.002c0.804 0.023 1.35 0.594 1.327 1.387-0.023 0.76-0.578 1.291-1.354 1.291zM13.14 9.068c-0.184 0.26-0.588 0.586-1.098 0.983l-0.562 0.387c-0.308 0.24-0.494 0.467-0.563 0.688-0.056 0.174-0.082 0.221-0.087 0.576v0.090h-2.145l0.006-0.182c0.027-0.744 0.045-1.184 0.354-1.547 0.485-0.568 1.555-1.258 1.6-1.287 0.154-0.115 0.283-0.246 0.379-0.387 0.225-0.311 0.324-0.555 0.324-0.793 0-0.334-0.098-0.643-0.293-0.916-0.188-0.266-0.545-0.398-1.061-0.398-0.512 0-0.863 0.162-1.072 0.496-0.216 0.341-0.325 0.7-0.325 1.067v0.092h-2.211l0.004-0.096c0.057-1.353 0.541-2.328 1.435-2.897 0.563-0.361 1.264-0.544 2.081-0.544 1.068 0 1.972 0.26 2.682 0.772 0.721 0.519 1.086 1.297 1.086 2.311-0.001 0.567-0.18 1.1-0.534 1.585z") 
+
+      // sprite 3
+      symbol#person
+       g
+        path(d="M7.725 2.146c-1.016 0.756-1.289 1.953-1.239 2.59 0.064 0.779 0.222 1.793 0.222 1.793s-0.313 0.17-0.313 0.854c0.109 1.717 0.683 0.976 0.801 1.729 0.284 1.814 0.933 1.491 0.933 2.481 0 1.649-0.68 2.42-2.803 3.334-2.13 0.918-4.326 2.073-4.326 4.073v1h18v-1c0-2-2.197-3.155-4.328-4.072-2.123-0.914-2.801-1.684-2.801-3.334 0-0.99 0.647-0.667 0.932-2.481 0.119-0.753 0.692-0.012 0.803-1.729 0-0.684-0.314-0.854-0.314-0.854s0.158-1.014 0.221-1.793c0.065-0.817-0.398-2.561-2.3-3.096-0.333-0.34-0.558-0.881 0.466-1.424-2.24-0.105-2.761 1.067-3.954 1.929z") 
+
+      // sprite 4
+      symbol#basket
+       g
+        path(d="M18.399 7h-5.007l-1.812 1.812c-0.453 0.453-1.056 0.702-1.696 0.702-0.642 0-1.244-0.25-1.698-0.703-0.452-0.452-0.702-1.054-0.703-1.695 0-0.039 0.010-0.077 0.011-0.116h-5.894c-0.332 0-0.6 0.268-0.6 0.6v2.4h18v-2.4c0-0.332-0.27-0.6-0.601-0.6zM10.768 7.999l5.055-5.055c0.235-0.234 0.237-0.613 0.002-0.849l-0.92-0.92c-0.234-0.234-0.614-0.233-0.85 0l-5.055 5.056c-0.488 0.488-0.488 1.28 0 1.768 0.488 0.487 1.279 0.488 1.768 0zM3.823 17.271c0.097 0.401 0.515 0.729 0.927 0.729h10.5c0.412 0 0.83-0.328 0.927-0.729l1.523-6.271h-15.4l1.523 6.271z") 
+
+      // sprite 5
+      symbol#support
+       g
+        path(d="M1.574 5.286c0.488 0.262 7.248 3.894 7.5 4.029s0.578 0.199 0.906 0.199c0.328 0 0.654-0.064 0.906-0.199s7.012-3.767 7.5-4.029c0.489-0.263 0.951-1.286 0.054-1.286h-16.919c-0.897 0-0.435 1.023 0.053 1.286zM18.613 7.489c-0.555 0.289-7.387 3.849-7.727 4.027s-0.578 0.199-0.906 0.199-0.566-0.021-0.906-0.199-7.133-3.739-7.688-4.028c-0.39-0.204-0.386 0.035-0.386 0.219s0 7.293 0 7.293c0 0.42 0.566 1 1 1h16c0.434 0 1-0.58 1-1 0 0 0-7.108 0-7.292s0.004-0.423-0.387-0.219z") 
+
+      // sprite 6
+      symbol#chevron
+       g
+        path(d="M13.418 7.859c0.271-0.268 0.709-0.268 0.978 0s0.272 0.701 0 0.969l-3.908 3.83c-0.27 0.268-0.707 0.268-0.979 0l-3.908-3.83c-0.27-0.267-0.27-0.701 0-0.969s0.709-0.268 0.978 0l3.421 3.141 3.418-3.141z") 
+      
+      // sprite 7
+      symbol#chevron-right
+       g
+        path(d="M9 14c0 0.266-0.109 0.516-0.297 0.703l-7 7c-0.187 0.187-0.438 0.297-0.703 0.297-0.547 0-1-0.453-1-1v-14c0-0.547 0.453-1 1-1 0.266 0 0.516 0.109 0.703 0.297l7 7c0.187 0.187 0.297 0.438 0.297 0.703z") 
+
+      // sprite 8
+      symbol#facebook
+       g
+        path(d="M19.5 2c2.484 0 4.5 2.016 4.5 4.5v15c0 2.484-2.016 4.5-4.5 4.5h-2.938v-9.297h3.109l0.469-3.625h-3.578v-2.312c0-1.047 0.281-1.75 1.797-1.75l1.906-0.016v-3.234c-0.328-0.047-1.469-0.141-2.781-0.141-2.766 0-4.672 1.687-4.672 4.781v2.672h-3.125v3.625h3.125v9.297h-8.313c-2.484 0-4.5-2.016-4.5-4.5v-15c0-2.484 2.016-4.5 4.5-4.5h15z") 
+
+      // sprite 9
+      symbol#twitter
+       g
+        path(d="M20 9.531c-0.594 0.266-1.219 0.438-1.891 0.531 0.688-0.406 1.203-1.062 1.453-1.828-0.641 0.375-1.344 0.656-2.094 0.797-0.594-0.641-1.453-1.031-2.391-1.031-1.813 0-3.281 1.469-3.281 3.281 0 0.25 0.016 0.516 0.078 0.75-2.734-0.141-5.156-1.437-6.781-3.437-0.281 0.484-0.453 1.062-0.453 1.656 0 1.141 0.531 2.141 1.422 2.734-0.547-0.016-1.062-0.172-1.563-0.406v0.031c0 1.594 1.203 2.922 2.703 3.219-0.281 0.078-0.5 0.125-0.797 0.125-0.203 0-0.406-0.031-0.609-0.063 0.422 1.297 1.625 2.25 3.063 2.281-1.125 0.875-2.531 1.406-4.078 1.406-0.266 0-0.531-0.016-0.781-0.047 1.453 0.922 3.172 1.469 5.031 1.469 6.031 0 9.344-5 9.344-9.344 0-0.141 0-0.281-0.016-0.422 0.641-0.453 1.203-1.031 1.641-1.703zM24 6.5v15c0 2.484-2.016 4.5-4.5 4.5h-15c-2.484 0-4.5-2.016-4.5-4.5v-15c0-2.484 2.016-4.5 4.5-4.5h15c2.484 0 4.5 2.016 4.5 4.5z") 
+      
+      // sprite 10
+      symbol#google
+       g
+        path(d="M14.328 14.141c0-0.391-0.047-0.703-0.094-1h-5.656v2.063h3.391c-0.125 0.875-1.016 2.578-3.391 2.578-2.063 0-3.734-1.687-3.734-3.781s1.672-3.781 3.734-3.781c1.156 0 1.937 0.484 2.391 0.922l1.625-1.578c-1.047-0.969-2.406-1.563-4.016-1.563-3.328 0-6 2.688-6 6s2.672 6 6 6c3.453 0 5.75-2.438 5.75-5.859zM19.719 14.859h1.703v-1.719h-1.703v-1.719h-1.719v1.719h-1.719v1.719h1.719v1.719h1.719v-1.719zM24 6.5v15c0 2.484-2.016 4.5-4.5 4.5h-15c-2.484 0-4.5-2.016-4.5-4.5v-15c0-2.484 2.016-4.5 4.5-4.5h15c2.484 0 4.5 2.016 4.5 4.5z") 
+
+      // sprite 11
+      symbol#youtube
+       g
+        path(d="M14.359 20.359v-2.453c0-0.516-0.156-0.781-0.453-0.781-0.172 0-0.344 0.078-0.516 0.25v3.5c0.172 0.172 0.344 0.25 0.516 0.25 0.297 0 0.453-0.25 0.453-0.766zM17.234 18.453h1.031v-0.531c0-0.531-0.172-0.797-0.516-0.797s-0.516 0.266-0.516 0.797v0.531zM8.313 14.297v1.094h-1.25v6.609h-1.156v-6.609h-1.219v-1.094h3.625zM11.453 16.266v5.734h-1.047v-0.625c-0.406 0.469-0.797 0.703-1.188 0.703-0.328 0-0.562-0.141-0.656-0.438-0.063-0.172-0.094-0.438-0.094-0.844v-4.531h1.031v4.219c0 0.234 0 0.375 0.016 0.406 0.016 0.156 0.094 0.234 0.234 0.234 0.219 0 0.422-0.156 0.656-0.484v-4.375h1.047zM15.391 18v2.281c0 0.516-0.031 0.906-0.109 1.141-0.125 0.438-0.406 0.656-0.828 0.656-0.359 0-0.719-0.219-1.062-0.641v0.562h-1.047v-7.703h1.047v2.516c0.328-0.406 0.688-0.625 1.062-0.625 0.422 0 0.703 0.219 0.828 0.656 0.078 0.234 0.109 0.609 0.109 1.156zM19.313 20.016v0.141c0 0.344-0.016 0.562-0.031 0.672-0.031 0.234-0.109 0.438-0.234 0.625-0.281 0.422-0.719 0.625-1.25 0.625-0.547 0-0.969-0.203-1.266-0.594-0.219-0.281-0.328-0.734-0.328-1.344v-2.016c0-0.609 0.094-1.047 0.313-1.344 0.297-0.391 0.719-0.594 1.25-0.594 0.516 0 0.938 0.203 1.219 0.594 0.219 0.297 0.328 0.734 0.328 1.344v1.188h-2.078v1.016c0 0.531 0.172 0.797 0.531 0.797 0.25 0 0.406-0.141 0.469-0.406 0-0.063 0.016-0.297 0.016-0.703h1.062zM12.266 7.141v2.438c0 0.531-0.172 0.797-0.5 0.797-0.344 0-0.5-0.266-0.5-0.797v-2.438c0-0.531 0.156-0.812 0.5-0.812 0.328 0 0.5 0.281 0.5 0.812zM20.594 18.281v0c0-1.344 0-2.766-0.297-4.062-0.219-0.922-0.969-1.594-1.859-1.687-2.125-0.234-4.281-0.234-6.438-0.234-2.141 0-4.297 0-6.422 0.234-0.906 0.094-1.656 0.766-1.859 1.687-0.297 1.297-0.313 2.719-0.313 4.062v0c0 1.328 0 2.75 0.313 4.062 0.203 0.906 0.953 1.578 1.844 1.687 2.141 0.234 4.297 0.234 6.438 0.234s4.297 0 6.438-0.234c0.891-0.109 1.641-0.781 1.844-1.687 0.313-1.313 0.313-2.734 0.313-4.062zM8.797 8.109l1.406-4.625h-1.172l-0.797 3.047-0.828-3.047h-1.219c0.234 0.719 0.5 1.437 0.734 2.156 0.375 1.094 0.609 1.906 0.719 2.469v3.141h1.156v-3.141zM13.312 9.375v-2.031c0-0.609-0.109-1.062-0.328-1.359-0.297-0.391-0.703-0.594-1.219-0.594-0.531 0-0.938 0.203-1.219 0.594-0.219 0.297-0.328 0.75-0.328 1.359v2.031c0 0.609 0.109 1.062 0.328 1.359 0.281 0.391 0.688 0.594 1.219 0.594 0.516 0 0.922-0.203 1.219-0.594 0.219-0.281 0.328-0.75 0.328-1.359zM16.141 11.25h1.047v-5.781h-1.047v4.422c-0.234 0.328-0.453 0.484-0.656 0.484-0.141 0-0.234-0.078-0.25-0.25-0.016-0.031-0.016-0.156-0.016-0.406v-4.25h-1.047v4.578c0 0.406 0.031 0.672 0.094 0.859 0.109 0.281 0.344 0.422 0.672 0.422 0.391 0 0.781-0.234 1.203-0.703v0.625zM24 6.5v15c0 2.484-2.016 4.5-4.5 4.5h-15c-2.484 0-4.5-2.016-4.5-4.5v-15c0-2.484 2.016-4.5 4.5-4.5h15c2.484 0 4.5 2.016 4.5 4.5z") 
+
+      // sprite 12
+      symbol#behance
+       g
+        path(d="M19.5 2c2.484 0 4.5 2.016 4.5 4.5v15c0 2.484-2.016 4.5-4.5 4.5h-15c-2.484 0-4.5-2.016-4.5-4.5v-15c0-2.484 2.016-4.5 4.5-4.5h15zM7.797 7.734h-5.797v12.297h5.969c2.234 0 4.328-1.062 4.328-3.563 0-1.547-0.734-2.688-2.234-3.125 1.094-0.531 1.672-1.328 1.672-2.562 0-2.453-1.828-3.047-3.937-3.047zM7.453 12.703h-2.75v-2.875h2.547c0.969 0 1.859 0.266 1.859 1.406 0 1.047-0.688 1.469-1.656 1.469zM7.594 17.938h-2.891v-3.391h2.953c1.188 0 1.937 0.516 1.937 1.766s-0.891 1.625-2 1.625zM17.75 18.438c-1.437 0-2.188-0.844-2.188-2.266h6.422c0.016-0.156 0.016-0.313 0.016-0.469 0-2.625-1.547-4.828-4.344-4.828-2.703 0-4.562 2.047-4.562 4.719 0 2.781 1.75 4.672 4.562 4.672 2.141 0 3.516-0.953 4.172-2.984h-2.156c-0.234 0.75-1.188 1.156-1.922 1.156zM17.594 12.719c1.219 0 1.828 0.734 1.937 1.906h-3.969c0.078-1.172 0.859-1.906 2.031-1.906zM15.062 8.563h4.984v1.203h-4.984v-1.203z") 
+
+      // sprite 13
+      symbol#vimeo
+       g
+        path(d="M20.188 9.969c0.109-2.266-0.734-3.406-2.516-3.469-2.406-0.078-4.031 1.281-4.875 4.078 0.438-0.187 0.859-0.297 1.281-0.297 0.875 0 1.266 0.5 1.156 1.5-0.047 0.594-0.438 1.469-1.156 2.609-0.734 1.156-1.281 1.719-1.641 1.719-0.469 0-0.875-0.875-1.281-2.641-0.125-0.531-0.359-1.844-0.703-3.984-0.313-1.969-1.141-2.891-2.5-2.766-0.562 0.063-1.437 0.562-2.562 1.563-0.844 0.734-1.672 1.5-2.531 2.25l0.812 1.047c0.781-0.531 1.234-0.812 1.359-0.812 0.594 0 1.156 0.938 1.672 2.797 0.469 1.719 0.938 3.422 1.406 5.141 0.703 1.859 1.547 2.797 2.562 2.797 1.625 0 3.625-1.531 5.984-4.594 2.281-2.938 3.469-5.25 3.531-6.937zM24 6.5v15c0 2.484-2.016 4.5-4.5 4.5h-15c-2.484 0-4.5-2.016-4.5-4.5v-15c0-2.484 2.016-4.5 4.5-4.5h15c2.484 0 4.5 2.016 4.5 4.5z") 
+      
+     // mixin
+     mixin item(img, imgDes, imgHover, imgHoverDes, name, newW, price)
+
+      // components(item)
+      .item
+        .item__img-box
+         img(src=img, alt=imgDes)
+         img(src=imgHover, alt=imgHoverDes)
+         figure.item__details
+          a(href="#") View Details
+        // base(typography)
+        ul
+         li
+          h4.heading-quaternary
+           span.heading-quaternary--main= name
+           span.heading-quaternary--sub= newW
+         li
+          p.item__paragraph= price
+
+     // shadow(layouts)
+     .shadow &nbsp;
+    
+     // mob-menu(layouts)
+     ul.mob-nav
+      li.mob-nav__add
+       a(href="#") Shop(+)
+       ul.mob-nav__add-nav
+        li
+         a(href="#") Best Sellers
+        li
+         a(href="#") New Arrivals
+        li 
+         a(href="#") Tops
+        li 
+         a(href="#") Bottoms
+        li
+         a(href="#") Outerwear
+        li
+         a(href="#") Merino Wool
+        li
+         a(href="#") Accessories
+        li
+         a(href="#") Bundles
+        li 
+         a(href="#") Gift Cards
+        li
+         a(href="#") Last Chance
+        li
+         a(href="#") All Products
+      li 
+       a(href="#") About
+      li 
+       a(href="#") Journal
+      li 
+       a(href="#") Q + A
+       a.mob-nav__close &times;
+     // gift(layouts)
+     .gift 
+      .gift__close &times;
+      .gift__text-box 
+       h2.heading-secondary--gift
+        span.heading-secondary--main.mb-10px Enter to win
+        span.heading-secondary--sub.mb-20px 1 of 3 prizes
+       p <span>Grand Prize:</span> 150$ in Apparel
+       p <span>2nd Prize:</span> 100$ in Apparel
+       p.mb-20px <span>3rd Prize:</span> 50$ in Apparel
+      form(action="#").form.gift__form
+       input(type="text" placeholder="Email adress here").form__input
+       button.form__btn 
+        svg
+         use(xlink:href="#chevron-right")
+
+     // layouts(cookies)
+     figure.cookies
+      .cookies__header
+       h2.heading-secondary Notice
+       .cookies__close &times;
+      p.cookies__paragraph This website or its third-party tools process personal data (e.g. browsing data or IP addresses) and use cookies or other identifiers, which are necessary for its functioning and required to achieve the purposes illustrated in the cookie policy. You accept the use of cookies or other identifiers by closing or dismissing this notice, by clicking a link or button or by continuing to browse otherwise.
+      .cookies__btn-box 
+       a.cookies__btn.btn Learn and customize
+       a.cookies__btn.btn.btn--blue Accept
+     // layouts(touch)
+     form.touch(action="#")
+      .touch__header Questions? Click here
+      .touch__box
+       img(src="img/support.png", alt="support's icon").touch__img 
+       .touch__text-box
+        h3.touch__name Roger Moore
+        h4.heading-quaternary
+          span.heading-quaternary--main Live Support
+          span.heading-quaternary--sub Ask me everything
+       label(for="email") Introduce yourself*
+       input(type="email" id="email")
+       label(for="message") Message*
+       textarea(id="message")
+       // components(btn)
+       button.btn.touch__btn Send
+       .touch__footer or sign up with
+        ul.touch__icon-box
+         li.touch__item
+          a(href="#")
+           svg.touch__red
+            use(xlink:href="#google")
+         li.touch__item
+          a(href="#")
+           svg.touch__blue
+            use(xlink:href="#facebook")
+     // layouts(grid-container)
+     .grid-container
+      // section(sidebar)
+      .sidebar
+       ul.sidebar__sticky
+        li 
+         svg
+          use(xlink:href="#person")
+        li 
+         svg
+          use(xlink:href="#basket")
+         span 0
+       svg.sidebar__support-cta
+        use(xlink:href="#support")
+      // layouts(header)
+      header.header
+       nav
+        ul.header__main-nav
+         li Shop
+          svg
+           use(xlink:href="#chevron")
+          ul.header__add-nav
+           li
+            a(href="#") Best Sellers
+           li
+            a(href="#") New Arrivals
+           li 
+            a(href="#") Tops
+           li 
+            a(href="#") Bottoms
+           li
+            a(href="#") Outerwear
+           li
+            a(href="#") Merino Wool
+           li
+            a(href="#") Accessories
+           li
+            a(href="#") Bundles
+           li 
+            a(href="#") Gift Cards
+           li
+            a(href="#") Last Chance
+           li
+            a(href="#") All Products
+         li Story
+          svg 
+           use(xlink:href="#chevron")
+          ul.header__add-nav
+           li 
+            a(href="#") About
+           li 
+            a(href="#") Design
+           li 
+            a(href="#") Our Fabrics
+           li 
+            a(href="#") Journal
+        .header__logo &nbsp;
+        ul.header__minor-nav
+         li
+          form(action="#").header__form
+            input(type="text" placeholder="Search...").header__input
+          svg.header__search
+            use(xlink:href="#search")
+         li 
+          svg
+           use(xlink:href="#question-mark")
+          ul.header__add-nav.header__add-nav--right
+           li 
+            a(href="#") Contact
+           li 
+            a(href="#") Size + Fit
+           li 
+            a(href="#") FAQ
+           li 
+            a(href="#") Returns
+           li 
+            a(href="#") Review
+          svg
+           use(xlink:href="#chevron")
+        ul.header__mob
+         li 
+          // components (burger)
+          .burger
+           span &nbsp;
+         li 
+          svg
+           use(xlink:href="#person")
+         li 
+          svg
+           use(xlink:href="#basket")
+         li 
+          form(action="#").header__form#input
+            input(type="text" placeholder="Search...").header__input
+          svg.header__search#icon
+            use(xlink:href="#search")
+      // layouts(intro)
+      section.intro
+       .intro__slider
+        .intro__text-box
+         // base(typography)
+         h1.heading-primary
+          span.heading-primary--sub WFH Kit
+          span.heading-primary--main Working from home?
+         // base(typography)
+         p.intro__paragraph.mb-20px This exclusive kit will make working from home<br> a little more comfortable.
+         // components(btn)
+         a(href="#").btn Shop Now
+        img(src="img/bgs/bg-1.png", alt="slide 1").intro__img
+       .intro__btn-box
+        button(data-id="0").intro__slider-btn &nbsp;
+        button(data-id="1").intro__slider-btn &nbsp; 
+        button(data-id="2").intro__slider-btn &nbsp;
+        button(data-id="3").intro__slider-btn &nbsp;
+        button(data-id="4").intro__slider-btn &nbsp;
+      // layouts(shop)
+      section.shop 
+       .shop__header
+        // base(typography)
+        h5 Trending
+        p.shop__paragraph
+         a(href="#") View All
+       +item('img/shop/item-1.png', 'item 1', 'img/shop/item-1.1.png', 'item 1 preview', 'AT Slim Pant', 'NEW', '$ 128.00')
+       +item('img/shop/item-2.png', 'item 2', 'img/shop/item-2.1.png', 'item 2 preview', 'StrongCore Merino Tee', 'NEW', '$ 96.00')
+       +item('img/shop/item-3.png', 'item 3', 'img/shop/item-3.1.png', 'item 3 preview', 'Diversion Pant', 'NEW', '$ 138.00')
+       +item('img/shop/item-4.png', 'item 4', 'img/shop/item-4.1.png', 'item 4 preview', 'Evolution Pant', 'NEW', '$ 149.00')
+       +item('img/shop/item-5.png', 'item 5', 'img/shop/item-5.1.png', 'item 5 preview', 'Button-Down Shirt', '', '$ 129.00')
+       +item('img/shop/item-6.png', 'item 6', 'img/shop/item-6.1.png', 'item 6 preview', 'Polo Shirt', '', '$ 99.00')
+       +item('img/shop/item-7.png', 'item 7', 'img/shop/item-7.1.png', 'item 7 preview', 'StrongCore Merino Socks', '', '$ 19.00')
+       +item('img/shop/item-8.png', 'item 8', 'img/shop/item-8.1.png', 'item 8 preview', 'Button-Down Shirt', '', '$ 129.00')
+      // layouts(intro)
+      section.intro-minor
+       .intro-minor__header
+        // base(typography)
+        h5 Western Rise in the News
+       .intro-minor__slider
+        blockquote “Versatile enough that I’ve worn them on an overnight international flight, through the next day, then paired them with a blazer for dinner."
+        cite Nick Caruso, Associate Editor
+        // components(cta)
+        a(href="#").cta Learn More
+       .intro-minor__btn-box
+        img(src="img/logos/gear.png", alt="logo 1", data-id="0").intro-minor__img
+        img(src="img/logos/wall-street.png", alt="logo 2", data-id="1").intro-minor__img
+        img(src="img/logos/forbes.png", alt="logo 3", data-id="2").intro-minor__img
+        img(src="img/logos/mens-journal.png", alt="logo 4", data-id="3").intro-minor__img
+      // layouts(footer)
+      footer.footer
+       ul.footer__list
+        li.footer__item Shop
+        li.footer__item
+         a(href="#") Men
+        li.footer__item
+         a(href="#") Accessories
+        li.footer__item
+         a(href="#") Gift Cards
+       ul.footer__list
+        li.footer__item Help
+        li.footer__item
+         a(href="#") Contact Us
+        li.footer__item
+         a(href="#") Sign In
+        li.footer__item
+         a(href="#") Returns 
+        li.footer__item
+         a(href="#") FAQ
+        li.footer__item
+         a(href="#") Privacy Policy
+       ul.footer__list
+        li.footer__item About
+        li.footer__item
+         a(href="#") Story
+        li.footer__item
+         a(href="#") Manufacturing Standards
+        li.footer__item
+         a(href="#") Our Fabrics
+        li.footer__item
+         a(href="#") Press
+       ul.footer__list
+        li.footer__item Community
+        li.footer__item
+         a(href="#") Instagram
+        li.footer__item
+         a(href="#") Journal
+        li.footer__item
+         a(href="#") Affiliate
+        li.footer__item
+         a(href="#") Get $20
+       .footer__loop
+        .footer__loop-item Stay in the loop
+        .footer__loop-item
+         // component(form)
+         form(action="#").form
+          input(type="text" placeholder="Email adress here").form__input
+          button.form__btn 
+           svg
+            use(xlink:href="#chevron-right")
+        ul.footer__icon-box
+         li.footer__loop-item
+          a(href="#")
+           svg
+            use(xlink:href="#google")
+         li.footer__loop-item
+          a(href="#")
+           svg
+            use(xlink:href="#facebook")
+         li.footer__loop-item
+          a(href="#")
+           svg
+            use(xlink:href="#behance")
+         li.footer__loop-item
+          a(href="#")
+           svg
+            use(xlink:href="#twitter")
+         li.footer__loop-item
+          a(href="#")
+           svg
+            use(xlink:href="#vimeo")
+         li
+          a(href="#")
+           svg
+            use(xlink:href="#youtube")
+        ul.footer__picture-box
+         li
+          a(href="#")
+           img(src="img/logos/planet.png", alt="footer logo 1")
+         li
+          a(href="#")
+           img(src="img/logos/climate.png", alt="footer logo 2")
+       .footer__copyright © 2020 All Rights Reserved Western Rise. Terms of Use  
+
+     script(src="js/app.min.js")
+
