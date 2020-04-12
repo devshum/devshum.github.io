@@ -1,0 +1,33 @@
+.correct, 
+.wrong {
+    display: none;
+    
+    font-size: 1.8rem;
+    padding: 3rem 3rem 3rem 1.3rem;
+
+    @include respond(phone) {
+        flex-direction: column;
+        padding: 1.5rem;
+    }
+
+    svg {
+        height: 2rem;
+        width: 2rem;
+        margin-right: 1rem;
+
+        @include respond(phone) { margin: 0 0 1rem 0; }
+    }
+}
+
+.correct {
+    background-color: $color-green-light;
+
+    svg { fill: $color-green; }
+}
+
+.wrong {
+    background-color: $color-red-light;
+
+    svg { fill: $color-red; }
+}
+

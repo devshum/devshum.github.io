@@ -1,0 +1,84 @@
+.btn {
+    display: inline-block;
+    padding: 1rem 1rem;
+    border-radius: $b-r-2px;
+    text-decoration: none;
+    font-weight: 400;
+    line-height: 3rem;
+
+    &--skip,
+    &--next,
+    &--result,
+    &--start,
+    &--retry,
+    &--last { cursor: pointer; }
+
+    &--skip,
+    &--last {
+        color: $color-blue;
+
+        &:hover { 
+            background-color: $color-white; 
+
+            @media only screen and (max-width: 37.5em),
+                   only screen and (hover: none) { background-color: initial; }
+        }
+    }
+
+    &--last { display: none; }
+
+    &--check,
+    &--next,
+    &--start,
+    &--result,
+    &--retry {
+        color: $color-white;
+        background-color: $color-red;
+        margin-left: 1rem;
+
+    }
+
+    &--next,
+    &--start,
+    &--result,
+    &--retry { 
+        &:hover { background-color: darken($color-red, 5%); }
+    }
+
+    &--check { opacity: .5; }
+
+    &--next,
+    &--result,
+    &--retry { display: none; }
+
+    &--retry { 
+        padding: 1rem 3.5rem;
+        
+        @include respond(phone) {
+            width: 100%;
+            text-align: center;
+            margin-left: 0;
+            font-size: 2rem;
+        }
+    }
+
+    &--start { 
+        display: flex;
+        align-items: center;
+
+        height: 5rem;
+        font-size: 2rem; 
+        margin-left: 4rem;
+
+        @include respond(phone-small) { margin: 2rem 0 0 0; }
+    }
+}
+
+// JS
+.active {
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+

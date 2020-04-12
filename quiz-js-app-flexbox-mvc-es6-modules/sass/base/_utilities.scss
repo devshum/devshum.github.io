@@ -1,0 +1,6 @@
+.mb-10px { 
+    margin-bottom: 1rem; 
+
+    @include respond(phone-small) { margin-bottom: 1.5rem; }
+}
+.mb-20px { margin-bottom: 2rem; }

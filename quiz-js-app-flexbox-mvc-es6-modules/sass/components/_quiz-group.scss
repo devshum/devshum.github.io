@@ -1,0 +1,62 @@
+.quiz-group {
+    //display: none;
+    min-width: 55rem;
+    flex: 1;
+
+    @include respond(phone) { min-width: initial; }
+
+    &__box {
+        width: 100%;
+        padding: 1rem 1rem;
+        border: solid .1rem $color-gray;
+        border-radius: $b-r-2px;
+        cursor: pointer;
+
+        @include respond(phone) {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &:hover { background-color: $color-gray; }
+
+        & input:checked + label span::after { opacity: 1; }
+
+        & input { display: none; }
+
+        & label { 
+            padding-left: 5rem;
+            position: relative;
+            cursor: pointer;
+
+            @include respond(phone) { padding-left: 3.5rem; }
+
+            & span,
+            & span::after {
+                position: absolute;
+                border-radius: 50%;
+            }
+
+            & span { 
+                display: inline-block;
+                border: solid .4rem $color-blue;
+                left: 0;
+                top: -.2rem;
+                height: 2.5rem;
+                width: 2.5rem;
+
+                &::after {
+                    content: '';
+                    display: block;
+                    height: 1rem;
+                    width: 1rem;
+
+                    background-color: $color-blue;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    opacity: 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,111 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    //height: 100%;
+
+    &__intro {
+        display: flex;
+        align-items: center;
+        
+        text-align: center;
+
+        @include respond(phone-small) { flex-direction: column; }
+    }
+
+    &__main { 
+        display: none;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 1rem;
+
+        @include respond(phone) { padding: 0 2rem; }
+
+        @include respond(phone-small) { transform: translateY(-2.5rem); }
+    }
+
+    &__check { width: 100%; }
+
+    &__result-label {
+        display: flex;
+        align-items: center;
+
+        & svg { 
+            display: block;
+            fill: $color-hray-dark;
+            height: 2rem;
+            width: 2rem;
+            margin-right: 1rem;
+            position: relative;
+
+            &:nth-child(3) {
+                margin-left: 1rem;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__result-info {
+        position: absolute;
+        color: $color-white;
+        padding: 1rem;
+        margin-top: 6rem;
+        background-color: $color-hray-dark;
+        z-index: 1;
+        box-shadow: .1rem .4rem .5rem rgba($color-black, .2);
+        opacity: 0;
+        visibility: hidden;
+
+        @include respond(phone) { margin-top: 3.8rem; }
+    }
+
+    &__result-label {
+        background-color: $color-gray;
+        padding: .5rem 2rem;
+
+        & svg {
+            &:nth-child(3) {
+                &:hover + .container__result-info { opacity: 1; visibility: visible;}
+            }
+        }
+    }
+
+    &__results {
+        display: none;
+        padding: 2rem 2rem 0 2rem;
+
+        & ul {
+            list-style: none;
+
+            & li { 
+                margin-bottom: 1rem;
+
+                &:not(:last-child) {
+                    border-bottom: solid .1rem $color-gray;
+                }
+            }
+
+            & li {
+                &:not(:first-child) { padding-bottom: 1rem; }
+            }
+
+            & li:last-child { margin-bottom: 1rem; }
+        }
+    }
+}
+
+.header {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 100%;
+    padding: 2rem;
+    background-color: $color-blue-dark;
+    color: $color-white;
+    
+}

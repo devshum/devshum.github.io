@@ -1,0 +1,20 @@
+.question {
+    display: flex;
+    flex-direction: column;
+
+    span { display: none; }
+
+    p {
+        &::after { 
+            content: ':'; 
+
+            @include respond(phone) {
+                display: none;
+            }
+        }
+    }
+
+    span {
+        @include respond(phone) { display: inline-block; }
+    }
+}

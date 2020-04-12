@@ -1,0 +1,31 @@
+.footer {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+
+    padding: 1rem 2rem;
+    background-color: $color-gray;
+
+    @include respond(phone) {
+        padding: 2rem;
+    }
+
+    &__btn-box {
+        @include respond(phone) {
+            display: flex;
+            justify-content: space-between;
+            
+            font-size: 1.4rem;
+            width: 100%;
+        }
+    }
+
+    &__label {
+        @include respond(phone) { display: none; }
+    }
+}
