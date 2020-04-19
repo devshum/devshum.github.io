@@ -1,0 +1,121 @@
+.day {
+    min-width: 30rem;
+    border: solid .2rem $color-purple;
+    margin: 1rem;
+    flex: 1;
+
+    span,
+    &__btn { cursor: pointer; }
+
+    span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-right: 1rem;
+        border-top: .2rem solid $color-gray-dark;
+        border-right: .2rem solid $color-gray-dark;
+        border-left: .2rem solid $color-gray-dark;
+        height: 3rem;
+        width: 3rem;
+
+        &::after {
+            content: '\2713';
+            font-size: 2.5rem;
+            display: none;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        min-height: 36rem;
+        list-style: none;
+        padding: 1rem 2rem;
+    }
+
+    &__plan {
+        display: flex;
+        align-items: center;
+
+        position: relative;
+        border-bottom: solid .2rem $color-gray-dark;
+    }
+
+    @media only screen and (min-width: 62.5em),
+           only screen and(hover: none) {
+        &__item:hover &__btn { display: block; }
+    }
+
+    &__item p {
+        font-size: 3rem;
+        font-family: $shadows-light-font;
+
+        @include respond(phone) { font-size: 2.5rem; }
+    }
+
+    &__btn { 
+        color: $color-red;
+        font-size: 2.2rem;
+        background: none;
+        border: none;
+        display: none;
+        margin-left: auto;
+        cursor: pointer;
+
+        @include respond(tab-land) { display: block; }
+
+        p {
+            position: absolute;
+            display: block;
+            width: 100%;
+        }
+
+        &::after {
+            display: flex;
+            align-items: center;
+
+            content: 'You can also delete a plan if you please';
+            font-family: $baloo-paaji-font;
+            line-height: 1.5rem;
+            top: 0;
+            padding: 0 1rem;
+            font-size: 1.2rem;
+            right: -55%;
+            height: 100%;
+            width: 50%;
+            position: absolute;
+            background-color: $color-white;
+            z-index: 2;
+
+            @include respond(tab-land) { display: none; }
+        }
+    }
+
+    &__paragraph {
+        position: relative;
+        line-height: 3rem;
+
+        & p { margin-right: 1rem; }
+
+        p::after {
+            content: '';
+            position: absolute;
+            background: $color-black;
+            height: .2rem;
+            width: 95%;
+            bottom: 50%;
+            display: none;
+        }
+    }
+
+    &__checkbox { display: none; }
+
+    &__checkbox-box { display: flex; }
+
+    &__checkbox:checked + &__new-checkbox span::after { display: block; }
+
+    &__checkbox:checked ~ &__paragraph p::after { display: block; }
+}

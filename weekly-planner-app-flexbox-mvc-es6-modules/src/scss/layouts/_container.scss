@@ -1,0 +1,25 @@
+.container {
+    border: solid .5rem $color-purple;
+    background-color: rgba($color-white, .94);
+    box-shadow: 0 2rem 3rem rgba($color-black, .4);
+    border-radius: .5rem;
+    margin: 2rem 0;
+
+    @include respond(tab-land) { 
+        width: 100vw; 
+        border: initial;
+        border-radius: initial;
+        box-shadow: initial;
+        background-color: $color-white;
+        margin: initial;
+    }
+
+    &__days {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+        max-width: 120rem;
+        padding: 2rem 1rem;
+    }
+}

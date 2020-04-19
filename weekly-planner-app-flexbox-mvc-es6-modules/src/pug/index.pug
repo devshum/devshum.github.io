@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Weekly planner
+        link(rel="stylesheet", href="css/style.css")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@500&family=Great+Vibes&display=swap")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap")
+    body
+     // sprites
+     svg(style="display: none;")
+    
+      // sprite 1
+      symbol#smile
+       g
+        path(d="M17.719 16.797c-0.781 2.516-3.078 4.203-5.719 4.203s-4.937-1.687-5.719-4.203c-0.172-0.531 0.125-1.078 0.656-1.25 0.516-0.172 1.078 0.125 1.25 0.656 0.516 1.672 2.063 2.797 3.813 2.797s3.297-1.125 3.813-2.797c0.172-0.531 0.734-0.828 1.266-0.656 0.516 0.172 0.812 0.719 0.641 1.25zM10 10c0 1.109-0.891 2-2 2s-2-0.891-2-2 0.891-2 2-2 2 0.891 2 2zM18 10c0 1.109-0.891 2-2 2s-2-0.891-2-2 0.891-2 2-2 2 0.891 2 2zM22 14c0-5.516-4.484-10-10-10s-10 4.484-10 10 4.484 10 10 10 10-4.484 10-10zM24 14c0 6.625-5.375 12-12 12s-12-5.375-12-12 5.375-12 12-12 12 5.375 12 12z")
+
+      // sprite 2
+      symbol#pencil
+       g
+        path(d="M5.672 24l1.422-1.422-3.672-3.672-1.422 1.422v1.672h2v2h1.672zM13.844 9.5c0-0.203-0.141-0.344-0.344-0.344-0.094 0-0.187 0.031-0.266 0.109l-8.469 8.469c-0.078 0.078-0.109 0.172-0.109 0.266 0 0.203 0.141 0.344 0.344 0.344 0.094 0 0.187-0.031 0.266-0.109l8.469-8.469c0.078-0.078 0.109-0.172 0.109-0.266zM13 6.5l6.5 6.5-13 13h-6.5v-6.5zM23.672 8c0 0.531-0.219 1.047-0.578 1.406l-2.594 2.594-6.5-6.5 2.594-2.578c0.359-0.375 0.875-0.594 1.406-0.594s1.047 0.219 1.422 0.594l3.672 3.656c0.359 0.375 0.578 0.891 0.578 1.422z")  
+     
+      // sprite 3
+      symbol#calendar
+       g
+        path(d="M2 26h4.5v-4.5h-4.5v4.5zM7.5 26h5v-4.5h-5v4.5zM2 20.5h4.5v-5h-4.5v5zM7.5 20.5h5v-5h-5v5zM2 14.5h4.5v-4.5h-4.5v4.5zM13.5 26h5v-4.5h-5v4.5zM7.5 14.5h5v-4.5h-5v4.5zM19.5 26h4.5v-4.5h-4.5v4.5zM13.5 20.5h5v-5h-5v5zM8 7v-4.5c0-0.266-0.234-0.5-0.5-0.5h-1c-0.266 0-0.5 0.234-0.5 0.5v4.5c0 0.266 0.234 0.5 0.5 0.5h1c0.266 0 0.5-0.234 0.5-0.5zM19.5 20.5h4.5v-5h-4.5v5zM13.5 14.5h5v-4.5h-5v4.5zM19.5 14.5h4.5v-4.5h-4.5v4.5zM20 7v-4.5c0-0.266-0.234-0.5-0.5-0.5h-1c-0.266 0-0.5 0.234-0.5 0.5v4.5c0 0.266 0.234 0.5 0.5 0.5h1c0.266 0 0.5-0.234 0.5-0.5zM26 6v20c0 1.094-0.906 2-2 2h-22c-1.094 0-2-0.906-2-2v-20c0-1.094 0.906-2 2-2h2v-1.5c0-1.375 1.125-2.5 2.5-2.5h1c1.375 0 2.5 1.125 2.5 2.5v1.5h6v-1.5c0-1.375 1.125-2.5 2.5-2.5h1c1.375 0 2.5 1.125 2.5 2.5v1.5h2c1.094 0 2 0.906 2 2z") 
+
+      // sprite 4
+      symbol#writedown
+       g
+        path(d="M4 21c0-0.547-0.453-1-1-1s-1 0.453-1 1 0.453 1 1 1 1-0.453 1-1zM26 12c0-1.062-0.953-2-2-2h-9c0-0.984 1.5-2 1.5-4 0-1.5-1.172-2-2.5-2-0.438 0-1.234 1.813-1.406 2.172-0.187 0.344-0.375 0.688-0.578 1.016-0.516 0.828-1.109 1.547-1.75 2.266-1 1.141-2.109 2.547-3.766 2.547h-0.5v10h0.5c2.734 0 5.406 2 8.437 2 1.75 0 2.953-0.734 2.953-2.609 0-0.297-0.031-0.594-0.078-0.875 0.656-0.359 1.016-1.25 1.016-1.969 0-0.375-0.094-0.75-0.281-1.078 0.531-0.5 0.828-1.125 0.828-1.859 0-0.5-0.219-1.234-0.547-1.609h5.172c1.078 0 2-0.922 2-2zM28 11.984c0 2.188-1.813 4.016-4 4.016h-2.641c-0.047 0.656-0.25 1.281-0.578 1.859 0.031 0.219 0.047 0.453 0.047 0.672 0 1-0.328 2-0.938 2.781 0.031 2.953-1.984 4.688-4.875 4.688-1.75 0-3.406-0.484-5.031-1.078-0.953-0.344-2.5-0.922-3.484-0.922h-4.5c-1.109 0-2-0.891-2-2v-10c0-1.109 0.891-2 2-2h4.5c0.75 0 1.813-1.344 2.266-1.859 0.562-0.641 1.094-1.281 1.563-2.016 0.906-1.453 1.578-4.125 3.672-4.125 2.484 0 4.5 1.359 4.5 4 0 0.688-0.109 1.359-0.344 2h5.844c2.156 0 4 1.828 4 3.984z") 
+      
+      // sprite 5
+      symbol#linked-in
+       g
+        path(d="M3.703 22.094h3.609v-10.844h-3.609v10.844zM7.547 7.906c-0.016-1.062-0.781-1.875-2.016-1.875s-2.047 0.812-2.047 1.875c0 1.031 0.781 1.875 2 1.875h0.016c1.266 0 2.047-0.844 2.047-1.875zM16.688 22.094h3.609v-6.219c0-3.328-1.781-4.875-4.156-4.875-1.937 0-2.797 1.078-3.266 1.828h0.031v-1.578h-3.609s0.047 1.016 0 10.844v0h3.609v-6.062c0-0.313 0.016-0.641 0.109-0.875 0.266-0.641 0.859-1.313 1.859-1.313 1.297 0 1.813 0.984 1.813 2.453v5.797zM24 6.5v15c0 2.484-2.016 4.5-4.5 4.5h-15c-2.484 0-4.5-2.016-4.5-4.5v-15c0-2.484 2.016-4.5 4.5-4.5h15c2.484 0 4.5 2.016 4.5 4.5z") 
+      
+      // sprite 6
+      symbol#github
+       g
+        path(d="M8.109 18.75v0c0.031-0.047 0.016-0.141-0.047-0.203-0.078-0.063-0.172-0.078-0.219-0.031-0.031 0.047-0.016 0.141 0.047 0.203 0.078 0.063 0.172 0.078 0.219 0.031zM7.672 18.109c-0.047-0.063-0.125-0.094-0.187-0.063-0.047 0.031-0.047 0.125 0 0.187 0.063 0.078 0.141 0.109 0.187 0.078v0c0.047-0.031 0.047-0.125 0-0.203zM7.031 17.484v0c0.016-0.031-0.016-0.094-0.078-0.125-0.047-0.016-0.109-0.016-0.125 0.031-0.031 0.047 0 0.094 0.063 0.125 0.063 0.016 0.125 0.016 0.141-0.031zM7.359 17.844v0c0.031-0.031 0.031-0.109-0.031-0.156-0.047-0.063-0.125-0.078-0.156-0.047-0.047 0.047-0.031 0.109 0.016 0.172 0.047 0.047 0.125 0.078 0.172 0.031zM8.703 19.016v0c0.016-0.063-0.047-0.141-0.141-0.172s-0.172 0-0.203 0.063c-0.016 0.063 0.047 0.141 0.141 0.172s0.172 0 0.203-0.063zM9.359 19.063v0c0-0.063-0.078-0.125-0.187-0.125-0.094 0-0.156 0.063-0.156 0.125s0.078 0.125 0.172 0.125 0.172-0.063 0.172-0.125zM9.969 18.953v0c-0.016-0.063-0.109-0.094-0.203-0.078s-0.156 0.078-0.141 0.141 0.094 0.109 0.187 0.094 0.156-0.094 0.156-0.156zM20 14c0-4.422-3.578-8-8-8s-8 3.578-8 8c0 3.531 2.297 6.531 5.469 7.594 0.406 0.078 0.547-0.172 0.547-0.391 0-0.187 0-0.812-0.016-1.484 0 0-2.219 0.484-2.688-0.953 0 0-0.359-0.922-0.891-1.156 0 0-0.719-0.5 0.063-0.5 0 0 0.781 0.063 1.219 0.828 0.703 1.234 1.875 0.875 2.328 0.672 0.078-0.516 0.281-0.875 0.516-1.078-1.781-0.203-3.656-0.891-3.656-3.953 0-0.875 0.313-1.578 0.828-2.141-0.078-0.203-0.359-1.016 0.078-2.125 0.672-0.203 2.203 0.828 2.203 0.828 0.641-0.187 1.313-0.266 2-0.266s1.359 0.078 2 0.266c0 0 1.531-1.031 2.203-0.828 0.438 1.109 0.156 1.922 0.078 2.125 0.516 0.562 0.828 1.266 0.828 2.141 0 3.078-1.875 3.75-3.656 3.953 0.281 0.25 0.547 0.734 0.547 1.484 0 1.062-0.016 1.922-0.016 2.188 0 0.219 0.141 0.469 0.547 0.391 3.172-1.062 5.469-4.062 5.469-7.594zM24 6.5v15c0 2.484-2.016 4.5-4.5 4.5h-15c-2.484 0-4.5-2.016-4.5-4.5v-15c0-2.484 2.016-4.5 4.5-4.5h15c2.484 0 4.5 2.016 4.5 4.5z")
+      
+      // sprite 7
+      symbol#add
+       g
+        path(d="M26.109 8.844c0 0.391-0.156 0.781-0.438 1.062l-13.438 13.438c-0.281 0.281-0.672 0.438-1.062 0.438s-0.781-0.156-1.062-0.438l-7.781-7.781c-0.281-0.281-0.438-0.672-0.438-1.062s0.156-0.781 0.438-1.062l2.125-2.125c0.281-0.281 0.672-0.438 1.062-0.438s0.781 0.156 1.062 0.438l4.594 4.609 10.25-10.266c0.281-0.281 0.672-0.438 1.062-0.438s0.781 0.156 1.062 0.438l2.125 2.125c0.281 0.281 0.438 0.672 0.438 1.062z")
+      
+      // sprite 8
+      symbol#delete
+       g
+        path(d="M20.281 20.656c0 0.391-0.156 0.781-0.438 1.062l-2.125 2.125c-0.281 0.281-0.672 0.438-1.062 0.438s-0.781-0.156-1.062-0.438l-4.594-4.594-4.594 4.594c-0.281 0.281-0.672 0.438-1.062 0.438s-0.781-0.156-1.062-0.438l-2.125-2.125c-0.281-0.281-0.438-0.672-0.438-1.062s0.156-0.781 0.438-1.062l4.594-4.594-4.594-4.594c-0.281-0.281-0.438-0.672-0.438-1.062s0.156-0.781 0.438-1.062l2.125-2.125c0.281-0.281 0.672-0.438 1.062-0.438s0.781 0.156 1.062 0.438l4.594 4.594 4.594-4.594c0.281-0.281 0.672-0.438 1.062-0.438s0.781 0.156 1.062 0.438l2.125 2.125c0.281 0.281 0.438 0.672 0.438 1.062s-0.156 0.781-0.438 1.062l-4.594 4.594 4.594 4.594c0.281 0.281 0.438 0.672 0.438 1.062z")
+     
+     // layouts(notifications)
+     .notifications
+      .notifications__add#uniqueid
+       span Plan was successfully 
+       svg
+        use(xlink:href="#add")
+      .notifications__delete#uniqueid
+       span Plan was successfully 
+       svg
+        use(xlink:href="#delete")
+
+     // layouts(container)
+     .container
+      // base(typography)
+      h1.heading-primary
+       span.heading-primary--left Weekly Planner
+        svg
+         use(xlink:href="#smile")
+       span.heading-primary--right Great Memories
+      // components(add)
+      .add 
+       svg
+        use(xlink:href="#calendar")
+       select.add__day
+        option(value="monday") Monday
+        option(value="tuesday") Tuesday
+        option(value="wednesday") Wednesday
+        option(value="thursday") Thursday
+        option(value="friday") Friday
+        option(value="saturday") Saturday
+        option(value="sunday") Sunday
+       svg.add__hide
+        use(xlink:href="#writedown")
+       input.add__plan(type="text" placeholder="Write a plan down :)")
+       button.add__btn Add
+        svg
+         use(xlink:href="#pencil")
+      .container__days
+       // component(day)
+       .day#monday
+        h2.heading-secondary.heading-secondary--monday Monday
+        ul.day__list
+
+       // component(day)
+       .day#tuesday
+        h2.heading-secondary.heading-secondary--tuesday Tuesday
+        ul.day__list
+         li.day__item 
+          .day__plan
+           input(type="checkbox" id="8").day__checkbox
+           label(for="8").day__new-checkbox
+            span 
+           .day__paragraph 
+            p Cooking Recital
+           button.day__btn &#9986;
+        //-  li.day__item 
+        //-   .day__plan
+        //-    input(type="checkbox" id="9").day__checkbox
+        //-    label(for="9").day__new-checkbox
+        //-     span 
+        //-    .day__paragraph 
+        //-     p Tom's piano lesson
+        //-    button.day__btn &#9986;
+        //-  li.day__item 
+        //-   .day__plan
+        //-    input(type="checkbox" id="10").day__checkbox
+        //-    label(for="10").day__new-checkbox
+        //-     span 
+        //-    .day__paragraph 
+        //-     p Oil change
+        //-    button.day__btn &#9986;
+        //-  li.day__item 
+        //-   .day__plan
+        //-    input(type="checkbox" id="11").day__checkbox
+        //-    label(for="11").day__new-checkbox
+        //-     span 
+        //-    .day__paragraph 
+        //-     p Library books due
+        //-    button.day__btn &#9986;
+        //-  li.day__item 
+        //-   .day__plan
+        //-    //input(type="checkbox" id="12").day__checkbox
+        //-    label(for="12").day__new-checkbox
+        //-     span 
+        //-    .day__paragraph
+        //-     //p Visit Mom
+        //-    //button.day__btn &#9986;
+        //-  li.day__item 
+        //-   .day__plan
+        //-    //input(type="checkbox" id="13").day__checkbox
+        //-    label(for="13").day__new-checkbox
+        //-     span 
+        //-    .day__paragraph 
+        //-     //p Visit Mom
+        //-    //button.day__btn &#9986;
+        //-  li.day__item 
+        //-   .day__plan
+        //-    //input(type="checkbox" id="14").day__checkbox
+        //-    label(for="14").day__new-checkbox
+        //-     span 
+        //-    .day__paragraph 
+        //-     //p Visit Mom
+        //-    //button.day__btn &#9986;
+        //-  li.day__item 
+        //-   .day__plan
+        //-    //input(type="checkbox" id="16").day__checkbox
+        //-    label(for="16").day__new-checkbox
+        //-     span 
+        //-    .day__paragraph 
+        //-     //p Visit Mom
+        //-    //button.day__btn &#9986;
+
+       // component(day)
+       .day#wednesday
+        h2.heading-secondary.heading-secondary--wednesday Wednesday
+        ul.day__list
+        //-  li.day__item 
+        //-   .day__plan
+        //-    input(type="checkbox" id="17").day__checkbox
+        //-    label(for="17").day__new-checkbox
+        //-     span 
+        //-    .day__paragraph
+        //-     p Band Practice
+        //-    button.day__btn &#9986;
+        //-  li.day__item 
+        //-   .day__plan
+        //-    input(type="checkbox" id="18").day__checkbox
+        //-    label(for="18").day__new-checkbox
+        //-     span 
+        //-    .day__paragraph 
+        //-     p Sandy's recital
+        //-    button.day__btn &#9986;
+        //-  li.day__item 
+        //-   .day__plan
+        //-    input(type="checkbox" id="19").day__checkbox
+        //-    label(for="19").day__new-checkbox
+        //-     span 
+        //-    .day__paragraph
+        //-     p Yoga class
+        //-    button.day__btn &#9986;
+        //-  li.day__item 
+        //-   .day__plan
+        //-    input(type="checkbox" id="20").day__checkbox
+        //-    label(for="20").day__new-checkbox
+        //-     span 
+        //-    .day__paragraph
+        //-     p Meet Danny
+        //-    button.day__btn &#9986;
+        //-  li.day__item 
+        //-   .day__plan
+        //-    //input(type="checkbox" id="20").day__checkbox
+        //-    label(for="20").day__new-checkbox
+        //-     span 
+        //-    .day__paragraph 
+        //-     //p Visit Mom
+        //-    //button.day__btn &#9986;
+        //-  li.day__item 
+        //-   .day__plan
+        //-    //input(type="checkbox" id="21").day__checkbox
+        //-    label(for="21").day__new-checkbox
+        //-     span 
+        //-    .day__paragraph 
+        //-     //p Visit Mom
+        //-    //button.day__btn &#9986;
+        //-  li.day__item 
+        //-   .day__plan
+        //-    //input(type="checkbox" id="22").day__checkbox
+        //-    label(for="22").day__new-checkbox
+        //-     span 
+        //-    .day__paragraph 
+        //-     //p Visit Mom
+        //-    //button.day__btn &#9986;
+        //-  li.day__item 
+        //-   .day__plan
+        //-    //input(type="checkbox" id="23").day__checkbox
+        //-    label(for="23").day__new-checkbox
+        //-     span 
+        //-    .day__paragraph 
+        //-     //p Visit Mom
+        //-    //button.day__btn &#9986;    
+
+       // component(day)
+       .day#thursday
+        h2.heading-secondary.heading-secondary--thursday Thursday
+        ul.day__list
+        //-  li.day__item 
+        //-   .day__plan
+        //-    input(type="checkbox" id="24").day__checkbox
+        //-    label(for="24").day__new-checkbox
+        //-     span 
+        //-    .day__paragraph 
+        //-     p House Cleaning
+        //-    button.day__btn &#9986;
+        //-  li.day__item 
+        //-   .day__plan
+        //-    input(type="checkbox" id="25").day__checkbox
+        //-    label(for="25").day__new-checkbox
+        //-     span 
+        //-    .day__paragraph 
+        //-     p Clean Out Fridge
+        //-    button.day__btn &#9986;
+        //-  li.day__item 
+        //-   .day__plan
+        //-    input(type="checkbox" id="26").day__checkbox
+        //-    label(for="26").day__new-checkbox
+        //-     span 
+        //-    .day__paragraph 
+        //-     p Pay light bill
+        //-    button.day__btn &#9986;
+        //-  li.day__item 
+        //-   .day__plan
+        //-    input(type="checkbox" id="27").day__checkbox
+        //-    label(for="27").day__new-checkbox
+        //-     span 
+        //-    .day__paragraph 
+        //-     p Visit Zoo
+        //-    button.day__btn &#9986;
+        //-  li.day__item 
+        //-   .day__plan
+        //-    //input(type="checkbox" id="28").day__checkbox
+        //-    label(for="28").day__new-checkbox
+        //-     span 
+        //-    .day__paragraph 
+        //-     //p Visit Mom
+        //-    //button.day__btn &#9986;
+        //-  li.day__item 
+        //-   .day__plan
+        //-    //input(type="checkbox" id="29").day__checkbox
+        //-    label(for="29").day__new-checkbox
+        //-     span 
+        //-    .day__paragraph 
+        //-     //p Visit Mom
+        //-    //button.day__btn &#9986;
+        //-  li.day__item 
+        //-   .day__plan
+        //-    //input(type="checkbox" id="30").day__checkbox
+        //-    label(for="30").day__new-checkbox
+        //-     span 
+        //-    .day__paragraph 
+        //-     //p Visit Mom
+        //-    //button.day__btn &#9986;
+        //-  li.day__item 
+        //-   .day__plan
+        //-    //input(type="checkbox" id="31").day__checkbox
+        //-    label(for="31").day__new-checkbox
+        //-     span 
+        //-    .day__paragraph 
+        //-     //p Visit Mom
+        //-    //button.day__btn &#9986;  
+
+       // component(day)
+       .day#friday
+        h2.heading-secondary.heading-secondary--friday Friday
+        ul.day__list
+        //-  li.day__item 
+        //-   .day__plan
+        //-    input(type="checkbox" id="32").day__checkbox
+        //-    label(for="32").day__new-checkbox
+        //-     span 
+        //-    .day__paragraph 
+        //-     p House Cleaning
+        //-    button.day__btn &#9986;
+        //-  li.day__item 
+        //-   .day__plan
+        //-    input(type="checkbox" id="33").day__checkbox
+        //-    label(for="33").day__new-checkbox
+        //-     span 
+        //-    .day__paragraph 
+        //-     p Clean Out Fridge
+        //-    button.day__btn &#9986;
+        //-  li.day__item 
+        //-   .day__plan
+        //-    input(type="checkbox" id="34").day__checkbox
+        //-    label(for="34").day__new-checkbox
+        //-     span 
+        //-    .day__paragraph 
+        //-     p Pay light bill
+        //-    button.day__btn &#9986;
+        //-  li.day__item 
+        //-   .day__plan
+        //-    input(type="checkbox" id="35").day__checkbox
+        //-    label(for="35").day__new-checkbox
+        //-     span 
+        //-    .day__paragraph 
+        //-     p Visit Zoo
+        //-    button.day__btn &#9986;
+        //-  li.day__item 
+        //-   .day__plan
+        //-    //input(type="checkbox" id="36").day__checkbox
+        //-    label(for="36").day__new-checkbox
+        //-     span 
+        //-    .day__paragraph 
+        //-     //p Visit Mom
+        //-    //button.day__btn &#9986;
+        //-  li.day__item 
+        //-   .day__plan
+        //-    //input(type="checkbox" id="37").day__checkbox
+        //-    label(for="37").day__new-checkbox
+        //-     span 
+        //-    .day__paragraph 
+        //-     //p Visit Mom
+        //-    //button.day__btn &#9986;
+        //-  li.day__item 
+        //-   .day__plan
+        //-    //input(type="checkbox" id="38").day__checkbox
+        //-    label(for="38").day__new-checkbox
+        //-     span 
+        //-    .day__paragraph 
+        //-     //p Visit Mom
+        //-    //button.day__btn &#9986;
+        //-  li.day__item 
+        //-   .day__plan
+        //-    //input(type="checkbox" id="39").day__checkbox
+        //-    label(for="39").day__new-checkbox
+        //-     span 
+        //-    .day__paragraph 
+        //-     //p Visit Mom
+        //-    //button.day__btn &#9986;   
+
+       // component(day)
+       .day#saturday
+        h2.heading-secondary.heading-secondary--saturday Saturday
+        ul.day__list
+        //-  li.day__item 
+        //-   .day__plan
+        //-    input(type="checkbox" id="40").day__checkbox
+        //-    label(for="40").day__new-checkbox
+        //-     span 
+        //-    .day__paragraph 
+        //-     p Clean Bathroom
+        //-    button.day__btn &#9986;
+        //-  li.day__item 
+        //-   .day__plan
+        //-    input(type="checkbox" id="41").day__checkbox
+        //-    label(for="41").day__new-checkbox
+        //-     span 
+        //-    .day__paragraph 
+        //-     p Visit auntry
+        //-    button.day__btn &#9986;
+        //-  li.day__item 
+        //-   .day__plan
+        //-    input(type="checkbox" id="42").day__checkbox
+        //-    label(for="42").day__new-checkbox
+        //-     span 
+        //-    .day__paragraph 
+        //-     p Mop Floors
+        //-    button.day__btn &#9986;
+        //-  li.day__item 
+        //-   .day__plan
+        //-    input(type="checkbox" id="43").day__checkbox
+        //-    label(for="43").day__new-checkbox
+        //-     span 
+        //-    .day__paragraph 
+        //-     p Do laundry
+        //-    button.day__btn &#9986;
+        //-  li.day__item 
+        //-   .day__plan
+        //-    input(type="checkbox" id="44").day__checkbox
+        //-    label(for="44").day__new-checkbox
+        //-     span 
+        //-    .day__paragraph 
+        //-     p Wipe windows
+        //-    button.day__btn &#9986;
+        //-  li.day__item 
+        //-   .day__plan
+        //-    //input(type="checkbox" id="45").day__checkbox
+        //-    label(for="45").day__new-checkbox
+        //-     span 
+        //-    .day__paragraph 
+        //-     //p Visit Mom
+        //-    //button.day__btn &#9986;
+        //-  li.day__item 
+        //-   .day__plan
+        //-    //input(type="checkbox" id="46").day__checkbox
+        //-    label(for="46").day__new-checkbox
+        //-     span 
+        //-    .day__paragraph 
+        //-     //p Visit Mom
+        //-    //button.day__btn &#9986;
+        //-  li.day__item 
+        //-   .day__plan
+        //-    //input(type="checkbox" id="47").day__checkbox
+        //-    label(for="47").day__new-checkbox
+        //-     span 
+        //-    .day__paragraph 
+        //-     //p Visit Mom
+        //-    //button.day__btn &#9986;       
+       
+       // component(day)
+       .day#sunday
+        h2.heading-secondary.heading-secondary--sunday Sunday
+        ul.day__list
+        //-  li.day__item 
+        //-   .day__plan
+        //-    input(type="checkbox" id="48").day__checkbox
+        //-    label(for="48").day__new-checkbox
+        //-     span 
+        //-    .day__paragraph 
+        //-     p Clean Bathroom
+        //-    button.day__btn &#9986;
+        //-  li.day__item 
+        //-   .day__plan
+        //-    input(type="checkbox" id="49").day__checkbox
+        //-    label(for="49").day__new-checkbox
+        //-     span 
+        //-    .day__paragraph
+        //-     p Visit auntry
+        //-    button.day__btn &#9986;
+        //-  li.day__item 
+        //-   .day__plan
+        //-    input(type="checkbox" id="50").day__checkbox
+        //-    label(for="50").day__new-checkbox
+        //-     span 
+        //-    .day__paragraph 
+        //-     p Mop Floors
+        //-    button.day__btn &#9986;
+        //-  li.day__item 
+        //-   .day__plan
+        //-    input(type="checkbox" id="51").day__checkbox
+        //-    label(for="51").day__new-checkbox
+        //-     span 
+        //-    .day__paragraph 
+        //-     p Do laundry
+        //-    button.day__btn &#9986;
+        //-  li.day__item 
+        //-   .day__plan
+        //-    input(type="checkbox" id="52").day__checkbox
+        //-    label(for="52").day__new-checkbox
+        //-     span 
+        //-    .day__paragraph
+        //-     p Wipe windows
+        //-    button.day__btn &#9986;
+        //-  li.day__item 
+        //-   .day__plan
+        //-    //input(type="checkbox" id="53").day__checkbox
+        //-    label(for="53").day__new-checkbox
+        //-     span 
+        //-    .day__paragraph 
+        //-     //p Visit Mom
+        //-    //button.day__btn &#9986;
+        //-  li.day__item 
+        //-   .day__plan
+        //-    //input(type="checkbox" id="54").day__checkbox
+        //-    label(for="54").day__new-checkbox
+        //-     span 
+        //-    .day__paragraph 
+        //-     //p Visit Mom
+        //-    //button.day__btn &#9986;
+        //-  li.day__item 
+        //-   .day__plan
+        //-    //input(type="checkbox" id="55").day__checkbox
+        //-    label(for="55").day__new-checkbox
+        //-     span 
+        //-    .day__paragraph 
+        //-     //p Visit Mom
+        //-    //button.day__btn &#9986; 
+
+       // component(project-info)     
+       .project-info
+        .project-info__header
+         span Personal Project
+         ul.project-info__list
+          li 
+           a(href="https://www.linkedin.com/in/vlad-shum-53b9b71a3/" target="_blank")
+            svg
+             use(xlink:href="#linked-in")
+          li
+           a(href="https://github.com/devshum" target="_blank")
+            svg
+             use(xlink:href="#github")
+        h3 Powered by:
+        ul.project-info__technologies
+         a(href="https://en.wikipedia.org/wiki/HTML" target="_blank")
+          li
+           img(src="/img/technologies/html.png", alt="html logo")
+         a(href="https://www.sitepoint.com/a-beginners-guide-to-pug/" target="_blank")
+          li
+           img(src="/img/technologies/pug.png", alt="pug logo")
+         a(href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets" target="_blank")
+          li
+           img(src="/img/technologies/css.png", alt="css logo")
+         a(href="https://en.wikipedia.org/wiki/Sass_(stylesheet_language)" target="_blank")
+          li
+           img(src="/img/technologies/sass.png", alt="sass logo")
+         a(href="https://en.wikipedia.org/wiki/Gulp.js" target="_blank")
+          li
+           img(src="/img/technologies/gulp.png", alt="gulp logo")
+         a(href="https://en.wikipedia.org/wiki/JavaScript" target="_blank")
+          li
+           img(src="/img/technologies/js.png", alt="js logo")
+         a(href="https://en.wikipedia.org/wiki/Webpack" target="_blank")
+          li
+           img(src="/img/technologies/webpack.png", alt="webpack logo")
+         a(href="https://en.wikipedia.org/wiki/Babel_(transcompiler)" target="_blank")
+          li
+           img(src="/img/technologies/babel.png", alt="babel logo")
+        .project-info__footer 
+         p All rights aren't reserved 😄👌
+         p Made with 😍🔥 Vlad Shum
+
+       
+
+
+
+         
+       
+
+
+
+       

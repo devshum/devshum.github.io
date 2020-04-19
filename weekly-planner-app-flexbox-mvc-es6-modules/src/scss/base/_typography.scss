@@ -1,0 +1,76 @@
+body {
+   display: flex;
+   justify-content: center;
+
+   background: url(/img/hero.png) center no-repeat;
+   background-size: cover;
+   font-size: 1.6rem;
+   font-weight: 300;
+   min-height: 100vh;
+
+    @include respond(tab-land) { align-items: initial; }
+}
+
+.heading-primary--left,
+.heading-secondary { 
+    color: rgba($color-white, .8);
+    font-family: $baloo-paaji-font; 
+}
+
+.heading-primary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 2rem;
+
+    &--left {
+        display: flex;
+        align-items: center;
+
+        background-color: $color-blue;
+        padding: .5rem 2rem;
+        border-radius: 4rem;
+        font-size: 2.2rem;
+
+        @include respond(phone) { 
+            justify-content: center;
+            width: 100%; 
+        }
+
+        svg {
+            fill: rgba($color-white, .8);
+            margin-left: 1rem;
+            height: 2.8rem;
+            width: 2.8rem;
+        }
+    }
+
+    &--right { 
+        font-family: $great-vibes-font; 
+        font-size: 3rem;
+
+        @include respond(phone) { display: none; }
+    }
+}
+
+
+.heading-secondary {
+    text-align: center;
+    font-size: 3rem;
+    padding: 0 2rem;
+
+    &--monday { background-color: $color-sand; }
+    &--tuesday { background-color: $color-mint; }
+    &--wednesday { background-color: $color-blue-light; }
+    &--thursday { background-color: $color-purple-dark; }
+    &--friday { background-color: $color-pink; }
+    &--saturday { background-color: $color-sand-dark; }
+    &--sunday { background-color: $color-blue-dark; }
+}
+
+h3 {
+    font-family: $shadows-light-font;
+    font-size: 2rem;
+    font-weight: 300;
+}

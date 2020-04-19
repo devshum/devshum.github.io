@@ -1,0 +1,35 @@
+.notifications {
+    position: fixed;
+    color: $color-white;
+    font-family: $baloo-paaji-font;
+    font-size: 2rem;
+    bottom: 0;
+    left: 2%;
+    z-index: 2;
+
+    @include respond(phone) { font-size: initial; }
+
+    &__add,
+    &__delete {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        padding: 1rem;
+        border-radius: 4rem;
+        margin-bottom: 2rem;
+        box-shadow: .1rem 1rem 1rem rgba($color-black, .2);
+        animation: moveToBottom .5s ease-out;
+
+        svg {
+            fill: $color-white;
+            height: 2.8rem;
+            width: 2.8rem;
+            margin-left: 1rem;
+        }
+    }
+
+    &__add { background-color: $color-mint; }
+
+    &__delete { background-color: $color-red; }
+}

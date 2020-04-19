@@ -1,0 +1,27 @@
+@keyframes write {
+    0% { transform: translateX(0); }
+
+    50% { transform: translateX(1rem); }
+
+    100% { transform: translateX(0); }
+}
+
+@keyframes dots {
+    0% { color: $color-black; }
+
+    50% { color: $color-white; }
+
+    100% { color: $color-black; }
+}
+
+@keyframes moveToBottom {
+    0% { 
+        opacity: 0; 
+        transform: translateY(-2rem);
+    }
+
+    100% { 
+        opacity: 1; 
+        transform: translateY(0);
+    }
+}
