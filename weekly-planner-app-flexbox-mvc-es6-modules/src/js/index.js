@@ -58,39 +58,39 @@ const ctrlChangeFields = () => {
     }
 };
 
-const ctrlRenderStorage = () => {
-    // Recieve storage
-    const storage = dataCtrl.readStorage();
-    if (storage.monday.length > 0) {
-        storage.monday.forEach(el => UICtrl.displayPlan(el.id, el.day, el.plan));
-    };
+// const ctrlRenderStorage = () => {
+//     // Recieve storage
+//     const storage = dataCtrl.readStorage();
+//     if (storage.monday.length > 0) {
+//         storage.monday.forEach(el => UICtrl.displayPlan(el.id, el.day, el.plan));
+//     };
 
-    if (storage.tuesday.length > 0) {
-        storage.tuesday.forEach(el => UICtrl.displayPlan(el.id, el.day, el.plan));
-    };
+//     if (storage.tuesday.length > 0) {
+//         storage.tuesday.forEach(el => UICtrl.displayPlan(el.id, el.day, el.plan));
+//     };
 
-    if (storage.wednesday.length > 0) {
-        storage.wednesday.forEach(el => UICtrl.displayPlan(el.id, el.day, el.plan));
-    };
+//     if (storage.wednesday.length > 0) {
+//         storage.wednesday.forEach(el => UICtrl.displayPlan(el.id, el.day, el.plan));
+//     };
 
-    if (storage.thursday.length > 0) {
-        storage.thursday.forEach(el => UICtrl.displayPlan(el.id, el.day, el.plan));
-    };
+//     if (storage.thursday.length > 0) {
+//         storage.thursday.forEach(el => UICtrl.displayPlan(el.id, el.day, el.plan));
+//     };
 
-    if (storage.friday.length > 0) {
-        storage.friday.forEach(el => UICtrl.displayPlan(el.id, el.day, el.plan));
-    };
+//     if (storage.friday.length > 0) {
+//         storage.friday.forEach(el => UICtrl.displayPlan(el.id, el.day, el.plan));
+//     };
 
-    if (storage.saturday.length > 0) {
-        storage.saturday.forEach(el => UICtrl.displayPlan(el.id, el.day, el.plan));
-    };
+//     if (storage.saturday.length > 0) {
+//         storage.saturday.forEach(el => UICtrl.displayPlan(el.id, el.day, el.plan));
+//     };
 
-    if (storage.sunday.length > 0) {
-        storage.sunday.forEach(el => UICtrl.displayPlan(el.id, el.day, el.plan));
-    };
-};
+//     if (storage.sunday.length > 0) {
+//         storage.sunday.forEach(el => UICtrl.displayPlan(el.id, el.day, el.plan));
+//     };
+// };
 
-window.addEventListener('load', ctrlRenderStorage);
+//window.addEventListener('load', ctrlRenderStorage);
 
 elements.chooseDay.addEventListener('change', ctrlChangeFields);
 

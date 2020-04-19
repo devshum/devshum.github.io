@@ -1,10 +1,19 @@
 import { elements } from './base';
+import uniqid from 'uniqid';
 
 export const displayPlan = (id, day, plan) => {
+    const UIDs = `${uniqid()} `.repeat(2);
+    const [UID1, UID2] = UIDs.split(' ');
     const html = `
         <li class="day__item" id="${day}-${id}">
             <div class="day__plan">
-                <p class="day__paragraph">${plan}</p>
+                <div class="day__checkbox-box">
+                    <input class="day__checkbox" type="checkbox" id="${UID1}"/>
+                    <label class="day__new-checkbox" for="${UID2}"><span> </span></label>
+                    <div class="day__paragraph">
+                    <p>${plan}</p>
+                    </div>
+                </div>
                 <button class="day__btn">&#10006;</button>
             </div>
         </li>
@@ -18,7 +27,6 @@ export const displayPlan = (id, day, plan) => {
 export const deleteListPlan = (planID) => {
     const el = document.getElementById(planID);
     el.parentNode.removeChild(el);
-    console.log(planID);
 };
 
 export const displayNotificationAdd = () => {

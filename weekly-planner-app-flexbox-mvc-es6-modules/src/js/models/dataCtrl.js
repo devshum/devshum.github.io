@@ -14,15 +14,15 @@ let state = {
     },
 };
 
-const persistData = () => {
-    localStorage.setItem('plans', JSON.stringify(state.allPlans));
-};
+// const persistData = () => {
+//     localStorage.setItem('plans', JSON.stringify(state.allPlans));
+// };
 
-export const readStorage = () => {
-    const storage = JSON.parse(localStorage.getItem('plans'));
-    state.allPlans = storage;
-    return storage;
-};
+// export const readStorage = () => {
+//     const storage = JSON.parse(localStorage.getItem('plans'));
+//     state.allPlans = storage;
+//     return storage;
+// };
 
 export const getInput = () => {
     // Return an array
@@ -38,7 +38,7 @@ export const addPlan = (day, plan) => {
         // Push the day item into an array
         state.allPlans[day].push(newPlan);
         // LocalStorage
-        persistData();
+        // persistData();
         return newPlan;
     } else {
         alert(`${day}'s limit has been exceeded`);
@@ -51,7 +51,7 @@ export const deletePlan = (day, id) => {
     });
     state.allPlans[day].splice(index, 1);
     // LocalStorage
-    persistData();
+    // persistData();
 };
 
 export const clearFields = () => {
