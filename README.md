@@ -1,11 +1,22 @@
-quiz-js-app-flexbox-mvc-es6-modules | https://devshum.github.io/
+english-js-app-flexbox-mvc-es6-modules | https://devshum.github.io/
 
-![Quiz Demo](demo/english-demo.gif)
+![English app Demo](demo/english-app-demo.gif)
+
+* 
+
+![English app Preview](preview/english-app.jpg)
+![English app MVC Preview](preview/english-es6-modules-mvc.jpg)
+
+---------------------
+
+quiz-js-app-flexbox-mvc-es6-modules | https://devshum.github.io/quiz-js-app-flexbox-mvc-es6-modules
+
+![Quiz Demo](demo/quiz-demo.gif)
 
 *The desing is from Udemy 
 
-![Englsih Preview](preview/english.jpg)
-![English MVC Preview](preview/english-es6-modules-mvc.jpg)
+![Englsih Preview](preview/quiz.jpg)
+![English MVC Preview](preview/es6-modules-mvc.jpg)
 
 ---------------------
 
