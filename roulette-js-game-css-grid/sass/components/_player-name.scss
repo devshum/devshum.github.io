@@ -1,7 +1,0 @@
-.player-name { 
-    font-size: 2rem;
-    color: $color-red; 
-    position: relative;
-
-    @include respond(phone-small) { font-size: 1.6rem; }
-}
