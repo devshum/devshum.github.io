@@ -114,12 +114,14 @@ Otherwise I used the same thing as below: PUG, SCSS, JS and so on and so forth â
 
 ---------------------
 
-roulette-js-game-css-grid ES5 | https://devshum.github.io/roulette-js-game-css-grid/
+roulette-js-game-css-grid ES6 modules | https://devshum.github.io/roulette-js-game-css-grid/
 
 ![Roulette Demo](demo/roulette-demo.gif)
+![Roulette MVC Demo](demo/game-mvc.jpg)
 
-In front of you a straightforward DOM game(also adaptive and looks well on a phone), I'm glad that I successeded in creating this one using all the technics that I've already learnt and showed to you. As usual the project includes PUG(HTML preprocessor(with BEM)), SCSS(CSS preprocessor(CSS GRID)), clean JS, a couple of animation, especially I liked a cylinder animation when you push the fire button ðŸ’¥
+In front of you a DOM game(also adaptive and looks well on a phone), I'm glad that I successeded in creating this one using all the technics that I've already learnt and showed to you. As usual the project includes PUG(HTML preprocessor(with BEM)), SCSS(CSS preprocessor(CSS GRID)), a couple of animation, especially I liked a cylinder animation when you push the fire button.
 
+The project was built with JS ES6 syntax and ES6 modules. The project has a base module and view module which connected with main index.js and do the job via function calls.
 *The design created on my own.
 
 ![Freebie Preview](preview/roulette.jpg)
