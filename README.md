@@ -1,11 +1,22 @@
+english-js-app-flexbox-mvc-es6-modules | https://devshum.github.io/
+
+![English app Demo](demo/english-app-demo.gif)
+
+* 
+
+![English app Preview](preview/english-app.jpg)
+![English app MVC Preview](preview/english-es6-modules-mvc.jpg)
+
+---------------------
+
 quiz-js-app-flexbox-mvc-es6-modules | https://devshum.github.io/quiz-js-app-flexbox-mvc-es6-modules
 
 ![Quiz Demo](demo/quiz-demo.gif)
 
 *The desing is from Udemy 
 
-![Quiz Preview](preview/quiz.jpg)
-![Quiz MVC Preview](preview/es6-modules-mvc.jpg)
+![Englsih Preview](preview/quiz.jpg)
+![English MVC Preview](preview/es6-modules-mvc.jpg)
 
 ---------------------
 
@@ -27,7 +38,7 @@ vocabulary-js-app-flexbox-mvc | https://devshum.github.io/vocabulary-js-app-flex
 
 ![Vocabulary Demo](demo/vocabulary-demo.gif)
 
-In this work I practiced object oriented programming approach thanks to IIFE.
+In this work I practiced an object oriented programming approach thanks to IIFE.
 
 Also this project has a switch button, which changes the color theme thanks to a :root variable approach.
 
@@ -49,7 +60,7 @@ Check the E-Mail newsletter in GMAIL APP
 
 ![Multiplex Demo (Mobile)](demo/multiplex-demo-app.gif)
 
-This kind of markup involves huge efforts and concentration but the result lived up my expectations, because the newsletter looks good everywhere :)
+This kind of markup involves huge efforts and concentration but the result lived up to my expectations, because the newsletter looks good everywhere :)
 
 *The desing I took from my gmail SPAM :D
 
@@ -77,9 +88,9 @@ english-css-grid-mobile-first | https://devshum.github.io/english-css-grid-mobil
 
 ![English Demo](demo/english-demo.gif)
 
-This time I trained a mobile first markup with css-grid, next time I'll be making mobile first with floats(custom grid).
+This time I trained a mobile first markup with css-grid
 
-The markup has good and adaptive photo galleries/navigations. The large gallery was created with css grid I made that section very esily thanks to css grid.
+The markup has good and adaptive photo galleries/navigations. The large gallery was created with css grid. I made that section very esily thanks to this one.
 
 *The design I took from the Internet.
 
@@ -109,8 +120,6 @@ roulette-js-game-css-grid ES5 | https://devshum.github.io/roulette-js-game-css-g
 
 In front of you a straightforward DOM game(also adaptive and looks well on a phone), I'm glad that I successeded in creating this one using all the technics that I've already learnt and showed to you. As usual the project includes PUG(HTML preprocessor(with BEM)), SCSS(CSS preprocessor(CSS GRID)), clean JS, a couple of animation, especially I liked a cylinder animation when you push the fire button 💥
 
-Includes 3 event listeners, 1 callback function(init), important gamePlaying variable and lots of DOM manipulations.
-
 *The design created on my own.
 
 ![Freebie Preview](preview/roulette.jpg)
@@ -123,9 +132,7 @@ freebie-css-grid | https://devshum.github.io/freebie-css-grid/
 
 I was creating this markup with great pleasure because I intended to revise my CSS Grid skills and the design looks outstanding and minimalistic.
 
-I slightly experimented with rotation animations which also consist the background-blend-mode(created seperately form the original design by myself) and a property(hover: none) in parallel to media screen. Which is why I wanted to create this markup 😃
-
-Afterwards, if everything goes smoothly, I'll create minimum 3 mobile-first markups on each of a technology in order to make my knowledge more complete and in the future 2-3 JS applications(1 large React app), ~ 2 html letters and some bootstrap project. It goes without saying 🙄 
+I slightly experimented with rotation animations which also consist the background-blend-mode(created seperately form the original design by myself) and a property(hover: none) in parallel to media screen. Which is why I wanted to create this markup 😃 
 
 *The design I took from the Internet.
 
@@ -143,7 +150,7 @@ Really a pure project which fully created with Flexbox, there are smooth animati
 
 Also I succeed in practicing some PHP, the usual and the compressed code were included in html and the folder, too but on GitHub Pages it isn't possible to show 😐
 
-The desktop part of site as usual has the ~100% support on Google Page speed but due to built-in Google Map above the footer the mobile support and the console warnings were crushed 😫😫😫😫 There's no getting around it. 
+The desktop part of site as usual has the ~100% support on Google Page speed but due to built-in Google Map above the footer the mobile support and the console warnings were crushed 😫😫😫😫 There's no way to prevent it. 
 
 I hope You'll like this as I do.
 
@@ -157,16 +164,15 @@ miramax-floats | https://devshum.github.io/miramax-floats/
 
 ![Miramax Demo](demo/miramax-demo.gif)
 
-Another(and last in this portfolio, but who knows 🤣) markup is with floats but this time with Graham Miller's fluid grid(http://www.responsivegridsystem.com/), a really outstanding thing 😍
+Another markup with floats but this time with Graham Miller's fluid grid(http://www.responsivegridsystem.com/), a really outstanding thing 😍
 
 The valid HTML markup has a basic SEO optimization a lot of jQuery animations(waypoints plugin), a few my own keyframes CSS animations and a big CSS animation framework(https://daneden.github.io/animate.css/) which also included in this Sass 7-1 Pattern and looks smooth and well 🙂
 
 To this one looks correct in Internet Explorer 6-8, Safari 4.x, Firefox 3.x. и iPhone 3.x. I included respond.js | html5shiv.min.js | selectivizr.min.js
 
-*The design I was creating just in browser without a template,
+*The design I created just in browser without a template,
 this is a mix of my idea and a real miramax web-site page(https://www.miramax.com/movie/pulp-fiction/),
 in this case ionicons(https://ionicons.com/) really helped me a lot 🎅
-
 
 ![Pulp Fiction Preview](preview/pulp-fiction.jpg)
 
@@ -176,7 +182,7 @@ fashion-blog-floats | https://devshum.github.io/fashion-blog-floats/
 
 ![Fashion Demo](demo/fashion-demo.gif)
 
-I didn't use PUG preprocessor until this time because I wanted learning SCSS preprocessor well. PUG is a technology, that stand one step above any CSS preprocessor and well I've really liked that thing, it allows to save time and HTML code looks much clean! I think that in furter I'll use PUG 🤠
+I haven't used PUG preprocessor until this time because I wanted learning SCSS preprocessor well. PUG is a technology, that stand one step above any CSS preprocessor and well I've really liked that thing, it allows to save time and HTML code looks much clean! I think that in furter I'll use PUG 🤠
 
 And this is my first project in the portfolio with jQuery, I implemented an onScroll method that allows produce the header if the scroll height bigger than the intro height section.
 
@@ -192,9 +198,9 @@ agora-flexbox | https://devshum.github.io/agora-flexbox/
 
 ![Agora Demo](demo/agora-demo.gif)
 
-I really enjoyed to make this HTML markup(cross-browser, responsive-adaptive) because I absolutely like this kind of static websites like a blog or something similar 😄
+I really enjoyed making this HTML markup(cross-browser, responsive-adaptive) because I absolutely like this kind of static websites like a blog or something similar 😄
 
-In this one I used the same things as below that base on Flexbox and so on...
+In this one I used the same things as below that based on Flexbox and so on...
 The markup also has a good support in 'The W3C Markup Validation Service', 'PageSpeed Insights' and has well-compressed images.
 
 In the next markup I mean to make an old-standart site on Floats(some grid system) and PUG, because as I consider that kind of markup must be in a portfolio in spite of modern technologies like CSS Grid or Flexbox etc.
@@ -224,7 +230,7 @@ kong-css-grid | https://devshum.github.io/kong-css-grid/
 
 This HTML(cross-browser, responsive-adaptive) markup is absolutely huge I used CSS GRID , BEM , SCSS , well-adaprive backgrounds which depend on width or device pixel ratio, that's nice
 
-I think that I managed to implement my CSS GRID knowledge greatly, I'm glad that in 2019 this technology has the support 90% or even more.
+I think that I managed to implement my CSS GRID knowledge greatly, I'm glad that in 2019-2020 this technology has the support 90% or even more.
 
 *The design I took from the Internet.
 
