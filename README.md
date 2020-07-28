@@ -117,7 +117,7 @@ Otherwise I used the same thing as below: PUG, SCSS, JS and so on and so forth â
 roulette-js-game-css-grid ES6 modules | https://devshum.github.io/roulette-js-game-css-grid/
 
 ![Roulette Demo](demo/roulette-demo.gif)
-![Roulette MVC Demo](demo/game-demo.jpg)
+![Roulette MVC Demo](demo/game-mvc.jpg)
 
 In front of you a DOM game(also adaptive and looks well on a phone), I'm glad that I successeded in creating this one using all the technics that I've already learnt and showed to you. As usual the project includes PUG(HTML preprocessor(with BEM)), SCSS(CSS preprocessor(CSS GRID)), a couple of animation, especially I liked a cylinder animation when you push the fire button.
 
