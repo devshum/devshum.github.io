@@ -1,0 +1,11 @@
+.hero {
+    @include bgPlusGradient(url(/img/hero.png));
+
+    img {
+        width: 70%;
+        transform: translateY(3rem);
+        @include boxShadow(.2);
+
+        @include respond(md) { width: 100%; }
+    }
+}

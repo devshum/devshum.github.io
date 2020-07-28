@@ -1,0 +1,29 @@
+//Media Query Manager
+
+//1em = 16px
+@mixin respond($breakpoint) {
+    @if $breakpoint == lg {
+        @media only screen and (max-width: 62em) { @content; }    //992px
+    }
+
+    @if $breakpoint == md {
+        @media only screen and (max-width: 48em) { @content; }    //768px
+    }
+
+    @if $breakpoint == sm {
+        @media only screen and (max-width: 36em) { @content; }    //576px
+    }
+
+    @if $breakpoint == xs {
+        @media only screen and (max-width: 23.75em) { @content; }    //380px
+    }
+}
+
+@mixin boxShadow($opacity) {
+    box-shadow: 0 .5rem 1rem rgba($color-black, $opacity);
+}
+
+@mixin bgPlusGradient($url) {
+    background: linear-gradient(to right bottom, rgba($color-black, .9), rgba($color-black, .3)), $url center no-repeat;
+    background-size: cover;
+}

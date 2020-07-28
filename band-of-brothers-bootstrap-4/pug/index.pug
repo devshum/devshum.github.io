@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous")
+        link(href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap", rel="stylesheet")
+        link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.11.2/css/all.css")
+        link(rel="stylesheet", type="text/css" href="css/style.compress.css")
+        title Band of Brothers
+    body 
+     header
+      nav.navbar.navbar-light.navbar-expand-lg.text-uppercase.py-4
+
+       .container
+        a(href="https://www.hbo.com/").navbar-brand.d-none.d-md-block
+         img(src="img/hbo-logo.png", alt="hbo logo").logo
+
+        button(type="button", data-toggle="collapse", data-target="#navbarShow").navbar-toggler.order-first.pl-0
+         span.navbar-toggler-icon &nbsp;
+        i.fas.fa-search.d-block.d-md-none.mr-auto.ml-4
+
+        .mobile-logo.d-flex.d-md-none 
+         a(href="https://www.hbo.com/").navbar-brand.mr-0
+          img(src="img/hbo-logo.png", alt="hbo logo").logo 
+         a.nav-link(href="#").font-weight-bold Series
+
+        ul.navbar-nav.ml-4.flex-row.d-none.d-md-flex
+         li.nav-item
+          a.nav-link(href="#").font-weight-bold Series
+         li.nav-item.d-none.d-md-block
+          a.nav-link(href="#") Movies
+         li.nav-item.d-none.d-md-block
+          a.nav-link(href="#") Specials
+         li.nav-item.d-none.d-md-block
+          a.nav-link(href="#") Sports
+         li.nav-item.d-none.d-md-block
+          a.nav-link(href="#") Kids
+         li.nav-item.d-flex.align-items-center.mr-0
+          i.fas.fa-search
+
+        .collapse.navbar-collapse#navbarShow
+         ul.navbar-nav.align-items-center.ml-auto
+          li.nav-item.d-xs-block
+           a.nav-link(href="#").font-weight-bold Series
+          li.nav-item.d-block.d-md-none
+           a.nav-link(href="#") Movies
+          li.nav-item.d-block.d-md-none
+           a.nav-link(href="#") Specials
+          li.nav-item.d-block.d-md-none
+           a.nav-link(href="#") Sports
+          li.nav-item.d-block.d-md-none
+           a.nav-link(href="#") Kids
+          li.nav-item
+           a.nav-link(href="#") Free Episodes
+          li.nav-item
+           a.nav-link(href="#") Schedule
+          li.nav-item.d-none.d-lg-block
+           a.nav-link(href="#") Sign In
+
+          li.nav-item.dropdown.d-block.d-lg-none
+           a(href="#", role="button", data-toggle="dropdown" aria-haspopup="true" aria-expanded="false").nav-link.dropdown-toggle#navbarDropdown.pb-5 Sign In
+           .dropdown-menu(aria-labelledby="navbarDropdown")
+
+            .row
+             .col-md.px-0.mb-5.mb-md-0.mr-0.mr-md-5
+              .card.w-100.text-center
+               .card-body
+                h2.card-title 
+                 img(src="img/hbo-now-logo.png", alt="hbo now logo").logo
+                p.card-text Stream TV & movies anytime — no cable needed.
+                a(href="#").btn.btn--link.p-0.font-weight-bold Sign In 
+                 i.fas.fa-sign-in-alt
+
+             .col-md.px-0
+              .card.w-100.text-center
+               .card-body.d-flex.flex-column
+                h2.card-title 
+                 img(src="img/hbo-max-logo.png", alt="hbo max logo").logo
+                p.card-text Where HBO meets so much more.
+                a(href="#").btn.btn--link.p-0.font-weight-bold.mt-auto Sign In 
+                 i.fas.fa-sign-in-alt
+          
+        a(href="#").btn.ml-4 Get HBO
+
+      .jumbotron.text-center.p-0.mb-0.pb-3
+       img(src="img/band-of-brothers-logo.png", alt="band of brothers logo")
+       ul.navbar-nav.d-flex.flex-row.justify-content-center.mt-3.text-uppercase
+        li.nav-item.mr-5
+         a.nav-link(href="#").font-weight-bold About
+        li.nav-item
+         a.nav-link(href="#") Episodes
+      
+     main
+      section.hero.w-100.text-center
+       h2.d-none &nbsp;
+       img(src="img/hero.png", alt="hero image")
+
+      section.stream.text-center
+       .card.px-4
+        .card-body
+         .row
+          .col-md-9.text-center.text-md-left.px-0
+           h3.card-title.pb-2.pb-md-0.mt-3 Band Of Brothers
+           p.card-text.text-uppercase.pb-4.pb-md-0 1 Season | 10 Episodes | TV-MA
+          .col-md-3.d-flex.align-items-center.px-0
+           a(href="#").btn.ml-md-auto Stream
+       
+       .row.justify-content-center.mx-0
+        .col-md-7
+         p.landmark.text-center.text-md-left This landmark miniseries based on Stephen E. Ambrose's best-seller, and executive produced by Steven Spielberg and Tom Hanks, recounts the remarkable achievements of an elite team of U.S. paratroopers during World War II.
+
+      .container-md.px-md-0.mt-4
+       section.review.text-center
+        h2.d-none &nbsp;
+        figure
+         blockquote “One of the definitive film treatments of World War II.”
+         figcaption.text-uppercase.mt-3 - Salon
+
+      .container-md.px-md-0.mt-5
+       section.pacific
+        .row.justify-content-center.align-items-center
+         .col-lg-8
+           img(src="img/pacific.png", alt="pacific promo").w-100
+         .col-md-9.col-lg-4
+          .card.text-center
+           .card-body.flex-column.py-5
+            h3.text-uppercase.font-weight-light You may also like
+            h2.card-title.font-weight-bold.mb-4 The Pacific
+            p.card-text From the producers of Band of Brothers comes this epic 10-part miniseries that tells the true stories of three Marines battling in the Pacific theater during WW2.
+            a.btn.btn--link.font-weight-bold.text-uppercase Find out more
+             i.fas.fa-angle-right.ml-2
+            
+      section.proposal.mt-5
+       .container-md.px-0
+        .row.align-items-center
+         .col-lg-9.py-0.py-lg-5
+          img(src="img/hbo-max-poster.png", alt="hbo max poster").w-100.h-100
+         .col-lg-3.px-0
+          .card.bg-transparent.shadow-none.text-center.text-uppercase
+           .card-body.px-5.px-md-0
+            h2.card-title.font-weight-bold.mb-4.mt-3.mt-md-0 Looking for HBO Max?
+            p.card-text.mb-4 Stream all of HBO together with even more of your favorite blockbusters, addictive series, and new Max Originals.
+            a(href="#").btn.font-weight-bold.text-uppercase.mb-4.mb-lg-0 Learn More
+      
+      section.follow.d-flex.flex-column.justify-content-center.align-items-center
+       h2.font-weight-bold.text-bold.text-uppercase Follow HBO
+       ul.navbar-nav.flex-row.mt-4.flex-wrap
+        li.navbar-item
+         a(href="#").navbar-link
+           i.fab.fa-facebook-f
+        li.navbar-item
+         a(href="#").navbar-link
+           i.fab.fa-twitter
+        li.navbar-item
+         a(href="#").navbar-link
+           i.fab.fa-instagram
+        li.navbar-item
+         a(href="#").navbar-link
+           i.fab.fa-youtube
+
+     footer.py-0.text-uppercase.font-weight-light.d-flex.align-items-center.flex-column.text-center
+      .row.mb-5
+       img(src="img/hbo-box-logo.png", alt="hbo logo").mt-1
+
+      .row.mb-5
+       ul.navbar-nav.text-uppercase.font-weight-light.flex-md-row.flex-wrap.justify-content-center
+        li.navbar-item
+         a.navbar-link About
+        li.navbar-item
+         a.navbar-link Ways to get
+        li.navbar-item
+         a.navbar-link Help
+        li.navbar-item
+         a.navbar-link Shop
+        li.navbar-item
+         a.navbar-link Careers
+        li.navbar-item
+         a.navbar-link Hbo inspires
+        li.navbar-item
+         a.navbar-link Looking for hbo go?
+
+      .row.mb-5
+       p © 2020 Home Box Office, Inc. All Rights Reserved.#[br] This website may contain mature content. 
+      
+      .row.mb-5
+       ul.navbar-nav.flex-md-row.flex-wrap
+        li.navbar-item
+         a.navbar-link Privacy Policy
+        li.navbar-item
+         a.navbar-link Terms
+        li.navbar-item
+         a.navbar-link Ad choices
+        li.navbar-item
+         a.navbar-link Show purposes
+
+     script(src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous")
+     script(src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" crossorigin="anonymous")
+     script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" crossorigin="anonymous")

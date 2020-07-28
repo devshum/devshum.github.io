@@ -1,0 +1,36 @@
+.jumbotron { 
+    background-color: $color-white;
+    border-radius: initial;
+
+    .nav-item {
+        position: relative;
+
+        &:first-child {
+            &::after {
+                background: $color-blue;
+                position: absolute;
+                display: block;
+                height: .3rem;
+                bottom: -1rem;
+                content: '';
+                width: 120%;
+                left: -10%;
+            }
+        }
+    }
+
+    .nav-link { 
+        &:link,
+        &:visited {
+            color: $color-black; 
+            position: relative;
+        }
+    }
+
+    img { 
+        height: 6.4rem; 
+
+        @include respond(md) { height: 4.2rem; }
+    }
+}
+

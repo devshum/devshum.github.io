@@ -1,0 +1,21 @@
+.logo { height: 2.5rem; }
+
+.mobile-logo {
+    transform: translateX(-50%);
+    position: absolute;
+    left: 50%;
+
+    a:nth-of-type(1) {
+        border-right: solid .2rem $color-black;
+        padding-right: 1rem;
+
+        @include respond(xs) { 
+            border-right: initial;
+            padding-right: initial;
+        }
+    }
+
+    a:nth-of-type(2) {
+        @include respond(xs) { display: none; }
+    }
+}

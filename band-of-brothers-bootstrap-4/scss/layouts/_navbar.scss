@@ -1,0 +1,59 @@
+.navbar {
+    .nav-item { margin-right: 2rem; }
+
+    .nav-link { 
+        &:link,
+        &:visited {
+            color: $color-black !important; 
+            font-size: 1.3rem;
+            font-weight: 100;
+        }
+    }
+}
+
+// RESPONSIVE
+#navbarShow {
+    z-index: 1;
+    background-color: $color-white;
+
+    @include respond(lg) { 
+        text-align: center;
+        position: absolute;
+        width: 100%;
+        top: 7rem;
+        left: 0;
+
+        .nav-item {
+            width: 100%;
+            margin-right: initial;
+
+            &:not(:last-child) {
+                border-bottom: solid .1rem $color-gray;
+            }
+
+            .nav-link { 
+                &:link,
+                &:visited { font-size: 2.5rem; }
+                
+            }
+        }
+    }
+
+    @include respond(xs) { top: 6rem; }
+}
+
+.d-xs-block { 
+    display: none;
+
+    @include respond(xs) { display: block; }
+}
+
+// DROPDOWN MENU
+.navbar-nav .dropdown-menu {
+    background: $color-gray;
+    padding: 2rem 5rem;
+    border-radius: 0;
+    border: 0;
+
+    .card { height: 100%; }
+}

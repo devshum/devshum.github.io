@@ -1,0 +1,33 @@
+footer {
+    padding: 5rem;
+    position: relative;
+    color: $color-white;
+    background: $color-gray-2;
+
+    img { width: 10rem; }
+
+    .navbar-item {
+        @include respond(md) { font-size: 2rem; }
+
+        &:not(:last-child) {  
+            margin-right: 4rem; 
+
+            @include respond(md) { 
+                margin-right: initial; 
+                margin-bottom: 1.6rem;
+            }
+        }
+    }
+
+    &:after {
+        content: '';
+        display: block;
+        width: 100%;
+        left: 0;
+
+        height: 3.3rem;
+        background: $color-gray-2;
+        top: -3.1rem;
+        position: absolute;
+    }
+}

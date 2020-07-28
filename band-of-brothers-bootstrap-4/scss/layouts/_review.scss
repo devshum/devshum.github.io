@@ -1,0 +1,54 @@
+.review {
+    height: 26.4rem;
+    font-size: 2.5rem;
+    position: relative;
+    color: $color-white;
+    
+    @include bgPlusGradient(url(/img/quote.png));
+
+    @include respond(md) {
+        height: 16rem;
+        background: initial;
+    }
+
+   figure {
+       transform: translate(-50%, -50%);
+       color: $color-white;
+       position: relative;
+       position: absolute;
+       font-weight: 100;
+       width: 40%;
+       left: 25%;
+       top: 50%;
+
+       &:before,
+       &:after {
+           background: $color-gray;
+           position: absolute;
+           height: .1rem;
+           display: none;
+           content: '';
+           width: 50%;
+           left: 25%;
+
+            @include respond(md) { display: block; }
+       }
+
+       &:before { top: -3rem; }
+
+       &:after { bottom: -3rem; }
+
+        @include respond(lg) {
+            width: 50%;
+            left: 30%;
+        }
+
+        @include respond(md) {
+            color: $color-black;
+            width: 100%;
+            left: 50%;
+        }
+
+        figcaption { font-size: initial; }
+   }
+}

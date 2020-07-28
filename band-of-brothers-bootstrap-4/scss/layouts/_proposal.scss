@@ -1,0 +1,15 @@
+.proposal {
+    background-color: $color-gray;
+
+    .card { 
+        @include respond(lg) {
+            transform: initial;
+        }
+
+        transform: translateX(2rem); 
+    }
+
+    .card-title { font-size: 3rem; }
+
+    .card-text { font-size: initial; }
+}

@@ -1,0 +1,21 @@
+.pacific {
+    img { @include boxShadow(.2); }
+
+    .card {
+        width: 121%;
+        transform: translateX(-15%);
+
+        @include respond(lg) {
+            transform: translate(0%, -2.5rem); 
+            width: initial;
+        }
+
+        @include respond(md) { transform: initial; }
+    }
+
+    .card-title { font-size: 3rem; }
+
+    .card-text { line-height: 2rem; }
+
+    .btn { font-size: 1.6rem; }
+}
