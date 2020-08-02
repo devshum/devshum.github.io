@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Aux from '../../hoc/Auxx/Aux';
+import Auxiliary from '../../hoc/Auxiliary/Auxiliary';
 import Header from '../../components/Header/Header';
 import SectionCalc from '../SectionCalc/SectionCalc';
 
@@ -88,7 +88,7 @@ class layout extends Component {
 
     render() {
         return(
-            <Aux>
+            <Auxiliary>
                 <Header popular={this.state.popular}
                         qa={this.state.qa}
                         enter={this.state.enter}
@@ -105,7 +105,7 @@ class layout extends Component {
                                  PO={this.state.PO} 
                                  delivery={this.state.delivery} />
                 </main>
-            </Aux>
+            </Auxiliary>
         );
     };
 };

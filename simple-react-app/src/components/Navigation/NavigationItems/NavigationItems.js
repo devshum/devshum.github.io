@@ -6,7 +6,7 @@ import LanguageChanger from '../../LanguageChanger/LanguageChanger';
 import Backdrop from '../../UI/Backdrop/Backdrop'
 import PropTypes from 'prop-types';
 import Cross from '../../Cross/Cross';
-import Aux from '../../../hoc/Auxx/Aux'
+import Auxiliary from '../../../hoc/Auxiliary/Auxiliary'
 
 const navigationItems = props => {
     let attachedClasses = [styles["NavigationItems"], styles["Close"]];
@@ -16,7 +16,7 @@ const navigationItems = props => {
     }
 
     return(
-        <Aux>
+        <Auxiliary>
             <Backdrop show={props.ifShowSide} sideDrawerClicked={props.sideDrawerClicked} />
             <ul className={attachedClasses.join(' ')}>
                 <Cross sideDrawerClicked={props.sideDrawerClicked} />
@@ -30,7 +30,7 @@ const navigationItems = props => {
                 <NavigationItem>{props.enter}</NavigationItem>
                 <Button>{props.register}</Button>
             </ul>
-        </Aux>
+        </Auxiliary>
     );
 };
 
