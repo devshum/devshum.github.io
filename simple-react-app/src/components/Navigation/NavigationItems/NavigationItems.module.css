@@ -1,0 +1,39 @@
+.NavigationItems {
+    display: flex;
+    align-items: center;
+    
+    list-style: none;
+    z-index: 200;
+
+}
+
+@media only screen and (max-width: 62.5em) {
+    .NavigationItems {
+        background-color: #fff;
+        height: 100%;
+        padding: 0 5rem;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        transition: all .5s;
+        right: 0;
+        top: 0;
+    }
+
+    .Open { 
+        opacity: 1; 
+        visibility: visible;
+    }
+
+    .Close { 
+        opacity: 0; 
+        visibility: hidden;
+    }
+}
+
+@media only screen and (max-width: 31.25em) {
+    .NavigationItems {
+        width: 100%;
+        padding: 0;
+    }
+}

@@ -1,0 +1,26 @@
+.LanguageChanger {
+    display: flex;
+    
+    font-weight: 700;
+    padding: 0 4rem 0 2rem;
+}
+
+.LanguageChanger button { 
+    font-weight: inherit;
+    background: none; 
+    border: none; 
+    cursor: pointer;
+}
+
+.LanguageChanger span { 
+    color: #333;
+}
+
+.Active { color: #e60003; }
+
+@media only screen and (max-width: 62.5em) {
+    .LanguageChanger {
+        padding: initial;
+        margin-bottom: 3rem;
+    }
+}
