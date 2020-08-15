@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700"/>
+    <link rel="shortcut icon" href="/img/UK-icon.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="/dist/css/style.css"/>
+    <title>English app (200 verbs)</title>
+  </head>
+  <body> 
+    <!-- sprites-->
+    <svg style="display: none;">
+      <!-- sprite 1-->
+      <symbol id="info">
+        <g>
+          <path d="M16 21.5v-2.5c0-0.281-0.219-0.5-0.5-0.5h-1.5v-8c0-0.281-0.219-0.5-0.5-0.5h-5c-0.281 0-0.5 0.219-0.5 0.5v2.5c0 0.281 0.219 0.5 0.5 0.5h1.5v5h-1.5c-0.281 0-0.5 0.219-0.5 0.5v2.5c0 0.281 0.219 0.5 0.5 0.5h7c0.281 0 0.5-0.219 0.5-0.5zM14 7.5v-2.5c0-0.281-0.219-0.5-0.5-0.5h-3c-0.281 0-0.5 0.219-0.5 0.5v2.5c0 0.281 0.219 0.5 0.5 0.5h3c0.281 0 0.5-0.219 0.5-0.5zM24 14c0 6.625-5.375 12-12 12s-12-5.375-12-12 5.375-12 12-12 12 5.375 12 12z"> </path>
+        </g>
+      </symbol>
+      <!-- sprite 2-->
+      <symbol id="share">
+        <g>
+          <path d="M20 18.672c0-1.844-1.5-3.344-3.328-3.344-0.875 0-1.672 0.344-2.266 0.906l-3.766-1.875c0.016-0.125 0.031-0.234 0.031-0.359s-0.016-0.234-0.031-0.359l3.766-1.875c0.594 0.562 1.391 0.906 2.266 0.906 1.828 0 3.328-1.5 3.328-3.344 0-1.828-1.5-3.328-3.328-3.328-1.844 0-3.344 1.5-3.344 3.328 0 0.125 0.016 0.234 0.031 0.359l-3.766 1.875c-0.594-0.547-1.391-0.891-2.266-0.891-1.828 0-3.328 1.484-3.328 3.328s1.5 3.328 3.328 3.328c0.875 0 1.672-0.344 2.266-0.891l3.766 1.875c-0.016 0.125-0.031 0.234-0.031 0.359 0 1.828 1.5 3.328 3.344 3.328 1.828 0 3.328-1.5 3.328-3.328zM24 6.5v15c0 2.484-2.016 4.5-4.5 4.5h-15c-2.484 0-4.5-2.016-4.5-4.5v-15c0-2.484 2.016-4.5 4.5-4.5h15c2.484 0 4.5 2.016 4.5 4.5z"> </path>
+        </g>
+      </symbol>
+      <!-- sprite 3-->
+      <symbol id="linkedin">
+        <g>
+          <path d="M3.703 22.094h3.609v-10.844h-3.609v10.844zM7.547 7.906c-0.016-1.062-0.781-1.875-2.016-1.875s-2.047 0.812-2.047 1.875c0 1.031 0.781 1.875 2 1.875h0.016c1.266 0 2.047-0.844 2.047-1.875zM16.688 22.094h3.609v-6.219c0-3.328-1.781-4.875-4.156-4.875-1.937 0-2.797 1.078-3.266 1.828h0.031v-1.578h-3.609s0.047 1.016 0 10.844v0h3.609v-6.062c0-0.313 0.016-0.641 0.109-0.875 0.266-0.641 0.859-1.313 1.859-1.313 1.297 0 1.813 0.984 1.813 2.453v5.797zM24 6.5v15c0 2.484-2.016 4.5-4.5 4.5h-15c-2.484 0-4.5-2.016-4.5-4.5v-15c0-2.484 2.016-4.5 4.5-4.5h15c2.484 0 4.5 2.016 4.5 4.5z"> </path>
+        </g>
+      </symbol>
+      <!-- sprite 4-->
+      <symbol id="github">
+        <g>
+          <path d="M8.109 18.75v0c0.031-0.047 0.016-0.141-0.047-0.203-0.078-0.063-0.172-0.078-0.219-0.031-0.031 0.047-0.016 0.141 0.047 0.203 0.078 0.063 0.172 0.078 0.219 0.031zM7.672 18.109c-0.047-0.063-0.125-0.094-0.187-0.063-0.047 0.031-0.047 0.125 0 0.187 0.063 0.078 0.141 0.109 0.187 0.078v0c0.047-0.031 0.047-0.125 0-0.203zM7.031 17.484v0c0.016-0.031-0.016-0.094-0.078-0.125-0.047-0.016-0.109-0.016-0.125 0.031-0.031 0.047 0 0.094 0.063 0.125 0.063 0.016 0.125 0.016 0.141-0.031zM7.359 17.844v0c0.031-0.031 0.031-0.109-0.031-0.156-0.047-0.063-0.125-0.078-0.156-0.047-0.047 0.047-0.031 0.109 0.016 0.172 0.047 0.047 0.125 0.078 0.172 0.031zM8.703 19.016v0c0.016-0.063-0.047-0.141-0.141-0.172s-0.172 0-0.203 0.063c-0.016 0.063 0.047 0.141 0.141 0.172s0.172 0 0.203-0.063zM9.359 19.063v0c0-0.063-0.078-0.125-0.187-0.125-0.094 0-0.156 0.063-0.156 0.125s0.078 0.125 0.172 0.125 0.172-0.063 0.172-0.125zM9.969 18.953v0c-0.016-0.063-0.109-0.094-0.203-0.078s-0.156 0.078-0.141 0.141 0.094 0.109 0.187 0.094 0.156-0.094 0.156-0.156zM20 14c0-4.422-3.578-8-8-8s-8 3.578-8 8c0 3.531 2.297 6.531 5.469 7.594 0.406 0.078 0.547-0.172 0.547-0.391 0-0.187 0-0.812-0.016-1.484 0 0-2.219 0.484-2.688-0.953 0 0-0.359-0.922-0.891-1.156 0 0-0.719-0.5 0.063-0.5 0 0 0.781 0.063 1.219 0.828 0.703 1.234 1.875 0.875 2.328 0.672 0.078-0.516 0.281-0.875 0.516-1.078-1.781-0.203-3.656-0.891-3.656-3.953 0-0.875 0.313-1.578 0.828-2.141-0.078-0.203-0.359-1.016 0.078-2.125 0.672-0.203 2.203 0.828 2.203 0.828 0.641-0.187 1.313-0.266 2-0.266s1.359 0.078 2 0.266c0 0 1.531-1.031 2.203-0.828 0.438 1.109 0.156 1.922 0.078 2.125 0.516 0.562 0.828 1.266 0.828 2.141 0 3.078-1.875 3.75-3.656 3.953 0.281 0.25 0.547 0.734 0.547 1.484 0 1.062-0.016 1.922-0.016 2.188 0 0.219 0.141 0.469 0.547 0.391 3.172-1.062 5.469-4.062 5.469-7.594zM24 6.5v15c0 2.484-2.016 4.5-4.5 4.5h-15c-2.484 0-4.5-2.016-4.5-4.5v-15c0-2.484 2.016-4.5 4.5-4.5h15c2.484 0 4.5 2.016 4.5 4.5z"> </path>
+        </g>
+      </symbol>
+      <!-- sprite 5-->
+      <symbol id="loader">
+        <g>
+          <path d="M42.16 29.464c0 0.056 0 0.14-0.028 0.195-2.372 9.877-10.519 16.769-20.815 16.769-5.441 0-10.714-2.148-14.676-5.915l-3.599 3.599c-0.335 0.335-0.781 0.53-1.256 0.53-0.977 0-1.786-0.809-1.786-1.786v-12.5c0-0.977 0.809-1.786 1.786-1.786h12.5c0.977 0 1.786 0.809 1.786 1.786 0 0.474-0.195 0.921-0.53 1.256l-3.823 3.823c2.623 2.455 6.11 3.85 9.71 3.85 4.967 0 9.57-2.567 12.165-6.808 0.67-1.088 1.004-2.148 1.479-3.265 0.14-0.391 0.419-0.642 0.837-0.642h5.357c0.502 0 0.893 0.419 0.893 0.893zM42.857 7.143v12.5c0 0.977-0.809 1.786-1.786 1.786h-12.5c-0.977 0-1.786-0.809-1.786-1.786 0-0.474 0.195-0.921 0.53-1.256l3.85-3.85c-2.651-2.455-6.138-3.823-9.738-3.823-4.967 0-9.57 2.567-12.165 6.808-0.67 1.088-1.004 2.148-1.479 3.265-0.14 0.391-0.419 0.642-0.837 0.642h-5.552c-0.502 0-0.893-0.419-0.893-0.893v-0.195c2.4-9.905 10.631-16.769 20.926-16.769 5.469 0 10.798 2.176 14.76 5.915l3.627-3.599c0.335-0.335 0.781-0.53 1.256-0.53 0.977 0 1.786 0.809 1.786 1.786z"> </path>
+        </g>
+      </symbol>
+    </svg>
+    <!-- layouts(search)-->
+    <div class="search-backdrop">&nbsp;</div>
+    <div class="search"> 
+      <form class="search__form">
+        <input type="text" placeholder="example: see" class="search__input" />
+        <button class="search__btn">Search</button>
+      </form>
+      <ul class="search__list">
+        &nbsp;
+      </ul>
+    </div>
+    <!-- layouts(all-verbs)-->
+    <div class="all-verbs-backdrop">&nbsp; </div>
+    <div class="all-verbs"> 
+      <div class="all-verbs__cross">&times; </div>
+      <ul class="all-verbs__list">
+        &nbsp;
+      </ul>
+    </div>
+    <!-- layouts(alert)-->
+    <div class="alert">The <span>LINK</span> was copied </div>
+    <div class="alert-backdrop">&nbsp;</div>
+    <!-- layouts(header)-->
+    <header class="header">
+      <!-- components(logo)-->
+      <img class="logo" src="/dist/img/logo.png" alt="logo"/>
+      <!-- components(btn)-->
+      <div class="header__btn-box">
+        <button class="btn header__btn-show">Show all 📄</button>
+        <button class="btn header__btn-search">Search 🔎</button>
+      </div>
+      <!-- component(share)-->
+      <div class="share header__share" id="share-1">
+        <input class="share__input" id="share-input-1"/>
+        <svg>
+          <use xlink:href="#share"></use>
+        </svg>
+      </div>
+    </header>
+    <!-- layouts(main)-->
+    <main class="main">
+      <!-- components(logo)--><img class="main__logo logo" src="/dist/img/logo.png" alt="logo"/>
+      <h1 class="heading-primary">...</h1>
+      <div class="main__container"> 
+        <button class="btn main__btn-start">Get Started! 😄</button>
+        <!-- <div class="main__form"> 
+          <input class="main__past" type="text" placeholder="the 2nd form(example: saw)"/>
+          <label>Past</label>
+        </div>
+        <div class="main__form">
+          <input class="main__pastParticiple" type="text" placeholder="the 3th form(example: seen)"/>
+          <label>Past participle</label>
+        </div>
+        <div class="main__btn-container">
+          <button class="btn btn--check">Check</button>
+          <button class="btn btn--next">Next</button>
+          <button class="btn btn--skip">Skip</button>
+        </div> -->
+      </div>
+    </main>
+    <!-- layouts(icon-box)-->
+    <ul class="icon-box">
+      <li>
+        <a class="icon-box__info">
+          <svg>
+            <use xlink:href="#info"></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <!-- component(share)-->
+        <div class="share" id="share-2">
+          <input class="share__input" id="share-input-2"/>
+          <svg>
+            <use xlink:href="#share"></use>
+          </svg>
+        </div>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/feed/" target="_blank">
+            <svg>
+                <use xlink:href="#linkedin"></use>
+            </svg>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/devshum" target="_blank">
+          <svg>
+            <use xlink:href="#github"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <script src="dist/js/bundle.js"></script></body>
+  </body>
+</html>
