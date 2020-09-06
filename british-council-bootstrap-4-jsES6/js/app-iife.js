@@ -505,8 +505,8 @@ const controller = (function(dataCtrl, UICtrl) {
 
         } else {
             // update UI
-            const numOfCorrect = UICtrl.checkAnswers(values[1], values[0]);
-            UICtrl.renderModal(numOfCorrect, values[2].length);
+            const numOfCorrect = UICtrl.checkAnswers(rightAnswers, allAnswered);
+            UICtrl.renderModal(numOfCorrect, allCells.length);
 
             ///////////////////
             dataCtrl.passFalse();
