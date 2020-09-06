@@ -1,0 +1,33 @@
+.nav-drop {
+    .nav-item:not(:first-child) {
+        transition: all .5s;
+        position: relative;
+        font-size: 1.8rem;
+
+        &:hover { background-color: $color-primary-dark; }
+
+        .nav {
+            background: $color-primary-dark;
+            transition: all .3s ease-in .1s;
+            visibility: hidden;
+            position: absolute;
+            display: block;
+            width: 20rem;
+            top: 4.4rem;
+            z-index: 3;
+            opacity: 0;
+
+            @include respond(lg) { 
+                text-align: right; 
+                right: 0;
+            }
+
+            .nav-link { font-size: initial; }
+        }
+
+        &:hover .nav { 
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}

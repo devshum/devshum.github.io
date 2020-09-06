@@ -1,0 +1,63 @@
+.header {
+    background-color: $color-primary;
+    border-bottom: $nav-border;
+    font-size: 1.2rem;
+
+    .nav-select {
+        width: 14%;
+        height: 2.8rem;
+        font-size: 1.4rem;
+    }
+
+    .nav-border {
+        .nav-item { 
+            border-left: $nav-border;
+            transition: all .5s;
+            cursor: pointer;
+
+            @include respond(md) { 
+                border-top: $nav-border; 
+            }
+
+            &:nth-of-type(1) {
+                &:hover { background-color: $color-red; }
+            }
+
+            &:nth-of-type(2) {
+                &:hover { background-color: $color-green; }
+            }
+
+            &:nth-of-type(3) {
+                &:hover { background-color: $color-blue; }
+            }
+
+            &:nth-of-type(4) {
+                &:hover { background-color: $color-yellow; }
+            }
+
+            &:last-child { 
+                @include respond(md) { border-right: $nav-border; }
+            }
+        }
+    }
+
+    .header-nav-mobile {
+        button {
+            background: none;
+            padding: 4rem 0;
+            cursor: pointer;
+            border: 0;
+            flex: 1;
+
+            &:nth-child(2) {
+                border-left: solid .1rem $color-primary-light;
+                border-right: solid .1rem $color-primary-light;
+            }
+        }
+
+        i {
+            color: $color-white;
+            font-size: 2rem;
+        }
+    }
+}

@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css")
+        link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.11.2/css/all.css")
+        link(rel='icon' type='image/png' href='img/hero/favicon.png')
+        link(rel="stylesheet", href="css/style.compress.css")
+
+        title Britishcouncil
+    body
+     //mixins
+     mixin btn-group-choice(ID, value)
+      .btn-group-choice.m-1.js-item(ID = ID)
+       button.btn(type="button").rounded-0 #[span=value]
+        i.far.fa-hand-point-down
+
+     mixin input-group(ID, value)
+      .input-group.flex-column
+       p.text-body=value
+       .form-control.w-100.js-cell(ID = ID)
+      
+     header.header
+      .container.px-0.px-sm-4
+       nav.navbar-expand-sm.navbar-dark.d-flex.flex-row-reverse.d-sm-block
+        
+        .header-nav-mobile.d-flex.d-sm-none.justify-content-around.w-100
+         button
+          i.fas.fa-home
+
+         button.togler-home
+          i.fas.fa-search
+
+         button(type="button", data-toggle="collapse", data-target="#navbarSupportedContent",  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+          i.fas.fa-bars
+
+        .d-none.d-sm-flex.flex-column.flex-md-row.justify-content-between.align-items-center
+         ul.nav.align-items-center.justify-content-center
+          li.nav-item
+           a(href="#").nav-link.text-white.pl-0 Log In
+          li.nav-item
+           a(href="#").nav-link.text-white Sign up
+          li.nav-item
+           a(href="#").nav-link.text-white Newsletter
+          li.nav-item
+
+         select.nav-select.pl-4.d-none.d-lg-block
+          option(value="English") English
+        
+         ul.nav.nav-border.justify-content-center
+          li.nav-item.ml-md-auto.py-2
+           a(href="#").nav-link.text-white My English level
+          li.nav-item.py-2
+           a(href="#").nav-link.text-white TeachingEnglish
+          li.nav-item.py-2
+           a(href="#").nav-link.text-white LearnEnglishKids
+          li.nav-item.py-2
+           a(href="#").nav-link.text-white LearnEnglishKids
+        
+        .collapse.navbar-collapse#navbarSupportedContent
+         .side-drawer
+          ul.nav.d-flex.flex-column
+           li.nav-item
+            a(href="#").nav-link Home
+            i.fas.fa-arrow-right.jumbotron-logo.pr-4
+           li.nav-item
+            a(href="#").nav-link Courses
+            i.fas.fa-arrow-right.jumbotron-logo.pr-4
+           li.nav-item
+            a(href="#").nav-link Skills
+            i.fas.fa-arrow-right.jumbotron-logo.pr-4
+
+            ul
+             li.pb-4
+              a(href="#") Speaking
+              ul
+               li
+                a(href="#") Beginner A1 speaking
+               li
+                a(href="#") Elementary A2 speaking
+               li
+                a(href="#") Intermediate B1 speaking
+               li
+                a(href="#") Upper intermediate B2 speaking
+              
+            ul
+             li.pb-4
+              a(href="#") Listening
+              ul
+               li
+                a(href="#") Beginner A1 listening
+               li
+                a(href="#") Elementary A2 listening
+               li
+                a(href="#") Intermediate B1 listening
+               li
+                a(href="#") Upper intermediate B2 listening
+               li
+                a(href="#") Advanced C1 listening
+
+            ul
+             li.pb-4
+              a(href="#") Reading
+              ul
+               li
+                a(href="#") Beginner A1 reading
+               li
+                a(href="#") Elementary A2 reading
+               li
+                a(href="#") Intermediate B1 reading
+               li
+                a(href="#") Upper intermediate B2 reading
+               li
+                a(href="#") Advanced C1 reading
+
+            ul
+             li.pb-4
+              a(href="#") Writing
+              ul
+               li
+                a(href="#") Beginner A1 writing
+               li
+                a(href="#") Elementary A2 writing
+               li
+                a(href="#") Intermediate B1 writing
+               li
+                a(href="#") Upper intermediate B2 writing
+               li
+                a(href="#") Advanced C1 writing
+
+           li.nav-item
+            a(href="#").nav-link Grammar
+            i.fas.fa-arrow-right.jumbotron-logo.pr-4
+
+            ul
+             li.pb-4
+              a(href="#") Beginner grammar
+             li
+               a(href="#") Intermediate grammar
+
+           li.nav-item
+            a(href="#").nav-link Vocabulary
+            i.fas.fa-arrow-right.jumbotron-logo.pr-4
+
+            ul
+             li.pb-4
+              a(href="#") Beginner vocabulary
+             li
+               a(href="#") Advanced vocabulary
+
+           li.nav-item
+            a(href="#").nav-link Exams
+            i.fas.fa-arrow-right.jumbotron-logo.pr-4
+
+            ul
+             li.pb-4
+              a(href="#") Reading exams
+             li.pb-4
+               a(href="#") Writing exams
+             li.pb-4
+               a(href="#") Listening exams
+             li.pb-4
+               a(href="#") Speaking exams
+             li.pb-4
+               a(href="#") Grammar and vocabulary #[br] exams
+             li
+               a(href="#") Exams study tips
+
+           li.nav-item
+            a(href="#").nav-link UK now
+            i.fas.fa-arrow-right.jumbotron-logo.pr-4
+
+            ul
+             li.pb-4
+              a(href="#") Read UK
+             li.pb-4
+               a(href="#") Video UK
+             li.pb-4
+               a(href="#") Literatury UK
+             li.pb-4
+               a(href="#") Film UK
+             li
+               a(href="#") Science UK
+
+           li.nav-item
+            a(href="#").nav-link Study break
+            i.fas.fa-arrow-right.jumbotron-logo.pr-4
+
+            ul
+             li.pb-4
+              a(href="#") Video zone
+             li.pb-4
+               a(href="#") YouTubers
+             li.pb-4
+               a(href="#") Games
+             li.pb-4
+               a(href="#") Photo captions
+             li.pb-4
+               a(href="#") What is it?
+             li.pb-4
+               a(href="#") Graded reading
+             li
+               a(href="#") Graded listening
+
+           li.nav-item
+            a(href="#").nav-link Magazine
+            i.fas.fa-arrow-right.jumbotron-logo.pr-4
+
+            ul
+             li.pb-4
+              a(href="#") Books
+             li.pb-4
+               a(href="#") Entertaiment
+             li.pb-4
+               a(href="#") Fashion
+             li.pb-4
+               a(href="#") Life around the world
+             li.pb-4
+               a(href="#") Music
+             li.pb-4
+               a(href="#") Science and technology
+             li
+               a(href="#") Sport
+          
+           li.nav-item.bg-dark.border-bottom.border-light
+            a(href="#").nav-link Log In
+           li.nav-item.bg-dark.border-bottom.border-light
+            a(href="#").nav-link Sign Up
+           li.nav-item.bg-dark.border-bottom.border-light
+            a(href="#").nav-link Newsletter
+           li.nav-item.bg-dark.border-bottom.border-light
+            a(href="#").nav-link LearnEnglish
+           li.nav-item.bg-dark.border-bottom.border-light
+            a(href="#").nav-link LearnEnglish Kids
+           li.nav-item.bg-dark.border-bottom.border-light
+            a(href="#").nav-link TeachingEnglish
+           li.nav-item.bg-dark.border-light
+            a(href="#").nav-link My English level
+     
+     main 
+      section.jumbotron.jumbotron-fluid.py-5
+       .container
+         .row
+          .col.d-flex.justify-content-between.align-items-center.flex-column.flex-sm-row
+           img(src="img/hero/logo.png", alt="main logo").mb-4.mb-sm-0
+           img(src="img/hero/helper-logo.png", alt="the second logo").pr-0
+
+         .row.px-4
+          .col
+           .row.mt-3.justify-content-between.align-items-center.d-none.d-sm-block.d-lg-flex
+             ul.nav.nav-drop.justify-content-center.align-items-center.py-4
+              li.nav-item
+               a(href="#").nav-link.pl-0
+                i.fas.fa-home.jumbotron-logo
+              li.nav-item.py-2.ml-md-auto
+               a(href="#").nav-link.text-white Courses
+              li.nav-item.py-2
+               a(href="#").nav-link.text-white Skills
+
+               ul.nav.px-1
+                li.nav-item.py-1
+                 a(href="#").nav-link.text-white Speaking
+                li.nav-item.py-1
+                 a(href="#").nav-link.text-white Listening
+                li.nav-item.py-1
+                 a(href="#").nav-link.text-white Reading
+                li.nav-item.py-1
+                 a(href="#").nav-link.text-white Writing
+
+              li.nav-item.py-2
+               a(href="#").nav-link.text-white Grammar
+
+               ul.nav.px-1
+                li.nav-item.py-1
+                 a(href="#").nav-link.text-white Beginner grammar
+                li.nav-item.py-1
+                 a(href="#").nav-link.text-white Intermediate grammar
+
+              li.nav-item.py-2
+               a(href="#").nav-link.text-white Vocabulary
+
+               ul.nav.px-1
+                li.nav-item.py-1
+                 a(href="#").nav-link.text-white Beginner vocabulary
+                li.nav-item.py-1
+                 a(href="#").nav-link.text-white Advanced vocabulary
+
+              li.nav-item.py-2
+               a(href="#").nav-link.text-white Exams
+
+               ul.nav.px-1
+                li.nav-item.py-1
+                 a(href="#").nav-link.text-white Reading exams
+                li.nav-item.py-1
+                 a(href="#").nav-link.text-white Writing exams
+                li.nav-item.py-1
+                 a(href="#").nav-link.text-white Listening exams
+                li.nav-item.py-1
+                 a(href="#").nav-link.text-white Reading exams
+                li.nav-item.py-1
+                 a(href="#").nav-link.text-white Grammar and #[br] vocabulary exams
+                li.nav-item.py-1
+                 a(href="#").nav-link.text-white Exam study tips
+
+              li.nav-item.py-2
+               a(href="#").nav-link.text-white UK now
+               
+               ul.nav.px-1
+                li.nav-item.py-1
+                 a(href="#").nav-link.text-white Video zone
+                li.nav-item.py-1
+                 a(href="#").nav-link.text-white YouTubers
+                li.nav-item.py-1
+                 a(href="#").nav-link.text-white Games
+                li.nav-item.py-1
+                 a(href="#").nav-link.text-white Photo captions
+                li.nav-item.py-1
+                 a(href="#").nav-link.text-white What is it?
+
+              li.nav-item.py-2
+               a(href="#").nav-link.text-white Study break
+
+               ul.nav.px-1
+                 li.nav-item.py-1
+                  a(href="#").nav-link.text-white Video zone
+                 li.nav-item.py-1
+                  a(href="#").nav-link.text-white YouTubers
+                 li.nav-item.py-1
+                  a(href="#").nav-link.text-white Games
+                 li.nav-item.py-1
+                  a(href="#").nav-link.text-white Photo captions
+                 li.nav-item.py-1
+                  a(href="#").nav-link.text-white What is it?
+                 li.nav-item.py-1
+                  a(href="#").nav-link.text-white Graden reading
+                 li.nav-item.py-1
+                  a(href="#").nav-link.text-white Graden listening
+
+              li.nav-item.py-2
+               a(href="#").nav-link.text-white Magazine
+
+               ul.nav.px-1
+                 li.nav-item.py-1
+                  a(href="#").nav-link.text-white Books
+                 li.nav-item.py-1
+                  a(href="#").nav-link.text-white Entertaiment
+                 li.nav-item.py-1
+                  a(href="#").nav-link.text-white Fashion
+                 li.nav-item.py-1
+                  a(href="#").nav-link.text-white Life around the world
+                 li.nav-item.py-1
+                  a(href="#").nav-link.text-white Music
+                 li.nav-item.py-1
+                  a(href="#").nav-link.text-white Science and technology
+                 li.nav-item.py-1
+                  a(href="#").nav-link.text-white Sport
+
+             .jumbotron-search.d-flex.align-items-center
+              input(type="text").w-100
+              i.fas.fa-search
+        
+         .row
+          .col
+           h1.text-white Robots: friend of foe?
+
+      section.reading.mb-4
+       .container
+        .row
+         .col-md-8
+          p.text-center.text-md-left What is the future of artificial intelligence (AI)? Will robots become as intelligent as humans? Or more intelligent?
+
+          img(src="img/hero/intro.png", alt="picture of intro").w-100
+          a(data-toggle="collapse", href="#collapseInstructions", role="button", aria-expanded="false", aria-controls="collapseInstructions").btn.btn-light.border-0.w-100.text-left.mt-4.rounded-0.light-hover-none Instructions
+           i.fas.fa-caret-right
+          .collapse#collapseInstructions
+           .card.card-body.rounded-0 Do the preparation exercise first. Then read the text and do the other exercises.
+
+          a(data-toggle="collapse", href="#collapsePreparation", role="button", aria-expanded="true", aria-controls="collapsePreparation").btn.btn-light.w-100.text-left.mt-4.rounded-0.bg-color-primary.text-white.border-0.primary-hover-none Preparation
+           i.fas.fa-caret-right
+          .collapse.show#collapsePreparation
+           // Modal
+           #modal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true')
+            .modal-dialog(role='document')
+              .modal-content
+                .modal-header.text-center
+                  h5#exampleModalLabel.modal-title Confirmation
+                  button.close(type='button' data-dismiss='modal' aria-label='Close')
+                    span(aria-hidden='true') &times;
+                .modal-body ..
+                .modal-footer
+                  button.btn.btn-secondary.btn--cancel(type='button' data-dismiss='modal') Cancel
+                  button.btn.btn-primary.btn--ok(type='button') OK
+
+           .card.card-body.rounded-0.p-0
+            .card-body-jumbotron.d-flex.flex-column
+             h2 Robots: friend or foe?
+             p.text-secondary Match the words with the definitions.
+             .card-body-label.ml-auto #[span.js-label 6] items remained
+            .btn-group(role="group", aria-label="Basic example").d-flex.flex-wrap.js-items-container.min-height
+
+              +btn-group-choice('item-0', 'a robot')
+              +btn-group-choice('item-1', 'a drone')
+              +btn-group-choice('item-2', 'autonomous')
+              +btn-group-choice('item-3', 'a foe')
+              +btn-group-choice('item-4', 'an algorithm')
+              +btn-group-choice('item-5', 'artificial intelligence (AI)')
+
+            #input-group.js-inputs-container
+
+             +input-group('id-0', 'an enemy')
+
+             +input-group('id-1', 'a computer-controlled machine which can perform jobs without human input. It may have a human-like body')
+
+             +input-group('id-2', 'mathematical instructions which help a computer calculate an answer to a problem')
+
+             +input-group('id-3', 'the field of science concerned with producing machines with qualities of the human mind, e.g. the ability to understand language')
+
+             +input-group('id-4', 'independent, with the power to make your own decisions')
+
+             +input-group('id-5', 'an aircraft without a pilot which is controlled by a human on the ground')
+
+            .btn-group(role="group", aria-label="Basic example").flex-column
+
+             .btn-group-manage.text-white.btn-finish-hide
+              i.fas.fa-flag
+              button.btn.btn--finish(type="button", disabled="disabled", data-toggle='modal', data-target='#modal').w-100.text-left.rounded-0.mb-2 #[span Finish] 
+
+             .btn-group-manage.text-white.btn-finish-hide.btn--hide-answers
+              i.fas.fa-eye-slash
+              button.btn(type="button").w-100.text-left.rounded-0.mb-2 #[span Hide answers] 
+
+             .btn-group-manage.text-white.btn-finish-hide.btn--show-answers
+              i.fas.fa-bars
+              button.btn(type="button").w-100.text-left.rounded-0.mb-2 #[span Show answers] 
+
+             .btn-group-manage.text-white.btn-finish-hide.btn--show-feedback
+              i.fas.fa-chess-queen
+              button.btn.mb-2(type="button", data-toggle='modal', data-target='#modal').w-100.text-left.rounded-0 #[span Show feedback] 
+
+             .btn-group-manage.text-white
+              i.fas.fa-sync-alt
+              button.btn.btn--again.mb-2(type="button", disabled="disabled").w-100.text-left.rounded-0 #[span  Try again]
+
+
+
+
+          a(data-toggle="collapse", href="#collapseReading", role="button", aria-expanded="false", aria-controls="collapseReading").btn.btn-light.border-0.w-100.text-left.mt-4.rounded-0.light-hover-none Reading
+           i.fas.fa-caret-right
+          .collapse#collapseReading
+           .card.card-body.rounded-0
+            h2 Robots: friend or foe?
+            p What is the future of artificial intelligence (AI)? Will it be possible for robots to be autonomous? If so, when will that happen and will it be a good thing? We asked four experts what they think.
+            .media.flex-column.mb-4
+             .media-body.mb-4
+              h5.mt-0 A
+              .text I would say that we are quite a long way off developing the computing power or the algorithms for fully autonomous AI, though I do think it will happen within the next thirty or forty years. We will probably remain in control of technology and it will help us solve many of the world’s problems. However, no one really knows what will happen if machines become more intelligent than humans. They may help us, ignore us or destroy us. I tend to believe AI will have a positive influence on our future lives, but whether that is true will be partly up to us.  
+              .media.mt-3
+
+             .media-body
+              h5.mt-0 B
+              .text I have to admit that the potential consequences of creating something that can match or surpass human intelligence frighten me. Even now, scientists are teaching computers how to learn on their own. At some point in the near future, their intelligence may well take off and develop at an ever-increasing speed. Human beings evolve biologically very slowly and we would be quickly superseded. In the short term, there is the danger that robots will take over millions of human jobs, creating a large underclass of unemployed people. This could mean large-scale poverty and social unrest. In the long term, machines might decide the world would be better without humans.
+            
+            .media.flex-column
+             .media-body.mb-4
+              h5.mt-0 A
+              .text I would say that we are quite a long way off developing the computing power or the algorithms for fully autonomous AI, though I do think it will happen within the next thirty or forty years. We will probably remain in control of technology and it will help us solve many of the world’s problems. However, no one really knows what will happen if machines become more intelligent than humans. They may help us, ignore us or destroy us. I tend to believe AI will have a positive influence on our future lives, but whether that is true will be partly up to us.  
+              .media.mt-3
+
+             .media-body
+              h5.mt-0 B
+              .text I have to admit that the potential consequences of creating something that can match or surpass human intelligence frighten me. Even now, scientists are teaching computers how to learn on their own. At some point in the near future, their intelligence may well take off and develop at an ever-increasing speed. Human beings evolve biologically very slowly and we would be quickly superseded. In the short term, there is the danger that robots will take over millions of human jobs, creating a large underclass of unemployed people. This could mean large-scale poverty and social unrest. In the long term, machines might decide the world would be better without humans.
+
+          a(data-toggle="collapse", href="#collapseMatching", role="button", aria-expanded="false", aria-controls="collapseMatching").btn.btn-light.border-0.w-100.text-left.mt-4.rounded-0.bg-color-primary.text-white.primary-hover-none Check your understanding: #[br.d-md-none] multiple choice
+           i.fas.fa-caret-right
+          .collapse.collapseMatching
+           .card-body-jumbotron.d-flex.flex-column.px-4
+             h2 Robots: friend or foe?
+             p.text-secondary Read the questions and choose the correct expert (A–D). Each expert may be chosen more than once.
+             .card-body-label.ml-auto.mb-4 #[span.js-label 5] items remained
+           .quiz-container
+            .quiz-group
+            //-  p.px-4 Which expert has a different view from the others regarding the timescale of AI becoming much more  autonomous?
+            //-  form(action="#").px-4
+            //-   label.input-group(for="0")
+            //-    input(type="radio", id="0" name="input")
+            //-    label(for="0") &nbsp;
+            //-    span.ml-2 Expert A
+            //-   label.input-group(for="1")
+            //-    input(type="radio", id="1" name="input")
+            //-    label(for="1") &nbsp;
+            //-    span.ml-2 Expert B
+            //-   label.input-group(for="2")
+            //-    input(type="radio", id="2" name="input")
+            //-    label(for="2") &nbsp;
+            //-    span.ml-2 Expert C
+            //-   label.input-group(for="3")
+            //-    input(type="radio", id="3" name="input")
+            //-    label(for="3") &nbsp;
+            //-    span.ml-2 Expert D
+            .quiz-panel
+             .btn-panel.d-flex.justify-content-between
+              .btn-circle.bg-color-primary &nbsp;
+              .btn-circle.bg-color-primary &nbsp;
+              .btn-circle.bg-color-primary &nbsp;
+              .btn-circle.bg-color-primary &nbsp;
+              .btn-circle.bg-color-primary &nbsp;
+             .swipe-panel.d-flex.justify-content-center.my-3
+              //- button(disabled="disabled").btn.mr-2
+              //-  i.fas.fa-angle-left
+              //- button.btn
+              //-  i.fas.fa-angle-right
+
+            .btn-group(role="group", aria-label="Basic example").d-flex.flex-column.p-3.pb-0
+             .btn-group-manage.text-white.btn-finish-hide
+              i.fas.fa-flag
+              button.btn.btn--finish-quiz(type="button", disabled="disabled", data-toggle='modal', data-target='#modal').w-100.text-left.rounded-0.mb-2 #[span Finish] 
+             .btn-group-manage.text-white.btn-finish-hide
+              i.fas.fa-sync-alt
+              button.btn.btn--again-quiz(type="button", disabled="disabled", data-toggle='modal', data-target='#modal').w-100.text-left.rounded-0.mb-2 #[span Try again] 
+              
+              
+
+          a(data-toggle="collapse", href="#collapseSheets", role="button", aria-expanded="false", aria-controls="collapseSheets").btn.btn-light.border-0.w-100.text-left.rounded-0.light-hover-none Worksheets and downloads
+           i.fas.fa-caret-right
+          .collapse#collapseSheets 
+           ul.nav.flex-column.p-4
+             li.nav-item
+              a(href="https://learnenglishteens.britishcouncil.org/sites/teens/files/robots_friend_or_foe_-_exercises.pdf", target="_blank").nav-link.color-primary
+               .nav-link-group
+                i.fas.fa-scroll.mr-2
+                span Robots: friend or foe? - exercises   
+                
+             li.nav-item
+              a(href="https://learnenglishteens.britishcouncil.org/sites/teens/files/robots_friend_or_foe_-_answers.pdf", target="_blank").nav-link.color-primary
+               .nav-link-group
+                i.fas.fa-scroll.mr-2
+                span Robots: friend or foe? - answers
+              
+             li.nav-item
+              a(href="https://learnenglishteens.britishcouncil.org/sites/teens/files/robots_friend_or_foe_-_text.pdf", target="_blank").nav-link.color-primary
+               .nav-link-group
+                i.fas.fa-scroll.mr-2
+                span Robots: friend or foe? - text
+                
+          h3.my-4.color-primary.font-weight-bold Topics:
+           span.badge.badge-secondary.bg-color-primary.font-weight-normal.rounded-0.ml-3.p-2 robots
+           span.badge.badge-secondary.bg-color-primary.font-weight-normal.rounded-0.ml-2.p-2 science and technology
+           span.badge.badge-secondary.bg-color-primary.font-weight-normal.rounded-0.ml-2.p-2 the future
+
+          h3.color-primary.font-weight-bold Language level:
+           span.badge.badge-secondary.bg-color-primary.font-weight-normal.rounded-0.ml-3.p-2 Advanced/C1
+
+          h2 Discussion
+          p Which of the points in the reading do you agree with? Do you see robots as friends or foes?
+
+          section.comments.pb-3
+           h2.font-weight-bold Comments
+
+           .media.mb-4
+            .media-img-container.d-none.d-md-flex.flex-md-column
+             img.mr-3(src='img/users/user-1.png', alt='user 1 photo').mb-3
+             .media-icon-box.mb-2
+              i.fas.fa-trophy.inline-block.mr-1.color-primary
+              span.d-inline-block 7x
+             .media-icon-box
+              i.fas.fa-medal.inline-block.mr-1.color-primary
+              span.d-inline-block 6x
+
+            .media-body.p-0
+             .media-content-container.bg-white.shadow-sm.p-4
+              h5.heading-fifth.mt-0.d-flex.flex-column.flex-md-row.justify-content-md-between
+               span.heading-fifth--date 12 July, 2020 - 05:24
+               span.heading-fifth--nickname bjyxszd
+              p I think it depends on us whether robots become our enemies. If we use it on the right occasion and  field, it will become friends with us. On the contrary, you have used the robot in the wrong place. For  example, more and more robots have replaced humans. Then we will always become enemies with robots.
+              p.border-bottom.pb-4.text-secondary 2 users have voted ❤
+              p.mb-0 #[span.color-primary Log in] or #[span.color-primary register] to post comments
+           
+           .media.mb-4
+            .media-img-container.d-none.d-md-flex.flex-md-column
+             img.mr-3(src='img/users/user-2.png' alt='user 2 image')
+             .media-icon-box.mb-2
+              i.fas.fa-trophy.inline-block.mr-1.color-primary
+              span.d-inline-block 127x
+             .media-icon-box
+              i.fas.fa-medal.inline-block.mr-1.color-primary
+              span.d-inline-block 115x
+
+            .media-body.p-0
+             .media-content-container.bg-white.shadow-sm.p-4
+              h5.heading-fifth.mt-0.d-flex.flex-column.flex-md-row.justify-content-md-between
+               span.heading-fifth--date 26 May, 2020 - 14:22
+               span.heading-fifth--nickname Giovannichoi
+              p I have a question here: In the "Check your understanding: multiple choice", the last question, the  answer of 'Which expert gives their opinion about what will happen with the same level of certainty as D? ' is wrong, I think. The answer is expert C, but C is the opposite of expert D. I thoght 'the same level  of~ ' means that something is very similar with something. Can you explain why expert C is the right  answer of this question? Please answer me!!!
+              p.border-bottom.pb-4.text-secondary 1 user has voted ❤
+              p.mb-0 #[span.color-primary Log in] or #[span.color-primary register] to post comments
+             
+             .media.mt-4
+              .media-img-container.d-none.d-md-flex.flex-md-column
+               img.mr-3(src='img/users/user-3.png' alt='user 3 image')
+               .media-icon-box.mb-2
+                i.fas.fa-trophy.inline-block.mr-1.color-primary
+                span.d-inline-block 19x
+               .media-icon-box
+                i.fas.fa-medal.inline-block.mr-1.color-primary
+                span.d-inline-block 28x
+
+              .media-body.p-0
+               .media-content-container.bg-white.shadow-sm.p-4
+                h5.heading-fifth.mt-0.d-flex.flex-column.flex-md-row.justify-content-md-between
+                 span.heading-fifth--date 27 May, 2020 - 13:51
+                 span.heading-fifth--nickname JoModerator
+                p Hi Giovannichoi,#[br] 'The same level of' means 'the same amount of'. So, in this question 'the same  level of certainty' means 'the same amount of certainty', in other words, which expert is as certain  of their opinion as expert D. It doesn't necessarily mean that they have the same opinion - what  matters is how sure they are that their opinion is correct.#[br] I hope that helps.
+                p.my-4 Best wishes,#[br] Jo #[span.color-primary.font-weight-bold (LearnEnglish Teens team)] 
+                p.border-bottom.pb-4.text-secondary 1 user has voted ❤
+                p.mb-0 #[span.color-primary Log in] or #[span.color-primary register] to post comments
+
+         .d-none.d-md-block.col-4 
+          section.sidebar
+           #list-gray.list-group.border.border-dark.mb-4
+             a(href="#").list-group-item.list-group-item-action.active.bg-dark.text-white.text-uppercase.font-weight-bold.d-flex.align-items-center.rounded-0.border-0.py-2
+              span.order-2 Help & support 
+              i.fas.fa-info-circle.order-1.mr-3
+             a(href="#").list-group-item.list-group-item-action.d-flex.align-items-center.py-2.bg-gray 
+              span.order-2 Covid-19 learning support
+              i.fas.fa-caret-right.order-1.mr-4.color-primary 
+             a(href="#").list-group-item.list-group-item-action.d-flex.align-items-center.py-2.bg-gray  
+              span.order-2 Find content for your English level
+              i.fas.fa-caret-right.order-1.mr-4.color-primary 
+             a(href="#").list-group-item.list-group-item-action.d-flex.align-items-center.py-2.bg-gray
+              span.order-2 CEF levels
+              i.fas.fa-caret-right.order-1.mr-4.color-primary 
+             a(href="#").list-group-item.list-group-item-action.d-flex.align-items-center.py-2.bg-gray
+              span.order-2 Getting started
+              i.fas.fa-caret-right.order-1.mr-4.color-primary 
+             a(href="#").list-group-item.list-group-item-action.d-flex.align-items-center.py-2.bg-gray
+              span.order-2 House rules
+              i.fas.fa-caret-right.order-1.mr-4.color-primary 
+
+           #list-tab-gray.list-group.border.border-dark.mb-4
+             a(href="#").list-group-item.list-group-item-action.active.bg-dark.text-white.text-uppercase.font-weight-bold.d-flex.align-items-center.rounded-0.border-0.py-2
+              span.order-2 Help & support 
+              i.fas.fa-graduation-cap.order-1.mr-3
+             a(href="#").list-group-item.list-group-item-action.d-flex.align-items-center.py-2.bg-gray
+              span.order-2 Find an online course
+              i.fas.fa-caret-right.order-1.mr-4.color-primary 
+    
+           .list-tab-header Top Post
+           .row.w-100.mx-0
+             .col-12.px-0.mb-4
+               #list-tab.list-group(role='tablist').flex-row.align-items-stretch.flex-wrap
+                 a(data-toggle='list', href='#list-viewed', role='tab')#list-viewed-list.list-group-item.list-group-item-action.active.text-center.rounded-0 Viewed
+
+                 a(data-toggle='list', href='#list-liked' role='tab')#list-liked-list.list-group-item.list-group-item-action.text-center.rounded-0 Liked
+
+                 a(data-toggle='list', href='#list-commented', role='tab')#list-commented-list.list-group-item.list-group-item-action.text-center.rounded-0 Commented
+
+             .col-12.px-0
+               #nav-tabContent.tab-content
+                 #list-viewed.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='list-viewed-list')
+                  ul.list-group
+                   li.list-group-item 
+                    h3 The giant chocolate chip cookie
+                    img(src="img/viewed/viewed-cookie.png", alt="view picture 1")
+                   li.list-group-item 
+                    h3 How to be a good listener if someone is upset
+                    img(src="img/viewed/viewed-listener.png", alt="view picture 2")
+                   li.list-group-item 
+                    h3 The cure for boredom
+                    img(src="img/viewed/viewed-boredom.png", alt="view picture 3")
+                   li.list-group-item 
+                    h3 International Women's Day – We are women
+                    img(src="img/viewed/viewed-women.png", alt="view picture 4")
+                   li.list-group-item 
+                    h3 Miso mushroom coconut noodles
+                    img(src="img/viewed/viewed-noodles.png", alt="view picture 5")
+
+                 #list-liked.tab-pane.fade(role='tabpanel', aria-labelledby='list-liked-list')
+                  ul.list-group
+                   li.list-group-item 
+                    h3 How do you become a K-pop star?
+                    img(src="img/liked/liked-star.png", alt="liked picture 1")
+                   li.list-group-item 
+                    h3 School strike 4 climate
+                    img(src="img/liked/liked-climate.png", alt="liked picture 2")
+                   li.list-group-item 
+                    h3 How to make a Day of the Dead mask
+                    img(src="img/liked/liked-mask.png", alt="liked picture 3")
+                   li.list-group-item 
+                    h3 Stan Lee, the man who invented Spider-Man
+                    img(src="img/liked/liked-spiderman.png", alt="liked picture 4")
+                   li.list-group-item 
+                    h3 How to be a good listener if someone is upset
+                    img(src="img/liked/liked-listener.png", alt="liked picture 5")
+                   
+                 #list-commented.tab-pane.fade(role='tabpanel', aria-labelledby='list-commented-list')
+                  ul.list-group
+                   li.list-group-item 
+                    h3 The cure for boredom
+                    img(src="/img/viewed/viewed-boredom.png", alt="commented picture 1")
+                   li.list-group-item 
+                    h3 Is being vegan more environmentally friendly?
+                    img(src="/img/commented/commented-friendly.png", alt="commented picture 2")
+                   li.list-group-item 
+                    h3 How do you become a K-pop star?
+                    img(src="/img/liked/liked-star.png", alt="commented picture 3")
+                   li.list-group-item 
+                    h3 Stan Lee, the man who invented Spider-Man
+                    img(src="/img/liked/liked-spiderman.png", alt="commented picture 4")
+                   li.list-group-item 
+                    h3 International Women's Day – We are women
+                    img(src="/img/viewed/viewed-women.png", alt="commented picture 5")
+
+           .card.mt-4.border-0
+            .card-body.bg-color-primary.p-3.d-flex.flex-row.align-items-center.text-white
+              i.fas.fa-caret-right
+              p.card-text.ml-2 Photo caption
+
+            // reverse for previous css sibling !
+            .card-sibling-reverse.d-flex.flex-column.flex-column-reverse
+             .card-link-container.ml-auto.p-3.color-primary
+              i.fas.fa-caret-right.mr-2
+              a(href="#").card-link.color-primary View More
+             .card-img-container
+              img.card-img-top(src='img/card/card-img-1.png' alt='Card image 1')
+              p.text-white.p-3.mb-0 This week's photo is even stranger than normal! Can you write a...
+
+           .card.mt-4.border-0
+            .card-body.bg-color-primary.p-3.d-flex.flex-row.align-items-center.text-white
+              i.fas.fa-caret-right
+              p.card-text.ml-2 What is it?
+
+            // reverse for previous css sibling !
+            .card-sibling-reverse.d-flex.flex-column.flex-column-reverse
+             .card-link-container.ml-auto.p-3.color-primary
+              i.fas.fa-caret-right.mr-2
+              a(href="#").card-link.color-primary View More
+             .card-img-container
+              img.card-img-top(src='img/card/card-img-2.png' alt='Card image 2')
+              p.text-white.p-3.mb-0 Do you know what this is? Do you know what it's called in English?...
+
+           .card.mt-4.border-0
+            .card-body.bg-color-primary.p-3.d-flex.flex-row.align-items-center.text-white
+              i.fas.fa-caret-right
+              p.card-text.ml-2 Games
+
+            // reverse for previous css sibling !
+            .card-sibling-reverse.d-flex.flex-column.flex-column-reverse
+             .card-link-container.ml-auto.p-3.color-primary
+              i.fas.fa-caret-right.mr-2
+              a(href="#").card-link.color-primary View More
+             .card-img-container
+              img.card-img-top(src='img/card/card-img-3.png' alt='Card image 1')
+              p.text-white.p-3.mb-0 How many words can you Sushi Spell in two minutes? Take the...
+
+     footer.footer.bg-color-primary.text-white
+      .container.py-4
+       .footer-header.d-flex.flex-column.flex-md-row.justify-content-md-between.align-items-center.mb-4.pb-4.border-bottom
+        img(src="img/hero/logo.png", alt="main logo").mb-4.md-md-0
+        ul.nav
+         li.nav-item
+          a(href="#").d-flex.align-items-center
+           i.fas.fa-home.align-items-center
+           p.p-0.mb-0.ml-2.mr-3 Email
+         li.nav-item
+          a(href="#").d-flex.align-items-center
+           i.fas.fa-home.align-items-center
+           p.p-0.mb-0.ml-2.mr-3 Facebook
+         li.nav-item
+          a(href="#").d-flex.align-items-center
+           i.fas.fa-home.align-items-center
+           p.p-0.mb-0.ml-2 Twitter
+       .footer-footer
+        ul.nav.mb-4.text-center.text-md-left
+         li.nav-item.mr-4
+          a(href="#").d-flex.align-items-center Terms of use
+         li.nav-item.mr-4
+          a(href="#").d-flex.align-items-center Accessibility
+         li.nav-item.mr-4
+          a(href="#").d-flex.align-items-center Privacy and cookies
+         li.nav-item.mr-4
+          a(href="#").d-flex.align-items-center Child protection
+         li.nav-item.mr-4
+          a(href="#").d-flex.align-items-center Contact us
+         li.nav-item.mr-4
+          a(href="#").d-flex.align-items-center Site map
+
+        p © British Council The United Kingdom's international organisation for cultural relations and educational opportunities. A registered charity: 209131 (England and Wales) SC037733 (Scotland).
+        p.mb-0 ICP#: 10044692
+            
+
+
+           
+
+            
+          
+          
+             
+         
+
+     
+        
+     script(src="/js/bundle.js")   
+     script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js")
+     script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js")
+     script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js")

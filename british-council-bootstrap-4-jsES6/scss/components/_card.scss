@@ -1,0 +1,280 @@
+#collapseReading,
+#collapseInstructions { border: solid .8rem $color-gray-light-2; }
+
+#collapsePreparation,
+#collapseMatching {
+    .card-body-label { 
+        background-color: $color-baby-blue;
+        border-radius: 20rem;
+        padding: .5rem 1rem;
+        font-size: 1.4rem;
+        margin-top: 5rem; 
+    }
+}
+
+#collapsePreparation,
+#collapseMatching {
+
+    .btn-group {
+        background-color: $color-gray-light;
+
+        .btn {
+            border: 0;
+            border-bottom: solid .3rem $color-gray-dark;
+            background-color: $color-white;
+            transition: all .1s;
+            color: $color-black;
+            font-size: inherit;
+
+            &:focus { 
+                box-shadow: initial;
+                border-bottom: solid .3rem $color-gray-dark;
+            }
+
+            &:hover { background-color: $color-gray-light-2;  }
+        }
+    }
+
+    .btn-group-manage {
+        width: 50%;
+        position: relative;
+
+        i {
+            transform: translateY(-79%);
+            position: absolute;
+            left: 1rem;
+            z-index: 2;
+            top: 50%;
+        }
+
+        .btn {
+            background-color: $color-primary;
+
+            &:hover { 
+                background-color: $color-primary-dark; 
+                transform: initial;
+            }
+
+            span { 
+                color: $color-white;
+                padding-left: 2.2rem; 
+            }
+        }
+    }
+}
+
+#collapsePreparation {
+    border: solid .8rem $color-primary;
+    position: relative;
+    overflow-y: scroll;
+    height: 90rem;
+
+    h2 { margin-bottom: 1rem; }
+
+    .btn-group,
+    .card-body-jumbotron { 
+        padding: 1rem; 
+        cursor: initial;
+    }
+
+    .btn-group-choice {
+        position: relative;
+
+        i {
+            top: 0;
+            right: 1%;
+            font-size: 1.1rem;
+            position: absolute;
+        }
+    }
+
+    #input-group { 
+        p { line-height: 4rem; }
+        
+        cursor: initial;
+    }
+
+    .input-group {
+        padding: 3rem 2rem 0 2rem;
+
+        &:last-child { padding-bottom: 5rem; }
+    }
+
+    .form-control {
+        padding: 0;
+        height: 4rem;
+        cursor: pointer;
+        border-radius: .2rem;
+        border-top: solid .3rem $color-gray-light;
+        border-left: solid .3rem $color-gray-light;
+        border-right: solid .3rem $color-gray-light;
+        border-bottom: solid .4rem $color-gray-light;
+    }
+}
+
+.card {
+    cursor: pointer;
+    border: initial;
+
+    .card-link {
+        &:hover { color: $color-primary; }
+    }
+
+    .card-img-container {
+        position: relative;
+
+        p {
+            background-color: rgba($color-black, .5);
+            transition: all .5s;
+            position: absolute;
+            opacity: 0;
+            bottom: 0;
+        }
+    }
+
+    .card-link-container:hover + .card-img-container p { opacity: 1; }
+}
+
+.js-chosen { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: $color-white;
+    height: 100%;
+
+    i {
+        position: initial !important;
+        padding-right: 1rem;
+        font-size: 2rem;
+    }
+
+    button { 
+        height: 100%; 
+        background-color: initial; 
+        font-size: 2rem; 
+    }
+
+    i, button { font-size: $font-default !important; }
+}
+
+.js-item-active {
+    i { color: $color-white; }
+    & button { color: $color-white !important; background-color: $color-gray-dark-3 !important; }
+}
+
+.js-cell-active { background-color: $color-gray-light !important; }
+
+.js-cell {
+    position: relative;
+
+    .js-right-item {
+        display: flex;
+        align-items: center;
+    
+        position: absolute !important;
+        background-color: $color-baby-blue;
+        font-size: $font-default;
+        color: $color-black;
+        height: 100%;
+        height: 100%;
+        width: 100%;
+        top: 0;
+    }
+}
+
+#collapseMatching {
+    border: solid .8rem $color-primary;
+
+    form { padding: 2rem 2rem; }
+
+    .quiz-group p { line-height: 4.5rem; }
+
+    .input-group { 
+        padding: 2.5rem 0;
+        cursor: pointer;
+
+        input:checked + label::after { opacity: 1; }
+
+        label,
+        label::after { border-radius: 50%; }
+
+        input { display: none; }
+
+        label {
+            border: solid .4rem $color-primary;
+            border-radius: 50%;
+            position: relative;
+            cursor: pointer;
+            height: 2rem;
+            width: 2rem;
+
+            &::after { 
+                background-color: $color-primary;
+                transform: translate(-50%, -50%);
+                transition: all .3s;
+                position: absolute;
+                display: block;
+                height: .8rem;
+                width: .8rem;
+                content: '';
+                opacity: 0;
+                left: 50%;
+                top: 50%;
+            }
+        }
+    }
+
+    .btn-panel,
+    .swipe-panel { 
+        width: 25%;
+        margin: 0 auto; 
+
+        @include respond(sm) { width: 80%; }
+    }
+
+    .btn-panel {
+        position: relative;
+
+        &::after {
+            background-color: $color-primary;
+            position: absolute;
+            display: block;
+            height: .2rem;
+            width: 100%;
+            content: '';
+            top: 50%;
+        }
+
+        .btn-circle {
+            border-radius: 50%;
+            cursor: pointer;
+            height: 1.5rem;
+            width: 1.5rem;
+            z-index: 1;
+
+            &:first-child { background-color: lighten($color-primary, 10%);}
+        }
+    }
+
+    .swipe-panel {
+        & button {
+            padding: .5rem 1.5rem;
+            border-radius: 5rem;
+            transition: all .2s;
+
+            &:hover { 
+                transform: translateY(.2rem);
+                background-color: $color-gray-light;
+            }
+
+            & i { font-size: 1.5rem; }
+        }
+    }
+}
+
+
+
+
+
+

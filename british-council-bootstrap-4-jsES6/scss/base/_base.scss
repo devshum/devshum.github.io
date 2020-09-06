@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html {
+    font-size: 62.5%;
+    box-sizing: inherit;
+}
+
+a {
+    &:active,
+    &:focus { outline: none; }
+}
+
+
+button {
+    &:focus { outline: none; }
+
+    &::-moz-focus-inner { outline:0; }
+}
+
+
+
+  
+  

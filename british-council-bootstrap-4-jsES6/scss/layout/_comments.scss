@@ -1,0 +1,27 @@
+.comments {
+    border-top: solid .3rem $color-primary;
+    background-color: $color-gray-light-3;
+    padding: 0 2rem 0 2rem;
+
+    h2 { margin-top: 2rem !important; }
+
+    .media-img-container span { font-size: 1.4rem; }
+
+    p {
+        &:nth-of-type(1) {
+            @include respond(md) { font-size: 1.4rem; }
+        }
+
+        &:nth-of-type(2) { 
+            font-size: 1.5rem; 
+
+            @include respond(md) { font-size: 1.2rem; }
+        }
+
+        &:nth-of-type(3) { 
+            font-size: 1.3rem; 
+
+            @include respond(md) { font-size: 1.3rem; }
+        }
+    }
+}

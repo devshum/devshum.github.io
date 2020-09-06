@@ -1,0 +1,15 @@
+@keyframes moveToRight {
+    0% {
+        transform: translateX(-4rem);
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    50% { transform: translateX(1rem); }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+    }
+}

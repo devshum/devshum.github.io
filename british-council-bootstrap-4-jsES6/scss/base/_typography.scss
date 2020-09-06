@@ -1,0 +1,19 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: $color-black;
+    font-weight: normal;
+    font-size: 1.6rem;
+}
+
+.heading-fifth {
+    &--date { 
+        font-size: 1.8rem; 
+
+        @include respond(md) { font-size: 1.4rem; }
+    }
+    &--nickname { 
+        font-size: 1.4rem; 
+
+        @include respond(md) { font-size: 1.4rem; }
+    }
+}

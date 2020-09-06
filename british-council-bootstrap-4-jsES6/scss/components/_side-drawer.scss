@@ -1,0 +1,68 @@
+.side-drawer {
+    background-color: $color-primary-dark;
+    position: absolute;
+    overflow: scroll;
+    display: none;
+    height: 100%;
+    z-index: 1;
+    width: 67%;
+    left: 0;
+    top: 0;
+
+    @include respond(sm) { display: block; }
+
+    .nav-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        flex-wrap: wrap;
+
+        background-color: $color-primary;
+        transition: all .5s;
+        cursor: pointer;
+
+        ul {
+            flex: 100%;
+            
+            background-color: $color-primary-dark;
+            padding: 1rem 0 1rem 2rem;
+            
+            ul {
+                padding: 1rem 0 0 2rem;
+
+                li {
+                    &:not(:last-child) { margin-bottom: 2rem; }
+                }
+            }
+            
+            li {
+                list-style: none;
+                
+                a {
+                    &,
+                    &:active,
+                    &:focus {
+                        color: $color-white;
+                        font-size: 1.4rem;
+                        opacity: .7;
+                    }
+                }
+            }
+        }
+
+        i { color: $color-white; }
+    }
+
+    .nav-link {
+        &,
+        &:active,
+        &:focus {
+            font-size: $font-default;
+            color: $color-white;
+            padding: 1rem;
+        }
+    }
+}
+
+.navbar-collapse { flex-basis: initial; }

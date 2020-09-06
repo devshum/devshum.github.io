@@ -1,0 +1,41 @@
+.jumbotron {
+    background: $color-primary;
+    
+    img:nth-child(1) { height: 3.5rem; }
+    img:nth-child(2) { height: 2rem; }
+
+    input {
+        padding: .2rem 0;
+        border: 0;
+
+        @include respond(lg) { transform: translateX(0); }
+    }
+
+    .jumbotron-logo { color: $color-white; }
+
+    .jumbotron-search {
+        position: relative;
+
+        & i {
+            position: absolute;
+            right: .5rem;
+        }
+    }
+
+    .row:nth-of-type(3) { 
+        margin-top: 10rem; 
+
+        h1 {
+            animation: moveToRight 1.5s ease-out;
+            animation-fill-mode: backwards;
+            font-size: 4.5rem; 
+
+            @include respond(md) { font-size: 2.8rem; }
+        }
+
+        @include respond(sm) {
+            margin-top: 5rem;
+            text-align: center;
+        }
+    }
+}

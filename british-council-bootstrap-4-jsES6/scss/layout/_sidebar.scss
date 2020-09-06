@@ -1,0 +1,22 @@
+.sidebar {
+    .list-tab-header {
+        font-weight: bold;
+        color: $color-primary;
+        padding: 1rem 0 1rem 1rem;
+        background-color: $color-gray-light;
+        border-top: solid .4rem $color-primary;
+    }
+
+    #list-tab-gray {
+        .list-group-item { 
+            &,
+            &:link,
+            &:visited {
+                color: $color-black;
+                font-size: 1.4rem;
+                border: 0; 
+            }
+        }
+    }
+}
+

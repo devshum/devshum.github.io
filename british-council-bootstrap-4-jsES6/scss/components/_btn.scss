@@ -1,0 +1,14 @@
+.btn--show-feedback { display: none; } 
+.btn--show-answers { display: none; }
+.btn--hide-answers { display: none; } 
+
+.btn-light { 
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row-reverse;
+
+    margin-top: 4rem; 
+
+    i { margin-right: .5rem; }
+}

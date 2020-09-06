@@ -1,0 +1,15 @@
+.footer {
+    font-size: 1.4rem;
+
+    @include respond(md) {
+        font-size: 1.2rem;
+    }
+    
+    img { width: 10rem; }
+
+    ul li a { 
+        color: $color-white; 
+
+        &:hover { text-decoration: initial; }
+    }
+}
