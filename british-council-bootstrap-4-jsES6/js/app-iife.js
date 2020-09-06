@@ -10,32 +10,25 @@ const dataController = (function() {
         ///////////////////
         quizAnswers: [
             {
-                answer: 'Which expert has a different view from the others regarding the timescale of AI becoming much more autonomous?',
-                rightAnswer: 'Expert A',
+                answer: 'Which expert has a different view from the others regarding the timescale of AI becoming much more autonomous?'
             },
 
             {
-                answer: 'Which expert has a similar view to A about the responsibility humans have for the future of AI?',
-                rightAnswer: 'Expert D',
+                answer: 'Which expert has a similar view to A about the responsibility humans have for the future of AI?'
             },
 
             {
-                answer: 'Which expert agrees with B that the negative aspects of AI far outweigh the positive aspects?',
-                rightAnswer: 'Expert D',
+                answer: 'Which expert agrees with B that the negative aspects of AI far outweigh the positive aspects?'
             },
 
             {
                 answer: 'Which expert seems to disagree with B about how fast humans can change?',
-                rightAnswer: 'Expert C',
             },
 
             {
-                answer: 'Which expert gives their opinion about what will happen with the same level of certainty as D?',
-                rightAnswer: 'Expert C',
+                answer: 'Which expert gives their opinion about what will happen with the same level of certainty as D?'
             },
         ],
-
-        //quizOptions: ['Expert A', 'Expert B', 'Expert C', 'Expert D']
     };
 
     const splitID = function(itemID) {
@@ -346,7 +339,6 @@ const UIController = (function() {
         },
 
         renderButton: function(page, type) { 
-            console.log(page);
             return `
                 <button class="btn mr-2" data-gotopage=${type === 'next' ? page + 1 : page - 1}>
                     <i class="fas fa-angle-${type === 'next' ? 'right' : 'left'}"></i>
