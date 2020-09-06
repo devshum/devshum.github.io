@@ -319,6 +319,8 @@ const UIController = (function() {
         checkAnswers: function(rightAnsw, sortAnsw) {
             let numOfCorrect = [];
 
+            console.log(rightAnsw, sortAnsw);
+
             rightAnsw.forEach((el, i) => {
                 if(sortAnsw[i]) {
                     if(el === sortAnsw[i].innerText) {
@@ -399,7 +401,7 @@ const controller = (function(dataCtrl, UICtrl) {
         // get sort answers
         let sortedAnswers = dataCtrl.getSortAnswers();
 
-        return [sortedAnswers, rightAnswers, allCells];
+        return [sortedAnswers, rightAnswers, allCells, allAnswered];
     };
 
     const pickItemCtrl = function(e) {
@@ -485,17 +487,17 @@ const controller = (function(dataCtrl, UICtrl) {
     };
 
     const checkAnswersCtrl = function() {
-        let values = getValuesForCheck();
+        const [sortedAnswers, rightAnswers, allCells, allAnswered] = getValuesForCheck();
 
         //check answers
-        if(values[0].length < 6) {
+        if(sortedAnswers.length < allCells.length) {
             // update UI
-            UICtrl.renderAskModal(values[0].length, values[2].length);
+            UICtrl.renderAskModal(sortedAnswers.length, allCells.length);
 
             document.querySelector('.btn--ok').addEventListener('click', () => {
                 // update UI
-                const numOfCorrect = UICtrl.checkAnswers(values[1], values[0]);
-                UICtrl.renderModal(numOfCorrect, values[2].length);
+                const numOfCorrect = UICtrl.checkAnswers(rightAnswers, allAnswered);
+                UICtrl.renderModal(numOfCorrect, allCells.length);
     
                 /////////////////
                 dataCtrl.passFalse();
