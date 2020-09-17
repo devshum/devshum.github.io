@@ -1,24 +1,3 @@
-english-js-app-flexbox-mvc-es6-modules | https://devshum.github.io/
-
-![English app Demo](demo/english-app-demo.gif)
-
-https://drive.google.com/file/d/1QcP0M3FwfBSsp9M9dLPRrM0ZsC3udzQI/view?usp=sharing
-https://drive.google.com/file/d/1WLj9jD-CrKXOJewh2qxa0eWps2CiyKhy/view?usp=sharing
-
-
-* 
-
-![English app Preview](preview/english-app.jpg)
-![English app MVC Preview](preview/english-es6-modules-mvc.jpg)
-
-
-band-of-brothers-bootstrap-4  | https://devshum.github.io/band-of-brothers-bootstrap-4
-
-![Band Demo](demo/band-demo.gif)
-
-* 
-
-![Band Preview](preview/band.jpg)
 
 ---------------------
 
