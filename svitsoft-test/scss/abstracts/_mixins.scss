@@ -1,0 +1,40 @@
+@mixin HelveticaNeue($font-family, $srcLocal, $urlWoff2, 
+                     $urlWoff, $urlTtf, $font-weight, $font-style) {
+                         
+    font-family: $font-family;
+    src: local($srcLocal), local($srcLocal),
+        url($urlWoff2) format('woff2'),
+        url($urlWoff) format('woff'),
+        url($urlTtf) format('truetype');
+    font-weight: $font-weight;
+    font-style: $font-style;
+};
+
+@mixin widthHeight($width, $height) { 
+    width: $width;
+    height: $height;
+}
+
+@mixin changeGridDirection($translateXY) {
+    transform: $translateXY rotate(45deg);
+    background: rgba($color-primary, .25);
+    grid-area: 1 / 2 / 2 / 3;
+    justify-self: center;
+}
+
+// MEDIA QUERY MANAGER
+@mixin respond($breakpoint) {    
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 47.9375em) { @content; }    //767px
+    }
+
+    @if $breakpoint == desktop-mini {
+        @media only screen and (max-width: 78.125em) { @content; }     //1250px
+    }
+
+    @if $breakpoint == desktop {
+        @media only screen and (max-width: 118.75em) { @content; }     //1900px
+    }
+}
+
+

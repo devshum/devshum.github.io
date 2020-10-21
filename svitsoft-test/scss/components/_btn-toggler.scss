@@ -1,0 +1,17 @@
+.btn-toggler {
+    font-family: $font-helvetica-400;
+    color: rgba($color-primary, .25);
+    line-height: $default-font-size;
+    background-color: transparent;
+    font-size: 1.4rem;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+
+    @extend .transition-all;
+    
+    &--active { 
+        font-family: $font-helvetica-700;
+        color: $color-primary; 
+    }
+}

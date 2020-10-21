@@ -1,0 +1,99 @@
+.hero {
+    background: url(/img/hero-small.png) center no-repeat;
+    background-size: cover;
+
+    @media(min-resolution: 192dpi) and (min-width: 47.9375em),
+                                       (min-width: 118.75em) {
+        background: url(/img/hero.png) center no-repeat;
+        background-size: cover;
+    }
+
+    &__grid-container { 
+        padding-top: 23.2rem; 
+
+        @include respond(desktop-mini) { padding-top: 30.5rem; }
+
+        @include respond(phone) { padding: 16.2rem 2.4rem 8.7rem 2.4rem; }
+    }
+
+    &__presentation {
+        grid-row: 2 / 3;
+        grid-column: center-start / col-start 5;
+        background-color: $color-primary-2;
+
+        padding: 8rem 3.6rem 12.8rem 4rem;
+        width: 79.2rem;
+
+        figcaption {
+            font-family: $font-helvetica-400;
+            line-height: 2.4rem;
+
+            @include respond(desktop-mini) { font-size: 1.4rem; }
+        }
+
+        @include respond(desktop-mini) {
+            padding: 5.6rem 3.2rem 5.6rem 2.4rem;
+            width: 100%;
+        }
+
+        @include respond(phone) {
+            grid-row: 2 / 3;
+            grid-column: center-start / center-end;
+
+            padding: 3.2rem 1.6rem;
+        }
+    }
+
+    &__button {
+        grid-column: col-end 6 / center-end;
+        justify-self: end;
+
+        @include respond(phone) {
+            grid-column: center-start / center-end;
+            margin-top: 1.5rem;
+            grid-row: 3 / 4;
+            height: 4.8rem;
+            width: 100%;
+        }
+    }
+
+    &__slider {
+        grid-row: 3 / 4;
+        grid-column: col-end 4 / full-end;
+
+        @include respond(phone) {
+            grid-row: 1 / 2;
+            grid-column: center-start / center-end;
+        }
+    }
+
+    &__btn-box {
+        display: flex;
+        align-self: center;
+
+        grid-row: 3 / 4;
+        grid-column: col-start 1;
+
+        @include respond(phone) { display: none; }
+    }
+
+    &__btn-switch,
+    &__btn-switch {
+        border: solid .1rem $color-white;
+        background-color: transparent;
+        transform: skew(-20deg);
+        padding: 2.4rem;
+        cursor: pointer;
+        width: 4rem;
+        outline: 0;
+        
+        @extend .transition-all;
+
+        &:hover {
+            border: solid .1rem transparent;
+            background-color: $color-primary-2;
+        }
+
+        img { transform: translateX(-.8rem); }
+    }
+}

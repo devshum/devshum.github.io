@@ -1,0 +1,51 @@
+.header {
+    @extend .d-flex-align-center;
+    @extend .transition-all;
+    
+    border-bottom: solid .1rem transparent;
+    justify-content: space-between;
+    padding-right: 3.2rem;
+    position: relative;
+
+    @include respond(phone) { padding-right: 2.4rem; }
+
+    &::before {
+        background-color: $color-gray;
+        position: absolute;
+        width: 9.9rem;
+        display: none;
+        height: 100%;
+        content: '';
+        z-index: -1;
+        left: 0;
+        top: 0;
+
+        @include respond(phone) { display: block; }
+    }
+
+    &__main-box {
+        @extend .d-flex-align-center;
+        @extend .transition-all;
+
+        padding: 2.4rem 10.1rem 2.4rem 8rem;
+        background-color: $color-gray;
+
+        @include respond(desktop-mini) { padding: 3.4rem .9rem 3.5rem 3.2rem; }
+
+        @include respond(phone) {
+            background-color: initial;
+            padding: 1.7rem 2.4rem;
+        }
+    }
+
+    &__language-toggler-box { 
+        margin-left: 5.5rem; 
+
+        @include respond(desktop-mini) { display: none; }
+    }
+
+    &__icons-box { @include widthHeight(3.2rem, 3.2rem); }
+}
+
+.toggle-main-box-js { background-color: $color-white; }
+

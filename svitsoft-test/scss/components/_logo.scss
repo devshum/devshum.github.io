@@ -1,0 +1,9 @@
+.logo {
+    font-size: 4rem;
+    line-height: 4.8rem;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    font-family: $font-helvetica-900;
+
+    @include respond(phone) { font-size: 3.2rem; }
+}

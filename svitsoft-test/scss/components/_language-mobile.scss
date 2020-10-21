@@ -1,0 +1,29 @@
+.language-mobile {
+    position: absolute;
+    display: none;
+    right: 3rem;
+    top: 4rem;
+
+    @include respond(phone) { left: 3rem; }
+
+    li { 
+        display: inline-block;
+
+        &:not(:last-child) { margin-right: 2rem; }
+
+        button {
+            border: solid .1rem $color-gray;
+            background-color: transparent;
+            visibility: hidden;
+            font-size: 3rem;
+            cursor: pointer;
+            padding: 1rem;
+            outline: none;
+            opacity: 0;
+
+            @include respond(phone) { font-size: 2.5rem; }
+        }
+    }
+    
+    @include respond(desktop-mini) { display: block; }
+}
