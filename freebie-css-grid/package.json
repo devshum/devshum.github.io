@@ -95,7 +95,7 @@
     "immutable": "^3.8.2",
     "in-publish": "^2.0.0",
     "indexof": "^0.0.1",
-    "ini": "^1.3.5",
+    "ini": "^1.3.6",
     "inherits": "^2.0.4",
     "is-arrayish": "^0.2.1",
     "interpret": "^1.2.0",
