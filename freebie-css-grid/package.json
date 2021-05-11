@@ -136,7 +136,7 @@
     "lazy-cache": "^1.0.4",
     "lcid": "^1.0.0",
     "limiter": "^1.1.5",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "longest": "^1.0.1",
     "lodash.isfinite": "^3.3.2",
     "make-iterator": "^1.0.1"
