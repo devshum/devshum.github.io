@@ -91,7 +91,7 @@
     "has-value": "^1.0.0",
     "has-unicode": "^2.0.1",
     "has-values": "^1.0.0",
-    "hosted-git-info": "^2.8.5",
+    "hosted-git-info": "^2.8.9",
     "immutable": "^3.8.2",
     "in-publish": "^2.0.0",
     "indexof": "^0.0.1",
