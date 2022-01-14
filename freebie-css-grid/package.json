@@ -70,7 +70,7 @@
     "fast-json-stable-stringify": "^2.1.0",
     "flagged-respawn": "^1.0.1",
     "for-in": "^1.0.2",
-    "follow-redirects": "^1.5.10",
+    "follow-redirects": "^1.14.7",
     "for-own": "^1.0.0",
     "forever-agent": "^0.6.1",
     "fresh": "^0.5.2",
