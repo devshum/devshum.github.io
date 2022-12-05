@@ -42,7 +42,7 @@
     "currently-unhandled": "^0.4.1",
     "dashdash": "^1.14.1",
     "decamelize": "^1.2.0",
-    "decode-uri-component": "^0.2.0",
+    "decode-uri-component": "^0.2.1",
     "default-compare": "^1.0.0",
     "default-resolution": "^2.0.0",
     "define-property": "^2.0.2",
